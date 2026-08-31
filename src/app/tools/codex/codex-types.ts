@@ -197,6 +197,14 @@ export interface Entry {
   /** the EASY / MEDIUM / HARD column one of the docs keeps */
   difficulty?: 1 | 2 | 3;
   pinned?: boolean;
+  /**
+   * Made by the Example button and not touched since.
+   *
+   * It is cleared by the first save rather than kept as a permanent label: the
+   * badge is there to stop somebody mistaking invented numbers for their own,
+   * and the moment they have edited the thing, they know.
+   */
+  sample?: boolean;
   data: EntryData;
   /** measurements, for the kinds that can be measured */
   runs?: Run[];

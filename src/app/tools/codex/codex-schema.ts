@@ -365,6 +365,7 @@ export function readEntry(raw: unknown): Entry | null {
       : {}),
     ...(difficulty >= 1 && difficulty <= 3 ? { difficulty: difficulty as 1 | 2 | 3 } : {}),
     ...(bool(record['pinned']) ? { pinned: true } : {}),
+    ...(bool(record['sample']) ? { sample: true } : {}),
     data,
     ...(runs.length ? { runs } : {}),
     ...(num(record['deletedAt']) ? { deletedAt: num(record['deletedAt']) } : {}),

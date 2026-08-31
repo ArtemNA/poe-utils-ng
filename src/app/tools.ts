@@ -31,7 +31,10 @@ export const TOOLS: ToolDef[] = [
     icon: '<path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/>',
   },
   {
+    // The game gives sockets by other means now, so the Vorici arithmetic is
+    // history: off the menu, and still at /chromatic for anyone who kept a link.
     id: 'chromatic',
+    hidden: true,
     label: 'Chromatic Calc',
     icon: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/>',
   },

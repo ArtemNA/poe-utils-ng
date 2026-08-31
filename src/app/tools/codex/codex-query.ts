@@ -21,7 +21,7 @@
  *   scarab:cloister         inside a strategy, by name
  *   node:"Wandering Path"   inside a tree, by keystone
  *   has:image has:runs has:code has:pob
- *   is:untagged is:measured is:pinned
+ *   is:untagged is:measured is:pinned is:sample
  *   sort:updated|created|title|points|perhour
  *
  * Two rules that are not syntax:
@@ -278,6 +278,8 @@ function is(entry: Entry, what: string): boolean {
       return entry.tags.length === 0;
     case 'measured':
       return !!entry.runs?.length;
+    case 'sample':
+      return entry.sample === true;
     case 'pinned':
       return entry.pinned === true;
     default:

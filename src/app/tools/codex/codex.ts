@@ -193,6 +193,7 @@ export class Codex {
     this.sampleAt = (at + 1) % SAMPLES.length;
     const runs = sampleRuns(sample, Date.now(), newId);
     const entry = await this.store.keepNamed(sample.kind, sample.title, sample.data, {
+      sample: true,
       body: sample.body,
       tags: sample.tags,
       ...(sample.league ? { league: sample.league } : {}),

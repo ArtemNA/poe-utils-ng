@@ -145,6 +145,17 @@ check(
   ['a', 'b'],
 );
 
+// An example says so on its card until somebody edits it. The flag is what the
+// badge reads, so it has to survive a round trip through storage; the store is
+// what clears it, on the first save.
+check('entry: an example is marked', readEntry(entry({ sample: true }))?.sample, true);
+check('entry: and anything else is not', readEntry(entry())?.sample, undefined);
+check(
+  'entry: a sample flag that is not true is not a sample',
+  readEntry(entry({ sample: 'yes' }))?.sample,
+  undefined,
+);
+
 // --- links --------------------------------------------------------------------
 
 check('link: no url, no link', readEntry(entry({ kind: 'link', data: { k: 'link' } })), null);
@@ -433,6 +444,7 @@ check(
 // whole of "I have not dealt with this yet".
 check('query: is:inbox is untagged', ids('is:inbox'), ['link1', 'loose']);
 check('query: is:measured', ids('is:measured'), ['strat1']);
+check('query: is:sample finds the examples', ids('is:sample'), []);
 
 check('toggle: adds a term', toggleTerm('kind:strategy', 'tag:legion'), 'kind:strategy tag:legion');
 check('toggle: and takes the same one away', toggleTerm('kind:strategy tag:legion', 'tag:legion'), 'kind:strategy');

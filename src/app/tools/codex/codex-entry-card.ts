@@ -40,6 +40,11 @@ import { runsLabel, runTotals } from './codex-metrics';
 
       <button type="button" class="codex-entry-main" (click)="opened.emit()">
         <span class="codex-entry-title">
+          @if (entry().sample) {
+            <span class="codex-sample" title="Invented, so the page has something to read. Edit it and this goes away.">
+              example
+            </span>
+          }
           @if (entry().game === 'poe2') {
             <span class="codex-poe2">PoE 2</span>
           }

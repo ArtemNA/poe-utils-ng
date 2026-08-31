@@ -127,6 +127,9 @@ export class CodexStore {
     const entry: Entry = existing
       ? { ...existing, ...extra, title: named, data, updatedAt: Date.now() }
       : { ...newEntry(kind, named, data), ...extra };
+    // Saved from the Atlas or from Map Strategy, so it holds a real tree now
+    // even if an example of the same name was standing there a moment ago.
+    if (!extra.sample) delete entry.sample;
     if (!(await this.write(() => this.driver.putEntry(entry)))) return null;
     this.entries.update((entries) =>
       existing ? entries.map((e) => (e.id === entry.id ? entry : e)) : [entry, ...entries],
@@ -137,6 +140,8 @@ export class CodexStore {
 
   async saveEntry(entry: Entry): Promise<boolean> {
     const next: Entry = { ...entry, tags: normaliseTags(entry.tags), updatedAt: Date.now() };
+    // Editing an example makes it yours, whatever is left of the numbers.
+    delete next.sample;
     if (!(await this.write(() => this.driver.putEntry(next)))) return false;
     this.entries.update((entries) => entries.map((e) => (e.id === next.id ? next : e)));
     return true;

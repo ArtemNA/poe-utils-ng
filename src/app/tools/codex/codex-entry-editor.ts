@@ -95,7 +95,7 @@ function anyUrl(entry: Entry): string {
             <label class="poe-field-label">Scarabs</label>
             <input
               type="text"
-              placeholder="2 доп легиона и 1 офицер — as written is fine"
+              placeholder="2 legion, 1 officers, 1 wisps — however you wrote it down"
               [value]="d.data.src.picksText ?? ''"
               (input)="setStrategy('picksText', $event)"
             />
