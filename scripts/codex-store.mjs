@@ -41,7 +41,6 @@ const schema = await load('codex-schema');
 const query = await load('codex-query');
 const capture = await load('codex-capture');
 const metrics = await load('codex-metrics');
-const blocks = await load('codex-blocks');
 const format = await load('codex-format');
 const image = await load('codex-image');
 const {
@@ -49,7 +48,6 @@ const {
   BUNDLE_VERSION,
   hostOf,
   migrate,
-  newDoc,
   newEntry,
   newId,
   normaliseTag,
@@ -58,9 +56,7 @@ const {
   parseTagInput,
   readAll,
   readBundle,
-  readDoc,
   readEntry,
-  readPage,
 } = schema;
 
 let failures = 0;
@@ -218,43 +214,6 @@ check(
   'Abyss?',
 );
 
-// --- docs and pages -----------------------------------------------------------
-
-check('doc: new docs are private', newDoc('League 3.29', '3.29').visibility, 'private');
-check('doc: the league is optional', newDoc('Evergreen', '   ').league, undefined);
-check(
-  'doc: anything unreadable in visibility means private',
-  readDoc({ v: SCHEMA, id: 'd1', title: 'x', visibility: 'public', ...stamp })?.visibility,
-  'private',
-);
-check(
-  'doc: published stays published',
-  readDoc({ v: SCHEMA, id: 'd1', title: 'x', visibility: 'link', slug: 'k7mfrp2q', ...stamp })?.slug,
-  'k7mfrp2q',
-);
-
-const page = (extra) => ({ v: SCHEMA, id: 'p1', docId: 'd1', title: 'Farming', ...stamp, ...extra });
-check('page: a page without a doc is nothing', readPage(page({ docId: '' })), null);
-check(
-  'page: unknown blocks are dropped, known ones stay',
-  readPage(page({ blocks: [{ t: 'entry', id: 'e1' }, { t: 'seance' }, { t: 'divider' }] }))?.blocks,
-  [{ t: 'entry', id: 'e1' }, { t: 'divider' }],
-);
-check(
-  'page: columns nest once and no further',
-  readPage(
-    page({
-      blocks: [
-        {
-          t: 'columns',
-          cols: [[{ t: 'text', md: 'left' }, { t: 'columns', cols: [] }], [{ t: 'text', md: 'right' }]],
-        },
-      ],
-    }),
-  )?.blocks[0].cols,
-  [[{ t: 'text', md: 'left' }], [{ t: 'text', md: 'right' }]],
-);
-
 // --- migration ----------------------------------------------------------------
 
 check('migrate: the current version passes through', migrate({ v: SCHEMA, id: 'x' })?.v, SCHEMA);
@@ -273,8 +232,6 @@ check('migrate: every version can reach the current one', gaps, []);
 
 const bundle = packBundle(
   {
-    docs: [newDoc('3.29', '3.29')],
-    pages: [],
     entries: [
       newEntry('link', 'Filter', {
         k: 'link',
@@ -472,18 +429,10 @@ check(
   ['link1'],
 );
 
-// The Inbox: captured and not filed. Without pages that is "untagged", and it
-// narrows by itself once pages exist rather than needing a second definition.
-const pages = [
-  {
-    id: 'p1',
-    docId: 'd1',
-    blocks: [{ t: 'entry', id: 'link1' }, { t: 'columns', cols: [[{ t: 'entry', id: 'note1' }]] }],
-  },
-];
-check('pages: entry ids are found inside columns too', [...placedIds(pages)].sort(), ['link1', 'note1']);
-check('query: is:inbox is untagged and unplaced', ids('is:inbox', { placed: placedIds(pages) }), ['loose']);
-check('query: is:orphan is just unplaced', ids('is:orphan', { placed: placedIds(pages) }), ['strat1', 'poe2', 'loose']);
+// Nothing has been filed under anything: with no pages to sit on, that is the
+// whole of "I have not dealt with this yet".
+check('query: is:inbox is untagged', ids('is:inbox'), ['link1', 'loose']);
+check('query: is:measured', ids('is:measured'), ['strat1']);
 
 check('toggle: adds a term', toggleTerm('kind:strategy', 'tag:legion'), 'kind:strategy tag:legion');
 check('toggle: and takes the same one away', toggleTerm('kind:strategy tag:legion', 'tag:legion'), 'kind:strategy');
@@ -520,234 +469,7 @@ check(
   '12 div/h',
 );
 
-// --- blocks on a page ---------------------------------------------------------
-// Dragging is the one interaction where a mistake loses work rather than just
-// looking wrong: a drop that quietly drops what it was carrying is
-// indistinguishable from a page that ate your notes.
-
-const { blockAt, insertBlock, moveBlock, nudgeBlock, removeBlock, updateBlock } = blocks;
-
-const e = (id) => ({ t: 'entry', id });
-const sheet = [e('a'), e('b'), { t: 'columns', cols: [[e('c')], [e('d'), e('e')]] }];
-const flat = (list) =>
-  list
-    .map((b) => (b.t === 'columns' ? `[${b.cols.map((c) => flat(c)).join('|')}]` : (b.id ?? b.t)))
-    .join(',');
-
-check('blocks: read a top-level path', blockAt(sheet, [1]).id, 'b');
-check('blocks: read into a column', blockAt(sheet, [2, 1, 0]).id, 'd');
-check('blocks: a path into a block that is not columns leads nowhere', blockAt(sheet, [0, 0, 0]), null);
-
-check('blocks: insert at the top', flat(insertBlock(sheet, [0], e('z'))), 'z,a,b,[c|d,e]');
-check('blocks: insert into a column', flat(insertBlock(sheet, [2, 0, 1], e('z'))), 'a,b,[c,z|d,e]');
-check('blocks: remove', flat(removeBlock(sheet, [1])), 'a,[c|d,e]');
-check('blocks: remove takes a columns block with its contents', flat(removeBlock(sheet, [2])), 'a,b');
-check('blocks: update replaces in place', flat(updateBlock(sheet, [1], e('B'))), 'a,B,[c|d,e]');
-
-// Taking the block out before putting it back is what makes a downward move
-// land one short, so the index is adjusted rather than left as an off-by-one.
-check('blocks: move down lands where it was dropped', flat(moveBlock(sheet, [0], [2])), 'b,a,[c|d,e]');
-check('blocks: move up', flat(moveBlock(sheet, [1], [0])), 'b,a,[c|d,e]');
-check('blocks: move from one column to the other', flat(moveBlock(sheet, [2, 0, 0], [2, 1, 0])), 'a,b,[|c,d,e]');
-check('blocks: move out of a column onto the sheet', flat(moveBlock(sheet, [2, 1, 1], [0])), 'e,a,b,[c|d]');
-check('blocks: a columns block cannot be dropped inside itself', flat(moveBlock(sheet, [2], [2, 0, 0])), flat(sheet));
-check('blocks: a path that leads nowhere changes nothing', flat(moveBlock(sheet, [9], [0])), flat(sheet));
-
-check('blocks: nudge down', flat(nudgeBlock(sheet, [0], 1)), 'b,a,[c|d,e]');
-check('blocks: nudge up', flat(nudgeBlock(sheet, [1], -1)), 'b,a,[c|d,e]');
-check('blocks: nudge past the end does nothing', flat(nudgeBlock(sheet, [2], 1)), flat(sheet));
-check('blocks: nudge inside a column', flat(nudgeBlock(sheet, [2, 1, 0], 1)), 'a,b,[c|e,d]');
-check('blocks: the page it was given is never touched', flat(sheet), 'a,b,[c|d,e]');
-
-// --- what a paste turns into ---------------------------------------------------
-// Our own codes and links are the point of the whole feature: a card that can
-// say what a tree costs, against a spreadsheet where the atlas is an imgur
-// screenshot nobody can open.
-
-check(
-  'capture: our own atlas link becomes a tree, not a link',
-  captureOne('Cloister: https://poe-utils.example/atlas?c=AT3:AQKKApndluC4YRIx'),
-  {
-    kind: 'atlas',
-    title: 'Cloister',
-    data: { k: 'atlas', src: { code: 'AT3:AQKKApndluC4YRIx' } },
-  },
-);
-check(
-  'capture: and our own strategy link',
-  captureOne('https://poe-utils.example/strategy?s=ST1:AQKKApndluC4YRIx').data,
-  { k: 'strategy', src: { code: 'ST1:AQKKApndluC4YRIx' } },
-);
-check(
-  'capture: a bare code pasted out of the tool next door',
-  captureOne('день 4 легион: AT3:AQKKApndluC4YRIx'),
-  { kind: 'atlas', title: 'день 4 легион', data: { k: 'atlas', src: { code: 'AT3:AQKKApndluC4YRIx' } } },
-);
-check(
-  'capture: somebody else\'s tree is still a tree',
-  captureOne('Starter Atlas (47 Points): https://poeplanner.com/a/669h'),
-  {
-    kind: 'atlas',
-    title: 'Starter Atlas (47 Points)',
-    data: { k: 'atlas', src: { url: 'https://poeplanner.com/a/669h' } },
-  },
-);
-// A bare code holds no URL, and "does this paste contain a link" is not the
-// same question as "was anything recognised" — the first one turned pasted
-// share codes into notes.
-check(
-  'capture: a pasted code survives the whole paste, not just captureOne',
-  grab('Легіон висп немезис: ST1:AQACKgEsAQA').map((item) => item.kind + ':' + item.title),
-  ['strategy:Легіон висп немезис'],
-);
-check(
-  'capture: a paste with nothing in it is still one note',
-  grab('день4\nбегал легион\nпрофит 14 в час').length,
-  1,
-);
-
-check(
-  'capture: a short link is left alone, because the slug means nothing here',
-  captureOne('https://poe-utils.example/s/k7mfrp2q').kind,
-  'link',
-);
-
-// --- what a card can say -------------------------------------------------------
-
-const { completeness, subtitleOf, typeOf, urlOf } = format;
-
-const strategyEntry = (src, extra = {}) => ({
-  ...newEntry('strategy', 'Cloister', { k: 'strategy', src }),
-  ...extra,
-});
-
-check(
-  'card: an atlas that is only a screenshot says so',
-  completeness(newEntry('atlas', 'x', { k: 'atlas', src: { imageUrl: 'https://imgur.com/a/x' } })).map(
-    (mark) => `${mark.label}:${mark.on ? 1 : 0}`,
-  ),
-  ['our tree code:0', 'a link out:0', 'a picture:1', 'notes:0'],
-);
-check(
-  'card: scarabs written as a sentence are not scarabs a search can find',
-  completeness(strategyEntry({ picksText: '5x Cloister' })).find((m) => m.label.startsWith('scarabs'))
-    .on,
-  false,
-);
-check(
-  'card: scarabs picked from the catalogue are',
-  completeness(strategyEntry({ picks: [{ code: 1, count: 5 }] })).find((m) =>
-    m.label.startsWith('scarabs'),
-  ).on,
-  true,
-);
-// A strategy code exists as soon as one is saved, whether or not a tree was
-// ever attached, so the code is no evidence of a tree — what was read off the
-// tree is.
-check(
-  'card: a saved strategy with no tree does not claim one',
-  completeness(strategyEntry({ code: 'ST1:AQACKgEsAQA', snapshot: { treeVersion: 1, slots: 2, picks: [], points: 0, keystones: [], issues: [] } })).find(
-    (m) => m.label === 'a tree',
-  ).on,
-  false,
-);
-check(
-  'card: one with a screenshot of somebody else\'s tree does',
-  completeness(strategyEntry({ atlas: { imageUrl: 'https://imgur.com/a/x' } })).find(
-    (m) => m.label === 'a tree',
-  ).on,
-  true,
-);
-
-check(
-  'card: a strategy reads as slots, maps and what it paid',
-  subtitleOf(
-    strategyEntry(
-      { picks: [{ code: 1, count: 5 }], map: '8-mod Dunes' },
-      { league: '3.29', runs: [{ id: 'r', at: 0, minutes: 60, investDiv: 2, revenueDiv: 14 }] },
-    ),
-  ),
-  'strategy · 5/5 slots · 8-mod Dunes · 3.29 · 12 div/h',
-);
-check(
-  'card: an atlas points at the planner, not at its own picture',
-  urlOf(newEntry('atlas', 'x', { k: 'atlas', src: { imageUrl: 'https://imgur.com/a/x' } })),
-  '',
-);
-check(
-  'card: a link is filed by what it is for, not by being a link',
-  typeOf(newEntry('link', 'x', { k: 'link', url: 'https://pobb.in/x', host: 'pobb.in', role: 'pob' })),
-  'pob',
-);
-
-// --- screenshots ---------------------------------------------------------------
-// One of the three source documents is nothing but screenshots of a loot
-// tracker, at 160-200 KB each, because a spreadsheet has nowhere to put the
-// numbers in them. Keeping them as they arrive is what fills a browser's
-// storage in one evening.
-
-const { fitWithin, imageTitle, FULL_MAX, THUMB_MAX } = image;
-
-check('image: a big screenshot comes down to the long side', fitWithin(2560, 1440, FULL_MAX), {
-  w: 1600,
-  h: 900,
-});
-check('image: a tall one is measured the same way', fitWithin(1440, 2560, FULL_MAX), {
-  w: 900,
-  h: 1600,
-});
-check('image: a small one is left alone rather than blown up', fitWithin(200, 120, FULL_MAX), {
-  w: 200,
-  h: 120,
-});
-check('image: thumbnails are cut to 320', fitWithin(1600, 900, THUMB_MAX), { w: 320, h: 180 });
-check('image: nothing rounds to zero', fitWithin(2000, 3, THUMB_MAX), { w: 320, h: 1 });
-check(
-  'image: the file name is the title, without the extension',
-  imageTitle('Screenshot_2026-08-11_233015.png'),
-  'Screenshot 2026 08 11 233015',
-);
-check('image: something with no name still gets one', imageTitle('.png'), 'Screenshot');
-
-// --- per map, and what a run reads as -------------------------------------------
-// The captions in the screenshot document compare in two different units —
-// "3.17 div investment" and ".29 div per map investment" — and only one of them
-// can be set beside another strategy.
-
-check(
-  'runs: per map, when the maps were counted',
-  (() => {
-    const t = runTotals([{ id: 'a', at: 0, minutes: 55, maps: 10, investDiv: 3, revenueDiv: 16 }]);
-    return [t.investPerMap.toFixed(2), t.netPerMap.toFixed(2)];
-  })(),
-  ['0.30', '1.30'],
-);
-check(
-  'runs: and not at all when they were not',
-  runTotals([{ id: 'a', at: 0, minutes: 55, investDiv: 3, revenueDiv: 16 }]).netPerMap,
-  0,
-);
-check('runs: a duration reads in hours once it has one', duration(250), '4h 10m');
-check('runs: and in minutes before that', duration(35), '35m');
-check('runs: nothing measured has no duration', duration(0), '');
-check('runs: divines keep their pennies while they matter', [div(0.29), div(2.4), div(16.4)], [
-  '0.29 div',
-  '2.4 div',
-  '16 div',
-]);
-check(
-  'runs: the line a card carries',
-  runsLabel(
-    runTotals([
-      { id: 'a', at: 0, minutes: 55, maps: 10, investDiv: 3, revenueDiv: 16 },
-      { id: 'b', at: 0, minutes: 60, maps: 11, investDiv: 2, revenueDiv: 14 },
-    ]),
-  ),
-  '2 runs · 1h 55m · 21 maps · +25 div net · 13 div/h',
-);
-check('runs: nothing measured says nothing', runsLabel(runTotals([])), '');
-
 console.log(
-  failures ? `\n${failures} failed` : 'codex schema, capture, query, measurements, blocks, cards and images: all checks passed',
+  failures ? `\n${failures} failed` : 'codex schema, capture, query, measurements, cards and images: all checks passed',
 );
 process.exit(failures ? 1 : 0);

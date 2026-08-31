@@ -1,32 +1,31 @@
 /**
- * The Codex — one place for the links, notes, builds, atlases and strategies
- * that otherwise live in a spreadsheet.
+ * The Codex — the trees, the scarabs, and what a night of running them paid.
  *
- * Two halves. The **library** is everything you kept, flat and searchable; the
- * search box, the tag list and the saved views are three ways of asking it the
- * same question, and all three write into the same query string, so what you
- * learn by clicking is what you can then type.
+ * It started as an attempt to replace the spreadsheet a player keeps their
+ * whole league in, and lost: a sheet is faster to type into, freer to lay out,
+ * already open in another tab and already shared. That half — docs, pages,
+ * blocks, arranging things by hand — is gone.
  *
- * A **page** is an arrangement of things the library already holds. It owns
- * nothing: the same entry can sit on this league's page and on the permanent
- * one, edited from either. That is the difference between this and the
- * documents it replaces, where having a link in two places means pasting it
- * twice and letting the two drift apart.
+ * What is left is the half a sheet cannot do at all. There, an atlas is a dead
+ * imgur screenshot, the scarabs are a sentence, and the profit is a number
+ * rendered as pixels in a picture of a loot tracker. Here the tree opens in the
+ * planner, the scarabs are a set the app can count and search, and a run is
+ * arithmetic that sorts. Links and notes belong in the sheet; measurements and
+ * trees belong here.
  */
 import { Component, computed, inject, signal } from '@angular/core';
 import { PoeCard } from '../../shared/poe-card';
 import { ToolPage } from '../../shared/tool-page';
 import { CodexStore } from './codex-store';
-import { CodexPage } from './codex-page';
 import { CodexEntryCard } from './codex-entry-card';
 import { CodexEntryEditor } from './codex-entry-editor';
-import { CodexCompare } from './codex-compare';
 import { CodexAssetImg } from './codex-asset-img';
+import { CodexCompare } from './codex-compare';
 import { capture, noteBody } from './codex-capture';
 import { imageTitle, imagesIn } from './codex-image';
 import { parseQuery, runQuery, toggleTerm } from './codex-query';
 import { count, mb, typeOf, when } from './codex-format';
-import type { Doc, Entry, Page, PageLayout } from './codex-types';
+import type { Entry, Layout } from './codex-types';
 
 const LAYOUT_KEY = 'poe_codex_layout';
 const GROUP_KEY = 'poe_codex_group';
@@ -34,29 +33,20 @@ const GROUP_KEY = 'poe_codex_group';
 export type GroupKey = 'none' | 'type' | 'tag' | 'league' | 'status';
 const GROUPS: GroupKey[] = ['type', 'tag', 'league', 'status', 'none'];
 
-/** The shortcuts along the top of the list: the questions asked most often. */
+/** The questions worth a button, now that the tool only answers a few. */
 const QUICK: { label: string; query: string; title: string }[] = [
   { label: 'All', query: '', title: 'Everything that is not dead' },
-  { label: 'Inbox', query: 'is:inbox', title: 'Captured and not filed anywhere yet' },
   { label: 'Strategies', query: 'kind:strategy sort:perhour', title: 'Best measured first' },
-  { label: 'Builds', query: 'kind:build', title: 'Builds and their PoBs' },
-  { label: 'Filters', query: 'role:filter', title: 'Loot filters' },
-  { label: 'Atlases', query: 'kind:atlas', title: 'Trees, ours and everybody else’s' },
+  { label: 'Atlases', query: 'kind:atlas', title: 'Trees — ours, and everybody else’s' },
   { label: 'Measured', query: 'has:runs sort:perhour', title: 'Anything somebody timed' },
+  { label: 'Unmeasured', query: 'kind:strategy -has:runs', title: 'Written down and never tested' },
+  { label: 'Untagged', query: 'is:untagged', title: 'Kept in a hurry and never filed' },
   { label: 'Dead', query: 'status:dead', title: 'Kept, and out of the way' },
 ];
 
 @Component({
   selector: 'app-codex',
-  imports: [
-    PoeCard,
-    ToolPage,
-    CodexPage,
-    CodexEntryCard,
-    CodexEntryEditor,
-    CodexAssetImg,
-    CodexCompare,
-  ],
+  imports: [PoeCard, ToolPage, CodexEntryCard, CodexEntryEditor, CodexAssetImg, CodexCompare],
   templateUrl: './codex.html',
 })
 export class Codex {
@@ -64,37 +54,26 @@ export class Codex {
   readonly quick = QUICK;
   readonly groupKeys = GROUPS;
 
-  // --- docs and pages ----------------------------------------------------------
-  readonly title = signal('');
-  readonly league = signal('');
-  readonly busy = signal(false);
-  readonly docs = this.store.docs;
-
-  /** Empty means the library is on screen; a page id means that page is. */
-  readonly openPage = signal('');
-  readonly page = computed(() => this.store.pages().find((p) => p.id === this.openPage()) ?? null);
-
-  // --- capture -----------------------------------------------------------------
+  // --- keeping something -------------------------------------------------------
   readonly captureText = signal('');
   readonly captureMessage = signal('');
   readonly over = signal(false);
+  readonly busy = signal(false);
 
   // --- the library -------------------------------------------------------------
   readonly query = signal('');
-  readonly layout = signal<PageLayout>(readLayout());
+  readonly layout = signal<Layout>(readLayout());
   readonly group = signal<GroupKey>(readGroup());
   readonly viewName = signal('');
 
-  readonly results = computed(() =>
-    runQuery(this.store.entries(), parseQuery(this.query()), { placed: this.store.placed() }),
-  );
+  readonly results = computed(() => runQuery(this.store.entries(), parseQuery(this.query())));
 
   /**
    * The results, cut into sections.
    *
-   * A flat list of everything is a pile, and a pile is what the spreadsheet
-   * already was. This is the cheap half of the answer; the other half is a
-   * page, which arranges entries by hand rather than by field.
+   * A flat list of everything is a pile. Grouping is what a sheet gets from
+   * having rows in a deliberate order; here the order is a field, so the
+   * sections come out of the data instead of out of somebody's dragging.
    */
   readonly groups = computed(() => {
     const key = this.group();
@@ -135,9 +114,9 @@ export class Codex {
   /**
    * Picking things to set side by side.
    *
-   * The document this answers is four scarab setups and eight screenshots,
-   * kept apart in a spreadsheet of its own because there was nowhere to put
-   * the numbers. Two ticks and they are columns of one table.
+   * The document this answers is four scarab setups and eight screenshots, kept
+   * apart in a spreadsheet of its own because there was nowhere to put the
+   * numbers. Two ticks and they are columns of one table.
    */
   readonly comparing = signal(false);
   readonly picked = signal<ReadonlySet<string>>(new Set());
@@ -151,72 +130,11 @@ export class Codex {
   readonly openEntry = signal('');
   readonly openIn = signal('');
 
-  readonly canCreate = computed(() => this.title().trim().length > 0 && !this.busy());
-
   constructor() {
-    this.league.set(this.store.currentLeague());
     void this.store.load();
   }
 
-  // --- docs and pages ----------------------------------------------------------
-
-  onTitle(event: Event): void {
-    this.title.set((event.target as HTMLInputElement).value);
-  }
-
-  onLeague(event: Event): void {
-    this.league.set((event.target as HTMLInputElement).value);
-  }
-
-  async create(): Promise<void> {
-    if (!this.canCreate()) return;
-    this.busy.set(true);
-    const doc = await this.store.createDoc(this.title(), this.league());
-    this.busy.set(false);
-    if (doc) this.title.set('');
-  }
-
-  async removeDoc(doc: Doc): Promise<void> {
-    await this.store.remove('docs', doc.id);
-    if (!this.page()) this.openPage.set('');
-  }
-
-  /** Top-level pages of a doc, in the order they were made. */
-  pagesOf(doc: Doc): Page[] {
-    return this.store
-      .pages()
-      .filter((page) => page.docId === doc.id && !page.parentId)
-      .sort((a, b) => a.order - b.order);
-  }
-
-  childrenOf(page: Page): Page[] {
-    return this.store
-      .pages()
-      .filter((child) => child.parentId === page.id)
-      .sort((a, b) => a.order - b.order);
-  }
-
-  /**
-   * A new page is named "New page" rather than asking first: the title is one
-   * click away at the top of the page you just opened, and a dialog in front of
-   * an empty page is a dialog in front of nothing.
-   */
-  async addPage(doc: Doc, parent: Page | null = null): Promise<void> {
-    const page = await this.store.createPage(doc.id, parent ? 'New section' : 'New page', parent?.id ?? null);
-    if (page) this.openPage.set(page.id);
-  }
-
-  async removePage(page: Page): Promise<void> {
-    await this.store.remove('pages', page.id);
-    if (this.openPage() === page.id) this.openPage.set('');
-  }
-
-  show(page: Page | null): void {
-    this.openPage.set(page?.id ?? '');
-    this.openEntry.set('');
-  }
-
-  // --- capture -----------------------------------------------------------------
+  // --- keeping something -------------------------------------------------------
 
   onCapture(event: Event): void {
     this.captureText.set((event.target as HTMLTextAreaElement).value);
@@ -226,8 +144,6 @@ export class Codex {
     const text = this.captureText();
     const items = capture(text);
     if (!items.length) return;
-    // A paste with no link in it is one note, and everything after its first
-    // line is the note itself rather than a title nobody will read.
     const body = items.length === 1 && items[0].kind === 'note' ? noteBody(text) : '';
     const written = await this.store.addEntries(
       items.map((item, index) => ({ ...item, body: index === 0 ? body : '' })),
@@ -237,20 +153,27 @@ export class Codex {
     this.captureMessage.set(
       written.length === 1 ? `Kept "${trim(written[0].title)}".` : `Kept ${written.length} entries.`,
     );
-    // One entry alone is almost always worth a tag straight away; a list of
-    // thirty is not, and opening the last of them would hide the other
-    // twenty-nine.
-    if (written.length === 1) this.open(written[0], '');
+    if (written.length === 1) this.openNew(written[0]);
   }
 
   /**
-   * A screenshot on the clipboard.
-   *
-   * This is how the evidence actually arrives: Print Screen, alt-tab, paste.
-   * One of the three source documents is nothing but screenshots of a loot
-   * tracker, pasted into a spreadsheet that had nowhere to put the numbers in
-   * them — so the box that takes links takes pictures too, and each one becomes
-   * an entry that can be tagged, found and put on a page.
+   * A strategy written by hand, for the ones that never went through the map
+   * device — "боссраш, любые т16, скарабы: 1 террор + 4 шрайна" is a strategy,
+   * and refusing it until it has a code would be refusing most of them.
+   */
+  async blank(): Promise<void> {
+    const written = await this.store.addEntries([
+      { kind: 'strategy', title: 'New strategy', data: { k: 'strategy', src: {} } },
+    ]);
+    if (written.length) {
+      this.captureMessage.set('');
+      this.openNew(written[0]);
+    }
+  }
+
+  /**
+   * A screenshot on the clipboard: Print Screen, alt-tab, paste. That is how
+   * the evidence actually arrives.
    */
   onPaste(event: ClipboardEvent): void {
     const images = imagesIn(event.clipboardData);
@@ -298,7 +221,7 @@ export class Codex {
       ]);
       if (!entry.length) break;
       kept++;
-      if (files.length === 1) this.open(entry[0], '');
+      if (files.length === 1) this.openNew(entry[0]);
     }
     this.busy.set(false);
     if (kept) this.captureMessage.set(kept === 1 ? 'Kept the picture.' : `Kept ${kept} pictures.`);
@@ -312,19 +235,17 @@ export class Codex {
 
   setQuery(value: string): void {
     this.query.set(value);
-    this.openPage.set('');
   }
 
   toggle(term: string): void {
     this.query.set(toggleTerm(this.query(), term));
-    this.openPage.set('');
   }
 
   active(term: string): boolean {
     return this.query().toLowerCase().split(/\s+/).includes(term.toLowerCase());
   }
 
-  setLayout(layout: PageLayout): void {
+  setLayout(layout: Layout): void {
     this.layout.set(layout);
     try {
       localStorage.setItem(LAYOUT_KEY, layout);
@@ -350,6 +271,8 @@ export class Codex {
     const view = await this.store.addView(this.viewName(), this.query(), this.layout());
     if (view) this.viewName.set('');
   }
+
+  // --- comparing ---------------------------------------------------------------
 
   toggleComparing(): void {
     this.comparing.update((on) => !on);
@@ -393,6 +316,21 @@ export class Codex {
     this.openEntry.set('');
   }
 
+  /**
+   * Open something that has just been created.
+   *
+   * The editor is pinned to a section, so opening one by id alone leaves it
+   * pinned to a section that does not exist and the editor never appears. The
+   * new entry is already in `groups()` by the time this runs, so the section it
+   * landed in is simply looked up.
+   */
+  private openNew(entry: Entry): void {
+    const section = this.groups().find((group) =>
+      group.entries.some((other) => other.id === entry.id),
+    );
+    this.open(entry, section?.label ?? '');
+  }
+
   async saveEntry(entry: Entry): Promise<void> {
     if (await this.store.saveEntry(entry)) this.close();
   }
@@ -432,7 +370,7 @@ function readGroup(): GroupKey {
   return 'type';
 }
 
-function readLayout(): PageLayout {
+function readLayout(): Layout {
   try {
     const saved = localStorage.getItem(LAYOUT_KEY);
     if (saved === 'cards' || saved === 'table' || saved === 'list') return saved;

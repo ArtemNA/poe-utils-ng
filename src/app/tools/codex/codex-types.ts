@@ -1,12 +1,11 @@
 /**
  * What a Codex is made of.
  *
- * Two layers, and keeping them apart is the whole design. An **entry** is a
- * thing you wrote down — a link, a note, a strategy, a screenshot. A **page**
- * only arranges entries it does not own. So the same filter link can sit on
- * this league's doc and on the permanent one, be edited in one place, and
- * deleting the page never deletes what was on it. That is the one thing a
- * spreadsheet cannot do, and it is why this is not a spreadsheet.
+ * One flat set of entries, and no arrangement layer at all. Arranging things
+ * on a page is what a spreadsheet is already good at, and the first attempt at
+ * this feature lost to one; what a spreadsheet cannot do is hold a *tree* you
+ * can open, a set of scarabs it can count, and what a run of them actually
+ * paid. That is what an entry is for.
  *
  * Nothing here is required beyond a title. The docs this replaces are full of
  * half-written strategies — a scarab line and an imgur link and no tree — and a
@@ -207,67 +206,16 @@ export interface Entry {
   deletedAt?: number;
 }
 
-/**
- * A doc.
- *
- * `league` is a field, not a frame: a doc may cover one league, several, or
- * none at all. It is prefilled on creation because that is how these documents
- * usually start, and it is one click to clear.
- */
-export interface Doc {
-  v: number;
-  id: string;
-  title: string;
-  league?: string;
-  game?: Game;
-  description?: string;
-  /** 'link' means anyone holding it may read it, and nobody but the author may change it */
-  visibility: 'private' | 'link';
-  /** short-link slug, once published */
-  slug?: string;
-  createdAt: number;
-  updatedAt: number;
-  deletedAt?: number;
-}
+/** How a list is drawn: dense rows, cards with their notes, or a table. */
+export type Layout = 'list' | 'cards' | 'table';
 
-export type Block =
-  | { t: 'entry'; id: string; size?: 'compact' | 'full' }
-  | { t: 'heading'; text: string; level: 1 | 2 | 3 }
-  | { t: 'text'; md: string }
-  | { t: 'divider' }
-  /** the two-column layout both source docs fall into by hand */
-  | { t: 'columns'; cols: Block[][] }
-  /** a live list in the middle of a page — this is what a "custom group" is */
-  | { t: 'query'; q: string; layout: PageLayout; title?: string };
-
-export type PageLayout = 'list' | 'cards' | 'table' | 'board';
-
-export interface Page {
-  v: number;
-  id: string;
-  docId: string;
-  parentId: string | null;
-  title: string;
-  icon?: string;
-  order: number;
-  /** 'curated' is arranged by hand; 'query' is a saved filter that stays current */
-  mode: 'curated' | 'query';
-  blocks: Block[];
-  query?: string;
-  layout: PageLayout;
-  groupBy?: 'tag' | 'league' | 'status' | 'kind' | 'none';
-  createdAt: number;
-  updatedAt: number;
-  deletedAt?: number;
-}
-
-/** A search worth keeping: the dynamic half of "custom groups". */
+/** A search worth keeping — a question asked often enough to have a name. */
 export interface SavedView {
   v: number;
   id: string;
   name: string;
   query: string;
-  layout: PageLayout;
+  layout: Layout;
   pinned: boolean;
   createdAt: number;
   updatedAt: number;
@@ -287,8 +235,7 @@ export interface AssetMeta {
 }
 
 /**
- * Everything, in one JSON — the way out that does not depend on this browser,
- * and the shape a published doc travels in.
+ * Everything, in one JSON — the way out that does not depend on this browser.
  *
  * Images are base64 here and Blobs everywhere else. Inside a single file that
  * somebody saves to disk, a third more bytes is the right trade for not having
@@ -297,8 +244,6 @@ export interface AssetMeta {
 export interface CodexBundle {
   v: number;
   at: number;
-  docs: Doc[];
-  pages: Page[];
   entries: Entry[];
   views: SavedView[];
   assets: { meta: AssetMeta; data: string }[];

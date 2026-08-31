@@ -13,11 +13,11 @@
  */
 import { computed, Injectable, signal } from '@angular/core';
 import { DEFAULT_TREE_VERSION, findTreeVersion } from '../atlas/tree-versions';
-import type { Doc, Entry, EntryData, EntryKind, Page, PageLayout, SavedView } from './codex-types';
+import type { Entry, EntryData, EntryKind, Layout, SavedView } from './codex-types';
 import type { CodexDriver, NewAsset, StorageUse, StoreName } from './codex-driver';
 import { LocalDriver } from './codex-db';
-import { newDoc, newEntry, newPage, newView, normaliseTags } from './codex-schema';
-import { placedIds, tagCounts } from './codex-query';
+import { newEntry, newView, normaliseTags } from './codex-schema';
+import { tagCounts } from './codex-query';
 import { fitWithin, prepareImage, THUMB_MAX } from './codex-image';
 
 @Injectable({ providedIn: 'root' })
@@ -30,8 +30,6 @@ export class CodexStore {
 
   readonly ready = signal(false);
   readonly error = signal('');
-  readonly docs = signal<Doc[]>([]);
-  readonly pages = signal<Page[]>([]);
   readonly entries = signal<Entry[]>([]);
   readonly views = signal<SavedView[]>([]);
   readonly assetCount = signal(0);
@@ -43,9 +41,6 @@ export class CodexStore {
    * that is wrong once a year beats an empty one that is wrong every time.
    */
   readonly currentLeague = computed(() => findTreeVersion(DEFAULT_TREE_VERSION)?.label ?? '');
-
-  /** Which entries sit on a page — what `is:orphan` and the Inbox are read off. */
-  readonly placed = computed(() => placedIds(this.pages()));
 
   /** Every tag in use and how many carry it, for the list you filter by clicking. */
   readonly tags = computed(() =>
@@ -66,16 +61,12 @@ export class CodexStore {
   private async read(): Promise<void> {
     try {
       await this.driver.open();
-      const [docs, pages, entries, views, assets, usage] = await Promise.all([
-        this.driver.docs(),
-        this.driver.pages(),
+      const [entries, views, assets, usage] = await Promise.all([
         this.driver.entries(),
         this.driver.views(),
         this.driver.assets(),
         this.driver.usage(),
       ]);
-      this.docs.set(sortDocs(docs));
-      this.pages.set(pages);
       this.entries.set(entries);
       this.views.set(views);
       this.assetCount.set(assets.length);
@@ -85,23 +76,6 @@ export class CodexStore {
     } catch (err) {
       this.error.set(err instanceof Error ? err.message : 'The Codex could not be opened.');
     }
-  }
-
-  async createDoc(title: string, league: string): Promise<Doc | null> {
-    const named = title.trim();
-    if (!named) return null;
-    const doc = newDoc(named, league);
-    if (!(await this.write(() => this.driver.putDoc(doc)))) return null;
-    this.docs.update((docs) => sortDocs([...docs, doc]));
-    void this.refreshUsage();
-    return doc;
-  }
-
-  async saveDoc(doc: Doc): Promise<boolean> {
-    const next: Doc = { ...doc, updatedAt: Date.now() };
-    if (!(await this.write(() => this.driver.putDoc(next)))) return false;
-    this.docs.update((docs) => sortDocs(docs.map((d) => (d.id === next.id ? next : d))));
-    return true;
   }
 
   /**
@@ -168,25 +142,7 @@ export class CodexStore {
     return true;
   }
 
-  async createPage(docId: string, title: string, parentId: string | null = null): Promise<Page | null> {
-    const named = title.trim();
-    if (!named) return null;
-    const siblings = this.pages().filter((page) => page.docId === docId && page.parentId === parentId);
-    const page = newPage(docId, named, siblings.length);
-    page.parentId = parentId;
-    if (!(await this.write(() => this.driver.putPage(page)))) return null;
-    this.pages.update((pages) => [...pages, page]);
-    return page;
-  }
-
-  async savePage(page: Page): Promise<boolean> {
-    const next: Page = { ...page, updatedAt: Date.now() };
-    if (!(await this.write(() => this.driver.putPage(next)))) return false;
-    this.pages.update((pages) => pages.map((p) => (p.id === next.id ? next : p)));
-    return true;
-  }
-
-  async addView(name: string, query: string, layout: PageLayout): Promise<SavedView | null> {
+  async addView(name: string, query: string, layout: Layout): Promise<SavedView | null> {
     const named = name.trim();
     if (!named) return null;
     const view = newView(named, query, layout);
@@ -198,14 +154,6 @@ export class CodexStore {
   async remove(store: StoreName, id: string): Promise<boolean> {
     if (!(await this.write(() => this.driver.remove(store, id)))) return false;
     const drop = <T extends { id: string }>(list: T[]) => list.filter((item) => item.id !== id);
-    if (store === 'docs') this.docs.update(drop);
-    if (store === 'pages') {
-      // A subpage without its parent is unreachable, so it goes too. The
-      // entries on either are untouched: a page never owned them.
-      const children = this.pages().filter((page) => page.parentId === id);
-      for (const child of children) await this.write(() => this.driver.remove('pages', child.id));
-      this.pages.update((pages) => pages.filter((page) => page.id !== id && page.parentId !== id));
-    }
     if (store === 'entries') this.entries.update(drop);
     if (store === 'views') this.views.update(drop);
     void this.refreshUsage();
@@ -293,9 +241,4 @@ export class CodexStore {
       return false;
     }
   }
-}
-
-/** Newest first: the doc you are in the middle of is the one you want. */
-function sortDocs(docs: Doc[]): Doc[] {
-  return [...docs].sort((a, b) => b.updatedAt - a.updatedAt);
 }

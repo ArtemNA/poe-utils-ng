@@ -367,56 +367,60 @@ the shipped data itself: distinct codes, distinct ids, every named icon actually
 
 ## Codex
 
-The doc every player keeps in a spreadsheet — links, notes, videos, builds, farming strategies,
-atlases, screenshots — with the parts that a spreadsheet cannot hold. Three real ones were taken
-apart to design it; what they are and what the model owes each of them is in
-[docs/codex-plan.md](docs/codex-plan.md).
+Where the trees, the scarab setups and the measurements live. Not the league doc — that stays in a
+spreadsheet, and this is the deliberate result of trying the other thing first.
 
-The shape is two layers. An **entry** is a thing you wrote down — a link, a note, a strategy, a
-screenshot — and it belongs to a library. A **page** only arranges entries it does not own, so the
-same filter link sits on this league's doc and on the permanent one, is edited in one place, and
-survives the page being deleted. That is the one thing a spreadsheet cannot do, and it is the reason
-this is not one.
+The first version of this was an attempt to replace the whole document: entries, tags, docs, pages,
+blocks, two columns, live query pages. It lost. A sheet is faster to type into, freer to lay out,
+already open in another tab, already shared, and known by everyone. Catching up on any of that is
+work for a tie. So the arrangement half was deleted and what remains is the half a sheet cannot do
+at all — which was, all along, the only part that justified building anything.
 
-Nothing beyond a title is required. The documents this replaces are full of half-written
-strategies — a scarab line, an imgur link, no tree — so an atlas is our own share code, somebody
-else's planner link, a screenshot, or all three at once, and a strategy whose scarabs are the
-sentence "2 доп легиона и 1 офицер" is a strategy. What our own codes buy is a card that can be
-read: points, keystones and mechanics come off a snapshot taken at save time, because `tree.json` is
-1.5 MB and a list of twenty strategies cannot each ask the tree what they contain.
+In those documents an atlas is a dead imgur screenshot, the scarabs are a sentence, and the profit
+is a number rendered as pixels inside a picture of a loot tracker. Here:
 
-Storage is IndexedDB, which is the one place in this project where that is the right way round: the
-screenshots in those documents run 160–200 KB each, and localStorage is ~5 MB for the whole origin
-and shared with the atlas and strategy libraries. Blobs go in as Blobs.
+- a tree is our `AT…` code and **⌖ opens it in the Atlas**, with its points, keystones and mechanics
+  on the card;
+- scarabs are a set the app counts and searches — `scarab:cloister` finds every strategy using one;
+- a run is arithmetic: minutes, maps, invested, came out. Net and div/h are derived, so `sort:perhour`
+  orders the whole library by what it actually paid, and **Side by side** turns four setups into four
+  columns with the best net and best rate marked.
 
-Records are versioned individually and migrated **on read** (`codex-schema.ts`) rather than in an
-`onupgradeneeded`: a failed upgrade transaction takes the database with it, a failed read takes one
-row. A record written by a newer build is refused rather than read with older rules — reads are
-non-destructive, so it waits in place instead of being written back with its unknown fields dropped.
-Deletes are soft for the same reason the sync uses tombstones: absence cannot mean deletion.
+Links, checklists and prose still open and still search — nothing was thrown away — but they are not
+what this is for, and the sheet does them better.
 
 ### Keeping something
 
-One box takes whatever is on the clipboard. A line is `Label: link` — which is how every link list
-in every one of those documents is written, from "ендгейм поба:" to "Leveling Filter (for blight):"
-— so the label becomes the title and the host decides what the link is *for*: a PoB, a video, a
-filter, somebody's atlas planner, an imgur screenshot. A pasted list is one entry per line, stamped
-so it keeps the order it was pasted in; a paste with no link in it is one note whose first line is
-the title.
+The two tools have a **Codex** button beside their own *Save*. That is the way in that matters:
+pressed there, the entry arrives knowing what the tree costs, which keystones it takes, which
+mechanics it leans on and which scarabs are in the device, because that is the one moment the tree
+is already in memory. `tree.json` is 1.5 MB and the sprite sheets another 4, so a list of forty
+cards cannot each go and ask, and a card that says nothing until it has is a card you scroll past.
 
-Filters get taken apart rather than stored as a URL, because there are three of them per league and
-the only thing telling a levelling one from an endgame one is a `saveState` in a query string.
+Otherwise: paste an `AT3:`/`ST1:` code or a `?c=` link and it becomes a tree; paste a poeplanner or
+imgur link and it becomes an atlas card holding somebody else's; press **New strategy** and write
+one out by hand, because "боссраш, любые т16, 1 террор + 4 шрайна" is a strategy and refusing it
+until it has a code would refuse most of them.
+
+Nothing is required beyond a title. Four dots on each card say how much of it a machine can read,
+which is the same as saying what a search will find — scarabs picked from the catalogue answer
+`scarab:cloister`, a sentence about scarabs does not. It is an invitation, never a gate. When the
+guess is wrong — and it is wrong for every imgur atlas — *It is really…* changes what an entry is
+and keeps what it pointed at.
+
+The thumbnail is drawn rather than screenshotted: at 46 pixels the atlas icons are illegible and
+what tells two trees apart is their shape, which needs `tree.json` alone. The whole tree goes
+underneath faint, because a branch means nothing without the tree it is a branch of.
 
 ### Finding it again
 
-The search box is the reason this is not a spreadsheet, which can only answer "is this string
-anywhere on this sheet". Words match everything readable — including scarab names out of a saved
-strategy — and the rest are fields:
+A spreadsheet can only answer "is this string anywhere on this sheet". Here the fields are the
+query:
 
 ```
 #legion  tag:legion  -tag:dead        kind:strategy   role:filter  stage:endgame
 league:3.29  game:poe2  status:dead   diff:hard       scarab:cloister
-node:"Wandering Path"  has:runs has:image has:code    is:untagged is:orphan is:inbox
+node:"Wandering Path"  has:runs has:image has:code    is:untagged is:measured is:pinned
 sort:updated|created|title|points|perhour
 ```
 
@@ -427,90 +431,40 @@ tonight, so mentioning `status:` in any form hands the decision back to the quer
 
 Clicking a tag or a shortcut writes into the same box rather than filtering behind it, so what you
 learn by clicking is what you can then type. A search worth keeping gets a name and lands in the
-rail. The list groups by type, tag, league or status — grouping by tag lists an entry under each of
-its tags, because a strategy that is both `#legion` and `#day-1` is an answer to both questions.
+rail. The list groups by type, tag, league or status; grouping by tag lists an entry under each of
+its tags, because a strategy that is both `#legion` and `#day-1` answers both questions.
 
-### Cards that say what a thing is
+### What it paid, and screenshots
 
-An atlas or a strategy shows the shape of the tree, what it costs, its keystones, the mechanics it
-leans on, and the scarabs by icon — none of which the documents this replaces can do, because there
-an atlas is a dead imgur screenshot and the scarabs are a sentence.
+Runs are the reason the third source document exists as a separate spreadsheet of screenshots: a
+sheet has nowhere to put the numbers in them. Per map is carried alongside per hour because those
+captions compare in two different units — "3.17 div investment" against ".29 div per map
+investment" — and only one of them can be set beside another strategy.
 
-All of it is read once, at the moment of saving, by the **Codex** button beside *Save* in the Atlas
-and in Map Strategy. That is the only moment the tree is in memory anyway; `tree.json` is 1.5 MB and
-the sprite sheets another 4, so a list of forty cards cannot each go and ask, and a card that says
-nothing until it has is a card you scroll past. The code stays the source of truth — ⌖ opens the
-real thing in the tool it came from — and the snapshot is only what the card reads.
+Screenshots are pasted or dropped straight onto the capture box, onto a run, or onto an atlas from
+its editor. Nothing is stored as it arrived: webp at 0.82, 1600 pixels on the long side, and a 320
+pixel copy beside it — measured on one of those very screenshots, 162 KB of PNG becomes 75 KB and
+its thumbnail 7 KB. The card draws the small one; clicking it opens the full one, because the
+numbers on a loot tracker are the entire reason it was kept.
 
-The thumbnail is drawn rather than screenshotted: the atlas icons are illegible at 46 pixels, and
-what actually tells two trees apart at that size is their shape, which needs `tree.json` alone. The
-whole tree is drawn faint underneath the allocated part, because a branch means nothing without the
-tree it is a branch of.
+### How it is stored
 
-Nothing is required. An atlas can be our share code, somebody else's planner link, a screenshot, or
-all three; a strategy can be a `ST…` code or the sentence "2 доп легиона и 1 офицер" with a map roll
-beside it. Four dots on the card say how much of it a machine can read, which is the same thing as
-saying what a search will find — scarabs picked from the catalogue answer `scarab:cloister`, a
-sentence about scarabs does not. It is an invitation, never a gate: a three second note beats a
-complete record nobody writes. When the guess is wrong — and it is wrong for every imgur atlas —
-*It is really…* changes what an entry is and keeps what it pointed at.
+IndexedDB, which is the one place in this project where that is the right way round: those
+screenshots run 160–200 KB each and localStorage is ~5 MB for the whole origin, shared with the
+atlas and strategy libraries. Blobs go in as Blobs.
 
-### What it paid
+Records are versioned individually and migrated **on read** (`codex-schema.ts`) rather than in an
+`onupgradeneeded`: a failed upgrade transaction takes the database with it, a failed read takes one
+row. A record written by a newer build is refused rather than read with older rules — reads are
+non-destructive, so it waits in place instead of being written back with its unknown fields dropped.
+Deletes are soft for the same reason the account sync uses tombstones: absence cannot mean deletion.
+The store version is separate and structural; version 2 dropped the `docs` and `pages` stores when
+the arrangement half was deleted.
 
-A strategy carries **runs**: how long, how many maps, what it cost to set up, what came out. Net,
-divines an hour and per-map are worked out and never typed, because a stored total is a total that
-can disagree with its own parts. The loot tracker's screenshot can be pasted onto the run itself, so
-the proof travels with the numbers.
-
-That turns the third source document — four scarab setups, eight screenshots and a caption under
-each — into a **Side by side** view: the setups are columns, every row is one question asked of all
-of them at once, and the best net and the best rate are marked, because "which of these is better"
-is the only reason anybody opens that document. It is also why `sort:perhour` exists: the whole
-library, ordered by what it actually paid.
-
-Per map matters more than it looks. Those captions compare in two different units — "3.17 div
-investment" against ".29 div per map investment" — and only one of them can be set beside another
-strategy.
-
-### Screenshots
-
-The third source document is *nothing but* screenshots of a loot tracker — a spreadsheet has
-nowhere to put the numbers in them, so they exist as pixels. Here they are pasted or dropped
-straight onto the capture box, or attached to an atlas or a strategy from its editor, and each one
-becomes an entry that can be tagged, found and put on a page.
-
-Nothing is stored as it arrived. Every picture is re-encoded to webp at quality 0.82 and cut to
-1600 pixels on the long side, with a 320 pixel copy beside it: measured on one of those very
-screenshots, 162 KB of PNG becomes 75 KB, and its thumbnail 7 KB. The card draws the small one —
-forty cards should not decode forty full screenshots to fill forty 46 pixel squares — and clicking
-it opens the full one, because the numbers on a loot tracker are the entire reason it was kept and
-they are not readable at 46 pixels.
-
-### Pages
-
-A page arranges entries; it does not own them. Putting one on two pages is putting *the same entry*
-in two places — edit it from either and both change, delete the page and the entry stays in the
-library. That is the thing the source documents cannot do: there, having the filter links on both
-this league's sheet and the permanent one means pasting them twice and letting the two drift.
-
-A page is either **arranged** or **live**. Arranged is blocks: an entry, a heading, a note, a
-divider, two columns, or a live list. Live is one query answered every time you open it — which is
-what a custom group actually is, since "strategies for this build, best paid first" stays right when
-a new strategy is tagged tomorrow and a hand-made list does not. The two are the same page with a
-switch, and a live list block puts one inside an arranged page.
-
-Two columns exist because both source documents fall into two columns by hand within a few rows of
-starting. So a position on a page is a path rather than an index — `[3]` is the fourth block,
-`[3, 1, 0]` is the first block in its second column — and one level is where it stops, which
-`readPage` enforces on the way in. Blocks move by dragging or with the arrows; a downward move
-adjusts for the block having been lifted out first, and a columns block cannot be dropped inside
-itself. `codex-blocks.ts` is pure and tested, because a drop that silently loses what it was
-carrying is indistinguishable from a page that ate your notes.
-
-`npm run test:codex` covers the readers (what is kept, what is dropped, what defaults are filled),
-tag normalisation, the atlas and strategy sources at every resolution they arrive in, the migration
-chain being complete, the export bundle round trip, the capture rules against lines copied out of
-the source documents, every query operator, the run arithmetic, and every way a block can move.
+`npm run test:codex` covers the readers (what is kept, dropped, defaulted), tag normalisation, the
+atlas and strategy sources at every resolution they arrive in, the migration chain being complete,
+the export bundle round trip, the capture rules against lines copied out of the source documents,
+every query operator, and the run arithmetic.
 
 ## Accounts and sync
 

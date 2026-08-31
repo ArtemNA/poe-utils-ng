@@ -19,7 +19,7 @@
  * failed `onupgradeneeded` takes the whole database with it while a failed read
  * takes one row.
  */
-import type { AssetMeta, CodexBundle, Doc, Entry, Page, SavedView } from './codex-types';
+import type { AssetMeta, CodexBundle, Entry, SavedView } from './codex-types';
 import {
   base64ToBlob,
   blobToBase64,
@@ -34,15 +34,18 @@ import {
   packBundle,
   readAll,
   readAssetMeta,
-  readDoc,
   readEntry,
-  readPage,
   readView,
   SCHEMA,
 } from './codex-schema';
 
 const DB_NAME = 'poe_codex';
-const DB_VERSION = 1;
+/**
+ * 2 dropped `docs` and `pages`. The arrangement layer lost to the spreadsheet
+ * it was competing with — see the Codex section of the README — and a store
+ * nothing reads is a store that quietly rots.
+ */
+const DB_VERSION = 2;
 
 /** Where the bytes of an image live; its metadata is a row of its own. */
 const BLOBS = 'blobs';
@@ -73,7 +76,7 @@ export class LocalDriver implements CodexDriver {
     }
     this.opening = new Promise<IDBDatabase>((resolve, reject) => {
       const request = indexedDB.open(DB_NAME, DB_VERSION);
-      request.onupgradeneeded = () => upgrade(request.result, request.transaction);
+      request.onupgradeneeded = () => upgrade(request.result);
       request.onsuccess = () => {
         const db = request.result;
         // Another tab opened a newer version: close rather than hold it back.
@@ -100,15 +103,6 @@ export class LocalDriver implements CodexDriver {
 
   // --- reads ------------------------------------------------------------------
 
-  async docs(): Promise<Doc[]> {
-    return live(readAll(await this.all('docs'), readDoc));
-  }
-
-  async pages(docId?: string): Promise<Page[]> {
-    const pages = live(readAll(await this.all('pages'), readPage));
-    return docId ? pages.filter((page) => page.docId === docId) : pages;
-  }
-
   async entries(): Promise<Entry[]> {
     return live(readAll(await this.all('entries'), readEntry));
   }
@@ -127,14 +121,6 @@ export class LocalDriver implements CodexDriver {
   }
 
   // --- writes -----------------------------------------------------------------
-
-  putDoc(doc: Doc): Promise<void> {
-    return this.put('docs', doc);
-  }
-
-  putPage(page: Page): Promise<void> {
-    return this.put('pages', page);
-  }
 
   putEntry(entry: Entry): Promise<void> {
     return this.put('entries', entry);
@@ -183,9 +169,7 @@ export class LocalDriver implements CodexDriver {
   // --- the whole thing --------------------------------------------------------
 
   async bundle(): Promise<CodexBundle> {
-    const [docs, pages, entries, views, metas] = await Promise.all([
-      this.docs(),
-      this.pages(),
+    const [entries, views, metas] = await Promise.all([
       this.entries(),
       this.views(),
       this.assets(),
@@ -197,13 +181,11 @@ export class LocalDriver implements CodexDriver {
     }
     // Tombstones stay out: a bundle is what you have, not the history of what
     // you stopped having. Sync is the thing that needs deletes to travel.
-    return packBundle({ docs, pages, entries, views, assets });
+    return packBundle({ entries, views, assets });
   }
 
   async restore(bundle: CodexBundle): Promise<void> {
     if (bundle.v > BUNDLE_VERSION) throw new Error('That file was written by a newer version.');
-    await this.merge('docs', bundle.docs);
-    await this.merge('pages', bundle.pages);
     await this.merge('entries', bundle.entries);
     await this.merge('views', bundle.views);
     for (const asset of bundle.assets) {
@@ -280,16 +262,9 @@ export class LocalDriver implements CodexDriver {
   }
 }
 
-function upgrade(db: IDBDatabase, tx: IDBTransaction | null): void {
-  if (!db.objectStoreNames.contains('docs')) db.createObjectStore('docs', { keyPath: 'id' });
-  if (!db.objectStoreNames.contains('pages')) {
-    const pages = db.createObjectStore('pages', { keyPath: 'id' });
-    // The one query that is a real query: a doc's pages.
-    pages.createIndex('docId', 'docId', { unique: false });
-  } else if (tx) {
-    const pages = tx.objectStore('pages');
-    if (!pages.indexNames.contains('docId')) pages.createIndex('docId', 'docId', { unique: false });
-  }
+function upgrade(db: IDBDatabase): void {
+  if (db.objectStoreNames.contains('docs')) db.deleteObjectStore('docs');
+  if (db.objectStoreNames.contains('pages')) db.deleteObjectStore('pages');
   if (!db.objectStoreNames.contains('entries')) db.createObjectStore('entries', { keyPath: 'id' });
   if (!db.objectStoreNames.contains('views')) db.createObjectStore('views', { keyPath: 'id' });
   if (!db.objectStoreNames.contains(ASSETS)) db.createObjectStore(ASSETS, { keyPath: 'id' });

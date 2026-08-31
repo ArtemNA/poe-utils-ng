@@ -14,9 +14,9 @@
  * sync already in this project works exactly that way (api/_lib/merge.ts), and
  * arriving there with hard deletes would mean every deleted entry coming back.
  */
-import type { AssetMeta, CodexBundle, Doc, Entry, Page, SavedView } from './codex-types';
+import type { AssetMeta, CodexBundle, Entry, SavedView } from './codex-types';
 
-export type StoreName = 'docs' | 'pages' | 'entries' | 'views';
+export type StoreName = 'entries' | 'views';
 
 export interface StorageUse {
   used: number;
@@ -32,13 +32,6 @@ export interface NewAsset {
 export interface CodexDriver {
   /** Called once before anything else; safe to call again. */
   open(): Promise<void>;
-
-  docs(): Promise<Doc[]>;
-  putDoc(doc: Doc): Promise<void>;
-
-  /** All pages, or one doc's. */
-  pages(docId?: string): Promise<Page[]>;
-  putPage(page: Page): Promise<void>;
 
   entries(): Promise<Entry[]>;
   putEntry(entry: Entry): Promise<void>;

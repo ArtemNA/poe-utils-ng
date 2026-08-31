@@ -20,16 +20,13 @@
 import type {
   AssetMeta,
   AtlasSource,
-  Block,
   CodexBundle,
-  Doc,
   Entry,
   EntryData,
   EntryKind,
   Game,
+  Layout,
   LinkRole,
-  Page,
-  PageLayout,
   Run,
   SavedView,
   StrategySource,
@@ -128,8 +125,7 @@ function optional<T extends string>(value: unknown, allowed: readonly T[]): T | 
 
 const GAMES = ['poe1', 'poe2'] as const;
 const STATUSES = ['live', 'dead', 'tbc', 'draft'] as const;
-const LAYOUTS = ['list', 'cards', 'table', 'board'] as const;
-const GROUP_BY = ['tag', 'league', 'status', 'kind', 'none'] as const;
+const LAYOUTS = ['list', 'cards', 'table'] as const;
 const ROLES = [
   'pob',
   'video',
@@ -375,101 +371,6 @@ export function readEntry(raw: unknown): Entry | null {
   };
 }
 
-export function readDoc(raw: unknown): Doc | null {
-  if (!isRec(raw)) return null;
-  const record = migrate(raw);
-  if (!record) return null;
-  const who = identity(record);
-  if (!who) return null;
-  return {
-    v: SCHEMA,
-    ...who,
-    title: str(record['title']),
-    ...(str(record['league']) ? { league: str(record['league']) } : {}),
-    ...(optional(record['game'], GAMES) ? { game: record['game'] as Game } : {}),
-    ...(str(record['description']) ? { description: str(record['description']) } : {}),
-    // Anything unreadable means private. Guessing the other way publishes
-    // somebody's notes because a field was mistyped.
-    visibility: record['visibility'] === 'link' ? 'link' : 'private',
-    ...(str(record['slug']) ? { slug: str(record['slug']) } : {}),
-    ...(num(record['deletedAt']) ? { deletedAt: num(record['deletedAt']) } : {}),
-  };
-}
-
-function readBlock(raw: unknown, depth = 0): Block | null {
-  if (!isRec(raw)) return null;
-  switch (raw['t']) {
-    case 'entry': {
-      const id = str(raw['id']);
-      return id
-        ? { t: 'entry', id, ...(raw['size'] === 'full' ? { size: 'full' as const } : {}) }
-        : null;
-    }
-    case 'heading': {
-      const level = num(raw['level'], 2);
-      return {
-        t: 'heading',
-        text: str(raw['text']),
-        level: (level >= 1 && level <= 3 ? level : 2) as 1 | 2 | 3,
-      };
-    }
-    case 'text':
-      return { t: 'text', md: str(raw['md']) };
-    case 'divider':
-      return { t: 'divider' };
-    case 'columns':
-      // Columns inside columns is a layout nobody asked for and a recursion
-      // nobody bounded, so one level is where it stops.
-      if (depth > 0) return null;
-      return {
-        t: 'columns',
-        cols: list(raw['cols']).map((col) =>
-          list(col)
-            .map((block) => readBlock(block, depth + 1))
-            .filter((block): block is Block => block !== null),
-        ),
-      };
-    case 'query':
-      return {
-        t: 'query',
-        q: str(raw['q']),
-        layout: optional(raw['layout'], LAYOUTS) ?? 'list',
-        ...(str(raw['title']) ? { title: str(raw['title']) } : {}),
-      };
-    default:
-      return null;
-  }
-}
-
-export function readPage(raw: unknown): Page | null {
-  if (!isRec(raw)) return null;
-  const record = migrate(raw);
-  if (!record) return null;
-  const who = identity(record);
-  if (!who) return null;
-  const docId = str(record['docId']);
-  if (!docId) return null;
-  return {
-    v: SCHEMA,
-    ...who,
-    docId,
-    parentId: str(record['parentId']) || null,
-    title: str(record['title']),
-    ...(str(record['icon']) ? { icon: str(record['icon']) } : {}),
-    order: num(record['order']),
-    mode: record['mode'] === 'query' ? 'query' : 'curated',
-    blocks: list(record['blocks'])
-      .map((block) => readBlock(block))
-      .filter((block): block is Block => block !== null),
-    ...(str(record['query']) ? { query: str(record['query']) } : {}),
-    layout: optional(record['layout'], LAYOUTS) ?? 'list',
-    ...(optional(record['groupBy'], GROUP_BY)
-      ? { groupBy: record['groupBy'] as Page['groupBy'] }
-      : {}),
-    ...(num(record['deletedAt']) ? { deletedAt: num(record['deletedAt']) } : {}),
-  };
-}
-
 export function readView(raw: unknown): SavedView | null {
   if (!isRec(raw)) return null;
   const record = migrate(raw);
@@ -544,36 +445,6 @@ export function migrate(raw: unknown): Rec | null {
 
 // --- new records --------------------------------------------------------------
 
-export function newDoc(title: string, league?: string): Doc {
-  const now = Date.now();
-  return {
-    v: SCHEMA,
-    id: newId(),
-    title: title.trim(),
-    ...(league?.trim() ? { league: league.trim() } : {}),
-    visibility: 'private',
-    createdAt: now,
-    updatedAt: now,
-  };
-}
-
-export function newPage(docId: string, title: string, order: number): Page {
-  const now = Date.now();
-  return {
-    v: SCHEMA,
-    id: newId(),
-    docId,
-    parentId: null,
-    title: title.trim(),
-    order,
-    mode: 'curated',
-    blocks: [],
-    layout: 'list',
-    createdAt: now,
-    updatedAt: now,
-  };
-}
-
 export function newEntry(kind: EntryKind, title: string, data: EntryData): Entry {
   const now = Date.now();
   return {
@@ -590,7 +461,7 @@ export function newEntry(kind: EntryKind, title: string, data: EntryData): Entry
   };
 }
 
-export function newView(name: string, query: string, layout: PageLayout = 'list'): SavedView {
+export function newView(name: string, query: string, layout: Layout = 'list'): SavedView {
   const now = Date.now();
   return {
     v: SCHEMA,
@@ -618,8 +489,6 @@ export function readBundle(raw: unknown): CodexBundle | null {
   return {
     v: BUNDLE_VERSION,
     at: num(raw['at']),
-    docs: readAll(raw['docs'], readDoc),
-    pages: readAll(raw['pages'], readPage),
     entries: readAll(raw['entries'], readEntry),
     views: readAll(raw['views'], readView),
     assets: list(raw['assets'])

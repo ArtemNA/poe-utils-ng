@@ -21,7 +21,7 @@
  *   scarab:cloister         inside a strategy, by name
  *   node:"Wandering Path"   inside a tree, by keystone
  *   has:image has:runs has:code has:pob
- *   is:untagged is:orphan is:inbox is:pinned
+ *   is:untagged is:measured is:pinned
  *   sort:updated|created|title|points|perhour
  *
  * Two rules that are not syntax:
@@ -35,7 +35,7 @@
  * what to run tonight. Mention `status:` in any form and the query decides for
  * itself instead.
  */
-import type { Entry, EntryKind, LinkRole, Page, Block } from './codex-types';
+import type { Entry, EntryKind, LinkRole } from './codex-types';
 import { normaliseTag } from './codex-schema';
 import { runTotals } from './codex-metrics';
 
@@ -53,11 +53,6 @@ export interface Query {
   sort: SortKey;
   /** the query said something about status, so it decides which ones show */
   mentionsStatus: boolean;
-}
-
-export interface QueryContext {
-  /** entry ids that sit on some page — what `is:orphan` is the absence of */
-  placed?: ReadonlySet<string>;
 }
 
 const FIELDS = new Set([
@@ -274,16 +269,15 @@ function has(entry: Entry, what: string): boolean {
   }
 }
 
-function is(entry: Entry, what: string, ctx: QueryContext): boolean {
+function is(entry: Entry, what: string): boolean {
   switch (what) {
+    // Nothing has been filed under anything: with no pages to sit on, that is
+    // the whole of "I have not dealt with this yet".
     case 'untagged':
-      return entry.tags.length === 0;
-    case 'orphan':
-      return !ctx.placed?.has(entry.id);
     case 'inbox':
-      // Not filed: nobody has tagged it and it is not on a page. Captured
-      // things start here and leave by being put somewhere.
-      return entry.tags.length === 0 && !ctx.placed?.has(entry.id);
+      return entry.tags.length === 0;
+    case 'measured':
+      return !!entry.runs?.length;
     case 'pinned':
       return entry.pinned === true;
     default:
@@ -291,7 +285,7 @@ function is(entry: Entry, what: string, ctx: QueryContext): boolean {
   }
 }
 
-function matchesTerm(entry: Entry, term: QueryTerm, text: string, ctx: QueryContext): boolean {
+function matchesTerm(entry: Entry, term: QueryTerm, text: string): boolean {
   switch (term.field) {
     case '':
       return text.includes(term.value);
@@ -320,16 +314,16 @@ function matchesTerm(entry: Entry, term: QueryTerm, text: string, ctx: QueryCont
     case 'has':
       return has(entry, term.value);
     case 'is':
-      return is(entry, term.value, ctx);
+      return is(entry, term.value);
     default:
       return false;
   }
 }
 
-export function matches(entry: Entry, query: Query, ctx: QueryContext = {}): boolean {
+export function matches(entry: Entry, query: Query): boolean {
   const text = haystack(entry);
   for (const term of query.terms) {
-    const hit = matchesTerm(entry, term, text, ctx);
+    const hit = matchesTerm(entry, term, text);
     if (hit === term.negated) return false;
   }
   return true;
@@ -352,10 +346,9 @@ function sortValue(entry: Entry, key: SortKey): number | string {
   }
 }
 
-export function runQuery(entries: readonly Entry[], query: Query, ctx: QueryContext = {}): Entry[] {
+export function runQuery(entries: readonly Entry[], query: Query): Entry[] {
   const out = entries.filter(
-    (entry) =>
-      (query.mentionsStatus || entry.status !== 'dead') && matches(entry, query, ctx),
+    (entry) => (query.mentionsStatus || entry.status !== 'dead') && matches(entry, query),
   );
   const key = query.sort;
   out.sort((a, b) => {
@@ -370,22 +363,6 @@ export function runQuery(entries: readonly Entry[], query: Query, ctx: QueryCont
     return b.updatedAt - a.updatedAt;
   });
   return out;
-}
-
-// --- pages --------------------------------------------------------------------
-
-function idsIn(blocks: readonly Block[], into: Set<string>): void {
-  for (const block of blocks) {
-    if (block.t === 'entry') into.add(block.id);
-    if (block.t === 'columns') for (const column of block.cols) idsIn(column, into);
-  }
-}
-
-/** Every entry that sits on some page — the opposite of `is:orphan`. */
-export function placedIds(pages: readonly Page[]): Set<string> {
-  const ids = new Set<string>();
-  for (const page of pages) idsIn(page.blocks, ids);
-  return ids;
 }
 
 /** How many entries carry each tag, for the list you filter by clicking. */
