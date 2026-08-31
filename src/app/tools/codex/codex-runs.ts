@@ -83,7 +83,7 @@ function num(text: string): number {
           </tbody>
           <tfoot>
             <tr>
-              <td>{{ totals().runs }} runs</td>
+              <td>{{ totals().runs }} {{ totals().runs === 1 ? 'run' : 'runs' }}</td>
               <td>{{ time(totals().minutes) }}</td>
               <td>{{ totals().maps || '' }}</td>
               <td>{{ money(totals().investDiv) }}</td>

@@ -22,6 +22,11 @@ export interface Release {
 
 export const RELEASES: Release[] = [
   {
+    version: '1.7.1',
+    date: '2026-08-31',
+    changes: ['Codex: an Example button, so an empty one shows what it is for'],
+  },
+  {
     version: '1.7.0',
     date: '2026-08-31',
     changes: [

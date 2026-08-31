@@ -4056,3 +4056,7 @@ button.codex-thumb:hover { border-color: var(--accent-dim); }
   color: var(--text-dim);
 }
 .debug-changes li::marker { color: var(--accent-dim); }
+
+/* Two ways to start, side by side: write one out, or read one that is already
+   written. */
+.codex-new-row .poe-btn { flex: 1; justify-content: center; }

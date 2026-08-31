@@ -23,6 +23,8 @@ import { CodexAssetImg } from './codex-asset-img';
 import { CodexCompare } from './codex-compare';
 import { capture, noteBody } from './codex-capture';
 import { imageTitle, imagesIn } from './codex-image';
+import { SAMPLES, sampleRuns } from './codex-sample';
+import { newId } from './codex-schema';
 import { parseQuery, runQuery, toggleTerm } from './codex-query';
 import { count, mb, typeOf, when } from './codex-format';
 import type { Entry, Layout } from './codex-types';
@@ -59,6 +61,8 @@ export class Codex {
   readonly captureMessage = signal('');
   readonly over = signal(false);
   readonly busy = signal(false);
+  /** which example the button hands out next */
+  private sampleAt = 0;
 
   // --- the library -------------------------------------------------------------
   readonly query = signal('');
@@ -169,6 +173,35 @@ export class Codex {
       this.captureMessage.set('');
       this.openNew(written[0]);
     }
+  }
+
+  /**
+   * An example, for a page that is otherwise empty.
+   *
+   * The cards are the explanation, so with none of them there is nothing to
+   * read. Pressing it again brings the next one, which is how two of them end
+   * up on screen and the compare view has something to compare.
+   */
+  async addSample(): Promise<void> {
+    // The next one you do not already have, rather than the next one in the
+    // list: saving by name replaces, so a counter that resets with the page
+    // would keep handing out the first example and never reach the third.
+    const have = new Set(this.store.entries().map((entry) => entry.title));
+    const missing = SAMPLES.findIndex((sample) => !have.has(sample.title));
+    const at = missing >= 0 ? missing : this.sampleAt;
+    const sample = SAMPLES[at];
+    this.sampleAt = (at + 1) % SAMPLES.length;
+    const runs = sampleRuns(sample, Date.now(), newId);
+    const entry = await this.store.keepNamed(sample.kind, sample.title, sample.data, {
+      body: sample.body,
+      tags: sample.tags,
+      ...(sample.league ? { league: sample.league } : {}),
+      ...(sample.status ? { status: sample.status } : {}),
+      ...(runs ? { runs } : {}),
+    });
+    if (!entry) return;
+    this.captureMessage.set('Added an example. It is tagged #sample — delete it whenever.');
+    this.openNew(entry);
   }
 
   /**
