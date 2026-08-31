@@ -99,8 +99,9 @@ export interface StrategySnapshot {
  * a card can hold a screenshot *and* our code — that is what upgrading one
  * looks like, and both are worth showing while it happens.
  *
- * At least one field must be set; an atlas card with nothing in it is not an
- * atlas card.
+ * All of it is optional, including all of it at once: an atlas you have named
+ * and not yet pasted anything into is a note to yourself with a shape, and the
+ * fields are there when you have them.
  */
 export interface AtlasSource {
   /** our `AT…` code — the only form that makes the card live */

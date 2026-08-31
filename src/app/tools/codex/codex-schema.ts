@@ -179,8 +179,9 @@ function readAtlasSource(raw: unknown): AtlasSource | null {
       ...(str(snapshot['thumbId']) ? { thumbId: str(snapshot['thumbId']) } : {}),
     };
   }
-  // An atlas card that names no tree at all is not an atlas card. Everything
-  // else about it is optional on purpose.
+  // Null when it names no tree at all. That is what tells a strategy's empty
+  // tree slot from a real one; an atlas *entry* is allowed to be empty, and
+  // fills that in itself — see `readData`.
   return src.code || src.url || src.assetId || src.imageUrl ? src : null;
 }
 
@@ -287,8 +288,11 @@ function readData(kind: EntryKind, raw: unknown): EntryData | null {
         rows: list(rec['rows']).map((row) => strings(row)),
       };
     case 'atlas': {
-      const src = readAtlasSource(rec['src']);
-      if (!src) return null;
+      // An atlas you have named and not yet pasted anything into is an atlas,
+      // the same way a strategy with no scarabs yet is a strategy. Refusing it
+      // would mean the Example button could make a card by hand that you
+      // cannot.
+      const src = readAtlasSource(rec['src']) ?? {};
       return { k: 'atlas', src, ...(num(rec['points']) ? { points: num(rec['points']) } : {}) };
     }
     case 'strategy': {

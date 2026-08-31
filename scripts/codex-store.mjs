@@ -186,7 +186,18 @@ check(
 // screenshot are as valid as our own share code, and one card may hold both.
 
 const atlasEntry = (src) => entry({ kind: 'atlas', data: { k: 'atlas', src } });
-check('atlas: an empty source is not an atlas', readEntry(atlasEntry({})), null);
+// An atlas entry may be empty — you named a tree before you had the link. A
+// strategy's *tree slot* may not: an empty one there is noise rather than a
+// card somebody made on purpose.
+check('atlas: a named one with nothing in it yet is still an atlas', readEntry(atlasEntry({}))?.data, {
+  k: 'atlas',
+  src: {},
+});
+check(
+  'strategy: an empty tree slot is dropped rather than kept as an empty object',
+  readEntry(entry({ kind: 'strategy', data: { k: 'strategy', src: { atlas: {} } } }))?.data.src,
+  {},
+);
 check('atlas: a foreign planner link is enough', readEntry(atlasEntry({ url: 'https://poeplanner.com/a/6gTh' }))?.data.src, {
   url: 'https://poeplanner.com/a/6gTh',
 });

@@ -22,6 +22,11 @@ export interface Release {
 
 export const RELEASES: Release[] = [
   {
+    version: '1.7.3',
+    date: '2026-08-31',
+    changes: ['Codex: an atlas can be started by hand, the same way a strategy can'],
+  },
+  {
     version: '1.7.2',
     date: '2026-08-31',
     changes: [

@@ -39,14 +39,15 @@
         </div>
         <div class="codex-capture-row codex-new-row">
           <button class="poe-btn poe-btn-dim" (click)="blank()">New strategy</button>
-          <button
-            class="poe-btn poe-btn-dim"
-            title="Fill in an example so the page has something to read"
-            (click)="addSample()"
-          >
-            Example
-          </button>
+          <button class="poe-btn poe-btn-dim" (click)="blankAtlas()">New atlas</button>
         </div>
+        <button
+          class="poe-btn poe-btn-dim codex-btn-wide"
+          title="Fill in an example so the page has something to read"
+          (click)="addSample()"
+        >
+          Example
+        </button>
         @if (captureMessage()) {
           <p class="codex-hint">{{ captureMessage() }}</p>
         } @else {

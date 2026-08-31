@@ -176,6 +176,21 @@ export class Codex {
   }
 
   /**
+   * A tree written down before there is anything to paste into it — the
+   * counterpart of `blank`, and the reason the Example button cannot make a
+   * card you could not have made yourself.
+   */
+  async blankAtlas(): Promise<void> {
+    const written = await this.store.addEntries([
+      { kind: 'atlas', title: 'New atlas', data: { k: 'atlas', src: {} } },
+    ]);
+    if (written.length) {
+      this.captureMessage.set('');
+      this.openNew(written[0]);
+    }
+  }
+
+  /**
    * An example, for a page that is otherwise empty.
    *
    * The cards are the explanation, so with none of them there is nothing to
