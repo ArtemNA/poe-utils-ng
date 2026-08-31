@@ -220,6 +220,7 @@ body::before {
 }
 
 .nav-btn {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -255,6 +256,27 @@ body::before {
   opacity: 0.7;
 }
 .nav-btn.active .nav-icon { opacity: 1; }
+
+/* A tool that is usable and still moving says so on the way in, rather than
+   after somebody has put a league's worth of notes in it.
+
+   Out of the flow and tilted into the corner: a nav item should be the width of
+   its name, and a badge that pushes the bar wider is a badge that costs every
+   other tool a few pixels for one tool's disclaimer. */
+.nav-beta {
+  position: absolute;
+  top: 1px;
+  right: 4px;
+  color: var(--warn);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transform: rotate(-10deg);
+  transform-origin: top right;
+  opacity: 0.85;
+  pointer-events: none;
+}
 
 .sidebar-footer {
   padding: 20px;
@@ -368,6 +390,9 @@ body::before {
   .nav-btn span { display: none; }
   .nav-btn { padding: 9px 11px; }
   .sidebar-account span { display: none; }
+  /* The label goes; the badge is in the corner rather than in the row, so it
+     stays without costing the icon any room. */
+  .nav-btn .nav-beta { display: block; }
 }
 
 /* ============================================================

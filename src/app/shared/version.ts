@@ -22,6 +22,15 @@ export interface Release {
 
 export const RELEASES: Release[] = [
   {
+    version: '1.7.0',
+    date: '2026-08-31',
+    changes: [
+      'Codex (beta): keep the trees and scarab setups you run, and what a night of them paid',
+      'Codex: side by side — several setups as columns, with the best net and rate marked',
+      'Atlas and Strategy got a Codex button, which carries the points and the scarabs with it',
+    ],
+  },
+  {
     version: '1.6.0',
     date: '2026-08-19',
     changes: ['Voyage Builder: how many whole Voyages your Charts make, and where each one goes'],
