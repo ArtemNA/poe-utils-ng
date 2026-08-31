@@ -10,8 +10,6 @@ export interface ToolDef {
   icon: string;
   /** kept out of the sidebar; its route still works if you know the URL */
   hidden?: boolean;
-  /** on the sidebar, but wearing a badge that says it may still move under you */
-  beta?: boolean;
 }
 
 export const TOOLS: ToolDef[] = [
@@ -68,16 +66,6 @@ export const TOOLS: ToolDef[] = [
     id: 'voyage',
     label: 'Voyage Builder',
     icon: '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v7M12 14v7M3 12h7M14 12h7"/><circle cx="12" cy="12" r="2"/>',
-  },
-  {
-    // On the sidebar wearing a badge rather than hidden behind its URL: it is
-    // usable and it is still moving, and both of those are worth saying out
-    // loud. What it holds lives in this browser alone until there is an account
-    // behind it.
-    id: 'codex',
-    label: 'Codex',
-    beta: true,
-    icon: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M8 3v14"/><path d="M11.5 7.5h4M11.5 11h4"/>',
   },
   {
     id: 'minesweeper',

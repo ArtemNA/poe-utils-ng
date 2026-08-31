@@ -22,6 +22,13 @@ export interface Release {
 
 export const RELEASES: Release[] = [
   {
+    version: '1.8.0',
+    date: '2026-08-31',
+    changes: [
+      'Codex removed — saved atlas builds and saved strategies already did most of it',
+    ],
+  },
+  {
     version: '1.7.3',
     date: '2026-08-31',
     changes: ['Codex: an atlas can be started by hand, the same way a strategy can'],

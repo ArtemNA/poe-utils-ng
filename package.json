@@ -1,6 +1,6 @@
 {
   "name": "poe-utils-ng",
-  "version": "1.7.3",
+  "version": "1.8.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,7 +12,6 @@
     "test:summary": "node scripts/atlas-summary.mjs",
     "test:regex": "node scripts/regex-range.mjs",
     "test:sync": "node scripts/sync-merge.mjs",
-    "test:codex": "node scripts/codex-store.mjs",
     "test:voyage": "node scripts/voyage-plan.mjs",
     "test:api": "node scripts/api-load.mjs",
     "test:version": "node scripts/version-check.mjs",
