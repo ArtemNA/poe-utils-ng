@@ -77,12 +77,14 @@ export function buildTree(raw: RawTree): Tree {
     const idx = nodes.length;
 
     const stats = r.stats ?? [];
+    const variants = (r.variantEffects ?? []).map((v) => v.stats ?? []);
     const node: TreeNode = {
       idx,
       id,
       name: r.name ?? (id === 'root' ? 'Atlas Centre' : id),
       icon: r.icon ?? '',
       stats,
+      variants,
       reminder: r.reminderText ?? [],
       flavour: r.flavourText ?? [],
       kind,
@@ -97,7 +99,7 @@ export function buildTree(raw: RawTree): Tree {
       y: (group?.y ?? 0) - radius * Math.cos(angle),
       radius: RADIUS[kind],
       grantsPoints: pointsGranted(stats),
-      searchText: `${r.name ?? ''}\n${stats.join('\n')}`.toLowerCase(),
+      searchText: [r.name ?? '', ...stats, ...variants.flat()].join('\n').toLowerCase(),
     };
     nodes.push(node);
     byId.set(id, node);
@@ -105,6 +107,17 @@ export function buildTree(raw: RawTree): Tree {
   }
 
   // --- edges (undirected, deduplicated) -------------------------------------
+  // Arcs the export spells out, keyed both ways round since edges are undirected.
+  const explicitArcs = new Map<string, { cx: number; cy: number }>();
+  for (const id of ids) {
+    for (const c of raw.nodes[id].connections ?? []) {
+      if (!c.orbit) continue;
+      const centre = { cx: c.orbitX, cy: c.orbitY };
+      explicitArcs.set(`${id}>${c.to}`, centre);
+      explicitArcs.set(`${c.to}>${id}`, centre);
+    }
+  }
+
   const seen = new Set<number>();
   const edges: Edge[] = [];
   const neighbours: number[][] = nodes.map(() => []);
@@ -126,7 +139,22 @@ export function buildTree(raw: RawTree): Tree {
     let a0 = 0;
     let a1 = 0;
     let anticlockwise = false;
-    if (a.group === b.group && a.orbit === b.orbit && a.orbit > 0) {
+    const explicit = explicitArcs.get(`${a.id}>${b.id}`);
+    if (explicit) {
+      // Both ends sit on a circle round the given centre; take the short way.
+      const ang0 = Math.atan2(a.y - explicit.cy, a.x - explicit.cx);
+      const ang1 = Math.atan2(b.y - explicit.cy, b.x - explicit.cx);
+      let delta = ang1 - ang0;
+      while (delta > Math.PI) delta -= 2 * Math.PI;
+      while (delta < -Math.PI) delta += 2 * Math.PI;
+      arc = true;
+      cx = explicit.cx;
+      cy = explicit.cy;
+      r = Math.hypot(a.x - explicit.cx, a.y - explicit.cy);
+      a0 = ang0;
+      a1 = ang0 + delta;
+      anticlockwise = delta < 0;
+    } else if (a.group === b.group && a.orbit === b.orbit && a.orbit > 0) {
       const g = raw.groups[String(a.group)];
       const rad = orbitRadii[a.orbit];
       // canvas angles are measured from +x; tree angles from -y
@@ -228,7 +256,7 @@ export async function loadTree(versionId: number = DEFAULT_TREE_VERSION): Promis
   if (!version) throw new Error(`Unknown atlas tree version ${versionId}`);
   const res = await fetch(`${atlasAssetBase(versionId)}tree.json`);
   if (!res.ok) throw new Error(`Could not load atlas tree ${version.label} (${res.status})`);
-  return buildTree((await res.json()) as RawTree);
+  return { ...buildTree((await res.json()) as RawTree), art: version.art };
 }
 
 /**

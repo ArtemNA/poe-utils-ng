@@ -1,0 +1,1974 @@
+{
+ "version": "3.30",
+ "source": "https://raw.githubusercontent.com/repoe-fork/repoe-fork.github.io/HEAD/data/stat_translations/atlas.json",
+ "rules": [
+  {
+   "id": "blighted_map_chest_reward_lucky_count",
+   "match": [
+    {
+     "text": "Varieties of Items contained in # Blight Chests in your Maps are Lucky",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 1,
+     "drop": true,
+     "text": "Varieties of Items contained in 1 Blight Chest in your Maps are Lucky"
+    },
+    {
+     "min": 2,
+     "text": "Varieties of Items contained in {0} Blight Chests in your Maps are Lucky"
+    }
+   ]
+  },
+  {
+   "id": "map_abyss_monster_experience_+%",
+   "match": [
+    {
+     "text": "Abyss Monsters in your Maps grant #% increased Experience",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Abyss Monsters in your Maps grant {0}% increased Experience"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Abyss monsters in your Maps grant {0}% reduced Experience"
+    }
+   ]
+  },
+  {
+   "id": "map_abyss_monster_spawn_amount_+%",
+   "match": [
+    {
+     "text": "Abysses in your Maps spawn #% increased Monsters",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Abysses in your Maps spawn {0}% increased Monsters"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Abysses in your Maps spawn {0}% reduced Monsters"
+    }
+   ]
+  },
+  {
+   "id": "map_abyssal_trove_jewel_chance_+%",
+   "match": [
+    {
+     "text": "#% increased quantity of Abyss Jewels found in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased quantity of Abyss Jewels found in your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced quantity of Abyss Jewels found in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_affliction_encounter_chance_+%",
+   "match": [
+    {
+     "text": "Your Maps have #% increased chance to contain a Mirror of Delirium",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Your Maps have {0}% increased chance to contain a Mirror of Delirium"
+    },
+    {
+     "max": -1,
+     "text": "Your Maps have {0}% reduced chance to contain a Mirror of Delirium"
+    }
+   ]
+  },
+  {
+   "id": "map_allied_mercenary_damage_+%_final_vs_mercenaries_and_rogue_exiles",
+   "match": [
+    {
+     "text": "Allied Mercenaries in your Maps deal #% more Damage against\nMercenaries and Rogue Exiles",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Allied Mercenaries in your Maps deal {0}% more Damage against\nMercenaries and Rogue Exiles"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Allied Mercenaries in your Maps deal {0}% less Damage against\nMercenaries and Rogue Exiles"
+    }
+   ]
+  },
+  {
+   "id": "map_atlas_memory_tear_chance_+%",
+   "match": [
+    {
+     "text": "#% increased chance for your Maps to contain Memory Tears (Tier #+)",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased chance for your Maps to contain Memory Tears (Tier 16+)"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced chance for your Maps to contain Memory Tears (Tier 16+)"
+    }
+   ]
+  },
+  {
+   "id": "map_betrayal_chance_for_leader_to_intervene_+%",
+   "match": [
+    {
+     "text": "Immortal Syndicate Members in your Maps are #% more likely\nto be accompanied by their Leader",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Immortal Syndicate Members in your Maps are {0}% more likely to be accompanied by their Leader"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Immortal Syndicate Members in your Maps are {0}% less likely to be accompanied by their Leader"
+    }
+   ]
+  },
+  {
+   "id": "map_betrayal_secondary_target_amount_+%",
+   "match": [
+    {
+     "text": "Immortal Syndicate Members in your Maps have #% increased chance\nto be accompanied by reinforcements",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Immortal Syndicate Members in your Maps have {0}% increased chance to be accompanied by reinforcements"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Immortal Syndicate Members in your Maps have {0}% reduced chance to be accompanied by reinforcements"
+    }
+   ]
+  },
+  {
+   "id": "map_betrayal_target_item_drop_rarity_+%",
+   "match": [
+    {
+     "text": "#% increased Rarity of Items Dropped by Immortal Syndicate Members in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased Rarity of Items Dropped by Immortal Syndicate Members in your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced Rarity of Items Dropped by Immortal Syndicate Members in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_blight_monsters_take_+%_damage",
+   "match": [
+    {
+     "text": "Blight Monsters in your Maps take #% increased Damage",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "text": "Blight Monsters in your Maps take {0}% increased Damage"
+    },
+    {
+     "factor": -1,
+     "text": "Blight Monsters in your Maps take {0}% reduced Damage"
+    }
+   ]
+  },
+  {
+   "id": "map_blight_up_to_X_additional_bosses",
+   "match": [
+    {
+     "text": "Blight Encounters in your Maps contain up to # additional Blight Bosses",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 1,
+     "text": "Blight Encounters in your Maps contain up to {0} additional Blight Boss"
+    },
+    {
+     "text": "Blight Encounters in your Maps contain up to {0} additional Blight Bosses"
+    }
+   ]
+  },
+  {
+   "id": "map_bosses_have_azmeri_dust_if_fewer_than_x_monsters_remain",
+   "match": [
+    {
+     "text": "If there are fewer than # monsters remaining in your Maps, Final Map Bosses\nare Empowered by Wildwood Wisps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 1,
+     "drop": true,
+     "text": "If there is fewer than 1 monster remaining in your Maps, Final Map Bosses\nare Empowered by Wildwood Wisps"
+    },
+    {
+     "min": 2,
+     "text": "If there are fewer than {0} monsters remaining in your Maps, Final Map Bosses\nare Empowered by Wildwood Wisps"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_%_chance_for_1_additional_breach",
+   "match": [
+    {
+     "text": "Your Maps which contain Unstable Breaches have #% chance to contain an additional Unstable Breach",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "text": "Your Maps which contain Unstable Breaches have {0}% chance to contain an additional Unstable Breach"
+    },
+    {
+     "min": 100,
+     "drop": true,
+     "text": "Your Maps which contain Unstable Breaches contain an additional Unstable Breach"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_%_chance_for_10_additional_breach",
+   "match": [
+    {
+     "text": "Your Maps which contain Unstable Breaches have #% chance to contain ten additional Unstable Breaches",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "text": "Your Maps which contain Unstable Breaches have {0}% chance to contain ten additional Unstable Breaches"
+    },
+    {
+     "min": 100,
+     "drop": true,
+     "text": "Your Maps which contain Unstable Breaches contain ten additional Unstable Breaches"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_%_chance_for_2_additional_breach",
+   "match": [
+    {
+     "text": "Your Maps which contain Unstable Breaches have #% chance to contain two additional Unstable Breaches",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "text": "Your Maps which contain Unstable Breaches have {0}% chance to contain two additional Unstable Breaches"
+    },
+    {
+     "min": 100,
+     "drop": true,
+     "text": "Your Maps which contain Unstable Breaches contain two additional Unstable Breaches"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_%_chance_for_3_additional_breach",
+   "match": [
+    {
+     "text": "Your Maps which contain Unstable Breaches have #% chance to contain three additional Unstable Breaches",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "text": "Your Maps which contain Unstable Breaches have {0}% chance to contain three additional Unstable Breaches"
+    },
+    {
+     "min": 100,
+     "drop": true,
+     "text": "Your Maps which contain Unstable Breaches contain three additional Unstable Breaches"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_boss_additional_wombgift_chance_%",
+   "match": [
+    {
+     "text": "Breach Bosses in your Maps have #% chance to drop an additional Wombgift",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 100,
+     "max": 100,
+     "drop": true,
+     "text": "Breach Bosses in your Maps drop an additional Wombgift"
+    },
+    {
+     "min": 1,
+     "max": 99,
+     "text": "Breach Bosses in your Maps have {0}% chance to drop an additional Wombgift"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_fortress_chest_wombgift_chance_+%",
+   "match": [
+    {
+     "text": "Grasping Coffers in your Maps have #% increased chance to contain Wombgifts",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Grasping Coffers in your Maps have {0}% increased chance to contain Wombgifts"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Grasping Coffers in your Maps have {0}% reduced chance to contain Wombgifts"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_hive_breakable_spawners_area_of_effect_+%",
+   "match": [
+    {
+     "text": "Flammable Burrows in your Maps have #% increased Explosion Radius",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Flammable Burrows in your Maps have {0}% increased Explosion Radius"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Flammable Burrows in your Maps have {0}% reduced Explosion Radius"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_hive_fortress_chance_+%",
+   "match": [
+    {
+     "text": "Breach Hives in your Maps have #% increased chance to lead to Fortresses",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Breach Hives in your Maps have {0}% increased chance to lead to Fortresses"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Breach Hives in your Maps have {0}% reduced chance to lead to Fortresses"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_hive_monsters_toughness_per_broken_spawner_+%",
+   "match": [
+    {
+     "text": "Hive Monsters in your Maps have #% increased Toughness per Flammable Burrow destroyed",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Hive Monsters in your Maps have {0}% increased Toughness per Flammable Burrow destroyed"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Hive Monsters in your Maps have {0}% reduced Toughness per Flammable Burrow destroyed"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_hive_number_of_breakable_spawners_+%",
+   "match": [
+    {
+     "text": "Breach Hives in your Maps have #% increased number of Flammable Burrows",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Breach Hives in your Maps have {0}% increased number of Flammable Burrows"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Breach Hives in your Maps have {0}% reduced number of Flammable Burrows"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_hive_number_of_skills_+%",
+   "match": [
+    {
+     "text": "#% increased number of skills created by Ailith within Breach Hives\nnot leading to Fortresses in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased number of skills created by Ailith within Breach Hives\nnot leading to Fortresses in your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced number of skills created by Ailith within Breach Hives\nnot leading to Fortresses in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_hive_skill_damage_+%",
+   "match": [
+    {
+     "text": "#% increased Damage of skills created by Ailith within Breach Hives in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased Damage of skills created by Ailith within Breach Hives in your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced Damage of skills created by Ailith within Breach Hives in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_hiveblood_and_wombgift_quantity_per_broken_spawner_+%",
+   "match": [
+    {
+     "text": "Hive Encounters in your Maps grant #% increased Hiveblood\nand Wombgifts per Flammable Burrow destroyed",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Hive Encounters in your Maps grant {0}% increased Hiveblood\nand Wombgifts per Flammable Burrow destroyed"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Hive Encounters in your Maps grant {0}% reduced Hiveblood\nand Wombgifts per Flammable Burrow destroyed"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_hiveblood_quantity_+%",
+   "match": [
+    {
+     "text": "#% increased Quantity of Hiveblood found in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased Quantity of Hiveblood found in your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced Quantity of Hiveblood found in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_hives_additional_waves_+",
+   "match": [
+    {
+     "text": "Breach Hives in your Maps have # additional waves of Hiveborn Monsters",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 1,
+     "drop": true,
+     "text": "Breach Hives in your Maps have an additional wave of Hiveborn Monsters"
+    },
+    {
+     "text": "Breach Hives in your Maps have {0} additional waves of Hiveborn Monsters"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_monster_quantity_+%",
+   "match": [
+    {
+     "text": "Breach Monsters in your Maps have #% increased Pack Size",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Breach Monsters in your Maps have {0}% increased Pack Size"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Breach Monsters in your Maps have {0}% reduced Pack Size"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_number_of_magic_packs_+%",
+   "match": [
+    {
+     "text": "Breaches in your Maps spawn #% increased Magic Monsters",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Breaches in your Maps spawn {0}% increased Magic Monsters"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Breaches in your Maps spawn {0}% reduced Magic Monsters"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_number_of_rare_packs_+%",
+   "match": [
+    {
+     "text": "Breaches in your Maps spawn #% increased Rare Monsters",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Breaches in your Maps spawn {0}% increased Rare Monsters"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Breaches in your Maps spawn {0}% reduced Rare Monsters"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_time_passed_+%",
+   "match": [
+    {
+     "text": "Breach Encounters in your Maps are #% faster",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Breach Encounters in your Maps are {0}% faster"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Breach Encounters in your Maps are {0}% slower"
+    }
+   ]
+  },
+  {
+   "id": "map_breach_wombgift_quantity_+%",
+   "match": [
+    {
+     "text": "#% increased Quantity of Wombgifts found in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased Quantity of Wombgifts found in your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced Quantity of Wombgifts found in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_duplicate_captured_beasts_chance_%",
+   "match": [
+    {
+     "text": "#% chance to create a copy of Beasts Captured in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "text": "{0}% chance to create a copy of Beasts Captured in your Maps"
+    },
+    {
+     "min": 100,
+     "drop": true,
+     "text": "Create a copy of Beasts Captured in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_duplicate_x_rare_monsters",
+   "match": [
+    {
+     "text": "# Rare Monsters in each of your Maps are Duplicated",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 1,
+     "drop": true,
+     "text": "1 Rare Monster in each of your Maps is Duplicated"
+    },
+    {
+     "min": 2,
+     "text": "{0} Rare Monsters in each of your Maps are Duplicated"
+    }
+   ]
+  },
+  {
+   "id": "map_einhar_cooldown_recovery_rate_+%",
+   "match": [
+    {
+     "text": "Einhar has #% increased Cooldown Recovery Rate in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Einhar has {0}% increased Cooldown Recovery Rate in your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Einhar has {0}% reduced Cooldown Recovery Rate in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_einhar_damage_vs_unique_monsters_+%_final",
+   "match": [
+    {
+     "text": "Einhar deals #% more Damage to Unique Monsters in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Einhar deals {0}% more Damage to Unique Monsters in your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Einhar deals {0}% less Damage to Unique Monsters in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_einhar_mission_additional_yellows",
+   "match": [
+    {
+     "text": "Your Maps that contain capturable Beasts contain # additional Yellow Beast",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 1,
+     "text": "Your Maps that contain capturable Beasts contain {0} additional Yellow Beast"
+    },
+    {
+     "min": 2,
+     "text": "Your Maps that contain capturable Beasts contain {0} additional Yellow Beasts"
+    }
+   ]
+  },
+  {
+   "id": "map_essences_are_1_tier_higher_chance_%",
+   "match": [
+    {
+     "text": "Essences found in your Maps have #% chance to be a tier higher",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 100,
+     "max": 100,
+     "drop": true,
+     "text": "Essences found in your Maps are a tier higher"
+    },
+    {
+     "text": "Essences found in your Maps have {0}% chance to be a tier higher"
+    }
+   ]
+  },
+  {
+   "id": "map_expedition_elite_marker_count_+%",
+   "match": [
+    {
+     "text": "Your Maps contain #% increased number of Runic Monster Markers",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Your Maps contain {0}% increased number of Runic Monster Markers"
+    },
+    {
+     "max": -1,
+     "text": "Your Maps contain {0}% reduced number of Runic Monster Markers"
+    }
+   ]
+  },
+  {
+   "id": "map_expedition_maximum_placement_distance_+%",
+   "match": [
+    {
+     "text": "#% increased Explosive Placement Range in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased Explosive Placement Range in your Maps"
+    },
+    {
+     "max": -1,
+     "text": "{0}% reduced Explosive Placement Range in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_expedition_vendor_reroll_currency_quantity_+%",
+   "match": [
+    {
+     "text": "#% increased Quantity of Vendor Refresh Currencies dropped by Monsters in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased Quantity of Vendor Refresh Currencies dropped by Monsters in your Maps"
+    },
+    {
+     "max": -1,
+     "text": "{0}% reduced Quantity of Vendor Refresh Currencies dropped by Monsters in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_incursion_all_monster_packs_magic_and_allow_rare_chance_%",
+   "match": [
+    {
+     "text": "Incursions in your Maps have #% chance for all Monsters to be at least Magic",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "text": "Incursions in your Maps have {0}% chance for all Monsters to be at least Magic"
+    },
+    {
+     "min": 100,
+     "drop": true,
+     "text": "Incursion Monsters in your Maps are at least Magic"
+    }
+   ]
+  },
+  {
+   "id": "map_incursion_pack_size_+%",
+   "match": [
+    {
+     "text": "Incursions in your Maps have #% increased Pack Size",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Incursions in your Maps have {0}% increased Pack Size"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Incursions in your Maps have {0}% reduced Pack Size"
+    }
+   ]
+  },
+  {
+   "id": "map_legion_additional_number_of_sergeants",
+   "match": [
+    {
+     "text": "Legion Encounters in your Maps contain # additional Sergeants",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 1,
+     "text": "Legion Encounters in your Maps contain {0} additional Sergeant"
+    },
+    {
+     "text": "Legion Encounters in your Maps contain {0} additional Sergeants"
+    }
+   ]
+  },
+  {
+   "id": "map_legion_duration_+%",
+   "match": [
+    {
+     "text": "Legion Encounters in your Maps have #% increased Duration",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "text": "Legion Encounters in your Maps have {0}% increased Duration"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Legion Encounters in your Maps have {0}% reduced Duration"
+    }
+   ]
+  },
+  {
+   "id": "map_legion_generals_splinter_drop_amount_+%",
+   "match": [
+    {
+     "text": "#% increased Quantity of Timeless Splinters dropped by Legion Generals in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased Quantity of Timeless Splinters dropped by Legion Generals in your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced Quantity of Timeless Splinters dropped by Legion Generals in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_legion_pack_size_+%",
+   "match": [
+    {
+     "text": "Legion Monsters in your Maps have #% increased Pack Size",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Legion Monsters in your Maps have {0}% increased Pack Size"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Legion Monsters in your Maps have {0}% reduced Pack Size"
+    }
+   ]
+  },
+  {
+   "id": "map_legion_sergeants_reward_additional_chance_%",
+   "match": [
+    {
+     "text": "Legion Sergeants in your Maps have #% additional chance to have Rewards",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "text": "Legion Sergeants in your Maps have {0}% additional chance to have Rewards"
+    },
+    {
+     "min": 100,
+     "drop": true,
+     "text": "Legion Sergeants in your Maps always have Rewards"
+    }
+   ]
+  },
+  {
+   "id": "map_mercenary_additional_support_chance_%",
+   "match": [
+    {
+     "text": "Skills on Mercenaries found in your Maps have #% chance to have an additional Support",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "text": "Skills on Mercenaries found in your Maps have {0}% chance to have an additional Support"
+    },
+    {
+     "min": 100,
+     "drop": true,
+     "text": "Skills on Mercenaries found in your Maps have an additional Support"
+    }
+   ]
+  },
+  {
+   "id": "map_mercenary_aura_effect_+%",
+   "match": [
+    {
+     "text": "Mercenaries found in your Maps have #% increased effect of Auras from their Skills",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Mercenaries found in your Maps have {0}% increased effect of Auras from their Skills"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Mercenaries found in your Maps have {0}% reduced effect of Auras from their Skills"
+    }
+   ]
+  },
+  {
+   "id": "map_mercenary_cooldown_speed_+%",
+   "match": [
+    {
+     "text": "Mercenaries found in your Maps have #% increased Cooldown Recovery Rate",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Mercenaries found in your Maps have {0}% increased Cooldown Recovery Rate"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Mercenaries found in your Maps have {0}% reduced Cooldown Recovery Rate"
+    }
+   ]
+  },
+  {
+   "id": "map_mercenary_drop_all_items_chance_%",
+   "match": [
+    {
+     "text": "#% chance on defeating Mercenaries found in your Maps for them to drop all their Items",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "text": "{0}% chance on defeating Mercenaries found in your Maps for them to drop all their Items"
+    },
+    {
+     "min": 100,
+     "drop": true,
+     "text": "Defeating Mercenaries found in your Maps causes them to drop all their Items"
+    }
+   ]
+  },
+  {
+   "id": "map_mercenary_infamous_chance_+%",
+   "match": [
+    {
+     "text": "#% increased chance for Mercenaries found in your Maps to be Infamous",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased chance for Mercenaries found in your Maps to be Infamous"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced chance for Mercenaries found in your Maps to be Infamous"
+    }
+   ]
+  },
+  {
+   "id": "map_mercenary_unique_item_chance_+%",
+   "match": [
+    {
+     "text": "#% increased chance for Items worn by Mercenaries found in Maps to be Unique",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased chance for Items worn by Mercenaries found in Maps to be Unique"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced chance for Items worn by Mercenaries found in Maps to be Unique"
+    }
+   ]
+  },
+  {
+   "id": "map_mercenary_wager_gold_amount_+%",
+   "match": [
+    {
+     "text": "Mercenary Wagers in your Maps require #% increased Gold",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Mercenary Wagers in your Maps require {0}% increased Gold"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Mercenary Wagers in your Maps require {0}% reduced Gold"
+    }
+   ]
+  },
+  {
+   "id": "map_mercenary_wager_gold_returned_+%",
+   "match": [
+    {
+     "text": "Mercenary Wagers in your Maps return #% increased Gold if you win",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Mercenary Wagers in your Maps return {0}% increased Gold if you win"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Mercenary Wagers in your Maps return {0}% reduced Gold if you win"
+    }
+   ]
+  },
+  {
+   "id": "map_mod_effect_+%_for_non_unique_maps",
+   "match": [
+    {
+     "text": "#% increased effect of Explicit Modifiers on your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased effect of Explicit Modifiers on your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced effect of Explicit Modifiers on your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_mod_effect_+%_per_mod",
+   "match": [
+    {
+     "text": "#% increased effect of Explicit Modifiers on your Maps per Explicit Modifier",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased effect of Explicit Modifiers on your Maps per Explicit Modifier"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced effect of Explicit Modifiers on your Maps per Explicit Modifier"
+    }
+   ]
+  },
+  {
+   "id": "map_monster_damage_+%_final_from_deadly_atlas",
+   "match": [
+    {
+     "text": "Monsters in your Maps deal #% less Damage",
+     "slot": 0
+    },
+    {
+     "text": "Monsters in your Maps deal #% more Damage",
+     "slot": 0,
+     "factor": -1
+    }
+   ],
+   "variants": [
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Monsters in your Maps deal {0}% more Damage"
+    },
+    {
+     "min": 1,
+     "text": "Monsters in your Maps deal {0}% less Damage"
+    }
+   ]
+  },
+  {
+   "id": "map_monster_life_+%_final_from_deadly_atlas",
+   "match": [
+    {
+     "text": "Monsters in your Maps have #% more Life",
+     "slot": 0
+    },
+    {
+     "text": "Monsters in your Maps have #% less Life",
+     "slot": 0,
+     "factor": -1
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Monsters in your Maps have {0}% more Life"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Monsters in your Maps have {0}% less Life"
+    }
+   ]
+  },
+  {
+   "id": "map_primordial_altar_upside_effect_+%",
+   "match": [
+    {
+     "text": "Eldritch Altars Influenced by The Eater of Worlds have #% increased Effect of Upsides",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Eldritch Altars Influenced by The Eater of Worlds have {0}% increased Effect of Upsides"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Eldritch Altars Influenced by The Eater of Worlds have {0}% reduced Effect of Upsides"
+    }
+   ]
+  },
+  {
+   "id": "map_ritual_additional_reward_rerolls",
+   "match": [
+    {
+     "text": "Ritual Altars in your Maps allow rerolling Favours # additional times",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 1,
+     "drop": true,
+     "text": "Ritual Altars in your Maps allow rerolling Favours an additional time"
+    },
+    {
+     "min": 2,
+     "text": "Ritual Altars in your Maps allow rerolling Favours {0} additional times"
+    }
+   ]
+  },
+  {
+   "id": "map_ritual_defer_reward_tribute_cost_+%",
+   "match": [
+    {
+     "text": "Deferring Favours at Ritual Altars in your Maps costs #% reduced Tribute",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Deferring Favours at Ritual Altars in your Maps costs {0}% increased Tribute"
+    },
+    {
+     "min": 1,
+     "text": "Deferring Favours at Ritual Altars in your Maps costs {0}% reduced Tribute"
+    }
+   ]
+  },
+  {
+   "id": "map_ritual_rewards_reroll_cost_+%_final",
+   "match": [
+    {
+     "text": "Rerolling Favours at Ritual Altars in your Maps costs #% reduced Tribute",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Rerolling Favours at Ritual Altars in your Maps costs {0}% increased Tribute"
+    },
+    {
+     "min": 1,
+     "text": "Rerolling Favours at Ritual Altars in your Maps costs {0}% reduced Tribute"
+    }
+   ]
+  },
+  {
+   "id": "map_ritual_tribute_+%",
+   "match": [
+    {
+     "text": "Monsters Sacrificed at Ritual Altars in your Maps grant #% increased Tribute",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Monsters Sacrificed at Ritual Altars in your Maps grant {0}% increased Tribute"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Monsters Sacrificed at Ritual Altars in your Maps grant {0}% reduced Tribute"
+    }
+   ]
+  },
+  {
+   "id": "map_rogue_exiles_are_doubled_chance_%",
+   "match": [
+    {
+     "text": "#% chance for Wild Rogue Exiles in your Maps to appear in Pairs",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "text": "{0}% chance for Wild Rogue Exiles in your Maps to appear in Pairs"
+    },
+    {
+     "min": 100,
+     "drop": true,
+     "text": "Wild Rogue Exiles in your Maps appear in Pairs"
+    }
+   ]
+  },
+  {
+   "id": "map_settlers_%_chance_for_lost_shipment_instead_of_ore",
+   "match": [
+    {
+     "text": "#% chance for Ore Deposits in your Maps to be replaced by Lost Shipments",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 100,
+     "max": 100,
+     "drop": true,
+     "text": "Ore Deposits in your Maps are replaced by Lost Shipments"
+    },
+    {
+     "text": "{0}% chance for Ore Deposits in your Maps to be replaced by Lost Shipments"
+    }
+   ]
+  },
+  {
+   "id": "map_settlers_amber_tree_damage_taken_+%",
+   "match": [
+    {
+     "text": "Petrified Amber Ore Deposits in your Maps take #% reduced Damage",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Petrified Amber Ore Deposits in your Maps take {0}% increased Damage"
+    },
+    {
+     "min": 1,
+     "text": "Petrified Amber Ore Deposits in your Maps take {0}% reduced Damage"
+    }
+   ]
+  },
+  {
+   "id": "map_settlers_bismuth_additional_modifier_%_chance",
+   "match": [
+    {
+     "text": "Bismuth Ore Deposits in your Maps have #% chance to\nadd an additional Modifier to Monsters they affect",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "text": "Bismuth Ore Deposits in your Maps have {0}% chance to\nadd an additional Modifier to Monsters they affect"
+    },
+    {
+     "min": 100,
+     "max": 100,
+     "drop": true,
+     "text": "Bismuth Ore Deposits in your Maps add an additional Modifier to Monsters they affect"
+    }
+   ]
+  },
+  {
+   "id": "map_settlers_crimson_X_additional_pods",
+   "match": [
+    {
+     "text": "Crimson Iron Ore Deposits in your Maps are guarded by # additional Corrupted Growths",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 1,
+     "drop": true,
+     "text": "Crimson Iron Ore Deposits in your Maps are guarded by an additional Corrupted Growth"
+    },
+    {
+     "min": 2,
+     "text": "Crimson Iron Ore Deposits in your Maps are guarded by {0} additional Corrupted Growths"
+    }
+   ]
+  },
+  {
+   "id": "map_settlers_ore_additional_chance_%",
+   "match": [
+    {
+     "text": "Your Maps have +#% chance to contain Ore Deposits",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "sign": true,
+     "text": "Your Maps have {0}% chance to contain Ore Deposits"
+    },
+    {
+     "min": 100,
+     "drop": true,
+     "text": "Your Maps contain Ore Deposits"
+    }
+   ]
+  },
+  {
+   "id": "map_settlers_ore_found_+%",
+   "match": [
+    {
+     "text": "Ore Deposits in your Maps contain #% increased Ore",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Ore Deposits in your Maps contain {0}% increased Ore"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Ore Deposits in your Maps contain {0}% reduced Ore"
+    }
+   ]
+  },
+  {
+   "id": "map_settlers_orichalcum_buff_duration_+%",
+   "match": [
+    {
+     "text": "Buffs granted by Orichalcum Ore Deposits in your Maps have #% increased Duration",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Buffs granted by Orichalcum Ore Deposits in your Maps have {0}% increased Duration"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Buffs granted by Orichalcum Ore Deposits in your Maps have {0}% reduced Duration"
+    }
+   ]
+  },
+  {
+   "id": "map_settlers_secondary_ore_chance_%",
+   "match": [
+    {
+     "text": "Your Maps have +#% chance to contain multiple Ore Deposits",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "sign": true,
+     "text": "Your Maps have {0}% chance to contain multiple Ore Deposits"
+    },
+    {
+     "min": 100,
+     "drop": true,
+     "text": "Your Maps contain multiple Ore Deposits"
+    }
+   ]
+  },
+  {
+   "id": "map_shrine_granted_player_buff_duration_+%",
+   "match": [
+    {
+     "text": "#% increased duration of Shrine Buffs on players granted by Shrines in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased duration of Shrine Buffs on players granted by Shrines in your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced duration of Shrine Buffs on players granted by Shrines in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_shrine_granted_player_buff_effect_+%",
+   "match": [
+    {
+     "text": "#% increased effect of Shrine Buffs on players granted by Shrines in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased effect of Shrine Buffs on players granted by Shrines in your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced effect of Shrine Buffs on players granted by Shrines in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_strongbox_item_quantity_+%",
+   "match": [
+    {
+     "text": "#% increased Quantity of Items contained in Strongboxes in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased Quantity of Items contained in Strongboxes in your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced Quantity of Items contained in Strongboxes in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_strongboxes_chance_to_be_unique_+%",
+   "match": [
+    {
+     "text": "#% increased chance for Strongboxes in your Maps to be Unique",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased chance for Strongboxes in your Maps to be Unique"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced chance for Strongboxes in your Maps to be Unique"
+    }
+   ]
+  },
+  {
+   "id": "map_tier_bonus_permillage",
+   "match": [
+    {
+     "text": "Tier #-# Maps found have #% chance to become # tier higher",
+     "slot": 2
+    }
+   ],
+   "variants": [
+    {
+     "min": 0.1,
+     "max": 99.9,
+     "text": "Tier 1-15 Maps found have {0}% chance to become 1 tier higher"
+    },
+    {
+     "min": 100,
+     "factor": 10,
+     "drop": true,
+     "text": "Tier 1-15 Maps found are 1 tier higher"
+    }
+   ]
+  },
+  {
+   "id": "map_tormented_spirits_duration_+%",
+   "match": [
+    {
+     "text": "Tormented Spirits in your Maps have #% increased Duration",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Tormented Spirits in your Maps have {0}% increased Duration"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Tormented Spirits in your Maps have {0}% reduced Duration"
+    }
+   ]
+  },
+  {
+   "id": "map_ultimatum_encounter_radius_+%_per_round",
+   "match": [
+    {
+     "text": "Ultimatum Encounters in your Maps get #% reduced Radius each Round",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Ultimatum Encounters in your Maps get {0}% increased Radius each Round"
+    },
+    {
+     "min": 1,
+     "text": "Ultimatum Encounters in your Maps get {0}% reduced Radius each Round"
+    }
+   ]
+  },
+  {
+   "id": "map_ultimatum_monster_damage_+%_final",
+   "match": [
+    {
+     "text": "Ultimatum Monsters and Modifiers in your Maps deal #% less Damage",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Ultimatum Monsters and Modifiers in your Maps deal {0}% more Damage"
+    },
+    {
+     "min": 1,
+     "text": "Ultimatum Monsters and Modifiers in your Maps deal {0}% less Damage"
+    }
+   ]
+  },
+  {
+   "id": "map_ultimatum_trialmaster_spawn_chance_+%",
+   "match": [
+    {
+     "text": "Ultimatum Encounters in your Maps have #% increased chance for\nthe final Round to include a Boss",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Ultimatum Encounters in your Maps have {0}% increased chance for\nthe final Round to include a Boss"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Ultimatum Encounters in your Maps have {0}% reduced chance for\nthe final Round to include a Boss"
+    }
+   ]
+  },
+  {
+   "id": "map_unique_monster_tribute_multiplier_final_+%",
+   "match": [
+    {
+     "text": "Unique Monsters slain at Ritual Altars in your Maps grant #% more Tribute",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Unique Monsters slain at Ritual Altars in your Maps grant {0}% less Tribute"
+    },
+    {
+     "min": 1,
+     "text": "Unique Monsters slain at Ritual Altars in your Maps grant {0}% more Tribute"
+    }
+   ]
+  },
+  {
+   "id": "map_unstable_breach_additional_x_seconds_before_collapse",
+   "match": [
+    {
+     "text": "Unstable Breaches in your Maps take # additional seconds to collapse after timer is filled",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 1,
+     "drop": true,
+     "text": "Unstable Breaches in your Maps take an additional second to collapse after timer is filled"
+    },
+    {
+     "text": "Unstable Breaches in your Maps take {0} additional seconds to collapse after timer is filled"
+    }
+   ]
+  },
+  {
+   "id": "map_unstable_breach_enrage_x_additional_rare_monsters",
+   "match": [
+    {
+     "text": "Unstable Breaches in your Maps spawn # additional Rare Monsters when Stabilised",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 1,
+     "drop": true,
+     "text": "Unstable Breaches in your Maps spawn an additional Rare Monster when Stabilised"
+    },
+    {
+     "text": "Unstable Breaches in your Maps spawn {0} additional Rare Monsters when Stabilised"
+    }
+   ]
+  },
+  {
+   "id": "map_village_amber_ore_chance_+%",
+   "match": [
+    {
+     "text": "#% increased chance for Ore Deposits found in your Maps to be Petrified Amber",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased chance for Ore Deposits found in your Maps to be Petrified Amber"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced chance for Ore Deposits found in your Maps to be Petrified Amber"
+    }
+   ]
+  },
+  {
+   "id": "map_village_bismuth_ore_chance_+%",
+   "match": [
+    {
+     "text": "#% increased chance for Ore Deposits found in your Maps to be Bismuth",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased chance for Ore Deposits found in your Maps to be Bismuth"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced chance for Ore Deposits found in your Maps to be Bismuth"
+    }
+   ]
+  },
+  {
+   "id": "map_village_crimson_ore_chance_+%",
+   "match": [
+    {
+     "text": "#% increased chance for Ore Deposits found in your Maps to be Crimson Iron",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased chance for Ore Deposits found in your Maps to be Crimson Iron"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced chance for Ore Deposits found in your Maps to be Crimson Iron"
+    }
+   ]
+  },
+  {
+   "id": "map_village_orichalcum_ore_chance_+%",
+   "match": [
+    {
+     "text": "#% increased chance for Ore Deposits found in your Maps to be Orichalcum",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased chance for Ore Deposits found in your Maps to be Orichalcum"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced chance for Ore Deposits found in your Maps to be Orichalcum"
+    }
+   ]
+  },
+  {
+   "id": "map_village_verisium_ore_chance_+%",
+   "match": [
+    {
+     "text": "#% increased chance for Ore Deposits found in your Maps to be Verisium",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased chance for Ore Deposits found in your Maps to be Verisium"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced chance for Ore Deposits found in your Maps to be Verisium"
+    }
+   ]
+  },
+  {
+   "id": "map_wild_rogue_exile_dropped_item_rarity_+%",
+   "match": [
+    {
+     "text": "#% increased Rarity of Items Dropped by Wild Rogue Exiles in your Maps",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased Rarity of Items Dropped by Wild Rogue Exiles in your Maps"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced Rarity of Items Dropped by Wild Rogue Exiles in your Maps"
+    }
+   ]
+  },
+  {
+   "id": "map_wild_rogue_exiles_have_special_reward_chance_%",
+   "match": [
+    {
+     "text": "Wild Rogue Exiles in your Maps have #% chance to have additional Rewards",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "max": 99,
+     "text": "Wild Rogue Exiles in your Maps have {0}% chance to have additional Rewards"
+    },
+    {
+     "min": 100,
+     "max": 100,
+     "drop": true,
+     "text": "Wild Rogue Exiles in your Maps have additional Rewards"
+    }
+   ]
+  },
+  {
+   "id": "map_zana_influence_equipment_item_chance_+%",
+   "match": [
+    {
+     "text": "#% increased chance for Equipment Items dropped in your Maps to have Memory Strands",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased chance for Equipment Items dropped in your Maps to have Memory Strands"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced chance for Equipment Items dropped in your Maps to have Memory Strands"
+    }
+   ]
+  },
+  {
+   "id": "map_zana_influence_map_item_chance_+%",
+   "match": [
+    {
+     "text": "#% increased chance for Maps found in your Maps to have Memory Influence",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "{0}% increased chance for Maps found in your Maps to have Memory Influence"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "{0}% reduced chance for Maps found in your Maps to have Memory Influence"
+    }
+   ]
+  },
+  {
+   "id": "rogue_trader_map_rogue_exile_maximum_life_+%_final",
+   "match": [
+    {
+     "text": "Rogue Exiles in your Maps have #% more Life",
+     "slot": 0
+    }
+   ],
+   "variants": [
+    {
+     "min": 1,
+     "text": "Rogue Exiles in your Maps have {0}% more Life"
+    },
+    {
+     "max": -1,
+     "factor": -1,
+     "text": "Rogue Exiles in your Maps have {0}% less Life"
+    }
+   ]
+  }
+ ]
+}

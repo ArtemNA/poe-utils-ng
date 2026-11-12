@@ -220,18 +220,39 @@ export class Renderer {
       ctx.fillRect(view.minX, view.minY, view.maxX - view.minX, view.maxY - view.minY);
       ctx.restore();
     }
-    // the painting, on the rectangle at the top of this file
     ctx.save();
     ctx.globalAlpha = 0.85;
-    this.sprites.drawBox(
-      ctx,
-      'atlasBackground',
-      'AtlasPassiveBackground',
-      ART_CX - ART_W / 2,
-      this.tree.raw.min_y + ART_DROP,
-      ART_W,
-      ART_H,
-    );
+    const art = this.tree.art ?? { kind: 'hanging' };
+    if (art.kind === 'centred') {
+      // Rings round the Atlas centre. The root itself sits off at the bottom;
+      // the centre is the junction it links to, where every route starts.
+      const { rootIdx, offsets, adjacency, nodes } = this.tree;
+      const hub =
+        offsets[rootIdx + 1] > offsets[rootIdx]
+          ? nodes[adjacency[offsets[rootIdx]]]
+          : nodes[rootIdx];
+      const half = art.size / 2;
+      this.sprites.drawBox(
+        ctx,
+        'atlasBackground',
+        'AtlasPassiveBackground',
+        hub.x - half,
+        hub.y - half,
+        art.size,
+        art.size,
+      );
+    } else {
+      // the painting, on the rectangle at the top of this file
+      this.sprites.drawBox(
+        ctx,
+        'atlasBackground',
+        'AtlasPassiveBackground',
+        ART_CX - ART_W / 2,
+        this.tree.raw.min_y + ART_DROP,
+        ART_W,
+        ART_H,
+      );
+    }
     ctx.restore();
   }
 

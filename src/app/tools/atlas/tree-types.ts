@@ -14,6 +14,17 @@ export interface RawNode {
   orbitIndex?: number;
   in?: string[];
   out?: string[];
+  /**
+   * 3.30+: a notable whose effect the player picks from a list. `stats` then
+   * holds only a prompt (or nothing); the real lines are in `variantEffects`.
+   */
+  isMultipleChoiceVariant?: boolean;
+  variantEffects?: { effect: number; stats: string[] }[];
+  /**
+   * 3.30+: links drawn as an arc around an explicit centre, often between two
+   * groups. Links not listed here are straight lines or same-orbit arcs.
+   */
+  connections?: { to: string; orbit: number; orbitX: number; orbitY: number }[];
 }
 
 export interface RawGroup {
@@ -73,6 +84,12 @@ export interface TreeNode {
   name: string;
   icon: string;
   stats: string[];
+  /**
+   * The effects a multiple-choice notable lets you pick from, one list of
+   * lines per choice. Empty for every other node. Which one a plan uses is not
+   * known, so these are shown and searched but never added up.
+   */
+  variants: string[][];
   reminder: string[];
   flavour: string[];
   kind: NodeKind;
@@ -136,4 +153,13 @@ export interface Tree {
   groups: GroupInfo[];
   bounds: { minX: number; minY: number; maxX: number; maxY: number };
   totalPoints: number;
+  /** How the Atlas painting sits under this tree; see AtlasTreeVersion.art. */
+  art?: ArtPlacement;
 }
+
+/**
+ * 'hanging': the 3.29 painting, hung from the top of the tree by hand-measured
+ * numbers. 'centred': a square painting whose rings are centred on the Atlas
+ * centre, drawn `size` tree units across.
+ */
+export type ArtPlacement = { kind: 'hanging' } | { kind: 'centred'; size: number };

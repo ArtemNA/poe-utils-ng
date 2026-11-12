@@ -8,6 +8,8 @@
  * tree they were made against, and the version selector appears by itself once
  * there is more than one entry.
  */
+import type { ArtPlacement } from './tree-types';
+
 export interface AtlasTreeVersion {
   id: number;
   label: string;
@@ -18,10 +20,19 @@ export interface AtlasTreeVersion {
    * an old tree renderable.
    */
   dir: string;
+  /**
+   * Where the Atlas painting goes. Nothing in the export says, and it changed
+   * shape in 3.30 (a square of rings round the centre instead of a picture the
+   * tree grows up from), so each tree carries its own.
+   */
+  art: ArtPlacement;
 }
 
 export const TREE_VERSIONS: readonly AtlasTreeVersion[] = [
-  { id: 1, label: '3.29', dir: '3.29' },
+  { id: 1, label: '3.29', dir: '3.29', art: { kind: 'hanging' } },
+  // 25920 = the 5184 px sheet at zoom 0.2. Matched by eye against an in-game
+  // screenshot: the first ring of clusters sits inside the blue disc.
+  { id: 2, label: '3.30', dir: '3.30', art: { kind: 'centred', size: 25920 } },
 ];
 
 /** Newest known tree — what a fresh session and a code-less link get. */

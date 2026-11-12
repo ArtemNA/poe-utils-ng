@@ -241,7 +241,7 @@ export class StatIndex {
     const seen = new Map<string, number[][]>();
     for (const node of tree.nodes) {
       if (!countsAsModifier(node)) continue;
-      for (const stat of node.stats) {
+      for (const stat of [...node.stats, ...node.variants.flat()]) {
         if (!stat.trim()) continue;
         const key = statTemplate(stat);
         const rows = seen.get(key);
@@ -296,7 +296,7 @@ function countsAsModifier(node: TreeNode): boolean {
 }
 
 function keywordMechanic(node: TreeNode): string {
-  const text = `${node.name}\n${node.stats.join('\n')}`;
+  const text = [node.name, ...node.stats, ...node.variants.flat()].join('\n');
   for (const [name, words] of KEYWORDS) {
     for (const word of words) if (text.includes(word)) return name;
   }
@@ -372,7 +372,23 @@ interface Bucket {
   mechanics: Map<string, number>;
 }
 
-export function summarise(tree: Tree, index: StatIndex, allocated: Iterable<number>): Summary {
+/**
+ * What a node grants as far as adding up goes. A multiple-choice notable grants
+ * the one effect picked for it — its own text is only the prompt — and nothing
+ * until a pick is made, since guessing would put a mechanic you never chose
+ * into the totals.
+ */
+export function grantedStats(node: TreeNode, choice: number | undefined): string[] {
+  if (!node.variants.length) return node.stats;
+  return choice !== undefined ? (node.variants[choice] ?? []) : [];
+}
+
+export function summarise(
+  tree: Tree,
+  index: StatIndex,
+  allocated: Iterable<number>,
+  choices: ReadonlyMap<number, number> = new Map(),
+): Summary {
   const counts = { normal: 0, notable: 0, keystone: 0, wormhole: 0 };
   const buckets = new Map<string, Bucket>();
   const keystones: KeystoneView[] = [];
@@ -390,7 +406,7 @@ export function summarise(tree: Tree, index: StatIndex, allocated: Iterable<numb
     }
     if (!countsAsModifier(node)) continue;
 
-    for (const stat of node.stats) {
+    for (const stat of grantedStats(node, choices.get(idx))) {
       if (!stat.trim()) continue;
       sourceLines++;
       const template = statTemplate(stat);

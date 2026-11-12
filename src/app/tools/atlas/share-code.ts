@@ -15,7 +15,14 @@
  * Payload (format 3):
  *   u8   tree version
  *   u8   flags -- bit 1: the tree is stored as a walk
+ *                bit 2: choices follow the tree
  *   tree
+ *   choices (only with bit 2) -- for each allocated multiple-choice notable
+ *            (3.30+), in ascending node id order, a varint: 0 for no pick yet,
+ *            otherwise 1 + the index of the picked effect. The tree says which
+ *            nodes those are, so no count is stored. A reader that predates
+ *            this ignores the flag and the trailing bytes and still gets the
+ *            tree, which is why it did not need a new format number.
  *
  * The allocated set is never an arbitrary subset: it is always a connected
  * subtree hanging off the Atlas centre. So instead of a position per node it is
@@ -43,12 +50,23 @@ export interface AtlasPlan {
   /** only ever set by a format 1 or 2 code that was shared mid-planning */
   legacyTargets?: string[];
   legacyBlocked?: string[];
+  /** node id -> picked effect, for multiple-choice notables */
+  choices: Record<string, number>;
 }
 
 export interface PlanToShare {
   treeVersion: number;
   /** the finished tree: what you allocated, or the route you are looking at */
   allocated: string[];
+  /** node id -> picked effect; nodes not in `allocated` are ignored */
+  choices?: Record<string, number>;
+}
+
+/** Allocated multiple-choice notables, in the order their picks are stored. */
+function choiceNodes(tree: Tree, allocated: Iterable<number>): number[] {
+  return [...allocated]
+    .filter((idx) => tree.nodes[idx].variants.length > 0)
+    .sort((a, b) => Number(tree.nodes[a].id) - Number(tree.nodes[b].id));
 }
 
 export class ShareCodeError extends Error {}
@@ -199,7 +217,15 @@ export function encodePlan(tree: Tree, plan: PlanToShare): string {
   }
   const walkable = isConnectedToCentre(tree, allocatedNodes);
 
-  const out: number[] = [plan.treeVersion & 0xff, walkable ? 2 : 0];
+  const picks = choiceNodes(tree, allocatedNodes).map((idx) => {
+    const choice = plan.choices?.[tree.nodes[idx].id];
+    return choice !== undefined && choice >= 0 && choice < tree.nodes[idx].variants.length
+      ? choice + 1
+      : 0;
+  });
+  const withChoices = picks.some((p) => p > 0);
+
+  const out: number[] = [plan.treeVersion & 0xff, (walkable ? 2 : 0) | (withChoices ? 4 : 0)];
   if (walkable) {
     writeWalk(out, tree, allocatedNodes);
   } else {
@@ -210,6 +236,7 @@ export function encodePlan(tree: Tree, plan: PlanToShare): string {
     }
     writeSection(out, positions);
   }
+  if (withChoices) for (const pick of picks) writeVarint(out, pick);
   return `${PREFIX}${SHARE_FORMAT_VERSION}:${toBase64Url(Uint8Array.from(out))}`;
 }
 
@@ -271,7 +298,19 @@ export function decodePlan(code: string, tree: Tree): AtlasPlan {
       ? readWalk(bytes, cursor, tree).map((node) => tree.nodes[node].id)
       : ids(readSection(bytes, cursor, limit));
 
-  const plan: AtlasPlan = { treeVersion, allocated };
+  const choices: Record<string, number> = {};
+  if ((flags & 4) !== 0) {
+    const allocatedIdx = allocated.map((id) => tree.byId.get(id)!.idx);
+    for (const idx of choiceNodes(tree, allocatedIdx)) {
+      const pick = readVarint(bytes, cursor);
+      if (pick > tree.nodes[idx].variants.length) {
+        throw new ShareCodeError('code picks an effect the node does not have');
+      }
+      if (pick > 0) choices[tree.nodes[idx].id] = pick - 1;
+    }
+  }
+
+  const plan: AtlasPlan = { treeVersion, allocated, choices };
   if (formatVersion < 3) {
     // Older codes carried the planning state too. It is dropped, except when the
     // code holds nothing else — then it was shared mid-planning and the targets

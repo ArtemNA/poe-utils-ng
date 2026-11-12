@@ -7,7 +7,11 @@
  * are the numbers that went in, and the wording only changes where GGG's stat
  * descriptions say it changes.
  *
- * Run: node scripts/atlas-summary.mjs
+ * Run: node scripts/atlas-summary.mjs [tree version, default 3.29]
+ *
+ * Sections 2-4 lean on particular 3.29 nodes (Niko, Beyond, the scarab line)
+ * that later trees reworked away, so on another version they are skipped and
+ * the rest — nothing lost, mechanics, multiple-choice picks — still runs.
  */
 import { build } from 'esbuild';
 import { readFile, mkdir } from 'node:fs/promises';
@@ -16,7 +20,7 @@ import path from 'node:path';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const tmp = path.join(root, 'node_modules', '.summary-test');
-const VERSION = '3.29';
+const VERSION = process.argv[2] ?? '3.29';
 
 await mkdir(tmp, { recursive: true });
 await build({
@@ -54,6 +58,8 @@ function check(name, condition, detail = '') {
   failures++;
   console.error(`FAIL ${name}${detail ? `\n     ${detail}` : ''}`);
 }
+/** A check about specific 3.29 nodes; see the note at the top. */
+const contentCheck = VERSION === '3.29' ? check : () => {};
 
 const NUMBER = /\d+(?:\.\d+)?/g;
 const modifierKinds = new Set(['normal', 'notable', 'keystone']);
@@ -75,7 +81,24 @@ for (const idx of everything) {
     expectedKeystones++;
     continue;
   }
+  // A multiple-choice notable's own text is the prompt; with nothing picked it
+  // grants nothing, so it has no lines to account for.
+  if (node.variants.length) continue;
   expectedLines += node.stats.filter((s) => s.trim()).length;
+}
+
+// Picking an effect brings exactly that effect's lines in, and nothing else.
+{
+  const choiceNodes = everything.filter((idx) => tree.nodes[idx].variants.length > 0);
+  if (VERSION !== '3.29') check('the tree has multiple-choice notables', choiceNodes.length > 0);
+  const picks = new Map(choiceNodes.map((idx) => [idx, tree.nodes[idx].variants.length - 1]));
+  const picked = summarise(tree, index, everything, picks);
+  const pickedLines = choiceNodes.reduce(
+    (n, idx) => n + tree.nodes[idx].variants.at(-1).filter((s) => s.trim()).length,
+    0,
+  );
+  check('a picked effect is summed', picked.sourceLines === whole.sourceLines + pickedLines,
+    `${picked.sourceLines} with picks, ${whole.sourceLines} without, ${pickedLines} picked lines`);
 }
 check('every modifier line is accounted for', whole.sourceLines === expectedLines,
   `${whole.sourceLines} summarised, ${expectedLines} on the tree`);
@@ -109,7 +132,7 @@ const scarabSum = sumOf(scarabs, 0);
 const scarabLine = whole.groups
   .flatMap((g) => g.lines)
   .find((l) => l.text.endsWith('increased Scarabs found in your Maps'));
-check('a repeated modifier is added up', scarabLine?.text === `${scarabSum.total}% increased Scarabs found in your Maps`,
+contentCheck('a repeated modifier is added up', scarabLine?.text === `${scarabSum.total}% increased Scarabs found in your Maps`,
   `got ${JSON.stringify(scarabLine?.text)}, expected ${scarabSum.total}% over ${scarabSum.nodes} nodes`);
 
 // "Tier 1-15 Maps found have 5% chance to become 1 tier higher" — three numbers
@@ -117,7 +140,7 @@ check('a repeated modifier is added up', scarabLine?.text === `${scarabSum.total
 const tierTemplate = 'Tier #-# Maps found have #% chance to become # tier higher';
 const tierSum = sumOf(tierTemplate, 2);
 const tierLine = whole.groups.flatMap((g) => g.lines).find((l) => /^Tier 1-15 Maps found/.test(l.text));
-check('only the varying number is summed',
+contentCheck('only the varying number is summed',
   tierLine?.text === 'Tier 1-15 Maps found are 1 tier higher' || tierSum.total < 100,
   `got ${JSON.stringify(tierLine?.text)} for a total of ${tierSum.total}`);
 
@@ -140,17 +163,17 @@ function nodesGranting(match) {
 
 const nikoTemplate = 'Your Maps have +#% chance to contain Niko';
 const nikoNodes = nodesGranting(nikoTemplate);
-check('the tree still has the Niko chance nodes', nikoNodes.length > 0);
+contentCheck('the tree still has the Niko chance nodes', nikoNodes.length > 0);
 
 // One node on its own is under the threshold and keeps the percentage.
 const nikoOne = lineFor(nikoNodes.slice(0, 1), (t) => t.includes('Niko'));
-check('below 100% the chance is written as a chance', /^Your Maps have \+\d+% chance to contain Niko$/.test(nikoOne?.text ?? ''),
+contentCheck('below 100% the chance is written as a chance', /^Your Maps have \+\d+% chance to contain Niko$/.test(nikoOne?.text ?? ''),
   `got ${JSON.stringify(nikoOne?.text)}`);
 
 // All of them together clear it, and the modifier becomes a statement.
 const nikoAll = lineFor(nikoNodes, (t) => t.includes('Niko'));
 const nikoTotal = sumOf(nikoTemplate, 0).total;
-check('at 100% the chance becomes a certainty',
+contentCheck('at 100% the chance becomes a certainty',
   nikoTotal < 100 || nikoAll?.text === 'Your Maps contain Niko',
   `got ${JSON.stringify(nikoAll?.text)} for a total of ${nikoTotal}%`);
 
@@ -158,10 +181,10 @@ const beyondTemplate = '#% chance for your Maps to attract Beyond Demons';
 const beyondNodes = nodesGranting(beyondTemplate);
 const beyondTotal = sumOf(beyondTemplate, 0).total;
 const beyondAll = lineFor(beyondNodes, (t) => t.includes('Beyond Demons'));
-check('a modifier with one wording just keeps climbing',
+contentCheck('a modifier with one wording just keeps climbing',
   beyondAll?.text === `${beyondTotal}% chance for your Maps to attract Beyond Demons`,
   `got ${JSON.stringify(beyondAll?.text)}, expected ${beyondTotal}%`);
-check('and it really does go past 100%', beyondTotal > 100, `total is ${beyondTotal}%`);
+contentCheck('and it really does go past 100%', beyondTotal > 100, `total is ${beyondTotal}%`);
 
 // --- 4 · rules that are not thresholds ---------------------------------------
 // The same mechanism reads singular and plural, which is the cheapest possible
@@ -170,12 +193,12 @@ check('and it really does go past 100%', beyondTotal > 100, `total is ${beyondTo
 const beasts = nodesGranting(
   'Your Maps that contain capturable Beasts contain # additional Yellow Beast',
 );
-check('the tree still has two of the extra-beast nodes', beasts.length >= 2, `found ${beasts.length}`);
+contentCheck('the tree still has two of the extra-beast nodes', beasts.length >= 2, `found ${beasts.length}`);
 const oneBeast = lineFor(beasts.slice(0, 1), (t) => t.includes('Yellow Beast'));
 const twoBeasts = lineFor(beasts.slice(0, 2), (t) => t.includes('Yellow Beast'));
-check('one of a thing reads as singular', oneBeast?.text.endsWith('1 additional Yellow Beast'),
+contentCheck('one of a thing reads as singular', oneBeast?.text.endsWith('1 additional Yellow Beast'),
   `got ${JSON.stringify(oneBeast?.text)}`);
-check('two of a thing reads as plural', twoBeasts?.text.endsWith('2 additional Yellow Beasts'),
+contentCheck('two of a thing reads as plural', twoBeasts?.text.endsWith('2 additional Yellow Beasts'),
   `got ${JSON.stringify(twoBeasts?.text)}`);
 
 // --- 5 · opposite wordings of one stat ---------------------------------------

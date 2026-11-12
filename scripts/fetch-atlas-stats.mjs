@@ -18,11 +18,16 @@
  * Guessing that rule from the English would get it wrong in both directions, so
  * it is looked up rather than inferred.
  *
- * The descriptions come from RePoE, an export of the game files:
- * https://github.com/lvlvllvlvllvlvl/RePoE — the atlas set alone is 12 MB and
- * covers every stat in the game, so it is filtered down here to the handful the
- * tree actually uses and where the wording can change at all. What ships is a
- * few kilobytes.
+ * The descriptions come from RePoE, an export of the game files. The original
+ * (github.com/lvlvllvlvllvlvl/RePoE) stopped updating in November 2024; the
+ * maintained fork publishes the same files at repoe-fork.github.io, and its
+ * `version.txt` says which game patch they were exported from. The atlas set is
+ * about 1.3 MB and covers every atlas stat in the game, so it is filtered down
+ * here to the handful the tree actually uses and where the wording can change
+ * at all. What ships is a few kilobytes.
+ *
+ * A second argument reads a local copy instead of the default URL; the file
+ * still records the default URL as its source, so pass a copy of that.
  *
  * A stat the export does not know (a mechanic newer than the export) is simply
  * absent from the file, and the summary falls back to adding the numbers up in
@@ -36,7 +41,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 const SOURCE =
-  'https://raw.githubusercontent.com/lvlvllvlvllvlvl/RePoE/master/RePoE/data/stat_translations/atlas.json';
+  'https://raw.githubusercontent.com/repoe-fork/repoe-fork.github.io/HEAD/data/stat_translations/atlas.json';
 
 /**
  * How a stat's raw value becomes the number you read. Only the handlers that

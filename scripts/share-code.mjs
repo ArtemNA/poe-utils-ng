@@ -42,11 +42,13 @@ const { encodePlan, decodePlan, peekPlan, ShareCodeError } = await import(
 const raw = JSON.parse(await readFile(path.join(root, 'public/assets/atlas/3.29/tree.json'), 'utf8'));
 
 // --- a Tree shaped like the one the app builds -------------------------------
+function makeTree(raw) {
 const ids = Object.keys(raw.nodes);
 const nodes = ids.map((id, idx) => ({
   idx,
   id,
   allocatable: !raw.nodes[id].isMastery && id !== 'root',
+  variants: (raw.nodes[id].variantEffects ?? []).map((v) => v.stats),
 }));
 const byId = new Map(nodes.map((n) => [n.id, n]));
 const index = new Map(ids.map((id, i) => [id, i]));
@@ -73,7 +75,10 @@ shareOrder.forEach((nodeIdx, position) => {
   shareIndex[nodeIdx] = position;
 });
 const rootIdx = index.get('root');
-const tree = { nodes, byId, offsets, adjacency, rootIdx, shareOrder, shareIndex };
+return { nodes, byId, offsets, adjacency, rootIdx, shareOrder, shareIndex };
+}
+const tree = makeTree(raw);
+const { nodes, offsets, adjacency, rootIdx, shareOrder } = tree;
 
 const allocatableIds = shareOrder.map((i) => nodes[i].id);
 
@@ -255,6 +260,51 @@ const v7 = encodePlan(tree, {
 });
 if (peekPlan(v7).treeVersion !== 7) fail('tree version not carried');
 else console.log('✓ tree version travels with the code');
+
+// --- 3.30 multiple-choice notables --------------------------------------------
+{
+  const raw330 = JSON.parse(
+    await readFile(path.join(root, 'public/assets/atlas/3.30/tree.json'), 'utf8'),
+  );
+  const t = makeTree(raw330);
+  const choiceIds = t.nodes.filter((n) => n.variants.length > 0).map((n) => n.id);
+  if (choiceIds.length === 0) fail('3.30 tree should have multiple-choice notables');
+
+  // Every multiple-choice notable allocated, each with a different pick, plus
+  // one left unpicked and a pick for a node outside the plan (to be dropped).
+  const everything = t.shareOrder.map((i) => t.nodes[i].id);
+  const choices = {};
+  choiceIds.forEach((id, i) => {
+    if (i === 0) return; // unpicked
+    choices[id] = i % t.byId.get(id).variants.length;
+  });
+  const code = encodePlan(t, { treeVersion: 2, allocated: everything, choices });
+  const back = decodePlan(code, t);
+  const want = JSON.stringify(Object.entries(choices).sort());
+  const got = JSON.stringify(Object.entries(back.choices).sort());
+  if (want !== got) fail(`picks did not round-trip: ${want} vs ${got}`);
+  else console.log(`✓ ${Object.keys(choices).length} effect picks round-trip, an unpicked one stays unpicked`);
+
+  // Picks on nodes outside the tree are not shared.
+  const small = everything.filter((id) => !choiceIds.includes(id)).slice(0, 5);
+  const noPicks = encodePlan(t, { treeVersion: 2, allocated: small, choices });
+  if (Object.keys(decodePlan(noPicks, t).choices).length) fail('picks leaked for unallocated nodes');
+  if (noPicks !== encodePlan(t, { treeVersion: 2, allocated: small }))
+    fail('a plan with no relevant picks should encode exactly as before');
+  else console.log('✓ picks off the tree are not shared, and cost nothing');
+
+  // A pick past the node's last effect is refused, not wrapped around.
+  const bytes = Buffer.from(code.split(':')[1], 'base64url');
+  bytes[bytes.length - 1] = 0x7f;
+  let threw = false;
+  try {
+    decodePlan(`AT3:${bytes.toString('base64url')}`, t);
+  } catch (err) {
+    threw = err instanceof ShareCodeError;
+  }
+  if (!threw) fail('an out-of-range pick should be refused');
+  else console.log('✓ an out-of-range pick is refused');
+}
 
 console.log(failures === 0 ? '\nALL OK' : `\nFAILURES: ${failures}`);
 process.exit(failures === 0 ? 0 : 1);

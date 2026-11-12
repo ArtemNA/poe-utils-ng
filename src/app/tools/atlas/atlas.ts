@@ -45,7 +45,7 @@ import { LibrarySync } from '../../shared/sync';
 import { bfs, connectedWithin, walkBack, withoutBlocked, type Graph } from './graph';
 import { Renderer, type RenderState } from './renderer';
 import { SpriteAtlas } from './sprites';
-import { StatIndex, summarise, type Summary } from './summary';
+import { StatIndex, stripMarkup, summarise, type Summary } from './summary';
 import { atlasAssetBase, loadStatRules, loadTree } from './tree-loader';
 import type { SolverResponse } from './solver.worker';
 import type { Tree, TreeNode } from './tree-types';
@@ -65,12 +65,37 @@ interface NodeChip {
   kind: string;
 }
 
+/** The pop-up over the tree for picking a multiple-choice notable's effect. */
+interface PickerView {
+  idx: number;
+  name: string;
+  x: number;
+  y: number;
+  options: string[];
+  chosen: number;
+  /** what "Remove" undoes: taken in path mode, or targeted in targets mode */
+  removable: boolean;
+}
+
+/** A multiple-choice notable in the plan, with what it can be set to. */
+interface ChoiceRow {
+  idx: number;
+  name: string;
+  /** one line per effect, each effect's lines joined */
+  options: string[];
+  /** index into options, -1 while nothing is picked */
+  chosen: number;
+}
+
 interface TooltipView {
   x: number;
   y: number;
   name: string;
   kind: string;
   stats: string[];
+  variants: string[][];
+  /** which of `variants` the plan picked, -1 for none */
+  chosen: number;
   reminder: string[];
   hint: string;
 }
@@ -101,6 +126,8 @@ interface StoredState {
   excluded: string[];
   tab?: PanelTab;
   closedGroups?: string[];
+  /** node id -> picked effect of a multiple-choice notable */
+  choices?: Record<string, number>;
 }
 
 const EMPTY_SUMMARY: Summary = {
@@ -145,6 +172,8 @@ export class Atlas {
   readonly totalPoints = computed(() => this.basePoints() + this.bonusPoints());
   readonly targets = signal<NodeChip[]>([]);
   readonly excluded = signal<NodeChip[]>([]);
+  readonly choices = signal<ChoiceRow[]>([]);
+  readonly choicesMade = computed(() => this.choices().filter((c) => c.chosen >= 0).length);
   readonly status = signal('No targets picked');
   readonly notice = signal('');
   readonly loading = signal('Loading atlas tree...');
@@ -156,6 +185,7 @@ export class Atlas {
   /** A query long enough to be worth answering, so the panel can say so. */
   readonly searching = computed(() => this.query().trim().length >= 2);
   readonly tooltip = signal<TooltipView | null>(null);
+  readonly picker = signal<PickerView | null>(null);
 
   readonly treeVersions: readonly AtlasTreeVersion[] = TREE_VERSIONS;
   readonly treeVersion = signal(DEFAULT_TREE_VERSION);
@@ -202,6 +232,12 @@ export class Atlas {
   // Sets rather than signals: the renderer reads them every frame and they hold
   // up to a thousand entries, so copying them on each edit would be wasteful.
   private allocated = new Set<number>();
+  /**
+   * Picked effects of multiple-choice notables, by node index. Kept for nodes
+   * that drop out of the plan too, so taking a node off and back on does not
+   * lose the pick; only what is in the plan is shared or summed.
+   */
+  private picks = new Map<number, number>();
   private targetSet = new Set<number>();
   private excludedSet = new Set<number>();
   /** `graph` with excluded nodes isolated — what every search actually walks. */
@@ -476,6 +512,7 @@ export class Atlas {
       }
       if (saved.tab === 'plan' || saved.tab === 'summary') this.tab.set(saved.tab);
       if (saved.closedGroups) this.closedGroups.set(new Set(saved.closedGroups));
+      this.picks = this.picksFromIds(saved.choices ?? {});
     } catch {
       // corrupt or unavailable storage is not worth failing the tool over
     }
@@ -496,6 +533,7 @@ export class Atlas {
       excluded: ids(this.excludedSet),
       tab: this.tab(),
       closedGroups: [...this.closedGroups()],
+      choices: this.picksAsIds(this.picks),
     };
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
@@ -574,6 +612,21 @@ export class Atlas {
         : [];
     this.targets.set(chips(this.targetSet));
     this.excluded.set(chips(this.excludedSet));
+    this.choices.set(
+      tree
+        ? [...this.planned()]
+            .filter((idx) => tree.nodes[idx].variants.length > 0)
+            .sort((a, b) => tree.nodes[a].name.localeCompare(tree.nodes[b].name))
+            .map((idx) => ({
+              idx,
+              name: tree.nodes[idx].name,
+              options: tree.nodes[idx].variants.map((lines) =>
+                lines.map(stripMarkup).join(' / '),
+              ),
+              chosen: this.picks.get(idx) ?? -1,
+            }))
+        : [],
+    );
     this.refreshShareCode();
     this.refreshSummary();
     this.dirty = true;
@@ -600,7 +653,7 @@ export class Atlas {
     const tree = this.tree;
     const stats = this.stats;
     if (!tree || !stats) return;
-    this.summary.set(summarise(tree, stats, this.planned()));
+    this.summary.set(summarise(tree, stats, this.planned(), this.picks));
   }
 
   private changed(): void {
@@ -633,7 +686,41 @@ export class Atlas {
     return encodePlan(tree, {
       treeVersion: this.treeVersion(),
       allocated: [...shared].map((i) => tree.nodes[i].id),
+      choices: this.picksAsIds(this.picks),
     });
+  }
+
+  /** Sets the effect of a multiple-choice notable; -1 clears it. */
+  pickVariant(idx: number, event: Event): void {
+    this.setPick(idx, Number((event.target as HTMLSelectElement).value));
+  }
+
+  private setPick(idx: number, value: number): void {
+    const tree = this.tree;
+    if (!tree) return;
+    if (value >= 0 && value < tree.nodes[idx].variants.length) this.picks.set(idx, value);
+    else this.picks.delete(idx);
+    this.changed();
+  }
+
+  private picksAsIds(picks: Map<number, number>): Record<string, number> {
+    const tree = this.tree;
+    const out: Record<string, number> = {};
+    if (tree) for (const [idx, choice] of picks) out[tree.nodes[idx].id] = choice;
+    return out;
+  }
+
+  private picksFromIds(ids: Record<string, number>): Map<number, number> {
+    const tree = this.tree;
+    const out = new Map<number, number>();
+    if (!tree) return out;
+    for (const [id, choice] of Object.entries(ids)) {
+      const node = tree.byId.get(id);
+      if (node && Number.isInteger(choice) && choice >= 0 && choice < node.variants.length) {
+        out.set(node.idx, choice);
+      }
+    }
+    return out;
   }
 
   shareLink(): string {
@@ -744,6 +831,8 @@ export class Atlas {
     // A code is a finished tree, so it opens as one. The legacy fields only
     // appear for an old code that held nothing but targets.
     this.allocated = toIndices(plan.allocated);
+    // The code is the whole truth about the tree it carries, picks included.
+    this.picks = this.picksFromIds(plan.choices ?? {});
     this.targetSet = toIndices(plan.legacyTargets ?? []);
     this.excludedSet = toIndices(plan.legacyBlocked ?? []);
     for (const idx of this.targetSet) this.excludedSet.delete(idx);
@@ -1236,6 +1325,10 @@ export class Atlas {
 
   /** Escape puts out the pinned mechanic first, then the search. */
   onEscape(): void {
+    if (this.picker()) {
+      this.picker.set(null);
+      return;
+    }
     if (this.focusedMechanic()) {
       this.clearFocus();
       return;
@@ -1325,6 +1418,8 @@ export class Atlas {
   // --------------------------------------------------------------- canvas ----
 
   onPointerDown(event: PointerEvent): void {
+    // Touching the tree again is the way out of the picker, as with a menu.
+    this.picker.set(null);
     this.dragging = true;
     this.dragMoved = 0;
     this.lastX = event.clientX;
@@ -1357,7 +1452,7 @@ export class Atlas {
     if (this.dragMoved >= 5) return;
     const rect = this.canvasRef().nativeElement.getBoundingClientRect();
     const node = this.renderer?.pick(event.clientX - rect.left, event.clientY - rect.top);
-    if (node) this.onNodeClick(node);
+    if (node) this.onNodeClick(node, event.clientX, event.clientY);
     // A click that lands on nothing is the plainest "never mind" there is.
     else this.clearFocus();
   }
@@ -1423,7 +1518,9 @@ export class Atlas {
       }
       this.dirty = true;
     }
-    this.tooltip.set(node ? this.buildTooltip(node, clientX, clientY) : null);
+    this.tooltip.set(
+      node && !this.picker() ? this.buildTooltip(node, clientX, clientY) : null,
+    );
   }
 
   private buildTooltip(node: TreeNode, clientX: number, clientY: number): TooltipView | null {
@@ -1440,6 +1537,8 @@ export class Atlas {
             ? `${clusters} clusters on the tree — all of them are lit up`
             : 'The only cluster for this mechanic',
         ],
+        variants: [],
+        chosen: -1,
         reminder: [],
         hint:
           this.focusedMechanic() === node.name
@@ -1470,13 +1569,16 @@ export class Atlas {
       y: clientY + 18,
       name: node.name,
       kind: node.kind,
-      stats: node.stats,
+      // GGG's [Id|Label] link markup is for their site, not for reading
+      stats: node.stats.map(stripMarkup),
+      variants: node.variants.map((lines) => lines.map(stripMarkup)),
+      chosen: this.picks.get(node.idx) ?? -1,
       reminder: node.reminder,
       hint,
     };
   }
 
-  private onNodeClick(node: TreeNode): void {
+  private onNodeClick(node: TreeNode, clientX = 0, clientY = 0): void {
     if (node.kind === 'mastery') {
       this.pinMechanic(node.name);
       return;
@@ -1484,15 +1586,64 @@ export class Atlas {
     // Once you are working on a node again you are done looking at the mechanic.
     this.clearFocus();
     if (!node.allocatable) return;
+    // A multiple-choice notable is taken *and* set to one effect, as in game:
+    // the first click takes it and asks which, a later one asks again and
+    // offers to take it off. Removing therefore costs one extra click here.
+    const choice = node.variants.length > 0;
     if (this.mode() === 'targets') {
+      if (choice && this.targetSet.has(node.idx)) {
+        this.openPicker(node, clientX, clientY);
+        return;
+      }
       if (this.targetSet.has(node.idx)) this.targetSet.delete(node.idx);
       else this.targetSet.add(node.idx);
       this.solve();
       this.changed();
+      if (choice) this.openPicker(node, clientX, clientY);
+      return;
+    }
+    if (choice && this.allocated.has(node.idx)) {
+      this.openPicker(node, clientX, clientY);
       return;
     }
     if (this.allocated.has(node.idx)) this.deallocate(node.idx);
     else this.allocatePathTo(node.idx);
+    if (choice && this.allocated.has(node.idx)) this.openPicker(node, clientX, clientY);
+  }
+
+  private openPicker(node: TreeNode, clientX: number, clientY: number): void {
+    this.tooltip.set(null);
+    // Where the tooltip was, so the click looks like the tooltip settling into
+    // place; kept on screen, the pop-up is ~320 by up to ~260 px.
+    const x = Math.max(8, Math.min(clientX + 18, window.innerWidth - 336));
+    const y = Math.max(8, Math.min(clientY + 18, window.innerHeight - 280));
+    this.picker.set({
+      idx: node.idx,
+      name: node.name,
+      x,
+      y,
+      options: node.variants.map((lines) => lines.map(stripMarkup).join('\n')),
+      chosen: this.picks.get(node.idx) ?? -1,
+      removable: true,
+    });
+  }
+
+  /** A button in the pop-up: set the effect and close. */
+  choosePick(idx: number, choice: number): void {
+    this.setPick(idx, choice);
+    this.picker.set(null);
+  }
+
+  /** "Remove" in the pop-up: what a plain click does to any other node. */
+  removeFromPicker(idx: number): void {
+    this.picker.set(null);
+    if (this.mode() === 'targets') {
+      this.targetSet.delete(idx);
+      this.solve();
+      this.changed();
+    } else {
+      this.deallocate(idx);
+    }
   }
 
 }

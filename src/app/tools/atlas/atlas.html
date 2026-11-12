@@ -16,12 +16,53 @@
       @for (stat of tip.stats; track $index) {
         <div class="atlas-tip-stat">{{ stat }}</div>
       }
+      @if (tip.variants.length) {
+        <div class="atlas-tip-reminder">Choose one:</div>
+        @for (variant of tip.variants; track $index) {
+          <div class="atlas-tip-stat atlas-tip-variant" [class.chosen]="$index === tip.chosen">
+            {{ variant.join('\n') }}
+          </div>
+        }
+      }
       @for (line of tip.reminder; track $index) {
         <div class="atlas-tip-reminder">{{ line }}</div>
       }
       @if (tip.hint) {
         <div class="atlas-tip-hint">{{ tip.hint }}</div>
       }
+    </div>
+  }
+
+  @if (picker(); as pick) {
+    <div
+      class="atlas-picker"
+      role="dialog"
+      [attr.aria-label]="'Pick an effect for ' + pick.name"
+      [style.left.px]="pick.x"
+      [style.top.px]="pick.y"
+    >
+      <div class="atlas-tip-name kind-notable">{{ pick.name }}</div>
+      <div class="atlas-tip-reminder">Choose one:</div>
+      @for (option of pick.options; track $index) {
+        <button
+          type="button"
+          class="atlas-picker-option"
+          [class.chosen]="$index === pick.chosen"
+          (click)="choosePick(pick.idx, $index)"
+        >
+          {{ option }}
+        </button>
+      }
+      <div class="atlas-picker-foot">
+        @if (pick.chosen >= 0) {
+          <button type="button" class="atlas-link-btn" (click)="choosePick(pick.idx, -1)">clear pick</button>
+        }
+        @if (pick.removable) {
+          <button type="button" class="atlas-link-btn" (click)="removeFromPicker(pick.idx)">
+            {{ mode() === 'targets' ? 'untarget node' : 'remove node' }}
+          </button>
+        }
+      </div>
     </div>
   }
 
@@ -136,6 +177,32 @@
       </ul>
     }
 
+    <!-- Multiple-choice notables: the tree only says the node is taken, the
+         effect is picked here and travels with the code. -->
+    @if (choices().length) {
+      <div class="atlas-list-head">
+        <div class="section-label">Choices ({{ choicesMade() }}/{{ choices().length }})</div>
+      </div>
+      <ul class="atlas-choice-list">
+        @for (row of choices(); track row.idx) {
+          <li class="atlas-choice" (mouseenter)="highlight(row.idx)">
+            <span class="atlas-choice-name">{{ row.name }}</span>
+            <select
+              class="atlas-version atlas-choice-select"
+              [class.unpicked]="row.chosen < 0"
+              (change)="pickVariant(row.idx, $event)"
+            >
+              <!-- [selected] per option for the same reason as the version select -->
+              <option value="-1" [selected]="row.chosen < 0">Pick an effect…</option>
+              @for (option of row.options; track $index) {
+                <option [value]="$index" [selected]="$index === row.chosen">{{ option }}</option>
+              }
+            </select>
+          </li>
+        }
+      </ul>
+    }
+
     <div class="poe-field atlas-search-field">
       <input
         type="search"
@@ -171,11 +238,16 @@
         <select
           class="atlas-version"
           title="Atlas tree version"
-          [value]="treeVersion()"
           (change)="onTreeVersionChange($event)"
         >
+          <!-- [selected] per option, not [value] on the select: the select's
+               value is set before the @for has rendered any options, so the
+               browser fell back to the first one and showed 3.29 over a 3.30
+               tree. -->
           @for (version of treeVersions; track version.id) {
-            <option [value]="version.id">{{ version.label }}</option>
+            <option [value]="version.id" [selected]="version.id === treeVersion()">
+              {{ version.label }}
+            </option>
           }
         </select>
       } @else {

@@ -9,7 +9,7 @@
     "test": "ng test",
     "test:share": "node scripts/share-code.mjs",
     "test:strategy": "node scripts/strategy-code.mjs",
-    "test:summary": "node scripts/atlas-summary.mjs",
+    "test:summary": "node scripts/atlas-summary.mjs && node scripts/atlas-summary.mjs 3.30",
     "test:regex": "node scripts/regex-range.mjs",
     "test:sync": "node scripts/sync-merge.mjs",
     "test:voyage": "node scripts/voyage-plan.mjs",
