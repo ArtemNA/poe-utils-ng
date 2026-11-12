@@ -14,7 +14,7 @@
         <poe-card>
           <div class="tool-intro">
             A strategy is the whole setup: the atlas tree you run, the
-            <strong>{{ slotLimit }}</strong> scarabs and embers you load the map device with, and
+            <strong>{{ slotLimit }}</strong> {{ deviceItems() }} you load the map device with, and
             what you meant by it. The tree decides which game version the items are read against,
             so one that has been removed cannot quietly stay in an old plan.
           </div>
@@ -281,22 +281,25 @@
       <!-- ----------------------------------------------------------- right -->
       <div class="strat-col">
         <poe-card>
-          <div class="section-label">Scarabs &amp; embers</div>
+          <div class="section-label">{{ deviceItems() }}</div>
 
-          <div class="mode-toggle strat-kinds">
-            <label class="mode-label full-width">
-              <input type="radio" name="strat-kind" [checked]="kind() === 'all'" (change)="setKind('all')" />
-              <span class="mode-tab">All</span>
-            </label>
-            <label class="mode-label">
-              <input type="radio" name="strat-kind" [checked]="kind() === 'scarab'" (change)="setKind('scarab')" />
-              <span class="mode-tab">Scarabs</span>
-            </label>
-            <label class="mode-label">
-              <input type="radio" name="strat-kind" [checked]="kind() === 'allflame'" (change)="setKind('allflame')" />
-              <span class="mode-tab">Embers</span>
-            </label>
-          </div>
+          <!-- Only worth a toggle while there is more than one kind to pick. -->
+          @if (offersScarabs()) {
+            <div class="mode-toggle strat-kinds">
+              <label class="mode-label full-width">
+                <input type="radio" name="strat-kind" [checked]="activeKind() === 'all'" (change)="setKind('all')" />
+                <span class="mode-tab">All</span>
+              </label>
+              <label class="mode-label">
+                <input type="radio" name="strat-kind" [checked]="activeKind() === 'scarab'" (change)="setKind('scarab')" />
+                <span class="mode-tab">Scarabs</span>
+              </label>
+              <label class="mode-label">
+                <input type="radio" name="strat-kind" [checked]="activeKind() === 'allflame'" (change)="setKind('allflame')" />
+                <span class="mode-tab">Embers</span>
+              </label>
+            </div>
+          }
 
           <div class="strat-filters">
             <input

@@ -86,7 +86,7 @@ export class Strategy {
 
   readonly slotLimit = MAP_DEVICE_SLOTS;
 
-  readonly loading = signal('Loading the scarab list...');
+  readonly loading = signal('Loading the item list...');
   readonly catalogue = signal<ItemCatalogue | null>(null);
 
   readonly treeVersion = signal(DEFAULT_TREE_VERSION);
@@ -164,18 +164,50 @@ export class Strategy {
     return rows;
   });
 
-  /** Every mechanic in the catalogue, for the group dropdown. */
-  readonly groupNames = computed(() => (this.catalogue()?.groups ?? []).map((g) => g.name));
+  /**
+   * What the picker can offer for the game version in play. Items the version
+   * does not have are left out, not greyed: in 3.30 there are no scarabs, and a
+   * wall of disabled rows would read as a bug rather than as the game's change.
+   * The catalogue itself keeps them, so an old strategy still names its picks.
+   */
+  private readonly offered = computed<ItemGroup[]>(() => {
+    const groups = this.catalogue()?.groups ?? [];
+    const version = this.gameVersion();
+    if (!version) return groups;
+    const out: ItemGroup[] = [];
+    for (const group of groups) {
+      const items = group.items.filter((item) => !unavailableReason(item, version));
+      if (items.length) out.push({ ...group, items });
+    }
+    return out;
+  });
+
+  /** Kinds that have anything to pick in this version — drives the kind tabs. */
+  readonly offersScarabs = computed(() => this.offered().some((g) => g.type === 'scarab'));
+
+  /** What goes in the map device, in words — 3.30 took the scarabs out of it. */
+  readonly deviceItems = computed(() => (this.offersScarabs() ? 'scarabs and embers' : 'embers'));
+
+  /**
+   * The kind filter as applied. A "Scarabs" choice made on 3.29 would otherwise
+   * outlive a switch to 3.30 and show an empty list under a tab that is gone.
+   */
+  readonly activeKind = computed<Kind>(() =>
+    this.kind() === 'scarab' && !this.offersScarabs() ? 'all' : this.kind(),
+  );
+
+  /** Every mechanic on offer, for the group dropdown. */
+  readonly groupNames = computed(() => this.offered().map((g) => g.name));
 
   /** The picker: groups and items left after the kind, group and text filters. */
   readonly visible = computed<ItemGroup[]>(() => {
-    const catalogue = this.catalogue();
-    if (!catalogue) return [];
-    const kind = this.kind();
-    const group = this.group();
+    const kind = this.activeKind();
+    const names = this.groupNames();
+    // A group chosen on another version may not exist here; ignore it then.
+    const group = names.includes(this.group()) ? this.group() : '';
     const q = this.query().trim().toLowerCase();
     const out: ItemGroup[] = [];
-    for (const candidate of catalogue.groups) {
+    for (const candidate of this.offered()) {
       if (kind !== 'all' && candidate.type !== kind) continue;
       if (group && candidate.name !== group) continue;
       const items = q

@@ -70,7 +70,7 @@ let pending: Promise<ItemCatalogue> | null = null;
 export function loadItems(): Promise<ItemCatalogue> {
   pending ??= fetch(DATA_URL)
     .then((res) => {
-      if (!res.ok) throw new Error(`Could not load the scarab list (${res.status})`);
+      if (!res.ok) throw new Error(`Could not load the item list (${res.status})`);
       return res.json() as Promise<RawCatalogue>;
     })
     .then(build)

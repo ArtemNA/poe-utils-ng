@@ -14,6 +14,11 @@
  *   - `code`, the number share codes are written in, is assigned once and never
  *     reused, so an old strategy keeps naming the same items forever
  *
+ * One thing the scrape cannot witness is a whole kind of item being retired
+ * while poedb still lists it, so REMOVED_BY_TYPE records that by hand and is
+ * applied on every run. Without it a re-fetch would clear `removedIn` on every
+ * scarab that poedb still shows.
+ *
  * Items from the very first scrape have no `since`: they existed at or before
  * the earliest version we ever looked at, and guessing which league each was
  * introduced in would be inventing data. Only what a scrape actually witnessed
@@ -33,6 +38,12 @@ const outFile = path.join(outDir, 'items.json');
 
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36';
+
+/**
+ * Kinds of item the game dropped, and the version that did it. Scarabs were
+ * removed in 3.30; the items stay in the file so 3.29 strategies still decode.
+ */
+const REMOVED_BY_TYPE = { scarab: '3.30' };
 
 const SOURCES = [
   { url: 'https://poedb.tw/us/Scarab', type: 'scarab', tab: 'ScarabsItem' },
@@ -209,7 +220,8 @@ async function main() {
       icon: item.icon,
       // Absent means "at or before the earliest version we scraped".
       ...(before ? (before.since ? { since: before.since } : {}) : firstScrape ? {} : { since: version }),
-      removedIn: null,
+      // The override wins over "it is back on poedb": see REMOVED_BY_TYPE.
+      removedIn: REMOVED_BY_TYPE[item.type] ?? null,
     });
   }
 
@@ -217,12 +229,15 @@ async function main() {
   // It stays in the file: old strategies still refer to it and want to say so.
   for (const item of previous.items) {
     if (seen.has(item.id)) continue;
-    items.push({ ...item, removedIn: item.removedIn ?? version });
+    items.push({ ...item, removedIn: item.removedIn ?? REMOVED_BY_TYPE[item.type] ?? version });
   }
 
   items.sort((a, b) => a.code - b.code);
 
-  const versions = [...new Set([...previous.versions, version])].sort();
+  // Numeric order: a plain sort would put 3.100 before 3.30.
+  const versions = [...new Set([...previous.versions, version, ...Object.values(REMOVED_BY_TYPE)])].sort(
+    (a, b) => Number(a.split('.')[1]) - Number(b.split('.')[1]),
+  );
   writeFileSync(outFile, `${JSON.stringify({ versions, items }, null, 1)}\n`);
 
   const removed = items.filter((item) => item.removedIn).length;

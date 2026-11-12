@@ -102,6 +102,25 @@ check(
 check('3.29 sorts after 3.9, not before', compareVersions('3.29', '3.9') > 0);
 check('equal versions compare equal', compareVersions('3.29', '3.29') === 0);
 
+// The shipped data, not a stand-in: scarabs left the game in 3.30, and a 3.29
+// strategy that holds one has to keep reading as valid.
+const scarabs = items.filter((i) => i.type === 'scarab');
+check('there are scarabs in the data', scarabs.length > 0);
+check(
+  'every scarab is unavailable in 3.30',
+  scarabs.every((i) => unavailableReason(i, '3.30') === 'removed in 3.30'),
+  `${scarabs.filter((i) => unavailableReason(i, '3.30') === null).length} still available`,
+);
+check(
+  'every scarab is still available in 3.29',
+  scarabs.every((i) => unavailableReason(i, '3.29') === null),
+);
+check(
+  'allflame embers are untouched by the removal',
+  items.filter((i) => i.type === 'allflame').every((i) => unavailableReason(i, '3.30') === null),
+);
+check('3.30 is a known version in the data', data.versions.includes('3.30'));
+
 const live = { code: 1, name: 'Live', limit: 5, removedIn: null };
 const gone = { code: 2, name: 'Gone', limit: 2, removedIn: '3.30' };
 const future = { code: 3, name: 'Future', limit: 2, since: '3.31', removedIn: null };

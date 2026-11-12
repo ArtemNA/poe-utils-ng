@@ -1,6 +1,7 @@
 {
  "versions": [
-  "3.29"
+  "3.29",
+  "3.30"
  ],
  "items": [
   {
@@ -14,7 +15,7 @@
     "Area contains a Breach Hive"
    ],
    "icon": "LesserScarabBreach.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 2,
@@ -27,7 +28,7 @@
     "Area contains 2 additional Unstable Breaches"
    ],
    "icon": "AltLesserScarabBreach.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 3,
@@ -41,7 +42,7 @@
     "Breach Hives in Area lead to a Hive Fortress"
    ],
    "icon": "AltNormalScarabBreach.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 4,
@@ -55,7 +56,7 @@
     "and Reward of subsequent waves"
    ],
    "icon": "Tier4ScarabBreach.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 5,
@@ -70,7 +71,7 @@
     "each Unstable Breach already opened"
    ],
    "icon": "AltTier4ScarabBreach.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 6,
@@ -83,7 +84,7 @@
     "10% increased Maps found in Area for each Map Modifier affecting Area"
    ],
    "icon": "LesserScarabMaps.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 7,
@@ -96,7 +97,7 @@
     "Area has 2 additional random Modifiers"
    ],
    "icon": "NormalScarabMaps.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 8,
@@ -109,7 +110,7 @@
     "Non-Unique Maps found in Area are Corrupted with 8 Modifiers"
    ],
    "icon": "GreaterScarabMaps.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 9,
@@ -123,7 +124,7 @@
     "Difficult and Rewarding Monsters which drop 300% increased Maps"
    ],
    "icon": "AltNormalScarabMaps.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 10,
@@ -136,7 +137,7 @@
     "Unique Monsters have 1% increased Toughness, Damage, Rarity and Quantity of items dropped per 1% increased Pack Size of Area"
    ],
    "icon": "LesserScarabUnique.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 11,
@@ -150,7 +151,7 @@
     "Unique Monsters in Area have 30% increased Toughness"
    ],
    "icon": "NormalScarabUnique.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 12,
@@ -163,7 +164,7 @@
     "Unique Monsters in Area have 4 additional Monster Modifiers"
    ],
    "icon": "GreaterScarabUnique.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 13,
@@ -176,7 +177,7 @@
     "Area contains Einhar"
    ],
    "icon": "LesserScarabBeasts.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 14,
@@ -189,7 +190,7 @@
     "Area contains 5 additional Red Beasts if it contains Einhar"
    ],
    "icon": "NormalScarabBeasts.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 15,
@@ -202,7 +203,7 @@
     "Create a copy of Beasts captured in Area"
    ],
    "icon": "GreaterScarabBeasts.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 16,
@@ -215,7 +216,7 @@
     "Adds Shaper Influence outcome to Area"
    ],
    "icon": "LesserScarabShaper.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 17,
@@ -228,7 +229,7 @@
     "Adds Elder Influence outcome to Area"
    ],
    "icon": "LesserScarabElder.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 18,
@@ -241,7 +242,7 @@
     "Influenced Monster Packs in Area have 40% increased Pack Size"
    ],
    "icon": "GreaterScarabElder.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 19,
@@ -255,7 +256,7 @@
     "Can only be used with Tier 14+ Maps"
    ],
    "icon": "Tier4ScarabShaper.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 20,
@@ -268,7 +269,7 @@
     "Area contains Niko"
    ],
    "icon": "LesserScarabSulphite.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 21,
@@ -283,7 +284,7 @@
     "Sulphite in your maps is guarded by Monsters from the Azurite Mine"
    ],
    "icon": "GreaterScarabSulphite.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 22,
@@ -297,7 +298,7 @@
     "Doedre's Devoted have 1% additional chance to drop a Stacked Deck"
    ],
    "icon": "LesserScarabDivination.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 23,
@@ -311,7 +312,7 @@
     "have 1000% increased chance to drop Divination Cards"
    ],
    "icon": "NormalScarabDivination.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 24,
@@ -327,7 +328,7 @@
     "That Final Map Boss duplicates all stolen Divination Cards when defeated"
    ],
    "icon": "GreaterScarabDivination.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 25,
@@ -343,7 +344,7 @@
     "and dig up a Possessed Monster"
    ],
    "icon": "LesserScarabTorment.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 26,
@@ -356,7 +357,7 @@
     "Tormented Spirits in Area are replaced with unusual variants"
    ],
    "icon": "NormalScarabTorment.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 27,
@@ -369,7 +370,7 @@
     "Rare Monsters in Area have a quarter chance to be Possessed by up to 3 Tormented Spirits"
    ],
    "icon": "Tier4ScarabTorment.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 28,
@@ -382,7 +383,7 @@
     "Area contains 4 additional Strongboxes"
    ],
    "icon": "LesserScarabStrongboxes.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 29,
@@ -395,7 +396,7 @@
     "15% Chance for Strongboxes in Area to be openable again"
    ],
    "icon": "NormalScarabStrongboxes.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 30,
@@ -408,7 +409,7 @@
     "75% Increased effect of Explicit Modifiers on Strongboxes in Area"
    ],
    "icon": "GreaterScarabStrongboxes.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 31,
@@ -422,7 +423,7 @@
     "Area's inhabitants are lying in ambush"
    ],
    "icon": "Tier4ScarabStrongboxes.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 32,
@@ -435,7 +436,7 @@
     "Strongboxes in Area are more likely to be rarer varieties"
    ],
    "icon": "AltTier4ScarabStrongboxes.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 33,
@@ -448,7 +449,7 @@
     "Area contains an Expedition Encounter"
    ],
    "icon": "LesserScarabExpedition.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 34,
@@ -462,7 +463,7 @@
     "number of Runic Monster Markers"
    ],
    "icon": "NormalScarabExpedition.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 35,
@@ -476,7 +477,7 @@
     "80% increased Explosive Radius"
    ],
    "icon": "GreaterScarabExpedition.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 36,
@@ -490,7 +491,7 @@
     "Expedition Monsters gain increased Difficulty and Reward for each Remnant detonated"
    ],
    "icon": "AltGreaterScarabExpedition.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 37,
@@ -503,7 +504,7 @@
     "Remnants in Expedition Encounters in Area have 2 additional Suffixes and Prefixes"
    ],
    "icon": "Tier4ScarabExpedition.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 38,
@@ -516,7 +517,7 @@
     "Area contains an additional Legion Encounter"
    ],
    "icon": "LesserScarabLegion.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 39,
@@ -529,7 +530,7 @@
     "Legion Factions in Area have 5 additional Sergeants"
    ],
    "icon": "NormalScarabLegion.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 40,
@@ -544,7 +545,7 @@
     "Legion Monsters that have gained Rewards have increased Difficulty"
    ],
    "icon": "AltNormalScarabLegion.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 41,
@@ -558,7 +559,7 @@
     "Legion Monsters in Area gain increased Difficulty and Reward for each time they are broken out"
    ],
    "icon": "Tier4ScarabLegion.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 42,
@@ -571,7 +572,7 @@
     "Area contains an additional Abyss"
    ],
    "icon": "LesserScarabAbyss.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 43,
@@ -584,7 +585,7 @@
     "Abyss Chasms in Area spawn 100% increased Monsters per fed soul"
    ],
    "icon": "NormalScarabAbyss.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 44,
@@ -597,7 +598,7 @@
     "Abyss Pits in Area that do not contain a reward instead create an Abyssal Crystal"
    ],
    "icon": "GreaterScarabAbyss.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 45,
@@ -610,7 +611,7 @@
     "Area contains an Abyssal Depths"
    ],
    "icon": "Tier4ScarabAbyss.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 46,
@@ -623,7 +624,7 @@
     "An Abyss Pit in Area will spawn an Abyssal Consort"
    ],
    "icon": "AltTier4ScarabAbyss.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 47,
@@ -636,7 +637,7 @@
     "Area contains 5 additional Rogue Exiles"
    ],
    "icon": "LesserScarabAnarchy.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 48,
@@ -649,7 +650,7 @@
     "Wild Rogue Exiles in Area have a 30% chance to be replaced with a Rogue Giant"
    ],
    "icon": "NormalScarabAnarchy.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 49,
@@ -662,7 +663,7 @@
     "Wild Rogue Exiles in Area have a 50% chance to appear in pairs"
    ],
    "icon": "",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 50,
@@ -675,7 +676,7 @@
     "Area contains an additional Exceptional Rogue Exile"
    ],
    "icon": "Tier4ScarabAnarchy.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 51,
@@ -688,7 +689,7 @@
     "Area contains 3 additional Imprisoned Monsters"
    ],
    "icon": "LesserScarabEssence.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 52,
@@ -701,7 +702,7 @@
     "Essences found in Area are a tier higher"
    ],
    "icon": "NormalScarabEssence.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 53,
@@ -715,7 +716,7 @@
     "upgrading or transforming Essences"
    ],
    "icon": "GreaterScarabEssence.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 54,
@@ -728,7 +729,7 @@
     "Rare monsters that are natural inhabitants of the Area are imprisoned by Essences"
    ],
    "icon": "Tier4ScarabEssence.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 55,
@@ -743,7 +744,7 @@
     "each Essence Modifier"
    ],
    "icon": "AltTier4ScarabEssence.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 56,
@@ -756,7 +757,7 @@
     "Area contains 3 additional Shrines"
    ],
    "icon": "LesserScarabDomination.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 57,
@@ -769,7 +770,7 @@
     "Area contains 2 additional Apparition Shrines"
    ],
    "icon": "NormalScarabDomination.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 58,
@@ -782,7 +783,7 @@
     "Area contains an additional Evolving Shrine"
    ],
    "icon": "GreaterScarabDomination.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 59,
@@ -796,7 +797,7 @@
     "Modifiers to the Final Map Boss also apply to these Atlas Bosses"
    ],
    "icon": "Tier4ScarabDomination.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 60,
@@ -810,7 +811,7 @@
     "Ritual Altars in Area allow rerolling Favours 2 additional times"
    ],
    "icon": "LesserScarabRitual.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 61,
@@ -824,7 +825,7 @@
     "Wildwood Wisps grant 100% increased Tribute Gained to nearby Players"
    ],
    "icon": "NormalScarabRitual.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 62,
@@ -837,7 +838,7 @@
     "Rituals in Area offer 100% increased Favours"
    ],
    "icon": "GreaterScarabRitual.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 63,
@@ -850,7 +851,7 @@
     "Rituals in Area contain an additional Rare Itemised Corpse Monster"
    ],
    "icon": "Tier4ScarabRitual.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 64,
@@ -863,7 +864,7 @@
     "Area contains the Sacred Grove"
    ],
    "icon": "LesserScarabHarvest.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 65,
@@ -877,7 +878,7 @@
     "Harvest Monsters in Area have 100% more Life"
    ],
    "icon": "GreaterScarabHarvest.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 66,
@@ -890,7 +891,7 @@
     "If Area contains the Sacred Grove, it will contain up to 1 additional Tier 4 seed of each type, if possible"
    ],
    "icon": "Tier4ScarabHarvest.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 67,
@@ -903,7 +904,7 @@
     "Area contains Alva"
    ],
    "icon": "LesserScarabIncursion.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 68,
@@ -916,7 +917,7 @@
     "Area contains 12 to 16 additional packs of Incursion Monsters"
    ],
    "icon": "NormalScarabIncursion.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 69,
@@ -930,7 +931,7 @@
     "Incursions in Area have 15% increased Pack Size"
    ],
    "icon": "GreaterScarabIncursion.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 70,
@@ -944,7 +945,7 @@
     "Itemised Temples dropped in Area are generated based on current Temple layout, but with randomised room tiers"
    ],
    "icon": "Tier4ScarabIncursion.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 71,
@@ -957,7 +958,7 @@
     "Area contains Jun"
    ],
    "icon": "LesserScarabBetrayal.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 72,
@@ -970,7 +971,7 @@
     "75% Increased number of Monster Packs Substituted by Allflame Embers in Area"
    ],
    "icon": "NormalScarabBetrayal.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 73,
@@ -983,7 +984,7 @@
     "Immortal Syndicate Members in Area have 50% increased chance to be accompanied by reinforcements"
    ],
    "icon": "GreaterScarabBetrayal.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 74,
@@ -997,7 +998,7 @@
     "not lose Rank upon completing Interrogation"
    ],
    "icon": "Tier4ScarabBetrayal.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 75,
@@ -1010,7 +1011,7 @@
     "Slaying enemies close together in Area can attract monsters from Beyond this realm"
    ],
    "icon": "",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 76,
@@ -1024,7 +1025,7 @@
     "Characters that Kill Beyond Rare Monsters in Area have a 30% chance to gain their Modifiers for 20 seconds"
    ],
    "icon": "NormalScarabBeyond.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 77,
@@ -1039,7 +1040,7 @@
     "Beyond Portals in Area have 30% increased chance to spawn a Unique Boss"
    ],
    "icon": "AltGreaterScarabBeyond.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 78,
@@ -1052,7 +1053,7 @@
     "Rare and Unique Monsters slain in Area create 8 to 12 additional Beyond Portals"
    ],
    "icon": "Tier4ScarabBeyond.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 79,
@@ -1065,7 +1066,7 @@
     "Area contains an Ultimatum Encounter"
    ],
    "icon": "LesserScarabUltimatum.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 80,
@@ -1079,7 +1080,7 @@
     "Ultimatum Encounters grant rewards as though you completed 2 additional Rounds"
    ],
    "icon": "NormalScarabUltimatum.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 81,
@@ -1092,7 +1093,7 @@
     "Ultimatum Encounters in Area will always lead to a Unique Boss if possible"
    ],
    "icon": "GreaterScarabUltimatum.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 82,
@@ -1106,7 +1107,7 @@
     "as Rewards to the Map Owner"
    ],
    "icon": "Tier4ScarabUltimatum.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 83,
@@ -1120,7 +1121,7 @@
     "will offer Inscribed Ultimatums to the Map Owner instead"
    ],
    "icon": "AltTier4ScarabUltimatum.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 84,
@@ -1133,7 +1134,7 @@
     "Area contains a Mirror of Delirium"
    ],
    "icon": "LesserScarabDelirium.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 85,
@@ -1147,7 +1148,7 @@
     "Delirium in Area increases 50% faster with distance from the mirror"
    ],
    "icon": "NormalScarabDelirium.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 86,
@@ -1160,7 +1161,7 @@
     "Delirium Encounters in Area generate 2 additional Reward types"
    ],
    "icon": "GreaterScarabDelirium.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 87,
@@ -1175,7 +1176,7 @@
     "Can only be used with Tier 11+ Maps"
    ],
    "icon": "AltGreaterScarabDelirium.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 88,
@@ -1188,7 +1189,7 @@
     "Maps found in Area have layers of Delirium"
    ],
    "icon": "Tier4ScarabDelirium.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 89,
@@ -1201,7 +1202,7 @@
     "Area contains a Blight Encounter"
    ],
    "icon": "LesserScarabBlight.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 90,
@@ -1217,7 +1218,7 @@
     "rewarding the more Blighted Enemies are slain"
    ],
    "icon": "GreaterScarabBlight.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 91,
@@ -1232,7 +1233,7 @@
     "Tier 14+ Blighted Maps found in Area drop as Blight-Ravaged Maps instead"
    ],
    "icon": "Tier4ScarabBlight.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 92,
@@ -1246,7 +1247,7 @@
     "range increased Difficulty and Reward"
    ],
    "icon": "AltTier4ScarabBlight.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 93,
@@ -1259,7 +1260,7 @@
     "Area contains 2 additional Ore Deposits"
    ],
    "icon": "LesserScarabSettlers.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 94,
@@ -1272,7 +1273,7 @@
     "Monsters guarding Ore Deposits in Area are at least Magic"
    ],
    "icon": "NormalScarabSettlers.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 95,
@@ -1285,7 +1286,7 @@
     "Ore Deposits in Area grant Smelted Bars instead of Marking Ore"
    ],
    "icon": "GreaterScarabSettlers.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 96,
@@ -1300,7 +1301,7 @@
     "for each Ore Deposit completed in Area"
    ],
    "icon": "Tier4ScarabSettlers.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 97,
@@ -1313,7 +1314,7 @@
     "Area is inhabited by a Mercenary"
    ],
    "icon": "LesserScarabMercenaries.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 98,
@@ -1327,7 +1328,7 @@
     "Mercenaries found in Area are accompanied by two Wild Mercenaries"
    ],
    "icon": "NormalScarabMercenaries.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 99,
@@ -1340,7 +1341,7 @@
     "All Equipment Items on Mercenaries found in Area are Unique"
    ],
    "icon": "GreaterScarabMercenaries.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 100,
@@ -1354,7 +1355,7 @@
     "Wild Mercenaries have increased Difficulty for each Wild Mercenary in Area"
    ],
    "icon": "Tier4ScarabMercenaries.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 101,
@@ -1367,7 +1368,7 @@
     "40% increased Magic Pack Size"
    ],
    "icon": "LesserScarabMisc.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 102,
@@ -1380,7 +1381,7 @@
     "Area contains 4 additional Packs with Mirrored Rare Monsters"
    ],
    "icon": "AltLesserScarabMisc.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 103,
@@ -1394,7 +1395,7 @@
     "Apparitions spawned by Pantheon-Touched Monsters deal 100% increased damage"
    ],
    "icon": "NormalScarabMisc.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 104,
@@ -1407,7 +1408,7 @@
     "Area contains Hunted Traitors"
    ],
    "icon": "GreaterScarabMisc.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 105,
@@ -1420,7 +1421,7 @@
     "Portals to Area have a 50% chance to not be consumed on use"
    ],
    "icon": "Tier4ScarabMisc.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 106,
@@ -1433,7 +1434,7 @@
     "Grants an additional Kirac Mission on Map Completion"
    ],
    "icon": "LesserScarabMisc1.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 107,
@@ -1446,7 +1447,7 @@
     "10 Monster Packs in Area are upgraded to Magic"
    ],
    "icon": "LesserScarabMisc2.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 108,
@@ -1459,7 +1460,7 @@
     "Monsters in Area have a chance to be Empowered by 2000 Wildwood Wisps"
    ],
    "icon": "GreaterScarabMisc1.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 109,
@@ -1473,7 +1474,7 @@
     "Area Suffix Modifiers have no effect"
    ],
    "icon": "GreaterScarabMisc2.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 110,
@@ -1487,7 +1488,7 @@
     "Area Prefix Modifiers have no effect"
    ],
    "icon": "AltGreaterScarabMisc.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 111,
@@ -1500,7 +1501,7 @@
     "Area contains a Resplendent Tempest"
    ],
    "icon": "Tier4ScarabMisc2.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 112,
@@ -1514,7 +1515,7 @@
     "Magic Monsters in area have an additional Modifier"
    ],
    "icon": "SuperScarab1.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 113,
@@ -1527,7 +1528,7 @@
     "Rare Monsters in Area have 2 additional Modifiers"
    ],
    "icon": "SuperScarab2.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 114,
@@ -1540,7 +1541,7 @@
     "Other Scarabs are not consumed on use"
    ],
    "icon": "SuperScarab3.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 115,
@@ -1553,7 +1554,7 @@
     "Tier 16+ Areas contain the Bosses from a random Maven Invitation"
    ],
    "icon": "SuperScarab4.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 116,
@@ -1567,7 +1568,7 @@
     "transformed by a Reward Modifier"
    ],
    "icon": "SuperScarab5.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 117,
@@ -1581,7 +1582,7 @@
     "slain, up to 400%, decaying over time"
    ],
    "icon": "SuperScarab6.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 118,
@@ -1595,7 +1596,7 @@
     "Modifiers to the Final Map Boss also apply to these Atlas Bosses"
    ],
    "icon": "SuperScarab7.webp",
-   "removedIn": null
+   "removedIn": "3.30"
   },
   {
    "code": 119,
