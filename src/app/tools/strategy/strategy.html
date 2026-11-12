@@ -194,7 +194,8 @@
           <div class="strat-btn-row">
             <button class="poe-btn poe-btn-dim" (click)="copyCode()">Copy code</button>
             <button class="poe-btn poe-btn-dim" (click)="copyLink()">Copy link</button>
-            @if (auth.available()) {
+            <!-- Signed-in only, as on the Atlas: anonymous short links kept failing. -->
+            @if (auth.user()) {
               <button
                 class="poe-btn poe-btn-dim"
                 title="A short link, kept on the server"

@@ -11,6 +11,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { api } from './api';
+import { BACKEND_ENABLED } from './auth';
 import { toolLink } from './short-link';
 import type { LibraryKind } from './sync';
 import { ToolPage } from './tool-page';
@@ -44,6 +45,13 @@ export class OpenLink {
   private async open(slug: string): Promise<void> {
     if (!slug) {
       this.error.set('That link is missing its code.');
+      return;
+    }
+    // The links live in the switched-off backend, so asking would only fail.
+    if (!BACKEND_ENABLED) {
+      this.error.set(
+        'Short links are switched off for now. Ask whoever sent it for the full link or the code.',
+      );
       return;
     }
     try {

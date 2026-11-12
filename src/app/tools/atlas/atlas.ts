@@ -151,7 +151,7 @@ export class Atlas {
   private readonly zone = inject(NgZone);
   private readonly router = inject(Router);
   private readonly activatedRoute = inject(ActivatedRoute);
-  /** Public because the template hides the short link button without a backend. */
+  /** Public because the template shows the short link button to signed-in users only. */
   readonly auth = inject(Auth);
   readonly sync = inject(LibrarySync);
 

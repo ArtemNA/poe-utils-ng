@@ -13,6 +13,16 @@
 import { Injectable, signal } from '@angular/core';
 import { api, ApiError } from './api';
 
+/**
+ * The accounts backend is switched off: its database went away in a move and
+ * every call that touches it fails. With this false the app never asks the
+ * server who you are, so it runs exactly as it does with no backend at all —
+ * no sign-in, no account page, no library sync, no short links — and nothing
+ * on screen offers what cannot work. Flip it back once MONGODB_URI points at a
+ * live cluster again.
+ */
+export const BACKEND_ENABLED = false;
+
 export interface Account {
   id: string;
   email: string;
@@ -34,6 +44,12 @@ export class Auth {
   }
 
   private async fetchMe(): Promise<void> {
+    if (!BACKEND_ENABLED) {
+      this.available.set(false);
+      this.user.set(null);
+      this.ready.set(true);
+      return;
+    }
     try {
       const { user } = await api<{ user: Account | null }>('auth/me');
       this.user.set(user);

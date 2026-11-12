@@ -266,7 +266,9 @@
       <button class="poe-btn poe-btn-dim" [disabled]="!shareCode()" (click)="copyLink()">
         Copy link
       </button>
-      @if (auth.available()) {
+      <!-- Signed-in only: anonymous short links kept failing, and the long
+           link above already works for everyone. -->
+      @if (auth.user()) {
         <button
           class="poe-btn poe-btn-dim"
           title="A short link, kept on the server"

@@ -111,7 +111,7 @@ export class Strategy {
   readonly shortening = signal(false);
 
 
-  /** Public because the template hides the short link button without a backend. */
+  /** Public because the template shows the short link button to signed-in users only. */
   readonly auth = inject(Auth);
   readonly sync = inject(LibrarySync);
 
