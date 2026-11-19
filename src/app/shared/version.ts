@@ -22,6 +22,13 @@ export interface Release {
 
 export const RELEASES: Release[] = [
   {
+    version: '1.9.0',
+    date: '2026-11-19',
+    changes: [
+      'Atlas: paste a poeplanner or hypostasis link into Import to open that tree here',
+    ],
+  },
+  {
     version: '1.8.0',
     date: '2026-08-31',
     changes: [
