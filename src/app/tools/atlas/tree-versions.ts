@@ -12,7 +12,16 @@ import type { ArtPlacement } from './tree-types';
 
 export interface AtlasTreeVersion {
   id: number;
+  /**
+   * The game version, and nothing else: Strategy compares it numerically to
+   * decide which scarabs and embers exist. Two exports of one league share it.
+   */
   label: string;
+  /**
+   * GGG's tag in grindinggear/atlastree-export. Shown beside the label when two
+   * trees share one, so a patched tree can be told from the one before it.
+   */
+  export: string;
   /**
    * Folder under public/assets/atlas/ holding this tree's data *and* its sprite
    * sheets. Icons and sheet layouts change between leagues, so the whole set has
@@ -29,11 +38,25 @@ export interface AtlasTreeVersion {
 }
 
 export const TREE_VERSIONS: readonly AtlasTreeVersion[] = [
-  { id: 1, label: '3.29', dir: '3.29', art: { kind: 'hanging' } },
-  // 25920 = the 5184 px sheet at zoom 0.2. Matched by eye against an in-game
-  // screenshot: the first ring of clusters sits inside the blue disc.
-  { id: 2, label: '3.30', dir: '3.30', art: { kind: 'centred', size: 25920 } },
+  { id: 1, label: '3.29', export: '3.29.1', dir: '3.29', art: { kind: 'hanging' } },
+  // 15552 = three times the 5184 px sheet. Fitted against three in-game
+  // screenshots at two zoom levels: with the scale taken from the keystones at
+  // +-6910 units, edge correlation of the painting peaks at 15550 on each one
+  // (step 50) and the centre needs no offset. The export's own zoom for the
+  // sheet (0.5, so 10368) and the earlier by-eye 25920 both correlate at ~0.
+  { id: 2, label: '3.30', export: '3.30.0', dir: '3.30', art: { kind: 'centred', size: 15552 } },
+  // 3.30.0c: two new multiple-choice notables (Celestial Presence, Runic
+  // Distortion) and their links, 13 nodes moved, 6 stats reworded, new icon
+  // sheets. New nodes change the walk a code is read along, so this could not
+  // replace id 2. The keystones the painting was fitted to did not move.
+  { id: 3, label: '3.30', export: '3.30.0c', dir: '3.30c', art: { kind: 'centred', size: 15552 } },
 ];
+
+/** What the version selector shows: the game version, or the export when that is ambiguous. */
+export function versionTitle(version: AtlasTreeVersion): string {
+  const shared = TREE_VERSIONS.filter((v) => v.label === version.label).length > 1;
+  return shared ? `${version.label} (${version.export})` : version.label;
+}
 
 /** Newest known tree — what a fresh session and a code-less link get. */
 export const DEFAULT_TREE_VERSION = TREE_VERSIONS[TREE_VERSIONS.length - 1].id;

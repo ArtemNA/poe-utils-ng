@@ -246,12 +246,12 @@
                tree. -->
           @for (version of treeVersions; track version.id) {
             <option [value]="version.id" [selected]="version.id === treeVersion()">
-              {{ version.label }}
+              {{ versionTitle(version) }}
             </option>
           }
         </select>
       } @else {
-        <span class="atlas-version-static">tree {{ treeVersions[0].label }}</span>
+        <span class="atlas-version-static">tree {{ versionTitle(treeVersions[0]) }}</span>
       }
     </div>
     <p class="atlas-hint atlas-share-hint">

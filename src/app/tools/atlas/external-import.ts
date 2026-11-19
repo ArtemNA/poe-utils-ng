@@ -40,8 +40,12 @@ type Parsed =
   | { kind: 'hypostasis-short'; code: string }
   | { kind: 'hypostasis-long'; items: [number, number | undefined][] };
 
-/** poeplanner tree version -> ours. Gaps are Ruthless trees. */
-const POEPLANNER_TREES: Record<number, number> = { 28: 1, 30: 2 };
+/**
+ * poeplanner tree version -> ours. Gaps are Ruthless trees. Their 30 is the
+ * whole 3.30 league, so it goes to the newest 3.30 export: it has every node
+ * the older one had, plus the ones a patch added.
+ */
+const POEPLANNER_TREES: Record<number, number> = { 28: 1, 30: 3 };
 const POEPLANNER_RUTHLESS = new Set([25, 27, 29]);
 
 /** Whether the text is something this module should handle at all. */

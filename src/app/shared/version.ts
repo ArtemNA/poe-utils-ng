@@ -22,6 +22,15 @@ export interface Release {
 
 export const RELEASES: Release[] = [
   {
+    version: '1.10.0',
+    date: '2026-11-19',
+    changes: [
+      'Atlas: the 3.30.0c tree — Celestial Presence and Runic Distortion, moved Legion nodes, new wordings',
+      'Atlas: links made on the first 3.30 tree still open on it, as "3.30 (3.30.0)"',
+      'Atlas: the 3.30 painting is drawn at its in-game size',
+    ],
+  },
+  {
     version: '1.9.0',
     date: '2026-11-19',
     changes: [

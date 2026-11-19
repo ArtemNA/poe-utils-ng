@@ -38,6 +38,7 @@ import {
   DEFAULT_TREE_VERSION,
   findTreeVersion,
   TREE_VERSIONS,
+  versionTitle,
   type AtlasTreeVersion,
 } from './tree-versions';
 import { Auth } from '../../shared/auth';
@@ -189,6 +190,7 @@ export class Atlas {
   readonly picker = signal<PickerView | null>(null);
 
   readonly treeVersions: readonly AtlasTreeVersion[] = TREE_VERSIONS;
+  readonly versionTitle = versionTitle;
   readonly treeVersion = signal(DEFAULT_TREE_VERSION);
   readonly shareCode = signal('');
   readonly importText = signal('');
