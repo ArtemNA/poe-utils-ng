@@ -22,6 +22,13 @@ export interface Release {
 
 export const RELEASES: Release[] = [
   {
+    version: '1.10.1',
+    date: '2026-11-19',
+    changes: [
+      'Atlas summary: 61 more 3.30 modifiers read right once they reach 100%, from a fresh export of the game',
+    ],
+  },
+  {
     version: '1.10.0',
     date: '2026-11-19',
     changes: [
