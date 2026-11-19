@@ -25,6 +25,7 @@ import {
 import { ActivatedRoute, Router } from '@angular/router';
 import { createAtlasDebug } from './atlas-debug';
 import { decodePlan, encodePlan, peekPlan, ShareCodeError, type AtlasPlan } from './share-code';
+import { ExternalImportError, looksExternal, readExternal } from './external-import';
 import {
   exportAll,
   importAll,
@@ -620,9 +621,7 @@ export class Atlas {
             .map((idx) => ({
               idx,
               name: tree.nodes[idx].name,
-              options: tree.nodes[idx].variants.map((lines) =>
-                lines.map(stripMarkup).join(' / '),
-              ),
+              options: tree.nodes[idx].variants.map((lines) => lines.map(stripMarkup).join(' / ')),
               chosen: this.picks.get(idx) ?? -1,
             }))
         : [],
@@ -791,6 +790,17 @@ export class Atlas {
     const tree = this.tree;
     if (!tree) return;
     try {
+      if (looksExternal(code)) {
+        void this.importExternal(code);
+        return;
+      }
+    } catch (err) {
+      this.shareMessage.set(
+        err instanceof ExternalImportError ? err.message : 'Could not read that link.',
+      );
+      return;
+    }
+    try {
       const { treeVersion } = peekPlan(code);
       const known = findTreeVersion(treeVersion);
       if (!known) {
@@ -813,6 +823,49 @@ export class Atlas {
     } catch (err) {
       this.shareMessage.set(
         err instanceof ShareCodeError ? err.message : 'Could not read that code.',
+      );
+    }
+  }
+
+  /**
+   * A poeplanner or hypostasis link. It becomes one of our own codes, so a
+   * tree for another version goes through the same reload as a pasted code.
+   */
+  private async importExternal(text: string): Promise<void> {
+    const current = this.tree;
+    if (!current) return;
+    const currentVersion = this.treeVersion();
+    const loaded = new Map<number, Promise<Tree>>([[currentVersion, Promise.resolve(current)]]);
+    const treeFor = (version: number) => {
+      let tree = loaded.get(version);
+      if (!tree) loaded.set(version, (tree = loadTree(version)));
+      return tree;
+    };
+    this.shareMessage.set('Reading the link…');
+    try {
+      const plan = await readExternal(text, currentVersion, treeFor);
+      if (plan.treeVersion !== currentVersion) {
+        const tree = await treeFor(plan.treeVersion);
+        this.reloadWith({ c: encodePlan(tree, plan) });
+        return;
+      }
+      this.applyPlan({
+        treeVersion: plan.treeVersion,
+        allocated: plan.allocated,
+        choices: plan.choices,
+      });
+      this.importText.set('');
+      const notes = [`Imported a ${this.paid(this.allocated)} point tree from ${plan.source}.`];
+      if (plan.unpicked > 0) {
+        notes.push(`${plan.unpicked} multiple-choice notable(s) still need an effect picked.`);
+      }
+      if (plan.disconnected > 0) {
+        notes.push(`${plan.disconnected} node(s) are not connected to the centre on this tree.`);
+      }
+      this.shareMessage.set(notes.join(' '));
+    } catch (err) {
+      this.shareMessage.set(
+        err instanceof ExternalImportError ? err.message : 'Could not read that link.',
       );
     }
   }
@@ -1518,9 +1571,7 @@ export class Atlas {
       }
       this.dirty = true;
     }
-    this.tooltip.set(
-      node && !this.picker() ? this.buildTooltip(node, clientX, clientY) : null,
-    );
+    this.tooltip.set(node && !this.picker() ? this.buildTooltip(node, clientX, clientY) : null);
   }
 
   private buildTooltip(node: TreeNode, clientX: number, clientY: number): TooltipView | null {
@@ -1645,7 +1696,6 @@ export class Atlas {
       this.deallocate(idx);
     }
   }
-
 }
 
 function sameSet(a: Set<number>, b: Set<number>): boolean {
