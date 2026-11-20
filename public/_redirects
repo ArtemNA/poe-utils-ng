@@ -1,0 +1,9 @@
+# Cloudflare Pages redirects (copied to the build root from public/).
+# /pob without the slash: PoB's page resolves its files relative to /pob/.
+/pob  /pob/  302
+
+# No /* /index.html 200 here: Pages follows _redirects even where a file
+# exists, so a catch-all would shadow /pob/. The build has no top-level
+# 404.html, so Pages already serves index.html for every path that is not a
+# file (its single-page application mode). pob/404.html keeps missing PoB
+# files a real 404 instead of the Angular page.

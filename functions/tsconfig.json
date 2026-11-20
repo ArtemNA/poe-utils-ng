@@ -1,0 +1,22 @@
+/*
+ * Cloudflare Pages Functions. Pages bundles them with esbuild and does not
+ * type-check; this config is for `npx tsc -p functions` and the editor.
+ * Request, Response, fetch and streams are Workers globals; @types/node gives
+ * the same web API shapes, so no extra package is needed.
+ */
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": ["**/*.ts"]
+}
