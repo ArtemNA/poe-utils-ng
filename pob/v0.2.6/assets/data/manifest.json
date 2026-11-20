@@ -1,0 +1,859 @@
+{
+ "pobSha": "a41fec6c20f822a658ae5df1273e8c69d5969bac",
+ "converterVersion": "0.1.0",
+ "latestTreeVersion": "3_30",
+ "treeVersionList": [
+  "2_6",
+  "3_6",
+  "3_7",
+  "3_8",
+  "3_9",
+  "3_10",
+  "3_11",
+  "3_12",
+  "3_13",
+  "3_14",
+  "3_15",
+  "3_16",
+  "3_17",
+  "3_18",
+  "3_19",
+  "3_20",
+  "3_21",
+  "3_22_ruthless",
+  "3_22",
+  "3_23_ruthless",
+  "3_23",
+  "3_24_ruthless",
+  "3_24",
+  "3_25_ruthless",
+  "3_25_ruthless_alternate",
+  "3_25_alternate",
+  "3_25",
+  "3_26_ruthless",
+  "3_26_ruthless_alternate",
+  "3_26_alternate",
+  "3_26",
+  "3_27_ruthless",
+  "3_27_ruthless_alternate",
+  "3_27_alternate",
+  "3_27",
+  "3_28_ruthless",
+  "3_28_ruthless_alternate",
+  "3_28_alternate",
+  "3_28",
+  "3_29_ruthless",
+  "3_29",
+  "3_30_ruthless",
+  "3_30"
+ ],
+ "files": [
+  {
+   "file": "globals.json",
+   "bytes": 7702,
+   "sha256": "31f13d08292046d34542107fd3d5335f36bbf047cb3b2cd9967f2a01e3fc7180",
+   "sources": [
+    "_globals"
+   ]
+  },
+  {
+   "file": "constants.json",
+   "bytes": 30971,
+   "sha256": "1a14094fda574932024c419a9a602fe7a3d83bf5cec85a082228dbbb9a08ae9d",
+   "sources": [
+    "misc",
+    "characterConstants",
+    "monsterConstants",
+    "gameConstants",
+    "monsterAccuracyTable",
+    "monsterAilmentThresholdTable",
+    "monsterAllyDamageTable",
+    "monsterAllyLifeTable",
+    "monsterArmourTable",
+    "monsterDamageTable",
+    "monsterEvasionTable",
+    "monsterLifeTable",
+    "monsterLifeTable2",
+    "monsterLifeTable3",
+    "monsterPhysConversionMultiTable",
+    "monsterExperienceLevelMap",
+    "mapLevelBossAilmentMult",
+    "mapLevelBossLifeMult",
+    "mapLevelLifeMult",
+    "monsterVarietyLifeMult",
+    "totemLifeMult",
+    "goldRespecPrices"
+   ]
+  },
+  {
+   "file": "rules.json",
+   "bytes": 56675,
+   "sha256": "60dd07393df2dd0c06e23377b03021e141654f23febf3a7f6f2315233692ed54",
+   "sources": [
+    "weaponTypeInfo",
+    "unarmedWeaponData",
+    "nonDamagingAilment",
+    "ailmentTypeList",
+    "elementalAilmentTypeList",
+    "nonDamagingAilmentTypeList",
+    "nonElementalAilmentTypeList",
+    "highPrecisionMods",
+    "defaultHighPrecision",
+    "cursePriority",
+    "keystones",
+    "jewelRadii",
+    "skillColorMap",
+    "enchantmentSource",
+    "itemTagSpecial",
+    "itemTagSpecialExclusionPattern",
+    "timelessJewelTypes",
+    "timelessJewelSeedMin",
+    "timelessJewelSeedMax",
+    "timelessJewelTradeIDs",
+    "timelessJewelAdditions",
+    "casterTagCrucibleUniques",
+    "minionTagCrucibleUniques",
+    "vestigialUniqueBaseTypes",
+    "vestigialModMappings",
+    "bossStats",
+    "enemyIsBossTooltip",
+    "powerStatList"
+   ]
+  },
+  {
+   "file": "costs.json",
+   "bytes": 1761,
+   "sha256": "81df346657b2734fa2892fe6a4012cc29981a76172723a11a68cd661ca90f82a",
+   "sources": [
+    "costs"
+   ]
+  },
+  {
+   "file": "item-bases.json",
+   "bytes": 978525,
+   "sha256": "4b2a1953fa712fe29e1d4ab8e4d8a7884b823c515148865172fcd25249ee6f03",
+   "sources": [
+    "itemBases",
+    "itemBaseLists",
+    "itemBaseTypeList"
+   ]
+  },
+  {
+   "file": "item-mods/Explicit.json",
+   "bytes": 2380567,
+   "sha256": "105e654e5485509bd03871722555135b0fa73a2e36456320fe486226aee8231d",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/ItemExclusive.json",
+   "bytes": 3886097,
+   "sha256": "1fb50a3040c4d066ecaaef3723839af1d3936c7b9b561e7094649690a98a833b",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/Corrupted.json",
+   "bytes": 173533,
+   "sha256": "0bf34df5a97b8311da727ef135ad3fc823b1f70317864dae4cd38b1a846c55c9",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/Delve.json",
+   "bytes": 145766,
+   "sha256": "2072693237dabfdd6b50da8e2da8a6ea3158f562f514ec2faf5ea285c790cbbf",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/Synthesis.json",
+   "bytes": 561296,
+   "sha256": "559a544208c1d4d453b124ba99e5bc28b92b3f375ed83b8dd2016aa7df7c242a",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/Scourge.json",
+   "bytes": 624607,
+   "sha256": "29b2e04a09c2aa53fc715bd3d9981a398b4a0d00edd1d04d6e763217775a731f",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/Eldritch.json",
+   "bytes": 2328627,
+   "sha256": "8e8bad360c2fd98bba9b1841378d200162c5aec8239bf0906aaa4b2afb9cff97",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/Mercenary.json",
+   "bytes": 13997,
+   "sha256": "61aed0f48882d6891d4a73e68bc8e5dceaf2b13b809b124e640b5070ae0c1618",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/Flask.json",
+   "bytes": 130624,
+   "sha256": "1bd48299ed49c681f82053766bf4f5981f7b451b097b0ce424630a284dc0e6d6",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/Tincture.json",
+   "bytes": 32407,
+   "sha256": "41351779b0b19a00e095556dbe3f5ffe3dfbec5845c8dad8538222335ff10495",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/Graft.json",
+   "bytes": 238134,
+   "sha256": "88726e44b0c21470ea15efbbfb5e947921c32a4e389bf304b7e50647ee481eb4",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/Jewel.json",
+   "bytes": 217005,
+   "sha256": "144e47bacdc469e5642064794c01061c600c5a42c5a606f756570407748a6b50",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/JewelAbyss.json",
+   "bytes": 436715,
+   "sha256": "be849378c82a9b87daed35b9d96fdf28ad2b389912e45c54055456eb4db9c319",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/JewelCluster.json",
+   "bytes": 393601,
+   "sha256": "6f93a1bb2d8f705075fe8556fad39ad0068bcccdc1e539fa03091d516af02b32",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/JewelCharm.json",
+   "bytes": 125469,
+   "sha256": "77c5262956375d71a2252a2d1ae7b03d8a4397c05d731d162323b9b364b8ffd8",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/Foulborn.json",
+   "bytes": 160308,
+   "sha256": "5811f4c9e53f7191ffb3c84680e129f4f3ece260865cb83691486dbfcb0ea39d",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/WatchersEye.json",
+   "bytes": 71460,
+   "sha256": "0ce92df35b8ec5b207e1372c308dacab8704555473b819b8de0423f2fe1b3dfd",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "item-mods/_index.json",
+   "bytes": 868,
+   "sha256": "6816057f7927ae84b481b1d19487fd60be5d46581b59cfc165897ddfff6fd4fb",
+   "sources": [
+    "itemMods"
+   ]
+  },
+  {
+   "file": "master-mods.json",
+   "bytes": 314302,
+   "sha256": "021063cfd0b9a8bbcf8e09990cbfe30a8f91bea7b305e19a8e4e42006c791aec",
+   "sources": [
+    "masterMods"
+   ]
+  },
+  {
+   "file": "veiled-mods.json",
+   "bytes": 196315,
+   "sha256": "604e1eba8d501277762703c9c64bec3bc569a9707e8513e01ef2dfbb6e2d2c51",
+   "sources": [
+    "veiledMods"
+   ]
+  },
+  {
+   "file": "essences.json",
+   "bytes": 120483,
+   "sha256": "3b3112f4911e98b59e61d6e16eab5258820d01c37b4f3a983a07d6d99d6df67f",
+   "sources": [
+    "essences"
+   ]
+  },
+  {
+   "file": "necropolis-mods.json",
+   "bytes": 25841,
+   "sha256": "e8fdedb8c76e630035bf75fb1748b91519507a2e436b66df752e4b78dc0a6ba8",
+   "sources": [
+    "necropolisMods"
+   ]
+  },
+  {
+   "file": "enchantments.json",
+   "bytes": 120479,
+   "sha256": "ede51edc56618e5c3ffa1dbe2134e5b274ca5746b44c4b6b217e193e455d4270",
+   "sources": [
+    "enchantments"
+   ]
+  },
+  {
+   "file": "mod-scalability.json",
+   "bytes": 1424330,
+   "sha256": "adbf336a5655e0116a352bf86e4f42cc014c5de4429cb75c45dc296507ca4d39",
+   "sources": [
+    "modScalability"
+   ]
+  },
+  {
+   "file": "skills.json",
+   "bytes": 10074696,
+   "sha256": "c65da44d0ed00a04d80194191dfa35bc7235d1dda4090068a7c70732e749e2bc",
+   "sources": [
+    "skills"
+   ]
+  },
+  {
+   "file": "skill-stat-map.json",
+   "bytes": 167229,
+   "sha256": "1d62829d068b0f488740245faae80daed84c2c2ae483e77c4571f235562f3c82",
+   "sources": [
+    "skillStatMap"
+   ]
+  },
+  {
+   "file": "gems.json",
+   "bytes": 751465,
+   "sha256": "ee3be4098b4df7f336ebf89cd43f7b505f8d25d421b9dfd38f1a86598b9c1b2a",
+   "sources": [
+    "gems",
+    "gemForSkill",
+    "gemForBaseName",
+    "gemsByGameId",
+    "gemGrantedEffectIdForVaalGemId",
+    "gemVaalGemIdForBaseGemId",
+    "skills"
+   ]
+  },
+  {
+   "file": "uniques.json",
+   "bytes": 1033428,
+   "sha256": "d69467ce441569aa2d4d737dea513daec4827d0f836d639b44299fe7c9a0610c",
+   "sources": [
+    "uniques",
+    "uniqueMods"
+   ]
+  },
+  {
+   "file": "rares.json",
+   "bytes": 39484,
+   "sha256": "892e4a7cd03aa01536b0a1a43eb75b0206d9a4f21504dccf3133056dff183f22",
+   "sources": [
+    "rares"
+   ]
+  },
+  {
+   "file": "viscera.json",
+   "bytes": 49355,
+   "sha256": "fd73705deeb0a5ca1813c28464d3aa59abac67c98311f741b58d5b916a172a07",
+   "sources": [
+    "viscera"
+   ]
+  },
+  {
+   "file": "rare-like-uniques.json",
+   "bytes": 577172,
+   "sha256": "9f28443f5867ef6479af7ac55efe955a8639b9eac898506cee6535551b4ac9c4",
+   "sources": [
+    "rareLikeUniques",
+    "itemMods",
+    "veiledMods",
+    "itemBaseLists"
+   ]
+  },
+  {
+   "file": "minions.json",
+   "bytes": 344011,
+   "sha256": "3f396dc7e130f615a8a9a9c743203bea79631de08987c809cf1d5402b2d9aaec",
+   "sources": [
+    "minions",
+    "spectres"
+   ]
+  },
+  {
+   "file": "bosses.json",
+   "bytes": 1701,
+   "sha256": "85caeb4e28ea7ad3b0bbe69933dc0c781ba20541c9e5c001f891338e9fbfd3df",
+   "sources": [
+    "bosses"
+   ]
+  },
+  {
+   "file": "boss-skills.json",
+   "bytes": 5680,
+   "sha256": "50898ce0076d464b7b47a731f7d10ec5d89d387dc119d4b3c12055646363fb3a",
+   "sources": [
+    "bossSkills",
+    "bossSkillsList"
+   ]
+  },
+  {
+   "file": "pantheons.json",
+   "bytes": 7815,
+   "sha256": "bdb7131d9ca58d58946fb44abfe6b7477e22a51ed6416f46b9590177fa5317a8",
+   "sources": [
+    "pantheons"
+   ]
+  },
+  {
+   "file": "map-mods.json",
+   "bytes": 16163,
+   "sha256": "03ba0409377bb67b48403e29c0c77d7fac68bf09962737a285972e632abd041d",
+   "sources": [
+    "mapMods"
+   ]
+  },
+  {
+   "file": "cluster-jewels.json",
+   "bytes": 85998,
+   "sha256": "c69e35e025efbe94fb0d118af829bbfa61781fa0ca2a0e9b28df78c0371353bf",
+   "sources": [
+    "clusterJewels",
+    "clusterJewelInfoForNotable"
+   ]
+  },
+  {
+   "file": "foulborn-map.json",
+   "bytes": 38952,
+   "sha256": "9d8cf8e45edf607b56653da7f49008b78c96b6e26e4b57cffe412afd2bfd6795",
+   "sources": [
+    "foulbornMap"
+   ]
+  },
+  {
+   "file": "abyss-notable-names.json",
+   "bytes": 5389,
+   "sha256": "299425802a0cd8a2c31a402c55dde37750ec3a1ac1912f2616232bdbc26155a3",
+   "sources": [
+    "abyssNotableNames"
+   ]
+  },
+  {
+   "file": "node-id-list.json",
+   "bytes": 111591,
+   "sha256": "4d66463ed0438d4048861a6a2ed47d5561a9fc6eaa730aa65a5c3b3e25e95884",
+   "sources": [
+    "nodeIDList"
+   ]
+  },
+  {
+   "file": "mod-cache.json",
+   "bytes": 6941469,
+   "sha256": "cd08d294207cad76613f9d5bd5d5c7d711c2e3a8e31943391128506045205c42",
+   "sources": [
+    "_modCache"
+   ]
+  },
+  {
+   "file": "mod-parser.json",
+   "bytes": 2037914,
+   "sha256": "a09611c2d458b131f540991a284196fcadec9434ee78fc932269eaa1e4e3aeea",
+   "sources": [
+    "_modParser"
+   ]
+  },
+  {
+   "file": "config-options.json",
+   "bytes": 309551,
+   "sha256": "b7f8fdd4f4c65e6fc6c180423fdec2ed761188fcf4efbdae99aa52ee81f3e62a",
+   "sources": [
+    "_configOptions"
+   ]
+  },
+  {
+   "file": "closures.json",
+   "bytes": 40459,
+   "sha256": "a563a4e3826be3eff772f1bb9308e58e3cb928a2d67830ec7bf77f6dfda7e64b",
+   "sources": [
+    "*"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/2_6.json",
+   "bytes": 1745852,
+   "sha256": "4b2f3cb9fd9304643a32c880e5a59f05e6a700dd810abbfdf15052e32b3b9498",
+   "sources": [
+    "tree/2_6"
+   ]
+  },
+  {
+   "file": "tree/3_6.json",
+   "bytes": 1936983,
+   "sha256": "682e39bad87ccd74d7caa7f82a48aca25c535c2b37486f39abb7f1882a7552cf",
+   "sources": [
+    "tree/3_6"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_7.json",
+   "bytes": 2089928,
+   "sha256": "5dffbcf512f594531721eb2b1a80eed18c76d760bc5380bec95cb9bc7f2b49b0",
+   "sources": [
+    "tree/3_7"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_8.json",
+   "bytes": 2171031,
+   "sha256": "0d69e09b32ca529d10e830d3d5a42286bddde6568e9799fa6b009ec20ad888c8",
+   "sources": [
+    "tree/3_8"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_9.json",
+   "bytes": 2195711,
+   "sha256": "902410b497e5130658d34a8a04dd0183ddd2f8ab8a2dfc103ed6cbada035a53f",
+   "sources": [
+    "tree/3_9"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_10.json",
+   "bytes": 2171548,
+   "sha256": "e7189631667844233dfecdd261c09c276ab2d327bd0b962455fb8ca00033ba39",
+   "sources": [
+    "tree/3_10"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_11.json",
+   "bytes": 2278914,
+   "sha256": "777a886dc52232d2abb597ba663c4beb5ac84b0ed8c5f325c32e47a4d74a3560",
+   "sources": [
+    "tree/3_11"
+   ]
+  },
+  {
+   "file": "tree/3_12.json",
+   "bytes": 2294364,
+   "sha256": "f48f10bc8fc6cf12f8d388804ecf3f98c4afb77ec9d4dc28d60221f660c38d4e",
+   "sources": [
+    "tree/3_12"
+   ]
+  },
+  {
+   "file": "tree/3_13.json",
+   "bytes": 2289283,
+   "sha256": "c6cdbdf4255c72faa1866e8240663bc25f780e354f5914e6bd5638bec0c4acc0",
+   "sources": [
+    "tree/3_13"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_14.json",
+   "bytes": 2314613,
+   "sha256": "fc56dce98493606b03e771caa69c0b1ea0239be78bfaa1c908f519b19743077b",
+   "sources": [
+    "tree/3_14"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_15.json",
+   "bytes": 2320334,
+   "sha256": "ee447a07236d326cff86657a7680441f075ba8d9c5690af7e82464c1413a40bd",
+   "sources": [
+    "tree/3_15"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_16.json",
+   "bytes": 2756067,
+   "sha256": "84db42c4bff0870f698a783f4cbdf453e6fe0300f4350388770b8f808039f8a9",
+   "sources": [
+    "tree/3_16"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_17.json",
+   "bytes": 2756176,
+   "sha256": "aa1fbce2b3ca774148861d1579b8cc288f47aa9a303024f69500deb0515b6739",
+   "sources": [
+    "tree/3_17"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_18.json",
+   "bytes": 2808482,
+   "sha256": "d1dc9fe54aaa2f24d8f6259a12f96ea1a799dec53827461be7807af706b4ab68",
+   "sources": [
+    "tree/3_18"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_19.json",
+   "bytes": 2778838,
+   "sha256": "7238c9c477011bee5ebe4b6d00d133d7fcf2e8b945c1ca6397b295f357dcd24f",
+   "sources": [
+    "tree/3_19"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_20.json",
+   "bytes": 2814122,
+   "sha256": "955609adbde3c8a8f9470ed53568d05749f0becddf84849953b58fd4eb1c1318",
+   "sources": [
+    "tree/3_20"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_21.json",
+   "bytes": 2904805,
+   "sha256": "bfac9499bfc017b612cb97bde1d64855f04dc0ef476d84c7778897027bb181db",
+   "sources": [
+    "tree/3_21"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_22_ruthless.json",
+   "bytes": 2934554,
+   "sha256": "bb87fe7d42b08bbc6c37aecd479a61bda2165c4fe735a184967ec4c9bf4ac449",
+   "sources": [
+    "tree/3_22_ruthless"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_22.json",
+   "bytes": 2945248,
+   "sha256": "631785ce18558c29afd3e67623c8b6d9f66edd2fe29ca2a0d112fd116a7862f2",
+   "sources": [
+    "tree/3_22"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_23_ruthless.json",
+   "bytes": 2992353,
+   "sha256": "7a0d7de5d1275acd629ac08949efdca3e566750fd88c437e7e824a8140961382",
+   "sources": [
+    "tree/3_23_ruthless"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_23.json",
+   "bytes": 3003007,
+   "sha256": "cf1816cabe7edf8f17619c87c6fe907bdf3a65405c17230e583bbe06687717b3",
+   "sources": [
+    "tree/3_23"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_24_ruthless.json",
+   "bytes": 2993985,
+   "sha256": "e1eae4fe913e97a2ac6859eda09bd7184b276b12a668bde083fa8e94b6fb44cb",
+   "sources": [
+    "tree/3_24_ruthless"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_24.json",
+   "bytes": 3004425,
+   "sha256": "a76c2340dbaff6ee7ad14fa15beb80659467837e67fb6aae3138797848c399a0",
+   "sources": [
+    "tree/3_24"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_25_ruthless.json",
+   "bytes": 1762691,
+   "sha256": "fbcfc18c2a0f419bf646c9c706f921649c0570b50a6d0c1a6a4f8a387eb3a9d8",
+   "sources": [
+    "tree/3_25_ruthless"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_25_ruthless_alternate.json",
+   "bytes": 1773710,
+   "sha256": "e879ce4f1b8ef15e6afd71a9e33a278cc5ee7cf0a5b7a00e41fbb169be9f55de",
+   "sources": [
+    "tree/3_25_ruthless_alternate"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_25_alternate.json",
+   "bytes": 1773812,
+   "sha256": "3b2864c060c44e9c7c928417a3895c99948819b50a4f52180fa3abdc87598f62",
+   "sources": [
+    "tree/3_25_alternate"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_25.json",
+   "bytes": 1771988,
+   "sha256": "1c336b34fc1a06872fe8295fa6394b10bc67d790d3438b19800ee68b860f7538",
+   "sources": [
+    "tree/3_25"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_26_ruthless.json",
+   "bytes": 1772156,
+   "sha256": "0c42665b6f696b33c944c122929bd4da8973ea1233c1650fd33fb835095482bf",
+   "sources": [
+    "tree/3_26_ruthless"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_26_ruthless_alternate.json",
+   "bytes": 1773313,
+   "sha256": "e01cc3342a08528012889169193538b07333d87ae6bf35788a9b0bb560c90f36",
+   "sources": [
+    "tree/3_26_ruthless_alternate"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_26_alternate.json",
+   "bytes": 1773415,
+   "sha256": "8a2a66ce9b1fda6943927985dbe703f91acb6d0cad33ede98187d02a4bd44618",
+   "sources": [
+    "tree/3_26_alternate"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_26.json",
+   "bytes": 1780625,
+   "sha256": "04ae448b52392a6cde7601d31509029629ac3e8abdb6c816d91924b306555bac",
+   "sources": [
+    "tree/3_26"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_27_ruthless.json",
+   "bytes": 1844475,
+   "sha256": "6db4957dabce70839d7b93994744b22c6cde115177f232f81683736e948e796a",
+   "sources": [
+    "tree/3_27_ruthless"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_27_ruthless_alternate.json",
+   "bytes": 1853594,
+   "sha256": "4de3457671404e90ed58bb7970c22d3d23c7a4b556a502caa811023c06c58e9e",
+   "sources": [
+    "tree/3_27_ruthless_alternate"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_27_alternate.json",
+   "bytes": 1853696,
+   "sha256": "1dc3f4a28999416f1d753edb7ff4c3af96ffea0fb98958e22666f43803a40fe5",
+   "sources": [
+    "tree/3_27_alternate"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_27.json",
+   "bytes": 1852224,
+   "sha256": "55f345108f7577561f7be8ef0191ef07a13bd5a4d5d8707acdf4bb8df1aaf23d",
+   "sources": [
+    "tree/3_27"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_28_ruthless.json",
+   "bytes": 1876439,
+   "sha256": "c31d5d995d6af7bd27a9094b36b9ebb96074d87b04eacce86113eea6438f1f4f",
+   "sources": [
+    "tree/3_28_ruthless"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_28_ruthless_alternate.json",
+   "bytes": 1856176,
+   "sha256": "f7758aa8cc7780f3b74066a38bcd56dd634c82f9efbfdb0490254b24bd30880d",
+   "sources": [
+    "tree/3_28_ruthless_alternate"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_28_alternate.json",
+   "bytes": 1856278,
+   "sha256": "17f843012eec7b8ca15a97bdd4a87b1f721cd1665a5ef18315993f53b91a8b7b",
+   "sources": [
+    "tree/3_28_alternate"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_28.json",
+   "bytes": 1884358,
+   "sha256": "f7945cd9162b5ba85e718c7ada41bd7703a4acc6ae19fd70c195da5d09af0663",
+   "sources": [
+    "tree/3_28"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_29_ruthless.json",
+   "bytes": 1908968,
+   "sha256": "a3abe4f718e384578969d50de43c599dc237e2ae9b121ab9283f098f74bace17",
+   "sources": [
+    "tree/3_29_ruthless"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_29.json",
+   "bytes": 1916532,
+   "sha256": "fc586b85bec9a12204bc29c4777710874779f45318290915a12f55bdc5e47213",
+   "sources": [
+    "tree/3_29"
+   ]
+  },
+  {
+   "file": "tree/_ondemand/3_30_ruthless.json",
+   "bytes": 1932820,
+   "sha256": "b6246e6ec06abddbff9f9ef65cc9e6abb7ad5c9c0a1d88bcb293e1aaf557c738",
+   "sources": [
+    "tree/3_30_ruthless"
+   ]
+  },
+  {
+   "file": "tree/3_30.json",
+   "bytes": 1938878,
+   "sha256": "daa32277565e1735bf11b88cc07a2e59483504c1f4d15ed037bec8349b5d47c6",
+   "sources": [
+    "tree/3_30"
+   ]
+  },
+  {
+   "file": "tree/legion.json",
+   "bytes": 16823,
+   "sha256": "67563d5084a4a2ca5e87477dccc3e4001df2b5d9ce97e11bda57e9b0e31e00a7",
+   "sources": [
+    "tree/legion"
+   ]
+  }
+ ]
+}

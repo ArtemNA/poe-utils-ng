@@ -1,0 +1,3 @@
+# The built Path of Building (pob-rust-wasm dist): byte for byte, never
+# line-ending converted. The .br copies and range reads depend on it.
+/pob/** -text

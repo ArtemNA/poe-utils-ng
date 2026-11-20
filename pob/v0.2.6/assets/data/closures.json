@@ -1,0 +1,1396 @@
+{
+ "closures": [
+  {
+   "path": "describeStats",
+   "src": "Modules/StatDescriber.lua",
+   "from": 213,
+   "to": 305,
+   "sha256": "2e0fe215286ae8d6babda164a532acc7630cad1f15d617b8784c3dd1e2383f71"
+  },
+  {
+   "path": "getAbyssJewelComponentRoll",
+   "src": "Modules/DataAbyssJewelLookUpTableHelper.lua",
+   "from": 59,
+   "to": 73,
+   "sha256": "55099b6b2665aac44d47c886b1debf79a8cb8a8139d5cd01c371e72e76807bdd"
+  },
+  {
+   "path": "mapMods.AffixData.Armoured.apply",
+   "src": "Data/ModMap.lua",
+   "from": 12,
+   "to": 14,
+   "sha256": "818c41fa87bd12cac6f6fbc1a75aa0669108cf78175096fccb6c67b0d7e61721"
+  },
+  {
+   "path": "mapMods.AffixData.Buffered.apply",
+   "src": "Data/ModMap.lua",
+   "from": 91,
+   "to": 93,
+   "sha256": "71fb5806f1c4799d7a688c8358c1d2893d2673939ac6d58084791c25fc95b7ef"
+  },
+  {
+   "path": "mapMods.AffixData.Burning.apply",
+   "src": "Data/ModMap.lua",
+   "from": 117,
+   "to": 119,
+   "sha256": "294f42d630dc64fa11726899643c8835cdea0e0e2ac88455195fbeb3551c45df"
+  },
+  {
+   "path": "mapMods.AffixData.Conflagrating.apply",
+   "src": "Data/ModMap.lua",
+   "from": 158,
+   "to": 161,
+   "sha256": "3b142ef4b69f6bfdf15d3bdf52ab79ade50dfbf712af61931409387e674f3250"
+  },
+  {
+   "path": "mapMods.AffixData.Empowered.apply",
+   "src": "Data/ModMap.lua",
+   "from": 175,
+   "to": 177,
+   "sha256": "adb70f0b03c7bdf728153c0625b823d9d9b7e07b9965099adfa4208bc9741e3a"
+  },
+  {
+   "path": "mapMods.AffixData.Fecund.apply",
+   "src": "Data/ModMap.lua",
+   "from": 56,
+   "to": 58,
+   "sha256": "2499e4e54cf353ab108a2a7bcc4e9356b1ec075ceaa10b5d5274d4bc7f1dee4f"
+  },
+  {
+   "path": "mapMods.AffixData.Fleet.apply",
+   "src": "Data/ModMap.lua",
+   "from": 150,
+   "to": 153,
+   "sha256": "a3ad68ab3a97e5bc946578cbf65bf62715f06dd70ae6d2f90dc34de6ddefc7b6"
+  },
+  {
+   "path": "mapMods.AffixData.Freezing.apply",
+   "src": "Data/ModMap.lua",
+   "from": 125,
+   "to": 127,
+   "sha256": "393cc0c7eb5315306ad4b64b2136ccfaac293d3d304df836077cd383cafcc73a"
+  },
+  {
+   "path": "mapMods.AffixData.Hexproof.apply",
+   "src": "Data/ModMap.lua",
+   "from": 20,
+   "to": 22,
+   "sha256": "b2003d96e3ca0ad272d846086b483bb499c75c33bba2846e02286fa44dfcff69"
+  },
+  {
+   "path": "mapMods.AffixData.Hexwarded.apply",
+   "src": "Data/ModMap.lua",
+   "from": 29,
+   "to": 31,
+   "sha256": "f6d6f8ff58fbdca3b939d90a247b23b4fab890fdc3d5ef1ef8ba052ac1153b1a"
+  },
+  {
+   "path": "mapMods.AffixData.Impaling.apply",
+   "src": "Data/ModMap.lua",
+   "from": 167,
+   "to": 169,
+   "sha256": "b250fe9547c8848044725422d371cae6684e116af30f8d1474797be9d6449a20"
+  },
+  {
+   "path": "mapMods.AffixData.Impervious.apply",
+   "src": "Data/ModMap.lua",
+   "from": 73,
+   "to": 77,
+   "sha256": "0bdb7b6cf9b33614eee9071eb907c6cd3a74ca85e0aa1cded384fc985aca0c62"
+  },
+  {
+   "path": "mapMods.AffixData.Mirrored.apply",
+   "src": "Data/ModMap.lua",
+   "from": 200,
+   "to": 201,
+   "sha256": "db17ed70c654b159acfe392be812363f5ff82659b164962d346e7e7a5fb957e1"
+  },
+  {
+   "path": "mapMods.AffixData.Oppressive.apply",
+   "src": "Data/ModMap.lua",
+   "from": 83,
+   "to": 85,
+   "sha256": "433c9530b060d7ea33de063182a0409dbcd6d0cbef92955cc49aab2fa44506f7"
+  },
+  {
+   "path": "mapMods.AffixData.Overlord's.apply",
+   "src": "Data/ModMap.lua",
+   "from": 183,
+   "to": 186,
+   "sha256": "6c9f71a497af6b859ec862e80d02c91384e80c390da1042c99ff0b906de1f943"
+  },
+  {
+   "path": "mapMods.AffixData.Profane.apply",
+   "src": "Data/ModMap.lua",
+   "from": 141,
+   "to": 144,
+   "sha256": "02a7c50bb8639489a3675622afa48d0c8cc8b74097e988619a6474efc639a392"
+  },
+  {
+   "path": "mapMods.AffixData.Punishing.apply",
+   "src": "Data/ModMap.lua",
+   "from": 193,
+   "to": 194,
+   "sha256": "db17ed70c654b159acfe392be812363f5ff82659b164962d346e7e7a5fb957e1"
+  },
+  {
+   "path": "mapMods.AffixData.Resistant.apply",
+   "src": "Data/ModMap.lua",
+   "from": 38,
+   "to": 41,
+   "sha256": "4c39240b74d57c4f0a12ca033b84f700c18d767c9e5f43f1109342aec387bf12"
+  },
+  {
+   "path": "mapMods.AffixData.Savage.apply",
+   "src": "Data/ModMap.lua",
+   "from": 109,
+   "to": 111,
+   "sha256": "190b6698d0934ea46b9a81e8f7e84e046114a2f37f47b72d459a5bf3a5cc161e"
+  },
+  {
+   "path": "mapMods.AffixData.Shocking.apply",
+   "src": "Data/ModMap.lua",
+   "from": 133,
+   "to": 135,
+   "sha256": "96dc8e5d295dd132cfaec9f7f0d7e41662eff775bf021bf80fb522c69f2c0ab0"
+  },
+  {
+   "path": "mapMods.AffixData.Titan's.apply",
+   "src": "Data/ModMap.lua",
+   "from": 99,
+   "to": 102,
+   "sha256": "250a49a257b3d15d688677b4edb40cd63d6cc1e1a393c5953b62cceed2816ef6"
+  },
+  {
+   "path": "mapMods.AffixData.Unstoppable.apply",
+   "src": "Data/ModMap.lua",
+   "from": 64,
+   "to": 67,
+   "sha256": "d6eeb086a1e7fe3c4d11f6cf1de739dc35f9406ccb5bff86794d9a304a7676ad"
+  },
+  {
+   "path": "mapMods.AffixData.Unwavering.apply",
+   "src": "Data/ModMap.lua",
+   "from": 47,
+   "to": 50,
+   "sha256": "9a5edb6e09eaa1dbc585bc6bd852702cb01275c0fd5b5f15a8abb3ced04ebb57"
+  },
+  {
+   "path": "mapMods.AffixData.of Balance.apply",
+   "src": "Data/ModMap.lua",
+   "from": 208,
+   "to": 211,
+   "sha256": "9cf01e0006c0f257d9c72cb48db9e7be5494ce9652daeb54b5157626317d582d"
+  },
+  {
+   "path": "mapMods.AffixData.of Blinding.apply",
+   "src": "Data/ModMap.lua",
+   "from": 349,
+   "to": 351,
+   "sha256": "37e6755b9c89f84b7461b4ddbfb74a52bfb2419f7122c049328e97de10875209"
+  },
+  {
+   "path": "mapMods.AffixData.of Congealment.apply",
+   "src": "Data/ModMap.lua",
+   "from": 217,
+   "to": 221,
+   "sha256": "c604ff72ec4d448ec8a29e4163ff3699b3540b8a82f8ad347f756abb2b349c7e"
+  },
+  {
+   "path": "mapMods.AffixData.of Deadliness.apply",
+   "src": "Data/ModMap.lua",
+   "from": 364,
+   "to": 367,
+   "sha256": "492527040dd43a3b391db710b9f1b3bd68a9d0ccfcf921370bd27ad600531adb"
+  },
+  {
+   "path": "mapMods.AffixData.of Doubt.apply",
+   "src": "Data/ModMap.lua",
+   "from": 334,
+   "to": 336,
+   "sha256": "6d593d666f8fe51b118df8d6cab42966eb8f5b434c0b9981e1576bf99943f99e"
+  },
+  {
+   "path": "mapMods.AffixData.of Drought.apply",
+   "src": "Data/ModMap.lua",
+   "from": 228,
+   "to": 230,
+   "sha256": "0197215368725e64c7f6b763de5e85ff87122baba6255fcad408cd25c7e2ab3e"
+  },
+  {
+   "path": "mapMods.AffixData.of Exposure.apply",
+   "src": "Data/ModMap.lua",
+   "from": 238,
+   "to": 246,
+   "sha256": "2e295018661bc9e6bd279a4e7499be33584cf6970143bbc83b5d38e32047f6ef"
+  },
+  {
+   "path": "mapMods.AffixData.of Fatigue.apply",
+   "src": "Data/ModMap.lua",
+   "from": 319,
+   "to": 321,
+   "sha256": "ef8f4f623031da0d505600bcf238b65e9db244a030c30ff6ad38888730ee3d1c"
+  },
+  {
+   "path": "mapMods.AffixData.of Impotence.apply",
+   "src": "Data/ModMap.lua",
+   "from": 253,
+   "to": 255,
+   "sha256": "3702fdea037a02f9c7d65172696fdb96e0747408dbc1fb1b75475278feeef004"
+  },
+  {
+   "path": "mapMods.AffixData.of Imprecision.apply",
+   "src": "Data/ModMap.lua",
+   "from": 342,
+   "to": 344,
+   "sha256": "e3dd033cef23f4731d402b06fe3903c55a12ce6f164facab3d9dd17bf7431c83"
+  },
+  {
+   "path": "mapMods.AffixData.of Insulation.apply",
+   "src": "Data/ModMap.lua",
+   "from": 262,
+   "to": 264,
+   "sha256": "56b5abc314ae5fc025a3cbd2f8e0694f172b4a6205df2e879f794b48c567d95d"
+  },
+  {
+   "path": "mapMods.AffixData.of Miring.apply",
+   "src": "Data/ModMap.lua",
+   "from": 271,
+   "to": 275,
+   "sha256": "d4562915baf81d3685db4a954441ee8f961052b17ca61617d8112f3639c25232"
+  },
+  {
+   "path": "mapMods.AffixData.of Rust.apply",
+   "src": "Data/ModMap.lua",
+   "from": 282,
+   "to": 285,
+   "sha256": "8381aacb8d2da2e1f3537007824a18626a333000d29fd0592e9fa801ce6253e6"
+  },
+  {
+   "path": "mapMods.AffixData.of Smothering.apply",
+   "src": "Data/ModMap.lua",
+   "from": 292,
+   "to": 295,
+   "sha256": "f47c05a2bcd2f4b133df5219028f4ee27876dc6e0167f278b0fccc0e1ee15feb"
+  },
+  {
+   "path": "mapMods.AffixData.of Stasis.apply",
+   "src": "Data/ModMap.lua",
+   "from": 301,
+   "to": 305,
+   "sha256": "315d1c21b867e21ec1ad1b50d9c636ad74bb92203583727f8e0596376ef94d4e"
+  },
+  {
+   "path": "mapMods.AffixData.of Toughness.apply",
+   "src": "Data/ModMap.lua",
+   "from": 311,
+   "to": 313,
+   "sha256": "6894cf71d5e7e68f642da5f1162d880b65aa815c91c9a0f37f5029769b6809b4"
+  },
+  {
+   "path": "mapMods.AffixData.of Transience.apply",
+   "src": "Data/ModMap.lua",
+   "from": 327,
+   "to": 328,
+   "sha256": "db17ed70c654b159acfe392be812363f5ff82659b164962d346e7e7a5fb957e1"
+  },
+  {
+   "path": "mapMods.AffixData.of Venom.apply",
+   "src": "Data/ModMap.lua",
+   "from": 356,
+   "to": 358,
+   "sha256": "473f89de9d1052169a7fb206b69b5c16a94c17a5d120de414c82a2f5942844c7"
+  },
+  {
+   "path": "powerStatList.2.transform",
+   "src": "Modules/Data.lua",
+   "from": 131,
+   "to": 131,
+   "sha256": "f1374b87c1d4bf47cf8cd4eb9e5c6a0bcbb69320f3f6f0f9a934441142aad86f"
+  },
+  {
+   "path": "powerStatList.35.transform",
+   "src": "Modules/Data.lua",
+   "from": 164,
+   "to": 164,
+   "sha256": "5dcffd8294ccd179ff647d4fffa4d1659eba00c472a4dd90f33a21f376ce36fd"
+  },
+  {
+   "path": "powerStatList.36.transform",
+   "src": "Modules/Data.lua",
+   "from": 165,
+   "to": 165,
+   "sha256": "e305ab055e0fabdb18075880f8742df93cb4259f0b2de4e4e32700e3ee56552f"
+  },
+  {
+   "path": "powerStatList.37.transform",
+   "src": "Modules/Data.lua",
+   "from": 166,
+   "to": 166,
+   "sha256": "464d0be7bfa3c46d5908329383db9d6f327ecd627e87d4e52abb70340fc0140c"
+  },
+  {
+   "path": "powerStatList.38.transform",
+   "src": "Modules/Data.lua",
+   "from": 167,
+   "to": 167,
+   "sha256": "3eafa4bf54d2f4b8b0d17c19963a42a6be76d42c44b001ee6c16b3b4044f3a40"
+  },
+  {
+   "path": "powerStatList.39.transform",
+   "src": "Modules/Data.lua",
+   "from": 168,
+   "to": 168,
+   "sha256": "f248ed21f926bc39295c5a8eae247ee39f17fc59b163c797020600de1137bbf6"
+  },
+  {
+   "path": "powerStatList.71.transform",
+   "src": "Modules/Data.lua",
+   "from": 164,
+   "to": 164,
+   "sha256": "5dcffd8294ccd179ff647d4fffa4d1659eba00c472a4dd90f33a21f376ce36fd"
+  },
+  {
+   "path": "powerStatList.72.transform",
+   "src": "Modules/Data.lua",
+   "from": 165,
+   "to": 165,
+   "sha256": "e305ab055e0fabdb18075880f8742df93cb4259f0b2de4e4e32700e3ee56552f"
+  },
+  {
+   "path": "powerStatList.73.transform",
+   "src": "Modules/Data.lua",
+   "from": 166,
+   "to": 166,
+   "sha256": "464d0be7bfa3c46d5908329383db9d6f327ecd627e87d4e52abb70340fc0140c"
+  },
+  {
+   "path": "powerStatList.74.transform",
+   "src": "Modules/Data.lua",
+   "from": 167,
+   "to": 167,
+   "sha256": "3eafa4bf54d2f4b8b0d17c19963a42a6be76d42c44b001ee6c16b3b4044f3a40"
+  },
+  {
+   "path": "powerStatList.75.transform",
+   "src": "Modules/Data.lua",
+   "from": 168,
+   "to": 168,
+   "sha256": "f248ed21f926bc39295c5a8eae247ee39f17fc59b163c797020600de1137bbf6"
+  },
+  {
+   "path": "powerStatList.GetFromOutput",
+   "src": "Modules/Data.lua",
+   "from": 186,
+   "to": 212,
+   "sha256": "349f3f44c4c491121b11a7ff7a170f051355e4471df4f4faca591fd7c71bbbb9"
+  },
+  {
+   "path": "printMissingMinionSkills",
+   "src": "Modules/Data.lua",
+   "from": 1166,
+   "to": 1176,
+   "sha256": "b5300fe446d4dce416fddd3d232cc47a0271602e99e99d0ae3515efc97d1160c"
+  },
+  {
+   "path": "readAbyssJewelLUT",
+   "src": "Modules/DataAbyssJewelLookUpTableHelper.lua",
+   "from": 215,
+   "to": 273,
+   "sha256": "2673ab31dad64d928f94663c77f2d40c650a7da340c468bc920e2a3b877f943e"
+  },
+  {
+   "path": "readLUT",
+   "src": "Modules/DataLegionLookUpTableHelper.lua",
+   "from": 221,
+   "to": 260,
+   "sha256": "c2a28f6226248b7507faa225db252321914d5513132fdab1c4b6cdc0b480f7d0"
+  },
+  {
+   "path": "repairLUTs",
+   "src": "Modules/DataLegionLookUpTableHelper.lua",
+   "from": 120,
+   "to": 219,
+   "sha256": "f818626c44f1f2a985b0ee6852ed6b4c856ae931319e0921ba424d3dcfc1e04b"
+  },
+  {
+   "path": "resolveAbyssJewelComponent",
+   "src": "Modules/DataAbyssJewelLookUpTableHelper.lua",
+   "from": 51,
+   "to": 57,
+   "sha256": "44c54b40d5221560f9cab68080d56fc2bbfdd655ffd700acb4b76637d10c8145"
+  },
+  {
+   "path": "setJewelRadiiGlobally",
+   "src": "Modules/Data.lua",
+   "from": 583,
+   "to": 601,
+   "sha256": "0ee318b5bab80036e57a23411b4668f327469edb8c443312661fefc229ecbd84"
+  },
+  {
+   "path": "skillStatMapMeta.__index",
+   "src": "Modules/Data.lua",
+   "from": 1034,
+   "to": 1044,
+   "sha256": "09ca2a5f83dddb10419bb61875d1384bb229aaf6bfe3d70e3365cf1347ddfc86"
+  },
+  {
+   "path": "skills.ArmageddonBrand.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 715,
+   "to": 717,
+   "sha256": "48907eac3b6310cb369ef87ebddefa1a756bd1661da336193b0eaae2df3d17c6"
+  },
+  {
+   "path": "skills.ArmageddonBrandAltY.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 895,
+   "to": 897,
+   "sha256": "48907eac3b6310cb369ef87ebddefa1a756bd1661da336193b0eaae2df3d17c6"
+  },
+  {
+   "path": "skills.AvengingFlame.preDamageFunc",
+   "src": "Data/Skills/sup_str.lua",
+   "from": 2540,
+   "to": 2548,
+   "sha256": "faaad88be39c14af61f127e760f1f689f9d4aae599fe769597b20a36b665670a"
+  },
+  {
+   "path": "skills.AzmeriHydraBarrage.preDamageFunc",
+   "src": "Data/Skills/spectre.lua",
+   "from": 7277,
+   "to": 7279,
+   "sha256": "03e59e6faf7109e4a7a2a36ece5042d3240adfa86c9ca60ff39b899a3d699a99"
+  },
+  {
+   "path": "skills.BallLightning.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 1086,
+   "to": 1167,
+   "sha256": "dcb69ca3835a1191fe7c523895792508563f293fe432f147c747c60c6fef139e"
+  },
+  {
+   "path": "skills.BallLightningAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 1252,
+   "to": 1275,
+   "sha256": "89c427cc7e2f34a3c66e83beae5543c68e59253f28cdcf5b0553160143440188"
+  },
+  {
+   "path": "skills.BallLightningAltY.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 1375,
+   "to": 1393,
+   "sha256": "cba9cc4100f856123d3325e56396627834bba054a40ccf8b836925fe7c4adccf"
+  },
+  {
+   "path": "skills.Bane.preSkillTypeFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 1470,
+   "to": 1481,
+   "sha256": "fba3ceee7fea2793a2d314ed507e81d59d47f9c9e2b09dcbeb6e02863adfaca2"
+  },
+  {
+   "path": "skills.BaneAltX.preSkillTypeFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 1647,
+   "to": 1658,
+   "sha256": "fba3ceee7fea2793a2d314ed507e81d59d47f9c9e2b09dcbeb6e02863adfaca2"
+  },
+  {
+   "path": "skills.Barrage.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 1026,
+   "to": 1030,
+   "sha256": "659342bba434fa868ca4478a8ef9e416bb275f9da00e180d681b210af698ca1b"
+  },
+  {
+   "path": "skills.BarrageAltX.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 1114,
+   "to": 1118,
+   "sha256": "659342bba434fa868ca4478a8ef9e416bb275f9da00e180d681b210af698ca1b"
+  },
+  {
+   "path": "skills.BladeBlast.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 1374,
+   "to": 1379,
+   "sha256": "5b44bc750e2f5bb739428f164abf9c3a1177a4a0b152d5521a449d49dd43762d"
+  },
+  {
+   "path": "skills.BladeBlastAltX.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 1466,
+   "to": 1471,
+   "sha256": "5b44bc750e2f5bb739428f164abf9c3a1177a4a0b152d5521a449d49dd43762d"
+  },
+  {
+   "path": "skills.BladeFlurry.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 1906,
+   "to": 1916,
+   "sha256": "6fd38a79cb34281f091e02470a78846b6094afd6c97b288d5b65ebcc48ac918a"
+  },
+  {
+   "path": "skills.BladeFlurryAltX.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 2023,
+   "to": 2033,
+   "sha256": "6fd38a79cb34281f091e02470a78846b6094afd6c97b288d5b65ebcc48ac918a"
+  },
+  {
+   "path": "skills.BladeVortex.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 2209,
+   "to": 2211,
+   "sha256": "6d53d97ad73356d74c3ea60e46f26bfa2f76739c0ba480bae189da0fa2e82ba2"
+  },
+  {
+   "path": "skills.BladefallAltZ.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 2788,
+   "to": 2790,
+   "sha256": "52cad43550ec10e9b9a2108ca0e71eb5c44f50096eb28273e8cb5a3f9d208893"
+  },
+  {
+   "path": "skills.BlastRain.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 2895,
+   "to": 2899,
+   "sha256": "659342bba434fa868ca4478a8ef9e416bb275f9da00e180d681b210af698ca1b"
+  },
+  {
+   "path": "skills.BlazingSalvo.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 1823,
+   "to": 1827,
+   "sha256": "320418560c45149dd3f3e44b313abef1f0ce7ff4911d65edd1e021ac929f8d7d"
+  },
+  {
+   "path": "skills.BloodSacramentUnique.initialFunc",
+   "src": "Data/Skills/other.lua",
+   "from": 669,
+   "to": 677,
+   "sha256": "f8f41b09ba743ff19d8b31e7eb52f055e786e2ceddf542d5883aa858d865c970"
+  },
+  {
+   "path": "skills.Bodyswap.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 2298,
+   "to": 2309,
+   "sha256": "400f194111cbbdd3fa5526b6026439fa4da0643ee4126c8ea0c343b2bcdb7cc4"
+  },
+  {
+   "path": "skills.BodyswapAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 2413,
+   "to": 2424,
+   "sha256": "400f194111cbbdd3fa5526b6026439fa4da0643ee4126c8ea0c343b2bcdb7cc4"
+  },
+  {
+   "path": "skills.BrandSupport.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 552,
+   "to": 554,
+   "sha256": "48907eac3b6310cb369ef87ebddefa1a756bd1661da336193b0eaae2df3d17c6"
+  },
+  {
+   "path": "skills.ChargedDash.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 3941,
+   "to": 3946,
+   "sha256": "cbca4be3fb48ac1298af025e78cbe71d9b1da8b29161ee6f4d756bee523e1cf3"
+  },
+  {
+   "path": "skills.ChargedDashAltX.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 4066,
+   "to": 4071,
+   "sha256": "4cfa3dd9c3ae1b1b8d266348465c2fbf8ccabc90fca8b3ad8d339b607a1af06e"
+  },
+  {
+   "path": "skills.Cremation.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 4357,
+   "to": 4361,
+   "sha256": "882fada5a9bfe6cb9fea48dbebacee399971e50d9abb7b1018570a1689744a52"
+  },
+  {
+   "path": "skills.CremationAltX.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 4475,
+   "to": 4479,
+   "sha256": "882fada5a9bfe6cb9fea48dbebacee399971e50d9abb7b1018570a1689744a52"
+  },
+  {
+   "path": "skills.CremationAltY.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 4594,
+   "to": 4596,
+   "sha256": "bd9b0643b619e82acac920480884590d96cb2cdbb4df6e037e96d72f5e6bccfc"
+  },
+  {
+   "path": "skills.Cyclone.initialFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 4705,
+   "to": 4718,
+   "sha256": "a17ea50f272107e6da0976d59b0338a9c02946a975073f5d1bf3dac7ee02727f"
+  },
+  {
+   "path": "skills.CycloneAltX.initialFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 4811,
+   "to": 4824,
+   "sha256": "41ca5d9b2ee830be0c3c078a5e0c456f366600e6cb5dcce235ab941836797fd3"
+  },
+  {
+   "path": "skills.DarkPact.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 3890,
+   "to": 3904,
+   "sha256": "54cbc3a2f6744bc90aa534629f69e10239109e56e9631bea72eda678c3db98f5"
+  },
+  {
+   "path": "skills.DarkPactAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 4007,
+   "to": 4023,
+   "sha256": "74942ee31d9fdf61da9a7d9ed8d6e73c1005d4b108bd08775d0363449bf0ec60"
+  },
+  {
+   "path": "skills.DeathWish.preDamageFunc",
+   "src": "Data/Skills/other.lua",
+   "from": 1283,
+   "to": 1289,
+   "sha256": "30eefc9e444f08bc31fd1c9f01b822f3d1824a5d1c08de98d748550188dd96ba"
+  },
+  {
+   "path": "skills.DivineIre.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 4603,
+   "to": 4607,
+   "sha256": "f9c1b539df20a924f9fd319a7addab2918186e24162e68189e7b42de466ae7f8"
+  },
+  {
+   "path": "skills.DivineIreAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 4713,
+   "to": 4717,
+   "sha256": "25a809cb4fe5f0739cf8d3284c70e8dbdc2a3eef31f1ae187eab371f088f2ce8"
+  },
+  {
+   "path": "skills.DivineIreAltY.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 4824,
+   "to": 4826,
+   "sha256": "7a4ba81a52f2a63bb6f18cda7ea66454dd7fb1ae2bc33adc50260434d39485f5"
+  },
+  {
+   "path": "skills.Earthquake.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 3363,
+   "to": 3366,
+   "sha256": "f83e1ae0bdaf20278a8f98f4c547f3f91a4fbe9bd6074350753a14d1bf68d7fd"
+  },
+  {
+   "path": "skills.EnemyExplode.preDamageFunc",
+   "src": "Data/Skills/other.lua",
+   "from": 6367,
+   "to": 6415,
+   "sha256": "7e9905c62fd2940c2fa3a44316dc64e87f0c8502f602d0c16b061cbb04e58913"
+  },
+  {
+   "path": "skills.ExplosiveArrow.explosiveArrowFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 6701,
+   "to": 6780,
+   "sha256": "fcb10aac6ef439a9aeda38d6950f55f88ee90e682f5888b661c270c448f78105"
+  },
+  {
+   "path": "skills.ExplosiveTrap.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 7158,
+   "to": 7223,
+   "sha256": "d3c4aeaf80b651612cead32b56b5483cc01d01b91446d8cd1fb324ead204a510"
+  },
+  {
+   "path": "skills.ExplosiveTrap.statMap._grantedEffect.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 7158,
+   "to": 7223,
+   "sha256": "d3c4aeaf80b651612cead32b56b5483cc01d01b91446d8cd1fb324ead204a510"
+  },
+  {
+   "path": "skills.EyeOfWinter.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 5519,
+   "to": 5521,
+   "sha256": "0a1071f37209aa0bde8bc91a7ab1bb25d949adf9554f2fc4afb04d0d4e96aa5f"
+  },
+  {
+   "path": "skills.EyeOfWinterAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 5612,
+   "to": 5614,
+   "sha256": "505fe42709ddbbd02464f56c05a1886d33b00377fb63f80c40d793817ff14d9d"
+  },
+  {
+   "path": "skills.EyeOfWinterAltY.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 5705,
+   "to": 5707,
+   "sha256": "cde5535b049367c04282e6d0f8c0ff11409e8ec2ea4f6a93691d0875a0fb29a7"
+  },
+  {
+   "path": "skills.Flameblast.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 6880,
+   "to": 6882,
+   "sha256": "d91f3f655684a8ae1337eac08c1fc1191699d5fc5e89d66303764d6fe9b31e36"
+  },
+  {
+   "path": "skills.FlameblastAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 6985,
+   "to": 6987,
+   "sha256": "f96210fe53a013ffa40a757544f282747f78617d8da9a269ffc278ee9ee89556"
+  },
+  {
+   "path": "skills.FlameblastAltY.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 7088,
+   "to": 7090,
+   "sha256": "251dfcbb9351c5830cd56f1e801ead6f33c4e6cf877fd6ff6a074bf6cabc2117"
+  },
+  {
+   "path": "skills.FlamethrowerTrap.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 7693,
+   "to": 7719,
+   "sha256": "6cdc3e1700dfe5b0913fd558ea38bb7f67196eb5f76e944bbd6acc5b667d854e"
+  },
+  {
+   "path": "skills.FlamethrowerTrapAltX.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 7811,
+   "to": 7829,
+   "sha256": "5fba2e220c7694bd1b0e58ea4828866dbe8953c59861746ec69d13a68e266d95"
+  },
+  {
+   "path": "skills.ForbiddenRite.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 7470,
+   "to": 7514,
+   "sha256": "8457f4596105fea7e4ec5004af033184441926d8a9011141ff1701f05563ba0d"
+  },
+  {
+   "path": "skills.ForbiddenRiteAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 7629,
+   "to": 7669,
+   "sha256": "b3b9441a39c2cafc17cd4c2c2b55e57b984501ce03215e2da96de822e277fee6"
+  },
+  {
+   "path": "skills.FreezingPulse.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 7766,
+   "to": 7769,
+   "sha256": "06ba986fa54db9309760acd69ad078489a2c6dfe3714aa04413a79384595c94a"
+  },
+  {
+   "path": "skills.FrostBombAltY.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 8013,
+   "to": 8016,
+   "sha256": "2ca978412425995c8196876064185d0aa15abe800fd24b4d2e08ce4aa5b9e1fb"
+  },
+  {
+   "path": "skills.FrozenSweep.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 4679,
+   "to": 4713,
+   "sha256": "2723a80de969128512021a766ddcc18b794345df65a8d02b7f248081e64f7073"
+  },
+  {
+   "path": "skills.FrozenSweepAltX.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 4797,
+   "to": 4831,
+   "sha256": "6e21ef23c19d262d7b7f44d7bd8cb3d6592b9f54e97155a45950adf17c31dc4d"
+  },
+  {
+   "path": "skills.GAZombieCorpseGroundImpact.preDamageFunc",
+   "src": "Data/Skills/minion.lua",
+   "from": 756,
+   "to": 758,
+   "sha256": "bc3a99f2a20c2aa3d459f84684ca97c7f18ea23622b4c852bfdd0a67f9443ecb"
+  },
+  {
+   "path": "skills.GalvanicField.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 8623,
+   "to": 8625,
+   "sha256": "c46c160cb7ed4e7493e4c23dcc87fb5820553396bc2c9f1589a0b1e5dd39eac6"
+  },
+  {
+   "path": "skills.GalvanicFieldAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 8743,
+   "to": 8745,
+   "sha256": "c46c160cb7ed4e7493e4c23dcc87fb5820553396bc2c9f1589a0b1e5dd39eac6"
+  },
+  {
+   "path": "skills.HeraldOfAsh.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 5743,
+   "to": 5745,
+   "sha256": "b2dc72cf68544399285372853b14f33a4ea9ffd7a65c100bcb6c05e8251636d2"
+  },
+  {
+   "path": "skills.HeraldOfTheBreach.preDamageFunc",
+   "src": "Data/Skills/other.lua",
+   "from": 2259,
+   "to": 2261,
+   "sha256": "80f82d62eb8f1acd1ab5c0fc61896af3a6cb3d1531a582e287fd1982e7237541"
+  },
+  {
+   "path": "skills.HeraldOfThunder.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 9463,
+   "to": 9465,
+   "sha256": "3398c8cc4a2056f42ebb76d7a3099234dae24766f46b624cbb9208f2fe618343"
+  },
+  {
+   "path": "skills.Hydrosphere.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 9052,
+   "to": 9056,
+   "sha256": "49c97908eb081a0b6d019e28727e7a2f3fc6451068ce7dfcbfd29fb38b31e919"
+  },
+  {
+   "path": "skills.IceSpear.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 9885,
+   "to": 9889,
+   "sha256": "125b4c43fa4c1ca7013b5cae25905d7bd974e9f2b827a0b6e4c9bd1fce943279"
+  },
+  {
+   "path": "skills.IceSpearAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 9995,
+   "to": 9999,
+   "sha256": "125b4c43fa4c1ca7013b5cae25905d7bd974e9f2b827a0b6e4c9bd1fce943279"
+  },
+  {
+   "path": "skills.Incinerate.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 10364,
+   "to": 10368,
+   "sha256": "d6cb072ea9bff8bb8feca577ce5f6bbd96fdcae3dbc5e27c8740f86aef289f11"
+  },
+  {
+   "path": "skills.IncinerateAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 10502,
+   "to": 10506,
+   "sha256": "12a8c701214603e8d50ce7f526488d83fd8c6ad500ff34e4c3d7fa4b8997d9e4"
+  },
+  {
+   "path": "skills.IncinerateAltY.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 10641,
+   "to": 10645,
+   "sha256": "b61aa681cbe1828858a0c35fdfad00007843ae8c0fac92c0902fb7b526bfd1dd"
+  },
+  {
+   "path": "skills.InfernalBlow.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 7115,
+   "to": 7123,
+   "sha256": "51d48b99032e2cafffa213dfd711a775ddfa0608c6f184c6aceb084e9c16c0d2"
+  },
+  {
+   "path": "skills.InfernalBlowAltX.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 7241,
+   "to": 7249,
+   "sha256": "e7d573845e95ae52fe78cb4fbf8db7fffad8426a8b1326ae229343ccaf7dcff1"
+  },
+  {
+   "path": "skills.KineticFusillade.postCritFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 11126,
+   "to": 11203,
+   "sha256": "84ce184bd3aec16164374c36bedcfed0b740bad90f48d0de247dfc004c135304"
+  },
+  {
+   "path": "skills.KineticFusillade.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 11089,
+   "to": 11125,
+   "sha256": "7894a531ba5645f60951d837ce03583965a144c4ef3f22c9e8e69d26f816367a"
+  },
+  {
+   "path": "skills.KineticFusilladeAltX.postCritFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 11344,
+   "to": 11421,
+   "sha256": "84ce184bd3aec16164374c36bedcfed0b740bad90f48d0de247dfc004c135304"
+  },
+  {
+   "path": "skills.KineticFusilladeAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 11307,
+   "to": 11343,
+   "sha256": "ff8dd4f936006f9cd573b6c8cac571d1bbbf4b3e206a59c1f7576c9e208b1e3c"
+  },
+  {
+   "path": "skills.LancingSteel.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 10236,
+   "to": 10243,
+   "sha256": "78ba4c2f5a3bc6abc7c60ced2ec7a1ef808108754657bbf0ace863c3a0cc87d2"
+  },
+  {
+   "path": "skills.LancingSteelAltX.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 10339,
+   "to": 10346,
+   "sha256": "224eb660840035750561b12ee3d7e1b4598b6cf3c992dd97dae3a67aee13f50b"
+  },
+  {
+   "path": "skills.LightningBolt.preDamageFunc",
+   "src": "Data/Skills/other.lua",
+   "from": 2628,
+   "to": 2630,
+   "sha256": "bcb877cd38f680213da072ab311e27cfa9cb87d1faa786617e844738aad9537e"
+  },
+  {
+   "path": "skills.LightningSpireTrap.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 11747,
+   "to": 11868,
+   "sha256": "d7337e59d5c21fa35d46d46e596f8b5884ac6223f66675756b9e367f0ebf1ea8"
+  },
+  {
+   "path": "skills.LightningSpireTrapAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 11992,
+   "to": 12108,
+   "sha256": "028ba06841b97aabc71d46f9e1889238deb8252d56389e4d5b41adc296ab402f"
+  },
+  {
+   "path": "skills.LightningSpireTrapAltY.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 12230,
+   "to": 12340,
+   "sha256": "ef24fbb9e65b31ff10dda30110edff92b135ceffd54395d20f91c0e5198ffaa1"
+  },
+  {
+   "path": "skills.LightningTendrilsAltX.postCritFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 12731,
+   "to": 12742,
+   "sha256": "1d9effc02375c0875ba97ed557181296c4fb298a2994b5923f902c3162a2c0f5"
+  },
+  {
+   "path": "skills.LightningTendrilsAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 12722,
+   "to": 12730,
+   "sha256": "b646128c0d7652d7854f4684bbe6be3c545a3739c7803643487b494bb9be0dad"
+  },
+  {
+   "path": "skills.Manabond.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 13610,
+   "to": 13615,
+   "sha256": "bb99045da4e3a30496e00a37107e19a7760dc43a6c9020f4c6e1ca2909836783"
+  },
+  {
+   "path": "skills.MinionInstability.preDamageFunc",
+   "src": "Data/Skills/minion.lua",
+   "from": 1756,
+   "to": 1758,
+   "sha256": "bc3a99f2a20c2aa3d459f84684ca97c7f18ea23622b4c852bfdd0a67f9443ecb"
+  },
+  {
+   "path": "skills.MoltenShell.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 7599,
+   "to": 7603,
+   "sha256": "3a02403e817b375d2f14abed327b1bc6e16bec124cc220852b05eab7de952d01"
+  },
+  {
+   "path": "skills.MoltenStrike.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 7832,
+   "to": 7882,
+   "sha256": "a54f809c7509641eed7fbd55b08bbf94ea474af7f4161f5a52c61860da4c1c6f"
+  },
+  {
+   "path": "skills.MoltenStrikeAltX.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 8011,
+   "to": 8082,
+   "sha256": "1aa115a4b356ed97dea4dc33d1b6a8d907005bac936b9870758a4a51ec7e5c69"
+  },
+  {
+   "path": "skills.OrbOfStorms.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 13704,
+   "to": 13706,
+   "sha256": "c16984d1b006d2c64d68d32bf1b6b473c2897c50d2af1f7fd72f7629c53afc60"
+  },
+  {
+   "path": "skills.PenanceBrand.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 13892,
+   "to": 13894,
+   "sha256": "d4facd0432a4e07b57b66a47fd452a9a425261e509f7f3dd98c8f732947a8476"
+  },
+  {
+   "path": "skills.PenanceBrandAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 13984,
+   "to": 13986,
+   "sha256": "48907eac3b6310cb369ef87ebddefa1a756bd1661da336193b0eaae2df3d17c6"
+  },
+  {
+   "path": "skills.PenanceBrandAltY.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 14098,
+   "to": 14100,
+   "sha256": "48907eac3b6310cb369ef87ebddefa1a756bd1661da336193b0eaae2df3d17c6"
+  },
+  {
+   "path": "skills.Perforate.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 8304,
+   "to": 8306,
+   "sha256": "14405ec5edd00d5194d9589ea73b42a0096d422d8fb6bacc1ec9b4e4cb4ff8c6"
+  },
+  {
+   "path": "skills.PerforateAltX.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 8400,
+   "to": 8402,
+   "sha256": "14405ec5edd00d5194d9589ea73b42a0096d422d8fb6bacc1ec9b4e4cb4ff8c6"
+  },
+  {
+   "path": "skills.PerforateAltY.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 8501,
+   "to": 8503,
+   "sha256": "14405ec5edd00d5194d9589ea73b42a0096d422d8fb6bacc1ec9b4e4cb4ff8c6"
+  },
+  {
+   "path": "skills.PoisonousConcoction.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 17426,
+   "to": 17431,
+   "sha256": "558a8faca69370fdd764591fcaa080a6035da9236776ff310c8c3ac990b7009e"
+  },
+  {
+   "path": "skills.PoisonousConcoctionAltX.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 17527,
+   "to": 17532,
+   "sha256": "558a8faca69370fdd764591fcaa080a6035da9236776ff310c8c3ac990b7009e"
+  },
+  {
+   "path": "skills.RageVortex.preSkillTypeFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 9082,
+   "to": 9091,
+   "sha256": "3c8202d2061670642148688e8d08947e4e8a3124e115251dc7861020e5dc1146"
+  },
+  {
+   "path": "skills.RighteousFire.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 15511,
+   "to": 15517,
+   "sha256": "47f63f828c7e4767e698ee0c010aa605ced004ea8c0a7b486d7aaa75b3c82225"
+  },
+  {
+   "path": "skills.RighteousFireAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 15616,
+   "to": 15620,
+   "sha256": "12dd2781a200d312c2fb21b2cc18b0478792af63dd2581d67a2ad6d207ee775b"
+  },
+  {
+   "path": "skills.ScourgeArrow.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 12992,
+   "to": 12994,
+   "sha256": "f15cf01aee5a4b61d1d80cffe7e621ee4a0d31b1d680b1e54bf7a2d91ea8fa16"
+  },
+  {
+   "path": "skills.SeismicTrap.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 13383,
+   "to": 13498,
+   "sha256": "bcab0d881fb82cd7cab01ece5aa881433d7694c83538ffb0c4af3399d14a8b6e"
+  },
+  {
+   "path": "skills.SeismicTrapAltX.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 13624,
+   "to": 13673,
+   "sha256": "9a6bb655aa4aa81df0ceeaa8b090d8fa397c8bddff395a52765e38189680357a"
+  },
+  {
+   "path": "skills.ShrapnelBallista.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 13781,
+   "to": 13789,
+   "sha256": "a5e0e6526ed2da2039a231401f2141ba83c32b20a773365c8e069c59945796a1"
+  },
+  {
+   "path": "skills.ShrapnelBallistaAltX.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 13869,
+   "to": 13877,
+   "sha256": "a5e0e6526ed2da2039a231401f2141ba83c32b20a773365c8e069c59945796a1"
+  },
+  {
+   "path": "skills.Spark.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 16804,
+   "to": 16810,
+   "sha256": "3eda1a3a1b56279d7349ca9f484f7889c383b67346dcbb78c9cd19d9ce3f887e"
+  },
+  {
+   "path": "skills.SparkAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 16894,
+   "to": 16900,
+   "sha256": "6ba236c5d8dff7afa2ebf95e25c04b32216a8b592594ca233b11303f93b36096"
+  },
+  {
+   "path": "skills.SparkAltY.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 16985,
+   "to": 16991,
+   "sha256": "3eda1a3a1b56279d7349ca9f484f7889c383b67346dcbb78c9cd19d9ce3f887e"
+  },
+  {
+   "path": "skills.StaticStrike.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 10726,
+   "to": 10730,
+   "sha256": "30f986590c9224a1fd7f329b289eca6159a4a7058fbb725a25311d8b767fdfcb"
+  },
+  {
+   "path": "skills.StormBrand.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 17456,
+   "to": 17458,
+   "sha256": "48907eac3b6310cb369ef87ebddefa1a756bd1661da336193b0eaae2df3d17c6"
+  },
+  {
+   "path": "skills.StormBrandAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 17553,
+   "to": 17555,
+   "sha256": "48907eac3b6310cb369ef87ebddefa1a756bd1661da336193b0eaae2df3d17c6"
+  },
+  {
+   "path": "skills.StormBurst.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 18119,
+   "to": 18131,
+   "sha256": "3cec102ee122f79dbd58a5023871dadda66a8edf257e1c49be4461d59f0dad94"
+  },
+  {
+   "path": "skills.StormBurstAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 18234,
+   "to": 18240,
+   "sha256": "41a3cdc39bf20760e409a1933f6e52f7c5cb66a52b830d12a785239596d3fce0"
+  },
+  {
+   "path": "skills.StormRain.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 11749,
+   "to": 11754,
+   "sha256": "b2496d03fd13d5fb90bf078a953fe41c6913b0099fbd2b3def79e79b04ab5066"
+  },
+  {
+   "path": "skills.StormRainAltX.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 11853,
+   "to": 11858,
+   "sha256": "6e93f9cb7d7c788e8ac3129cbfbd179fde996179284eda25b965c5a6c6a76d98"
+  },
+  {
+   "path": "skills.StormRainAltY.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 11960,
+   "to": 11966,
+   "sha256": "c1234ad1dc0fa6652c350cf0b5c135a3642bc721047bc832b318b62505e30859"
+  },
+  {
+   "path": "skills.Tornado.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 18037,
+   "to": 18039,
+   "sha256": "91c37fecdf57afb92b32b98c4ed67f684fcdc47584e97d79c02c5e259873c87b"
+  },
+  {
+   "path": "skills.TornadoAltY.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 18130,
+   "to": 18133,
+   "sha256": "62e81aaabd74e61697a16e66ec3c776e095d5b638e71b186bc42ba5b00b3eec2"
+  },
+  {
+   "path": "skills.TornadoShot.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 16054,
+   "to": 16065,
+   "sha256": "d13aed30ef6bb210c32448cd93f0332c18e4892227ad62bde08547881701e2a0"
+  },
+  {
+   "path": "skills.ToxicRain.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 14938,
+   "to": 14940,
+   "sha256": "a607479cf006b5e38a533faf7759bf4c720bf6f0dcd325bbf27566aaedd92ca2"
+  },
+  {
+   "path": "skills.ToxicRainAltX.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 15030,
+   "to": 15032,
+   "sha256": "a607479cf006b5e38a533faf7759bf4c720bf6f0dcd325bbf27566aaedd92ca2"
+  },
+  {
+   "path": "skills.ToxicRainAltY.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 15119,
+   "to": 15121,
+   "sha256": "a607479cf006b5e38a533faf7759bf4c720bf6f0dcd325bbf27566aaedd92ca2"
+  },
+  {
+   "path": "skills.VaalBladeVortex.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 2428,
+   "to": 2430,
+   "sha256": "155ceb3b36862cb3a1fd5c046642cb437f354b1d9f612577a85e49a4608edd9d"
+  },
+  {
+   "path": "skills.VaalCyclone.initialFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 4936,
+   "to": 4949,
+   "sha256": "a17ea50f272107e6da0976d59b0338a9c02946a975073f5d1bf3dac7ee02727f"
+  },
+  {
+   "path": "skills.VaalLightningArrow.preDamageFunc",
+   "src": "Data/Skills/act_dex.lua",
+   "from": 10592,
+   "to": 10596,
+   "sha256": "659342bba434fa868ca4478a8ef9e416bb275f9da00e180d681b210af698ca1b"
+  },
+  {
+   "path": "skills.VaalMoltenShell.preDamageFunc",
+   "src": "Data/Skills/act_str.lua",
+   "from": 7701,
+   "to": 7705,
+   "sha256": "87435ec8cd27eb64b0dde5d339e393bc127cbd034c313309a284591744107c8f"
+  },
+  {
+   "path": "skills.VaalRighteousFire.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 15708,
+   "to": 15714,
+   "sha256": "00b0c5422a4ecb05b7f078f5c7b1d3407624dea66fa3ae4b73a5d88da4db2e78"
+  },
+  {
+   "path": "skills.VoidSphere.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 20350,
+   "to": 20352,
+   "sha256": "0fe6add8a42008e102b8e4143c3e5813ba32f1a423d639b6750f727f8b791a51"
+  },
+  {
+   "path": "skills.VoidSphereAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 20439,
+   "to": 20441,
+   "sha256": "0fe6add8a42008e102b8e4143c3e5813ba32f1a423d639b6750f727f8b791a51"
+  },
+  {
+   "path": "skills.VoltaxicBurst.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 20528,
+   "to": 20531,
+   "sha256": "7491b90332deaa6b87be2e67058f16c82da7744dd32c0cee0f3d94e161959927"
+  },
+  {
+   "path": "skills.Vortex.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 20625,
+   "to": 20627,
+   "sha256": "bcb877cd38f680213da072ab311e27cfa9cb87d1faa786617e844738aad9537e"
+  },
+  {
+   "path": "skills.VortexAltX.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 20712,
+   "to": 20714,
+   "sha256": "bcb877cd38f680213da072ab311e27cfa9cb87d1faa786617e844738aad9537e"
+  },
+  {
+   "path": "skills.WaveOfConviction.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 20878,
+   "to": 20883,
+   "sha256": "d4d6595d68b37dd6fa2c629d0136a52a372db77a256afb356d3486a592f28e4b"
+  },
+  {
+   "path": "skills.WaveOfConvictionAltY.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 20972,
+   "to": 20977,
+   "sha256": "b68cf4116a44f96ab8e673e4803e33a87a20f04fd98e48b36662ec499174edac"
+  },
+  {
+   "path": "skills.WinterOrb.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 21066,
+   "to": 21070,
+   "sha256": "ffece993f623ae6cf65174c43bc24ec134484057f5836476506381d9332d10a5"
+  },
+  {
+   "path": "skills.WintertideBrand.preDamageFunc",
+   "src": "Data/Skills/act_int.lua",
+   "from": 21275,
+   "to": 21299,
+   "sha256": "a78ef7b6cb1c7bef2be331229a14f7fd2121b407f0f0e1b3c64454d8c1723e35"
+  }
+ ],
+ "uniqueSources": 190,
+ "byHook": {
+  "GetFromOutput": 1,
+  "__index": 1,
+  "apply": 41,
+  "describeStats": 1,
+  "explosiveArrowFunc": 1,
+  "getAbyssJewelComponentRoll": 1,
+  "initialFunc": 4,
+  "postCritFunc": 3,
+  "preDamageFunc": 123,
+  "preSkillTypeFunc": 3,
+  "printMissingMinionSkills": 1,
+  "readAbyssJewelLUT": 1,
+  "readLUT": 1,
+  "repairLUTs": 1,
+  "resolveAbyssJewelComponent": 1,
+  "setJewelRadiiGlobally": 1,
+  "transform": 11
+ }
+}

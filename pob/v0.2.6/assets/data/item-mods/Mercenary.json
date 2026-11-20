@@ -1,0 +1,811 @@
+{
+ "MercenaryModAddCritPerExert": {
+  "lines": [
+   "Skills have +(2-3)% to Critical Strike Chance for each Warcry Exerting them"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "AddCritPerExert",
+  "level": 68,
+  "statOrder": [
+   4259
+  ],
+  "weightKey": [
+   "helmet",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "critical"
+  ],
+  "tradeHashes": {
+   "3528761893": [
+    "Skills have +(2-3)% to Critical Strike Chance for each Warcry Exerting them"
+   ]
+  }
+ },
+ "MercenaryModAshWarcries": {
+  "lines": [
+   "Your Warcries cover Enemies in Ash for 5 seconds"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "CoverInAshWarcry",
+  "level": 68,
+  "statOrder": [
+   10424
+  ],
+  "weightKey": [
+   "helmet",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "elemental",
+   "fire"
+  ],
+  "tradeHashes": {
+   "3946593978": [
+    "Your Warcries cover Enemies in Ash for 5 seconds"
+   ]
+  }
+ },
+ "MercenaryModClonesInheritGloves": {
+  "lines": [
+   "Your Blink and Mirror arrow clones use your Gloves"
+  ],
+  "type": "Prefix",
+  "affix": "Infamous",
+  "group": "ClonesInheritGloves",
+  "level": 68,
+  "statOrder": [
+   4977
+  ],
+  "weightKey": [
+   "quiver",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "minion"
+  ],
+  "tradeHashes": {
+   "3148879215": [
+    "Your Blink and Mirror arrow clones use your Gloves"
+   ]
+  }
+ },
+ "MercenaryModConsecratedChaosRes": {
+  "lines": [
+   "Consecrated Ground you create grants +(1-3)% maximum Chaos Resistance to you and Allies"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "ConsecratedChaosRes",
+  "level": 68,
+  "statOrder": [
+   10553
+  ],
+  "weightKey": [
+   "body_armour",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "chaos"
+  ],
+  "tradeHashes": {
+   "1235229114": [
+    "Consecrated Ground you create grants +(1-3)% maximum Chaos Resistance to you and Allies"
+   ]
+  }
+ },
+ "MercenaryModCurseChillingAreas": {
+  "lines": [
+   "Curses on Enemies in your Chilling Areas have 15% increased Effect"
+  ],
+  "type": "Prefix",
+  "affix": "Infamous",
+  "group": "CurseEffectChillingAreas",
+  "level": 68,
+  "statOrder": [
+   5487
+  ],
+  "weightKey": [
+   "wand",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "curse"
+  ],
+  "tradeHashes": {
+   "608898129": [
+    "Curses on Enemies in your Chilling Areas have 15% increased Effect"
+   ]
+  }
+ },
+ "MercenaryModCurseEffect": {
+  "lines": [
+   "20% reduced Curse Duration",
+   "15% increased Effect of your Curses"
+  ],
+  "type": "Prefix",
+  "affix": "Infamous",
+  "group": "CurseEffectReduceCurseDuration",
+  "level": 68,
+  "statOrder": [
+   1455,
+   2277
+  ],
+  "weightKey": [
+   "staff",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "curse"
+  ],
+  "tradeHashes": {
+   "2353576063": [
+    "15% increased Effect of your Curses"
+   ],
+   "3824372849": [
+    "20% reduced Curse Duration"
+   ]
+  }
+ },
+ "MercenaryModDebilitate": {
+  "lines": [
+   "Debuffs on you expire (80-100)% faster",
+   "You are Debilitated"
+  ],
+  "type": "Prefix",
+  "affix": "Infamous",
+  "group": "SelfDebilitate",
+  "level": 68,
+  "statOrder": [
+   5880,
+   9819
+  ],
+  "weightKey": [
+   "belt",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "1238227257": [
+    "Debuffs on you expire (80-100)% faster"
+   ],
+   "1989416016": [
+    "You are Debilitated"
+   ]
+  }
+ },
+ "MercenaryModFortificationDamageAura": {
+  "lines": [
+   "Enemies within 6 metres take 1% increased Physical Damage per two Fortification on you"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "FortificationDamageAura",
+  "level": 68,
+  "statOrder": [
+   9288
+  ],
+  "weightKey": [
+   "helmet",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "physical"
+  ],
+  "tradeHashes": {
+   "4187518631": [
+    "Enemies within 6 metres take 1% increased Physical Damage per two Fortification on you"
+   ]
+  }
+ },
+ "MercenaryModImpaleEffectFromDistance": {
+  "lines": [
+   "Projectiles gain Impale effect as they travel farther, causing Impales they inflict to have up to 40% increased effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "ImpaleEffectFromDistance",
+  "level": 68,
+  "statOrder": [
+   7015
+  ],
+  "weightKey": [
+   "gloves",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "physical"
+  ],
+  "tradeHashes": {
+   "2521866096": [
+    "Projectiles gain Impale effect as they travel farther, causing Impales they inflict to have up to 40% increased effect"
+   ]
+  }
+ },
+ "MercenaryModLGOHIgnitedEnemies": {
+  "lines": [
+   "Gain (5-10) Life for each Ignited Enemy hit with Attacks"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "LifeGainOnHitVsIgnitedEnemies",
+  "level": 68,
+  "statOrder": [
+   1417
+  ],
+  "weightKey": [
+   "ring",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "life"
+  ],
+  "tradeHashes": {
+   "120895749": [
+    "Gain (5-10) Life for each Ignited Enemy hit with Attacks"
+   ]
+  }
+ },
+ "MercenaryModLifeCostOnLowLife": {
+  "lines": [
+   "30% less Life cost of Skills while on Low Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "LifeCostOnLowLife",
+  "level": 68,
+  "statOrder": [
+   9905
+  ],
+  "weightKey": [
+   "gloves",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "life"
+  ],
+  "tradeHashes": {
+   "3452986510": [
+    "30% less Life cost of Skills while on Low Life"
+   ]
+  }
+ },
+ "MercenaryModLightningSkillManaCostWhileShocked": {
+  "lines": [
+   "40% less Mana cost of Lightning Skills while Shocked"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "LightningSkillManaCostWhileShocked",
+  "level": 68,
+  "statOrder": [
+   7239
+  ],
+  "weightKey": [
+   "body_armour",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "mana",
+   "elemental",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "3964669425": [
+    "40% less Mana cost of Lightning Skills while Shocked"
+   ]
+  }
+ },
+ "MercenaryModMaimDOT": {
+  "lines": [
+   "Enemies Maimed by you take 10% increased Damage Over Time"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "EnchantmentMaim",
+  "level": 68,
+  "statOrder": [
+   6153
+  ],
+  "weightKey": [
+   "belt",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "damage"
+  ],
+  "tradeHashes": {
+   "2745149002": [
+    "Enemies Maimed by you take 10% increased Damage Over Time"
+   ]
+  }
+ },
+ "MercenaryModMaxBlades": {
+  "lines": [
+   "Skills that leave Lingering Blades have +(5-10) to Maximum Lingering Blades"
+  ],
+  "type": "Prefix",
+  "affix": "Infamous",
+  "group": "MaxBlades",
+  "level": 68,
+  "statOrder": [
+   8983
+  ],
+  "weightKey": [
+   "amulet",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "3954265754": [
+    "Skills that leave Lingering Blades have +(5-10) to Maximum Lingering Blades"
+   ]
+  }
+ },
+ "MercenaryModMineLifeReserve": {
+  "lines": [
+   "Your Skills that throw Mines reserve Life instead of Mana"
+  ],
+  "type": "Prefix",
+  "affix": "Infamous",
+  "group": "MineLifeReserve",
+  "level": 68,
+  "statOrder": [
+   9918
+  ],
+  "weightKey": [
+   "helmet",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "life"
+  ],
+  "tradeHashes": {
+   "1192252020": [
+    "Your Skills that throw Mines reserve Life instead of Mana"
+   ]
+  }
+ },
+ "MercenaryModMinionCDR": {
+  "lines": [
+   "Minions have 20% increased Cooldown Recovery Rate"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "MinionCooldownRecovery",
+  "level": 68,
+  "statOrder": [
+   9108
+  ],
+  "weightKey": [
+   "belt",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "minion"
+  ],
+  "tradeHashes": {
+   "1691403182": [
+    "Minions have 20% increased Cooldown Recovery Rate"
+   ]
+  }
+ },
+ "MercenaryModMinionFireConvertToChaos": {
+  "lines": [
+   "Minions convert 100% of Fire Damage to Chaos Damage"
+  ],
+  "type": "Prefix",
+  "affix": "Infamous",
+  "group": "MinionFireConvertToChaos",
+  "level": 68,
+  "statOrder": [
+   9097
+  ],
+  "weightKey": [
+   "gloves",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "elemental",
+   "fire",
+   "chaos",
+   "minion"
+  ],
+  "tradeHashes": {
+   "2727256287": [
+    "Minions convert 100% of Fire Damage to Chaos Damage"
+   ]
+  }
+ },
+ "MercenaryModProjSpeedVariance": {
+  "lines": [
+   "Each Projectile created by Attacks you make with a Melee Weapon has",
+   "between 50% more and 50% less Projectile Speed at random"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "MeleeProjSpeedVariance",
+  "level": 68,
+  "statOrder": [
+   9587,
+   9587.1
+  ],
+  "weightKey": [
+   "gloves",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "speed"
+  ],
+  "tradeHashes": {
+   "1563068812": [
+    "Each Projectile created by Attacks you make with a Melee Weapon has",
+    "between 50% more and 50% less Projectile Speed at random"
+   ]
+  }
+ },
+ "MercenaryModRageDecaySpeed": {
+  "lines": [
+   "Inherent loss of Rage is 20% slower"
+  ],
+  "type": "Prefix",
+  "affix": "Infamous",
+  "group": "RageDecaySpeed",
+  "level": 68,
+  "statOrder": [
+   9636
+  ],
+  "weightKey": [
+   "helmet",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "3645269560": [
+    "Inherent loss of Rage is 20% slower"
+   ]
+  }
+ },
+ "MercenaryModRecentMinionCrit": {
+  "lines": [
+   "Minions created Recently have (60-100)% increased Critical Hit Chance"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "RecentMinionCrit",
+  "level": 68,
+  "statOrder": [
+   9161
+  ],
+  "weightKey": [
+   "wand",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "minion",
+   "critical"
+  ],
+  "tradeHashes": {
+   "3913090641": [
+    "Minions created Recently have (60-100)% increased Critical Hit Chance"
+   ]
+  }
+ },
+ "MercenaryModRecoupWhileFrozen": {
+  "lines": [
+   "(50-90)% of Damage taken while Frozen Recouped as Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "RecoupWhileFrozen",
+  "level": 68,
+  "statOrder": [
+   5853
+  ],
+  "weightKey": [
+   "body_armour",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "life"
+  ],
+  "tradeHashes": {
+   "2585984986": [
+    "(50-90)% of Damage taken while Frozen Recouped as Life"
+   ]
+  }
+ },
+ "MercenaryModReverseChillEffectChilledGround": {
+  "lines": [
+   "The Effect of Chill on you is reversed while on Chilled ground"
+  ],
+  "type": "Prefix",
+  "affix": "Infamous",
+  "group": "ChilledEffectReversedChilledGround",
+  "level": 68,
+  "statOrder": [
+   5477
+  ],
+  "weightKey": [
+   "boots",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "elemental",
+   "cold",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "3440719546": [
+    "The Effect of Chill on you is reversed while on Chilled ground"
+   ]
+  }
+ },
+ "MercenaryModSingleProjAOE": {
+  "lines": [
+   "30% more Area of Effect with Bow Attacks that fire a single Projectile"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "SingleProjAOE",
+  "level": 68,
+  "statOrder": [
+   4433
+  ],
+  "weightKey": [
+   "bow",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "2379109976": [
+    "30% more Area of Effect with Bow Attacks that fire a single Projectile"
+   ]
+  }
+ },
+ "MercenaryModSkipSacrifice": {
+  "lines": [
+   "(20-40)% chance on Skill use to not Sacrifice Life but",
+   "still gain benefits as though you had"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "SkipSacrifice",
+  "level": 68,
+  "statOrder": [
+   9919,
+   9919.1
+  ],
+  "weightKey": [
+   "staff",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "life"
+  ],
+  "tradeHashes": {
+   "1761297940": [
+    "(20-40)% chance on Skill use to not Sacrifice Life but",
+    "still gain benefits as though you had"
+   ]
+  }
+ },
+ "MercenaryModSpellslingerReservation": {
+  "lines": [
+   "20% increased Mana Reservation Efficiency of Skills Supported by Spellslinger"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "EnchantmentSpellslingerManaReservationEfficiency",
+  "level": 68,
+  "statOrder": [
+   10050
+  ],
+  "weightKey": [
+   "helmet",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "mana",
+   "attack",
+   "caster"
+  ],
+  "tradeHashes": {
+   "3305838454": [
+    "20% increased Mana Reservation Efficiency of Skills Supported by Spellslinger"
+   ]
+  }
+ },
+ "MercenaryModTrapMineChain": {
+  "lines": [
+   "Skills used by your Traps and Mines Chain 2 additional times"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "TrapMineChain",
+  "level": 68,
+  "statOrder": [
+   10272
+  ],
+  "weightKey": [
+   "gloves",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "2999750998": [
+    "Skills used by your Traps and Mines Chain 2 additional times"
+   ]
+  }
+ },
+ "MercenaryModTravelSkillCrit": {
+  "lines": [
+   "Your Travel Skills Critically Strike once every 3 uses"
+  ],
+  "type": "Prefix",
+  "affix": "Infamous",
+  "group": "TravelSkillCrit",
+  "level": 68,
+  "statOrder": [
+   10281
+  ],
+  "weightKey": [
+   "boots",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "critical"
+  ],
+  "tradeHashes": {
+   "335741860": [
+    "Your Travel Skills Critically Strike once every 3 uses"
+   ]
+  }
+ },
+ "MercenaryModUnaffectedShock": {
+  "lines": [
+   "Unaffected by Shock while Channelling"
+  ],
+  "type": "Suffix",
+  "affix": "of Infamy",
+  "group": "UnaffectedByShockWhileChannel",
+  "level": 68,
+  "statOrder": [
+   10344
+  ],
+  "weightKey": [
+   "body_armour",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "modTags": [
+   "elemental",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "2967697688": [
+    "Unaffected by Shock while Channelling"
+   ]
+  }
+ }
+}

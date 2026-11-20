@@ -1,0 +1,3793 @@
+{
+ "jewels": {
+  "Large Cluster Jewel": {
+   "size": "Large",
+   "sizeIndex": 2,
+   "minNodes": 8,
+   "maxNodes": 12,
+   "smallIndicies": [
+    0,
+    4,
+    6,
+    8,
+    10,
+    2,
+    7,
+    5,
+    9,
+    3,
+    11,
+    1
+   ],
+   "notableIndicies": [
+    6,
+    4,
+    8,
+    10,
+    2
+   ],
+   "socketIndicies": [
+    4,
+    8,
+    6
+   ],
+   "totalIndicies": 12,
+   "skills": {
+    "affliction_attack_damage_": {
+     "name": "Attack Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNode.png",
+     "tag": "affliction_attack_damage_",
+     "stats": [
+      "10% increased Attack Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 10% increased Attack Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltAttackDamageMastery.png"
+    },
+    "affliction_attack_damage_while_dual_wielding_": {
+     "name": "Attack Damage while Dual Wielding",
+     "icon": "Art/2DArt/SkillIcons/passives/NodeDualWieldingDamage.png",
+     "tag": "affliction_attack_damage_while_dual_wielding_",
+     "stats": [
+      "12% increased Attack Damage while Dual Wielding"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Attack Damage while Dual Wielding"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupDualWield.png"
+    },
+    "affliction_attack_damage_while_holding_a_shield": {
+     "name": "Attack Damage while holding a Shield",
+     "icon": "Art/2DArt/SkillIcons/passives/NodeHoldingShieldDamage.png",
+     "tag": "affliction_attack_damage_while_holding_a_shield",
+     "stats": [
+      "12% increased Attack Damage while holding a Shield"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Attack Damage while holding a Shield"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupShield.png"
+    },
+    "affliction_axe_and_sword_damage": {
+     "name": "Axe and Sword Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/NodeAxeandSwordDamage.png",
+     "tag": "affliction_axe_and_sword_damage",
+     "stats": [
+      "Axe Attacks deal 12% increased Damage with Hits and Ailments",
+      "Sword Attacks deal 12% increased Damage with Hits and Ailments"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: Axe Attacks deal 12% increased Damage with Hits and Ailments",
+      "Added Small Passive Skills grant: Sword Attacks deal 12% increased Damage with Hits and Ailments"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupSwordAndAxe.png"
+    },
+    "affliction_bow_damage": {
+     "name": "Bow Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/NodeBowDamage.png",
+     "tag": "affliction_bow_damage",
+     "stats": [
+      "12% increased Damage with Bows",
+      "12% increased Damage Over Time with Bow Skills"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Damage with Bows",
+      "Added Small Passive Skills grant: 12% increased Damage Over Time with Bow Skills"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupBow.png"
+    },
+    "affliction_chaos_damage": {
+     "name": "Chaos Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/ChaosDamagenode.png",
+     "tag": "affliction_chaos_damage",
+     "stats": [
+      "12% increased Chaos Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Chaos Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryChaos.png"
+    },
+    "affliction_cold_damage": {
+     "name": "Cold Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/ColdDamagenode.png",
+     "tag": "affliction_cold_damage",
+     "stats": [
+      "12% increased Cold Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Cold Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupCold.png"
+    },
+    "affliction_dagger_and_claw_damage": {
+     "name": "Dagger and Claw Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/NodeDaggerandClawDamage.png",
+     "tag": "affliction_dagger_and_claw_damage",
+     "stats": [
+      "Claw Attacks deal 12% increased Damage with Hits and Ailments",
+      "Dagger Attacks deal 12% increased Damage with Hits and Ailments"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: Claw Attacks deal 12% increased Damage with Hits and Ailments",
+      "Added Small Passive Skills grant: Dagger Attacks deal 12% increased Damage with Hits and Ailments"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltDaggerClawDamageMastery.png"
+    },
+    "affliction_damage_with_two_handed_melee_weapons": {
+     "name": "Damage with Two Handed Weapons",
+     "icon": "Art/2DArt/SkillIcons/passives/NodeTwoHandedMeleeDamage.png",
+     "tag": "affliction_damage_with_two_handed_melee_weapons",
+     "stats": [
+      "12% increased Damage with Two Handed Weapons"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Damage with Two Handed Weapons"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupTwoHands.png"
+    },
+    "affliction_elemental_damage": {
+     "name": "Elemental Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/ElementalDamagenode.png",
+     "tag": "affliction_elemental_damage",
+     "stats": [
+      "10% increased Elemental Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 10% increased Elemental Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryElementalDamage.png"
+    },
+    "affliction_fire_damage": {
+     "name": "Fire Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/FireDamagenode.png",
+     "tag": "affliction_fire_damage",
+     "stats": [
+      "12% increased Fire Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Fire Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupFire.png"
+    },
+    "affliction_lightning_damage": {
+     "name": "Lightning Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/LightningDamagenode.png",
+     "tag": "affliction_lightning_damage",
+     "stats": [
+      "12% increased Lightning Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Lightning Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupLightning.png"
+    },
+    "affliction_mace_and_staff_damage": {
+     "name": "Mace and Staff Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/NodeMaceandStaffDamage.png",
+     "tag": "affliction_mace_and_staff_damage",
+     "stats": [
+      "Staff Attacks deal 12% increased Damage with Hits and Ailments",
+      "Mace or Sceptre Attacks deal 12% increased Damage with Hits and Ailments"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: Staff Attacks deal 12% increased Damage with Hits and Ailments",
+      "Added Small Passive Skills grant: Mace or Sceptre Attacks deal 12% increased Damage with Hits and Ailments"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupMaceAndStaff.png"
+    },
+    "affliction_minion_damage": {
+     "name": "Minion Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/IncreasedMinionDamageNode.png",
+     "tag": "affliction_minion_damage",
+     "stats": [
+      "Minions deal 10% increased Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: Minions deal 10% increased Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupMinions.png"
+    },
+    "affliction_physical_damage": {
+     "name": "Physical Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/PhysicalDamagenode2.png",
+     "tag": "affliction_physical_damage",
+     "stats": [
+      "12% increased Physical Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Physical Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryPhysicalDamage.png"
+    },
+    "affliction_spell_damage": {
+     "name": "Spell Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/IncreasedSpellDamageNode.png",
+     "tag": "affliction_spell_damage",
+     "stats": [
+      "10% increased Spell Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 10% increased Spell Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupCast.png"
+    },
+    "affliction_wand_damage": {
+     "name": "Wand Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/NodeWandDamage.png",
+     "tag": "affliction_wand_damage",
+     "stats": [
+      "Wand Attacks deal 12% increased Damage with Hits and Ailments"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: Wand Attacks deal 12% increased Damage with Hits and Ailments"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupWand.png"
+    }
+   }
+  },
+  "Medium Cluster Jewel": {
+   "size": "Medium",
+   "sizeIndex": 1,
+   "minNodes": 4,
+   "maxNodes": 6,
+   "smallIndicies": [
+    0,
+    6,
+    8,
+    4,
+    10,
+    2
+   ],
+   "notableIndicies": [
+    6,
+    10,
+    2,
+    0
+   ],
+   "socketIndicies": [
+    6
+   ],
+   "totalIndicies": 12,
+   "skills": {
+    "affliction_area_damage": {
+     "name": "Area Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/AreaDmgNode.png",
+     "tag": "affliction_area_damage",
+     "stats": [
+      "10% increased Area Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 10% increased Area Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltAreaDamageMastery.png"
+    },
+    "affliction_aura_effect": {
+     "name": "Aura Effect (Legacy)",
+     "icon": "Art/2DArt/SkillIcons/passives/AuraEffectNode.png",
+     "tag": "old_do_not_use_affliction_aura_effect",
+     "stats": [
+      "3% increased effect of Non-Curse Auras from your Skills"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 3% increased effect of Non-Curse Auras from your Skills"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryAuras.png"
+    },
+    "affliction_brand_damage": {
+     "name": "Brand Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/BrandDmgNode.png",
+     "tag": "affliction_brand_damage",
+     "stats": [
+      "12% increased Brand Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Brand Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryBrand.png"
+    },
+    "affliction_channelling_skill_damage": {
+     "name": "Channelling Skill Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/DmgWhenChannelSkillsNode.png",
+     "tag": "affliction_channelling_skill_damage",
+     "stats": [
+      "Channelling Skills deal 12% increased Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: Channelling Skills deal 12% increased Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryChannelling.png"
+    },
+    "affliction_chaos_damage_over_time_multiplier": {
+     "name": "Chaos Damage over Time",
+     "icon": "Art/2DArt/SkillIcons/passives/ChaosDamageOverTimeNode.png",
+     "tag": "affliction_chaos_damage_over_time_multiplier",
+     "stats": [
+      "12% increased Chaos Damage over Time"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Chaos Damage over Time"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltChaosDamageMastery.png"
+    },
+    "affliction_cold_damage_over_time_multiplier": {
+     "name": "Cold Damage over Time",
+     "icon": "Art/2DArt/SkillIcons/passives/ColdDamageOverTimeNode.png",
+     "tag": "affliction_cold_damage_over_time_multiplier",
+     "stats": [
+      "12% increased Cold Damage over Time"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Cold Damage over Time"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltColdDamageMastery.png"
+    },
+    "affliction_critical_chance": {
+     "name": "Critical Chance",
+     "icon": "Art/2DArt/SkillIcons/passives/IncreaseCritChanceNode.png",
+     "tag": "affliction_critical_chance",
+     "stats": [
+      "15% increased Critical Strike Chance"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 15% increased Critical Strike Chance"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupCrit.png"
+    },
+    "affliction_curse_effect": {
+     "name": "Curse Effect (Legacy)",
+     "icon": "Art/2DArt/SkillIcons/passives/CurseEffectNode.png",
+     "tag": "old_do_not_use_affliction_curse_effect",
+     "stats": [
+      "2% increased Effect of your Curses"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 2% increased Effect of your Curses"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryCurse.png"
+    },
+    "affliction_damage_over_time_multiplier": {
+     "name": "Damage over Time",
+     "icon": "Art/2DArt/SkillIcons/passives/DamageOverTimeNode.png",
+     "tag": "affliction_damage_over_time_multiplier",
+     "stats": [
+      "10% increased Damage over Time"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 10% increased Damage over Time"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltDamageOverTimeMultiplierMastery.png"
+    },
+    "affliction_damage_while_you_have_a_herald": {
+     "name": "Damage while you have a Herald",
+     "icon": "Art/2DArt/SkillIcons/passives/DmgHeraldSkillsNode.png",
+     "tag": "affliction_damage_while_you_have_a_herald",
+     "stats": [
+      "10% increased Damage while affected by a Herald"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 10% increased Damage while affected by a Herald"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltDamageWithHeraldMastery.png"
+    },
+    "affliction_effect_of_non-damaging_ailments": {
+     "name": "Effect of Non-Damaging Ailments",
+     "icon": "Art/2DArt/SkillIcons/passives/IncreasedNonDamageAilmentNode.png",
+     "tag": "affliction_effect_of_non-damaging_ailments",
+     "stats": [
+      "10% increased Effect of Non-Damaging Ailments"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 10% increased Effect of Non-Damaging Ailments"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltNonDamagingAilmentsMastery.png"
+    },
+    "affliction_fire_damage_over_time_multiplier": {
+     "name": "Fire Damage over Time",
+     "icon": "Art/2DArt/SkillIcons/passives/FireDamageOverTimeNode.png",
+     "tag": "affliction_fire_damage_over_time_multiplier",
+     "stats": [
+      "12% increased Burning Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Burning Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltFireDamageMastery.png"
+    },
+    "affliction_flask_duration": {
+     "name": "Flask Duration",
+     "icon": "Art/2DArt/SkillIcons/passives/FlaskDurationnode.png",
+     "tag": "affliction_flask_duration",
+     "stats": [
+      "6% increased Flask Effect Duration"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 6% increased Flask Effect Duration"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryFlasks.png"
+    },
+    "affliction_life_and_mana_recovery_from_flasks": {
+     "name": "Life and Mana recovery from Flasks",
+     "icon": "Art/2DArt/SkillIcons/passives/LifeManaFlasksrecoverynode.png",
+     "tag": "affliction_life_and_mana_recovery_from_flasks",
+     "stats": [
+      "10% increased Life Recovery from Flasks",
+      "10% increased Mana Recovery from Flasks"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 10% increased Life Recovery from Flasks",
+      "Added Small Passive Skills grant: 10% increased Mana Recovery from Flasks"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryFlasks.png"
+    },
+    "affliction_minion_damage_while_you_have_a_herald": {
+     "name": "Minion Damage while you have a Herald",
+     "icon": "Art/2DArt/SkillIcons/passives/MinionDmgHeraldSkillsNode.png",
+     "tag": "affliction_minion_damage_while_you_have_a_herald",
+     "stats": [
+      "Minions deal 10% increased Damage while you are affected by a Herald"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: Minions deal 10% increased Damage while you are affected by a Herald"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMinionDamageHeraldMastery.png"
+    },
+    "affliction_minion_life": {
+     "name": "Minion Life",
+     "icon": "Art/2DArt/SkillIcons/passives/IncreaseMinionLifeNode.png",
+     "tag": "affliction_minion_life",
+     "stats": [
+      "Minions have 12% increased maximum Life"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: Minions have 12% increased maximum Life"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupMinions.png"
+    },
+    "affliction_physical_damage_over_time_multiplier": {
+     "name": "Physical Damage over Time",
+     "icon": "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimeNode.png",
+     "tag": "affliction_physical_damage_over_time_multiplier",
+     "stats": [
+      "12% increased Physical Damage over Time"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Physical Damage over Time"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltBloodMastery.png"
+    },
+    "affliction_projectile_damage": {
+     "name": "Projectile Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/ProjectileDmgNode.png",
+     "tag": "affliction_projectile_damage",
+     "stats": [
+      "10% increased Projectile Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 10% increased Projectile Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryProjectiles.png"
+    },
+    "affliction_totem_damage": {
+     "name": "Totem Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/TotemDmgNode.png",
+     "tag": "affliction_totem_damage",
+     "stats": [
+      "12% increased Totem Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Totem Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryTotem.png"
+    },
+    "affliction_trap_and_mine_damage": {
+     "name": "Trap and Mine Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/TrapAndMineDmgNode.png",
+     "tag": "affliction_trap_and_mine_damage",
+     "stats": [
+      "12% increased Trap Damage",
+      "12% increased Mine Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 12% increased Trap Damage",
+      "Added Small Passive Skills grant: 12% increased Mine Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltMasteryTraps.png"
+    },
+    "affliction_warcry_buff_effect": {
+     "name": "Exerted Attack Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/IncreasedWarcryNode.png",
+     "tag": "affliction_warcry_buff_effect",
+     "stats": [
+      "Exerted Attacks deal 20% increased Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: Exerted Attacks deal 20% increased Damage"
+     ],
+     "masteryIcon": "Art/2DArt/SkillIcons/passives/AltWarcryMastery.png"
+    }
+   }
+  },
+  "Small Cluster Jewel": {
+   "size": "Small",
+   "sizeIndex": 0,
+   "minNodes": 2,
+   "maxNodes": 3,
+   "smallIndicies": [
+    0,
+    4,
+    2
+   ],
+   "notableIndicies": [
+    4
+   ],
+   "socketIndicies": [
+    4
+   ],
+   "totalIndicies": 6,
+   "skills": {
+    "affliction_armour": {
+     "name": "Armour",
+     "icon": "Art/2DArt/SkillIcons/passives/ArmourNode.png",
+     "tag": "affliction_armour",
+     "stats": [
+      "15% increased Armour"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 15% increased Armour"
+     ]
+    },
+    "affliction_chance_to_block_attack_damage": {
+     "name": "Chance to Block Attack Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/BlockAttackDmgNode.png",
+     "tag": "affliction_chance_to_block",
+     "stats": [
+      "+2% Chance to Block Attack Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: +2% Chance to Block Attack Damage"
+     ]
+    },
+    "affliction_chance_to_block_spell_damage": {
+     "name": "Chance to Block Spell Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/BlockSpellDmgNode.png",
+     "tag": "affliction_chance_to_block",
+     "stats": [
+      "2% Chance to Block Spell Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 2% Chance to Block Spell Damage"
+     ]
+    },
+    "affliction_chance_to_dodge_attacks": {
+     "name": "Chance to Suppress Spell Damage",
+     "icon": "Art/2DArt/SkillIcons/passives/DodgeAtksNode.png",
+     "tag": "affliction_chance_to_dodge_attacks",
+     "stats": [
+      "+4% chance to Suppress Spell Damage"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: +4% chance to Suppress Spell Damage"
+     ]
+    },
+    "affliction_chaos_resistance": {
+     "name": "Chaos Resistance",
+     "icon": "Art/2DArt/SkillIcons/passives/ChaosResistNode.png",
+     "tag": "affliction_chaos_resistance",
+     "stats": [
+      "+12% to Chaos Resistance"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: +12% to Chaos Resistance"
+     ]
+    },
+    "affliction_cold_resistance": {
+     "name": "Cold Resistance",
+     "icon": "Art/2DArt/SkillIcons/passives/ColdResistNode.png",
+     "tag": "affliction_cold_resistance",
+     "stats": [
+      "+15% to Cold Resistance"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: +15% to Cold Resistance"
+     ]
+    },
+    "affliction_curse_effect_small": {
+     "name": "Curse Effect",
+     "icon": "Art/2DArt/SkillIcons/passives/CurseEffectNode.png",
+     "tag": "affliction_curse_effect_small",
+     "stats": [
+      "2% increased Effect of your Curses"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 2% increased Effect of your Curses"
+     ]
+    },
+    "affliction_dexterity": {
+     "name": "Dexterity",
+     "icon": "Art/2DArt/SkillIcons/passives/plusdexterity.png",
+     "tag": "affliction_dexterity",
+     "stats": [
+      "+10 to Dexterity"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: +10 to Dexterity"
+     ]
+    },
+    "affliction_evasion": {
+     "name": "Evasion",
+     "icon": "Art/2DArt/SkillIcons/passives/EvasionNode.png",
+     "tag": "affliction_evasion",
+     "stats": [
+      "15% increased Evasion Rating"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 15% increased Evasion Rating"
+     ]
+    },
+    "affliction_fire_resistance": {
+     "name": "Fire Resistance",
+     "icon": "Art/2DArt/SkillIcons/passives/FireResistNode.png",
+     "tag": "affliction_fire_resistance",
+     "stats": [
+      "+15% to Fire Resistance"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: +15% to Fire Resistance"
+     ]
+    },
+    "affliction_intelligence": {
+     "name": "Intelligence",
+     "icon": "Art/2DArt/SkillIcons/passives/plusintelligence.png",
+     "tag": "affliction_intelligence",
+     "stats": [
+      "+10 to Intelligence"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: +10 to Intelligence"
+     ]
+    },
+    "affliction_lightning_resistance": {
+     "name": "Lightning Resistance",
+     "icon": "Art/2DArt/SkillIcons/passives/LightningResistNode.png",
+     "tag": "affliction_lightning_resistance",
+     "stats": [
+      "+15% to Lightning Resistance"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: +15% to Lightning Resistance"
+     ]
+    },
+    "affliction_maximum_energy_shield": {
+     "name": "Energy Shield",
+     "icon": "Art/2DArt/SkillIcons/passives/EnergyShieldNode.png",
+     "tag": "affliction_maximum_energy_shield",
+     "stats": [
+      "6% increased maximum Energy Shield"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 6% increased maximum Energy Shield"
+     ]
+    },
+    "affliction_maximum_life": {
+     "name": "Life",
+     "icon": "Art/2DArt/SkillIcons/passives/IncreasedMaximumLifeNode.png",
+     "tag": "affliction_maximum_life",
+     "stats": [
+      "4% increased maximum Life"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 4% increased maximum Life"
+     ]
+    },
+    "affliction_maximum_mana": {
+     "name": "Mana",
+     "icon": "Art/2DArt/SkillIcons/passives/MaxManaNode.png",
+     "tag": "affliction_maximum_mana",
+     "stats": [
+      "6% increased maximum Mana"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 6% increased maximum Mana"
+     ]
+    },
+    "affliction_reservation_efficiency_small": {
+     "name": "Reservation Efficiency",
+     "icon": "Art/2DArt/SkillIcons/passives/AuraEffectNode.png",
+     "tag": "affliction_reservation_efficiency_small",
+     "stats": [
+      "6% increased Mana Reservation Efficiency of Skills"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: 6% increased Mana Reservation Efficiency of Skills"
+     ]
+    },
+    "affliction_strength": {
+     "name": "Strength",
+     "icon": "Art/2DArt/SkillIcons/passives/plusstrength.png",
+     "tag": "affliction_strength",
+     "stats": [
+      "+10 to Strength"
+     ],
+     "enchant": [
+      "Added Small Passive Skills grant: +10 to Strength"
+     ]
+    }
+   }
+  }
+ },
+ "keystones": [
+  "Disciple of Kitava",
+  "Lone Messenger",
+  "Nature's Patience",
+  "Secrets of Suffering",
+  "Kineticism",
+  "Veteran's Awareness",
+  "Hollow Palm Technique",
+  "Pitfighter"
+ ],
+ "notableSortOrder": {
+  "Adrenaline": 11494,
+  "Advance Guard": 11275,
+  "Aerialist": 11530,
+  "Aerodynamics": 11474,
+  "Agent of Destruction": 11458,
+  "Aggressive Defence": 15583,
+  "Alchemist": 11542,
+  "Ancestral Echo": 11313,
+  "Ancestral Guidance": 11319,
+  "Ancestral Inspiration": 11320,
+  "Ancestral Might": 11315,
+  "Ancestral Preservation": 11316,
+  "Ancestral Reach": 11314,
+  "Antifreeze": 11543,
+  "Antivenom": 11550,
+  "Arcane Adept": 11328,
+  "Arcane Heroism": 11380,
+  "Arcane Pyrotechnics": 11485,
+  "Arcing Shot": 11351,
+  "Assert Dominance": 11307,
+  "Astonishing Affliction": 11437,
+  "Basics of Pain": 11305,
+  "Battle-Hardened": 11290,
+  "Battlefield Dominator": 11357,
+  "Blacksmith": 11537,
+  "Blanketed Snow": 11399,
+  "Blast-Freeze": 11442,
+  "Blessed": 11552,
+  "Blessed Rebirth": 11465,
+  "Blizzard Caller": 12406,
+  "Blood Artist": 14129,
+  "Bloodscent": 11342,
+  "Blowback": 11415,
+  "Bodyguards": 11468,
+  "Born of Chaos": 11549,
+  "Brand Loyalty": 11478,
+  "Brewed for Potency": 11436,
+  "Broadside": 11353,
+  "Brush with Death": 11433,
+  "Brutal Infamy": 11361,
+  "Burden Projection": 11382,
+  "Burning Bright": 11418,
+  "Calamitous": 11373,
+  "Call to the Slaughter": 11411,
+  "Capacitor": 11545,
+  "Careful Handling": 11487,
+  "Chilling Presence": 11440,
+  "Chip Away": 11475,
+  "Circling Oblivion": 11435,
+  "Clarity of Purpose": 11500,
+  "Cold Conduction": 11438,
+  "Cold to the Core": 11400,
+  "Cold-Blooded Killer": 11401,
+  "Combat Rhythm": 11363,
+  "Compound Injury": 11423,
+  "Confident Combatant": 11522,
+  "Conjured Wall": 11379,
+  "Conservation of Energy": 11510,
+  "Cooked Alive": 11417,
+  "Corrosive Elements": 11387,
+  "Cremator": 11394,
+  "Cry Wolf": 11336,
+  "Cult-Leader": 11455,
+  "Daring Ideas": 11499,
+  "Dark Ideation": 11405,
+  "Dark Messenger": 11457,
+  "Darting Movements": 11532,
+  "Deadly Repartee": 11368,
+  "Deep Chill": 11441,
+  "Deep Cuts": 11284,
+  "Destructive Aspect": 11295,
+  "Devastator": 11374,
+  "Disciples": 11463,
+  "Disease Vector": 11350,
+  "Disorienting Display": 11389,
+  "Disorienting Wounds": 11422,
+  "Distilled Perfection": 11329,
+  "Doedre's Apathy": 12412,
+  "Doedre's Gluttony": 12411,
+  "Doedre's Spite": 11449,
+  "Doryani's Lesson": 11388,
+  "Dragon Hunter": 11515,
+  "Dread March": 11464,
+  "Drive the Destruction": 11376,
+  "Eldritch Inspiration": 11428,
+  "Electric Presence": 11296,
+  "Elegant Form": 11531,
+  "Empowered Envoy": 11456,
+  "Endbringer": 11454,
+  "Enduring Composure": 11516,
+  "Enduring Focus": 11324,
+  "Enduring Ward": 11279,
+  "Energy From Naught": 11507,
+  "Essence Rush": 11384,
+  "Eternal Suffering": 11427,
+  "Evil Eye": 11447,
+  "Expansive Might": 11346,
+  "Expendability": 11484,
+  "Expert Sabotage": 11482,
+  "Exploit Weakness": 12409,
+  "Explosive Force": 11354,
+  "Exposure Therapy": 11432,
+  "Eye of the Storm": 11304,
+  "Eye to Eye": 11472,
+  "Fan of Blades": 11349,
+  "Fan the Flames": 11416,
+  "Fasting": 11331,
+  "Fearsome Warrior": 11362,
+  "Feast of Flesh": 11490,
+  "Feasting Fiends": 11467,
+  "Feed the Fury": 11377,
+  "Fettle": 11489,
+  "Fiery Aegis": 22468,
+  "Fire Attunement": 11535,
+  "Flexible Sentry": 11523,
+  "Flow of Life": 11431,
+  "Follow-Through": 11469,
+  "Forbidden Words": 11448,
+  "Force Multiplier": 11286,
+  "Frantic Aspect": 12473,
+  "Fuel the Fight": 11375,
+  "Furious Assault": 11287,
+  "Genius": 11503,
+  "Gladiator's Fortitude": 11280,
+  "Gladiatorial Combat": 11276,
+  "Graceful Execution": 11360,
+  "Grand Design": 11480,
+  "Grim Oath": 11289,
+  "Guerilla Tactics": 11483,
+  "Haemorrhage": 11430,
+  "Haunting Shout": 11337,
+  "Heart of Iron": 11511,
+  "Heavy Hitter": 11371,
+  "Heraldry": 11453,
+  "Hex Breaker": 11327,
+  "Hibernator": 11540,
+  "Hit and Run": 11364,
+  "Holistic Health": 11502,
+  "Holy Conquest": 11479,
+  "Holy Word": 22467,
+  "Hound's Mark": 12410,
+  "Hulking Corpses": 11412,
+  "Improvisor": 11504,
+  "Insatiable Killer": 11365,
+  "Inspired Oppression": 11439,
+  "Insulated": 11548,
+  "Intensity": 11310,
+  "Introspection": 12474,
+  "Invigorating Portents": 11461,
+  "Iron Breaker": 11283,
+  "Lasting Impression": 11459,
+  "Lead By Example": 11338,
+  "Life from Death": 11466,
+  "Liquid Inspiration": 11497,
+  "Lord of Drought": 12405,
+  "Low Tolerance": 11425,
+  "Mage Bane": 11366,
+  "Mage Hunter": 11527,
+  "Magnifier": 11302,
+  "Martial Mastery": 11358,
+  "Martial Momentum": 11367,
+  "Martial Prowess": 11372,
+  "Master of Command": 11292,
+  "Master of Fear": 11451,
+  "Master of Fire": 11392,
+  "Master of the Maelstrom": 12413,
+  "Master the Fundamentals": 11285,
+  "Mender's Wellspring": 11332,
+  "Militarism": 11513,
+  "Mindfulness": 11496,
+  "Misery Everlasting": 12408,
+  "Mob Mentality": 11335,
+  "Molten One's Mark": 11534,
+  "Mortifying Aspect": 12472,
+  "Mystical Ward": 11525,
+  "Natural Vigour": 11518,
+  "No Witnesses": 11533,
+  "Non-Flammable": 11538,
+  "Numbing Elixir": 11334,
+  "One with the Shield": 11529,
+  "Openness": 11498,
+  "Opportunistic Fusilade": 11355,
+  "Overlord": 11345,
+  "Overshock": 11445,
+  "Overwhelming Malice": 11301,
+  "Paralysis": 11397,
+  "Peace Amidst Chaos": 11493,
+  "Peak Vigour": 11488,
+  "Phlebotomist": 14130,
+  "Powerful Assault": 11309,
+  "Powerful Ward": 11278,
+  "Practiced Caster": 11381,
+  "Precise Focus": 11325,
+  "Precise Retaliation": 11281,
+  "Pressure Points": 11300,
+  "Primordial Bond": 11414,
+  "Prismatic Carapace": 11512,
+  "Prismatic Dance": 11517,
+  "Prismatic Heart": 11390,
+  "Prodigious Defence": 11274,
+  "Provocateur": 11339,
+  "Pure Agony": 11462,
+  "Pure Aptitude": 11546,
+  "Pure Guile": 11541,
+  "Pure Might": 11536,
+  "Purposeful Harbinger": 11294,
+  "Quick Getaway": 11306,
+  "Quick and Deadly": 11369,
+  "Rattling Bellow": 11341,
+  "Raze and Pillage": 11409,
+  "Readiness": 11521,
+  "Remarkable": 11477,
+  "Rend": 11421,
+  "Renewal": 11408,
+  "Repeater": 11473,
+  "Replenishing Presence": 11291,
+  "Righteous Path": 11298,
+  "Riot Queller": 11528,
+  "Rot-Resistant": 11551,
+  "Rote Reinforcement": 11526,
+  "Rotten Claws": 11410,
+  "Run Through": 11343,
+  "Sadist": 11386,
+  "Sage": 11547,
+  "Sap Psyche": 11385,
+  "Savage Response": 11303,
+  "Savour the Moment": 11506,
+  "Scintillating Idea": 11501,
+  "Seal Mender": 11378,
+  "Second Skin": 11514,
+  "Seeker Runes": 11476,
+  "Self-Control": 12414,
+  "Self-Fulfilling Prophecy": 11460,
+  "Septic Spells": 11424,
+  "Set and Forget": 11481,
+  "Shifting Shadow": 11520,
+  "Shrieking Bolts": 11471,
+  "Skeletal Atrophy": 11704,
+  "Skullbreaker": 11299,
+  "Sleepless Sentries": 11318,
+  "Smite the Weak": 11370,
+  "Smoking Remains": 11393,
+  "Snaring Spirits": 11317,
+  "Snowstorm": 11395,
+  "Special Reserve": 11333,
+  "Spiked Concoction": 11330,
+  "Spiteful Presence": 11293,
+  "Spring Back": 11509,
+  "Steady Torment": 11426,
+  "Stoic Focus": 11326,
+  "Storm Drinker": 11396,
+  "Storm's Hand": 11356,
+  "Stormrider": 11444,
+  "Streamlined": 11470,
+  "Strike Leader": 11277,
+  "Stubborn Student": 11505,
+  "Student of Decay": 11553,
+  "Sublime Form": 12416,
+  "Sublime Sensation": 11491,
+  "Supercharge": 11398,
+  "Surefooted Striker": 11359,
+  "Surging Vitality": 11492,
+  "Surprise Sabotage": 11486,
+  "Tempered Arrowheads": 11352,
+  "Tempt the Storm": 12407,
+  "Thaumophage": 11383,
+  "Thunderstruck": 11443,
+  "Titanic Swings": 11311,
+  "Touch of Cruelty": 11402,
+  "Towering Threat": 11312,
+  "Uncompromising": 12415,
+  "Unholy Grace": 11406,
+  "Unrestrained Focus": 11322,
+  "Unspeakable Gifts": 11404,
+  "Untouchable": 11519,
+  "Unwavering Focus": 11323,
+  "Unwaveringly Evil": 11403,
+  "Vast Power": 11308,
+  "Veteran Defender": 11282,
+  "Vicious Bite": 11413,
+  "Vicious Guard": 11524,
+  "Vicious Skewering": 11288,
+  "Victim Maker": 11450,
+  "Vile Reinvigoration": 11434,
+  "Vital Focus": 11321,
+  "Vivid Hues": 11420,
+  "Volatile Presence": 11297,
+  "Wall of Muscle": 11495,
+  "Warning Call": 11340,
+  "Wasting Affliction": 11429,
+  "Weight Advantage": 11347,
+  "Wicked Pall": 11407,
+  "Widespread Destruction": 11391,
+  "Will Shaper": 11508,
+  "Wind-up": 11348,
+  "Winter Prowler": 11539,
+  "Wish for Death": 11452,
+  "Wizardry": 11544,
+  "Wound Aggravation": 11344,
+  "Wrapped in Flame": 11419
+ },
+ "orbitOffsets": {
+  "3854": {
+   "0": 0
+  },
+  "7956": {
+   "0": 3
+  },
+  "10643": {
+   "0": 4
+  },
+  "13201": {
+   "0": 3,
+   "1": 7
+  },
+  "18361": {
+   "0": 2
+  },
+  "18756": {
+   "0": 4,
+   "1": 7,
+   "2": 7
+  },
+  "22046": {
+   "0": 2
+  },
+  "24452": {
+   "0": 5,
+   "1": 9
+  },
+  "25134": {
+   "0": 0,
+   "1": 11,
+   "2": 11
+  },
+  "25441": {
+   "0": 1,
+   "1": 1
+  },
+  "26661": {
+   "0": 3,
+   "1": 5
+  },
+  "27475": {
+   "0": 0
+  },
+  "27819": {
+   "0": 4
+  },
+  "28018": {
+   "0": 2,
+   "1": 3
+  },
+  "28650": {
+   "0": 1,
+   "1": 1,
+   "2": 1
+  },
+  "30275": {
+   "0": 2,
+   "1": 3,
+   "2": 3
+  },
+  "33833": {
+   "0": 5,
+   "1": 9
+  },
+  "34013": {
+   "0": 4,
+   "1": 7
+  },
+  "35070": {
+   "0": 1
+  },
+  "35313": {
+   "0": 4
+  },
+  "35853": {
+   "0": 0,
+   "1": 1
+  },
+  "35926": {
+   "0": 4,
+   "1": 7
+  },
+  "36414": {
+   "0": 3
+  },
+  "37147": {
+   "0": 0
+  },
+  "37898": {
+   "0": 5,
+   "1": 11
+  },
+  "40114": {
+   "0": 1
+  },
+  "43989": {
+   "0": 3,
+   "1": 5,
+   "2": 5
+  },
+  "44470": {
+   "0": 5
+  },
+  "48128": {
+   "0": 5
+  },
+  "48132": {
+   "0": 5,
+   "1": 9,
+   "2": 9
+  },
+  "49951": {
+   "0": 1
+  },
+  "50179": {
+   "0": 5,
+   "1": 11
+  },
+  "51233": {
+   "0": 5,
+   "1": 9
+  },
+  "53203": {
+   "0": 3,
+   "1": 5
+  },
+  "54600": {
+   "0": 3
+  },
+  "55706": {
+   "0": 2,
+   "1": 3
+  },
+  "56439": {
+   "0": 5
+  },
+  "57194": {
+   "0": 5,
+   "1": 11
+  },
+  "58194": {
+   "0": 3,
+   "1": 5
+  },
+  "58355": {
+   "0": 2,
+   "1": 3
+  },
+  "63754": {
+   "0": 2
+  },
+  "64166": {
+   "0": 1,
+   "1": 1
+  }
+ },
+ "infoForNotable": {
+  "Adrenaline": {
+   "jewelTypes": [
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Advance Guard": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_holding_a_shield"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Aerialist": {
+   "jewelTypes": [
+    "affliction_chance_to_dodge_attacks"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Aerodynamics": {
+   "jewelTypes": [
+    "affliction_projectile_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Agent of Destruction": {
+   "jewelTypes": [
+    "affliction_damage_while_you_have_a_herald"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Aggressive Defence": {
+   "jewelTypes": [
+    "affliction_axe_and_sword_damage",
+    "affliction_dagger_and_claw_damage",
+    "affliction_mace_and_staff_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Alchemist": {
+   "jewelTypes": [
+    "affliction_cold_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Ancestral Echo": {
+   "jewelTypes": [
+    "affliction_totem_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Ancestral Guidance": {
+   "jewelTypes": [
+    "affliction_totem_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Ancestral Inspiration": {
+   "jewelTypes": [
+    "affliction_spell_damage",
+    "affliction_totem_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Ancestral Might": {
+   "jewelTypes": [
+    "affliction_totem_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Ancestral Preservation": {
+   "jewelTypes": [
+    "affliction_totem_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Ancestral Reach": {
+   "jewelTypes": [
+    "affliction_totem_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Antifreeze": {
+   "jewelTypes": [
+    "affliction_cold_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Antivenom": {
+   "jewelTypes": [
+    "affliction_chaos_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Arcane Adept": {
+   "jewelTypes": [
+    "affliction_spell_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Arcane Heroism": {
+   "jewelTypes": [
+    "affliction_spell_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Arcane Pyrotechnics": {
+   "jewelTypes": [
+    "affliction_trap_and_mine_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Arcing Shot": {
+   "jewelTypes": [
+    "affliction_bow_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Assert Dominance": {
+   "jewelTypes": [
+    "affliction_area_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Astonishing Affliction": {
+   "jewelTypes": [
+    "affliction_effect_of_non-damaging_ailments"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Basics of Pain": {
+   "jewelTypes": [
+    "affliction_critical_chance"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Battle-Hardened": {
+   "jewelTypes": [
+    "affliction_physical_damage",
+    "affliction_armour",
+    "affliction_evasion"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Battlefield Dominator": {
+   "jewelTypes": [
+    "affliction_damage_with_two_handed_melee_weapons"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Blacksmith": {
+   "jewelTypes": [
+    "affliction_armour",
+    "affliction_fire_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Blanketed Snow": {
+   "jewelTypes": [
+    "affliction_cold_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Blast-Freeze": {
+   "jewelTypes": [
+    "affliction_cold_damage",
+    "affliction_cold_damage_over_time_multiplier",
+    "affliction_effect_of_non-damaging_ailments"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Blessed": {
+   "jewelTypes": [
+    "affliction_chaos_resistance",
+    "affliction_maximum_life",
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Blessed Rebirth": {
+   "jewelTypes": [
+    "affliction_minion_life"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Blizzard Caller": {
+   "jewelTypes": [
+    "affliction_curse_effect_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Blood Artist": {
+   "jewelTypes": [
+    "affliction_physical_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Bloodscent": {
+   "jewelTypes": [
+    "affliction_axe_and_sword_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Blowback": {
+   "jewelTypes": [
+    "affliction_fire_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Bodyguards": {
+   "jewelTypes": [
+    "affliction_minion_life"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Born of Chaos": {
+   "jewelTypes": [
+    "affliction_chaos_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Brand Loyalty": {
+   "jewelTypes": [
+    "affliction_brand_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Brewed for Potency": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier",
+    "affliction_cold_damage_over_time_multiplier",
+    "affliction_damage_over_time_multiplier",
+    "affliction_fire_damage_over_time_multiplier",
+    "affliction_flask_duration",
+    "affliction_physical_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Broadside": {
+   "jewelTypes": [
+    "affliction_bow_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Brush with Death": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier",
+    "affliction_cold_damage_over_time_multiplier",
+    "affliction_damage_over_time_multiplier",
+    "affliction_fire_damage_over_time_multiplier",
+    "affliction_physical_damage_over_time_multiplier",
+    "affliction_maximum_energy_shield",
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Brutal Infamy": {
+   "jewelTypes": [
+    "affliction_damage_with_two_handed_melee_weapons"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Burden Projection": {
+   "jewelTypes": [
+    "affliction_spell_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Burning Bright": {
+   "jewelTypes": [
+    "affliction_fire_damage",
+    "affliction_fire_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Calamitous": {
+   "jewelTypes": [
+    "affliction_attack_damage_",
+    "affliction_attack_damage_while_dual_wielding_",
+    "affliction_attack_damage_while_holding_a_shield",
+    "affliction_axe_and_sword_damage",
+    "affliction_bow_damage",
+    "affliction_dagger_and_claw_damage",
+    "affliction_damage_with_two_handed_melee_weapons",
+    "affliction_mace_and_staff_damage",
+    "affliction_wand_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Call to the Slaughter": {
+   "jewelTypes": [
+    "affliction_minion_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Capacitor": {
+   "jewelTypes": [
+    "affliction_lightning_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Careful Handling": {
+   "jewelTypes": [
+    "affliction_trap_and_mine_damage",
+    "affliction_maximum_life",
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Chilling Presence": {
+   "jewelTypes": [
+    "affliction_cold_damage_over_time_multiplier",
+    "affliction_effect_of_non-damaging_ailments"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Chip Away": {
+   "jewelTypes": [
+    "affliction_brand_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Circling Oblivion": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier",
+    "affliction_cold_damage_over_time_multiplier",
+    "affliction_damage_over_time_multiplier",
+    "affliction_fire_damage_over_time_multiplier",
+    "affliction_physical_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Clarity of Purpose": {
+   "jewelTypes": [
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Cold Conduction": {
+   "jewelTypes": [
+    "affliction_effect_of_non-damaging_ailments"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Cold to the Core": {
+   "jewelTypes": [
+    "affliction_cold_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Cold-Blooded Killer": {
+   "jewelTypes": [
+    "affliction_cold_damage",
+    "affliction_cold_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Combat Rhythm": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_dual_wielding_"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Compound Injury": {
+   "jewelTypes": [
+    "affliction_physical_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Conjured Wall": {
+   "jewelTypes": [
+    "affliction_spell_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Conservation of Energy": {
+   "jewelTypes": [
+    "affliction_maximum_energy_shield"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Cooked Alive": {
+   "jewelTypes": [
+    "affliction_fire_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Corrosive Elements": {
+   "jewelTypes": [
+    "affliction_cold_damage",
+    "affliction_elemental_damage",
+    "affliction_fire_damage",
+    "affliction_lightning_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Cremator": {
+   "jewelTypes": [
+    "affliction_fire_damage",
+    "affliction_fire_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Cry Wolf": {
+   "jewelTypes": [
+    "affliction_warcry_buff_effect"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Cult-Leader": {
+   "jewelTypes": [
+    "affliction_minion_damage_while_you_have_a_herald"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Daring Ideas": {
+   "jewelTypes": [
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Dark Ideation": {
+   "jewelTypes": [
+    "affliction_chaos_damage",
+    "affliction_chaos_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Dark Messenger": {
+   "jewelTypes": [
+    "affliction_damage_while_you_have_a_herald"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Darting Movements": {
+   "jewelTypes": [
+    "affliction_chance_to_dodge_attacks"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Deadly Repartee": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_dual_wielding_"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Deep Chill": {
+   "jewelTypes": [
+    "affliction_cold_damage",
+    "affliction_cold_damage_over_time_multiplier",
+    "affliction_effect_of_non-damaging_ailments"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Destructive Aspect": {
+   "jewelTypes": [
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Devastator": {
+   "jewelTypes": [
+    "affliction_attack_damage_",
+    "affliction_attack_damage_while_dual_wielding_",
+    "affliction_attack_damage_while_holding_a_shield",
+    "affliction_axe_and_sword_damage",
+    "affliction_bow_damage",
+    "affliction_dagger_and_claw_damage",
+    "affliction_damage_with_two_handed_melee_weapons",
+    "affliction_mace_and_staff_damage",
+    "affliction_wand_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Disciples": {
+   "jewelTypes": [
+    "affliction_minion_damage_while_you_have_a_herald"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Disease Vector": {
+   "jewelTypes": [
+    "affliction_dagger_and_claw_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Disorienting Display": {
+   "jewelTypes": [
+    "affliction_cold_damage",
+    "affliction_elemental_damage",
+    "affliction_fire_damage",
+    "affliction_lightning_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Disorienting Wounds": {
+   "jewelTypes": [
+    "affliction_physical_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Distilled Perfection": {
+   "jewelTypes": [
+    "affliction_flask_duration",
+    "affliction_life_and_mana_recovery_from_flasks"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Doedre's Apathy": {
+   "jewelTypes": [
+    "affliction_curse_effect_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Doedre's Gluttony": {
+   "jewelTypes": [
+    "affliction_curse_effect_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Doedre's Spite": {
+   "jewelTypes": [
+    "affliction_curse_effect_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Doryani's Lesson": {
+   "jewelTypes": [
+    "affliction_cold_damage",
+    "affliction_elemental_damage",
+    "affliction_fire_damage",
+    "affliction_lightning_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Dragon Hunter": {
+   "jewelTypes": [
+    "affliction_armour",
+    "affliction_fire_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Dread March": {
+   "jewelTypes": [
+    "affliction_minion_life"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Drive the Destruction": {
+   "jewelTypes": [
+    "affliction_attack_damage_",
+    "affliction_attack_damage_while_dual_wielding_",
+    "affliction_attack_damage_while_holding_a_shield",
+    "affliction_axe_and_sword_damage",
+    "affliction_bow_damage",
+    "affliction_dagger_and_claw_damage",
+    "affliction_damage_with_two_handed_melee_weapons",
+    "affliction_mace_and_staff_damage",
+    "affliction_wand_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Eldritch Inspiration": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier",
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Electric Presence": {
+   "jewelTypes": [
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Elegant Form": {
+   "jewelTypes": [
+    "affliction_chance_to_dodge_attacks"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Empowered Envoy": {
+   "jewelTypes": [
+    "affliction_damage_while_you_have_a_herald"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Endbringer": {
+   "jewelTypes": [
+    "affliction_damage_while_you_have_a_herald",
+    "affliction_minion_damage_while_you_have_a_herald"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Enduring Composure": {
+   "jewelTypes": [
+    "affliction_armour"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Enduring Focus": {
+   "jewelTypes": [
+    "affliction_channelling_skill_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Energy From Naught": {
+   "jewelTypes": [
+    "affliction_maximum_energy_shield"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Essence Rush": {
+   "jewelTypes": [
+    "affliction_spell_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Eternal Suffering": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Evil Eye": {
+   "jewelTypes": [
+    "affliction_curse_effect_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Expansive Might": {
+   "jewelTypes": [
+    "affliction_mace_and_staff_damage",
+    "affliction_area_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Expendability": {
+   "jewelTypes": [
+    "affliction_trap_and_mine_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Expert Sabotage": {
+   "jewelTypes": [
+    "affliction_trap_and_mine_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Exploit Weakness": {
+   "jewelTypes": [
+    "affliction_curse_effect_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Explosive Force": {
+   "jewelTypes": [
+    "affliction_wand_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Exposure Therapy": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier",
+    "affliction_cold_damage_over_time_multiplier",
+    "affliction_damage_over_time_multiplier",
+    "affliction_fire_damage_over_time_multiplier",
+    "affliction_physical_damage_over_time_multiplier",
+    "affliction_chaos_resistance"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Eye of the Storm": {
+   "jewelTypes": [
+    "affliction_critical_chance",
+    "affliction_effect_of_non-damaging_ailments",
+    "affliction_fire_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Eye to Eye": {
+   "jewelTypes": [
+    "affliction_projectile_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Fan of Blades": {
+   "jewelTypes": [
+    "affliction_dagger_and_claw_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Fan the Flames": {
+   "jewelTypes": [
+    "affliction_fire_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Fasting": {
+   "jewelTypes": [
+    "affliction_flask_duration",
+    "affliction_life_and_mana_recovery_from_flasks"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Fearsome Warrior": {
+   "jewelTypes": [
+    "affliction_damage_with_two_handed_melee_weapons"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Feast of Flesh": {
+   "jewelTypes": [
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Feasting Fiends": {
+   "jewelTypes": [
+    "affliction_minion_damage",
+    "affliction_minion_life"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Feed the Fury": {
+   "jewelTypes": [
+    "affliction_attack_damage_",
+    "affliction_attack_damage_while_dual_wielding_",
+    "affliction_attack_damage_while_holding_a_shield",
+    "affliction_axe_and_sword_damage",
+    "affliction_bow_damage",
+    "affliction_dagger_and_claw_damage",
+    "affliction_damage_with_two_handed_melee_weapons",
+    "affliction_mace_and_staff_damage",
+    "affliction_wand_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Fettle": {
+   "jewelTypes": [
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Fire Attunement": {
+   "jewelTypes": [
+    "affliction_fire_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Flexible Sentry": {
+   "jewelTypes": [
+    "affliction_cold_resistance",
+    "affliction_fire_resistance",
+    "affliction_lightning_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Flow of Life": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier",
+    "affliction_cold_damage_over_time_multiplier",
+    "affliction_damage_over_time_multiplier",
+    "affliction_fire_damage_over_time_multiplier",
+    "affliction_physical_damage_over_time_multiplier",
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Follow-Through": {
+   "jewelTypes": [
+    "affliction_projectile_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Force Multiplier": {
+   "jewelTypes": [
+    "affliction_physical_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Frantic Aspect": {
+   "jewelTypes": [
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Fuel the Fight": {
+   "jewelTypes": [
+    "affliction_attack_damage_",
+    "affliction_attack_damage_while_dual_wielding_",
+    "affliction_attack_damage_while_holding_a_shield",
+    "affliction_axe_and_sword_damage",
+    "affliction_bow_damage",
+    "affliction_dagger_and_claw_damage",
+    "affliction_damage_with_two_handed_melee_weapons",
+    "affliction_mace_and_staff_damage",
+    "affliction_wand_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Furious Assault": {
+   "jewelTypes": [
+    "affliction_physical_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Genius": {
+   "jewelTypes": [
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Gladiator's Fortitude": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_holding_a_shield",
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Graceful Execution": {
+   "jewelTypes": [
+    "affliction_damage_with_two_handed_melee_weapons"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Grand Design": {
+   "jewelTypes": [
+    "affliction_brand_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Grim Oath": {
+   "jewelTypes": [
+    "affliction_chaos_damage",
+    "affliction_physical_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Guerilla Tactics": {
+   "jewelTypes": [
+    "affliction_trap_and_mine_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Haemorrhage": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier",
+    "affliction_cold_damage_over_time_multiplier",
+    "affliction_critical_chance",
+    "affliction_damage_over_time_multiplier",
+    "affliction_fire_damage_over_time_multiplier",
+    "affliction_physical_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Haunting Shout": {
+   "jewelTypes": [
+    "affliction_warcry_buff_effect"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Heart of Iron": {
+   "jewelTypes": [
+    "affliction_armour",
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Heavy Hitter": {
+   "jewelTypes": [
+    "affliction_attack_damage_",
+    "affliction_attack_damage_while_dual_wielding_",
+    "affliction_attack_damage_while_holding_a_shield",
+    "affliction_axe_and_sword_damage",
+    "affliction_bow_damage",
+    "affliction_dagger_and_claw_damage",
+    "affliction_damage_with_two_handed_melee_weapons",
+    "affliction_mace_and_staff_damage",
+    "affliction_wand_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Heraldry": {
+   "jewelTypes": [
+    "affliction_damage_while_you_have_a_herald",
+    "affliction_minion_damage_while_you_have_a_herald"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Hex Breaker": {
+   "jewelTypes": [
+    "affliction_channelling_skill_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Hibernator": {
+   "jewelTypes": [
+    "affliction_cold_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Hit and Run": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_dual_wielding_",
+    "affliction_chance_to_dodge_attacks"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Holistic Health": {
+   "jewelTypes": [
+    "affliction_maximum_life",
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Holy Conquest": {
+   "jewelTypes": [
+    "affliction_brand_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Holy Word": {
+   "jewelTypes": [
+    "affliction_warcry_buff_effect"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Hound's Mark": {
+   "jewelTypes": [
+    "affliction_curse_effect_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Hulking Corpses": {
+   "jewelTypes": [
+    "affliction_minion_life"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Improvisor": {
+   "jewelTypes": [
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Insatiable Killer": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_dual_wielding_"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Inspired Oppression": {
+   "jewelTypes": [
+    "affliction_cold_damage",
+    "affliction_elemental_damage",
+    "affliction_lightning_damage",
+    "affliction_effect_of_non-damaging_ailments"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Insulated": {
+   "jewelTypes": [
+    "affliction_lightning_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Introspection": {
+   "jewelTypes": [
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Invigorating Portents": {
+   "jewelTypes": [
+    "affliction_minion_damage_while_you_have_a_herald"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Iron Breaker": {
+   "jewelTypes": [
+    "affliction_physical_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Lasting Impression": {
+   "jewelTypes": [
+    "affliction_damage_while_you_have_a_herald",
+    "affliction_minion_damage_while_you_have_a_herald"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Lead By Example": {
+   "jewelTypes": [
+    "affliction_warcry_buff_effect"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Life from Death": {
+   "jewelTypes": [
+    "affliction_minion_life"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Liquid Inspiration": {
+   "jewelTypes": [
+    "affliction_flask_duration",
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Lord of Drought": {
+   "jewelTypes": [
+    "affliction_curse_effect_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Low Tolerance": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Mage Bane": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_dual_wielding_"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Mage Hunter": {
+   "jewelTypes": [
+    "affliction_spell_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Magnifier": {
+   "jewelTypes": [
+    "affliction_area_damage",
+    "affliction_critical_chance"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Martial Mastery": {
+   "jewelTypes": [
+    "affliction_damage_with_two_handed_melee_weapons"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Martial Momentum": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_dual_wielding_"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Martial Prowess": {
+   "jewelTypes": [
+    "affliction_attack_damage_",
+    "affliction_attack_damage_while_dual_wielding_",
+    "affliction_attack_damage_while_holding_a_shield",
+    "affliction_axe_and_sword_damage",
+    "affliction_bow_damage",
+    "affliction_dagger_and_claw_damage",
+    "affliction_damage_with_two_handed_melee_weapons",
+    "affliction_mace_and_staff_damage",
+    "affliction_wand_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Master of Command": {
+   "jewelTypes": [
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Master of Fire": {
+   "jewelTypes": [
+    "affliction_fire_damage",
+    "affliction_fire_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Master of the Maelstrom": {
+   "jewelTypes": [
+    "affliction_curse_effect_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Master the Fundamentals": {
+   "jewelTypes": [
+    "affliction_physical_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Mender's Wellspring": {
+   "jewelTypes": [
+    "affliction_flask_duration",
+    "affliction_life_and_mana_recovery_from_flasks"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Militarism": {
+   "jewelTypes": [
+    "affliction_armour"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Mindfulness": {
+   "jewelTypes": [
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Misery Everlasting": {
+   "jewelTypes": [
+    "affliction_curse_effect_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Mob Mentality": {
+   "jewelTypes": [
+    "affliction_warcry_buff_effect"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Molten One's Mark": {
+   "jewelTypes": [
+    "affliction_fire_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Mortifying Aspect": {
+   "jewelTypes": [
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Mystical Ward": {
+   "jewelTypes": [
+    "affliction_maximum_energy_shield"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Natural Vigour": {
+   "jewelTypes": [
+    "affliction_evasion",
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Non-Flammable": {
+   "jewelTypes": [
+    "affliction_fire_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Numbing Elixir": {
+   "jewelTypes": [
+    "affliction_flask_duration",
+    "affliction_life_and_mana_recovery_from_flasks"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Openness": {
+   "jewelTypes": [
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Opportunistic Fusilade": {
+   "jewelTypes": [
+    "affliction_wand_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Overlord": {
+   "jewelTypes": [
+    "affliction_mace_and_staff_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Overshock": {
+   "jewelTypes": [
+    "affliction_lightning_damage",
+    "affliction_effect_of_non-damaging_ailments"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Overwhelming Malice": {
+   "jewelTypes": [
+    "affliction_chaos_damage",
+    "affliction_critical_chance"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Paralysis": {
+   "jewelTypes": [
+    "affliction_lightning_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Peace Amidst Chaos": {
+   "jewelTypes": [
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Peak Vigour": {
+   "jewelTypes": [
+    "affliction_flask_duration",
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Phlebotomist": {
+   "jewelTypes": [
+    "affliction_physical_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Powerful Assault": {
+   "jewelTypes": [
+    "affliction_area_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Practiced Caster": {
+   "jewelTypes": [
+    "affliction_spell_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Precise Focus": {
+   "jewelTypes": [
+    "affliction_channelling_skill_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Precise Retaliation": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_holding_a_shield",
+    "affliction_critical_chance"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Pressure Points": {
+   "jewelTypes": [
+    "affliction_critical_chance"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Primordial Bond": {
+   "jewelTypes": [
+    "affliction_minion_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Prismatic Carapace": {
+   "jewelTypes": [
+    "affliction_armour",
+    "affliction_cold_resistance",
+    "affliction_fire_resistance",
+    "affliction_lightning_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Prismatic Dance": {
+   "jewelTypes": [
+    "affliction_cold_resistance",
+    "affliction_evasion",
+    "affliction_fire_resistance",
+    "affliction_lightning_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Prismatic Heart": {
+   "jewelTypes": [
+    "affliction_cold_damage",
+    "affliction_elemental_damage",
+    "affliction_fire_damage",
+    "affliction_lightning_damage",
+    "affliction_cold_resistance",
+    "affliction_fire_resistance",
+    "affliction_lightning_resistance"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Prodigious Defence": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_holding_a_shield"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Provocateur": {
+   "jewelTypes": [
+    "affliction_critical_chance",
+    "affliction_warcry_buff_effect"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Pure Agony": {
+   "jewelTypes": [
+    "affliction_minion_damage_while_you_have_a_herald"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Pure Aptitude": {
+   "jewelTypes": [
+    "affliction_lightning_resistance",
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Pure Guile": {
+   "jewelTypes": [
+    "affliction_cold_resistance",
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Pure Might": {
+   "jewelTypes": [
+    "affliction_fire_resistance",
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Purposeful Harbinger": {
+   "jewelTypes": [
+    "affliction_damage_while_you_have_a_herald",
+    "affliction_minion_damage_while_you_have_a_herald",
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Quick Getaway": {
+   "jewelTypes": [
+    "affliction_critical_chance"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Quick and Deadly": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_dual_wielding_"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Rattling Bellow": {
+   "jewelTypes": [
+    "affliction_warcry_buff_effect"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Raze and Pillage": {
+   "jewelTypes": [
+    "affliction_minion_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Readiness": {
+   "jewelTypes": [
+    "affliction_evasion"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Remarkable": {
+   "jewelTypes": [
+    "affliction_brand_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Rend": {
+   "jewelTypes": [
+    "affliction_physical_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Renewal": {
+   "jewelTypes": [
+    "affliction_minion_damage",
+    "affliction_minion_life"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Repeater": {
+   "jewelTypes": [
+    "affliction_projectile_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Replenishing Presence": {
+   "jewelTypes": [
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Righteous Path": {
+   "jewelTypes": [
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Riot Queller": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_holding_a_shield"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Rot-Resistant": {
+   "jewelTypes": [
+    "affliction_chaos_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Rote Reinforcement": {
+   "jewelTypes": [
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Rotten Claws": {
+   "jewelTypes": [
+    "affliction_minion_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Run Through": {
+   "jewelTypes": [
+    "affliction_axe_and_sword_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Sadist": {
+   "jewelTypes": [
+    "affliction_cold_damage",
+    "affliction_elemental_damage",
+    "affliction_fire_damage",
+    "affliction_lightning_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Sage": {
+   "jewelTypes": [
+    "affliction_lightning_resistance",
+    "affliction_maximum_life",
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Sap Psyche": {
+   "jewelTypes": [
+    "affliction_spell_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Savage Response": {
+   "jewelTypes": [
+    "affliction_critical_chance"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Savour the Moment": {
+   "jewelTypes": [
+    "affliction_maximum_energy_shield"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Scintillating Idea": {
+   "jewelTypes": [
+    "affliction_lightning_damage",
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Seal Mender": {
+   "jewelTypes": [
+    "affliction_spell_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Second Skin": {
+   "jewelTypes": [
+    "affliction_armour"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Seeker Runes": {
+   "jewelTypes": [
+    "affliction_brand_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Self-Control": {
+   "jewelTypes": [
+    "affliction_maximum_energy_shield",
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Self-Fulfilling Prophecy": {
+   "jewelTypes": [
+    "affliction_damage_while_you_have_a_herald"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Septic Spells": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Set and Forget": {
+   "jewelTypes": [
+    "affliction_trap_and_mine_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Shifting Shadow": {
+   "jewelTypes": [
+    "affliction_evasion"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Shrieking Bolts": {
+   "jewelTypes": [
+    "affliction_projectile_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Skeletal Atrophy": {
+   "jewelTypes": [
+    "affliction_minion_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Skullbreaker": {
+   "jewelTypes": [
+    "affliction_critical_chance"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Sleepless Sentries": {
+   "jewelTypes": [
+    "affliction_totem_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Smite the Weak": {
+   "jewelTypes": [
+    "affliction_attack_damage_",
+    "affliction_attack_damage_while_dual_wielding_",
+    "affliction_attack_damage_while_holding_a_shield",
+    "affliction_axe_and_sword_damage",
+    "affliction_bow_damage",
+    "affliction_dagger_and_claw_damage",
+    "affliction_damage_with_two_handed_melee_weapons",
+    "affliction_mace_and_staff_damage",
+    "affliction_wand_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Smoking Remains": {
+   "jewelTypes": [
+    "affliction_fire_damage",
+    "affliction_fire_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Snaring Spirits": {
+   "jewelTypes": [
+    "affliction_totem_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Snowstorm": {
+   "jewelTypes": [
+    "affliction_cold_damage",
+    "affliction_lightning_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Special Reserve": {
+   "jewelTypes": [
+    "affliction_flask_duration",
+    "affliction_life_and_mana_recovery_from_flasks"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Spiked Concoction": {
+   "jewelTypes": [
+    "affliction_flask_duration",
+    "affliction_life_and_mana_recovery_from_flasks"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Spiteful Presence": {
+   "jewelTypes": [
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Spring Back": {
+   "jewelTypes": [
+    "affliction_maximum_energy_shield"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Steady Torment": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier",
+    "affliction_physical_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Stoic Focus": {
+   "jewelTypes": [
+    "affliction_channelling_skill_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Storm Drinker": {
+   "jewelTypes": [
+    "affliction_lightning_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Storm's Hand": {
+   "jewelTypes": [
+    "affliction_wand_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Stormrider": {
+   "jewelTypes": [
+    "affliction_cold_damage",
+    "affliction_lightning_damage",
+    "affliction_effect_of_non-damaging_ailments"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Streamlined": {
+   "jewelTypes": [
+    "affliction_projectile_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Strike Leader": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_holding_a_shield"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Stubborn Student": {
+   "jewelTypes": [
+    "affliction_armour",
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Student of Decay": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier",
+    "affliction_damage_over_time_multiplier",
+    "affliction_fire_damage_over_time_multiplier",
+    "affliction_physical_damage_over_time_multiplier",
+    "affliction_chaos_resistance"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Sublime Form": {
+   "jewelTypes": [
+    "affliction_evasion",
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Sublime Sensation": {
+   "jewelTypes": [
+    "affliction_maximum_energy_shield",
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Surefooted Striker": {
+   "jewelTypes": [
+    "affliction_damage_with_two_handed_melee_weapons"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Surging Vitality": {
+   "jewelTypes": [
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Surprise Sabotage": {
+   "jewelTypes": [
+    "affliction_trap_and_mine_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Tempered Arrowheads": {
+   "jewelTypes": [
+    "affliction_bow_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Tempt the Storm": {
+   "jewelTypes": [
+    "affliction_curse_effect_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Thaumophage": {
+   "jewelTypes": [
+    "affliction_spell_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Thunderstruck": {
+   "jewelTypes": [
+    "affliction_lightning_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Titanic Swings": {
+   "jewelTypes": [
+    "affliction_damage_with_two_handed_melee_weapons",
+    "affliction_area_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Touch of Cruelty": {
+   "jewelTypes": [
+    "affliction_chaos_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Towering Threat": {
+   "jewelTypes": [
+    "affliction_area_damage",
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Uncompromising": {
+   "jewelTypes": [
+    "affliction_armour",
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Unholy Grace": {
+   "jewelTypes": [
+    "affliction_chaos_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Unrestrained Focus": {
+   "jewelTypes": [
+    "affliction_channelling_skill_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Unspeakable Gifts": {
+   "jewelTypes": [
+    "affliction_chaos_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Untouchable": {
+   "jewelTypes": [
+    "affliction_chance_to_dodge_attacks",
+    "affliction_evasion"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Unwavering Focus": {
+   "jewelTypes": [
+    "affliction_channelling_skill_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Unwaveringly Evil": {
+   "jewelTypes": [
+    "affliction_chaos_damage",
+    "affliction_chaos_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Vast Power": {
+   "jewelTypes": [
+    "affliction_area_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Veteran Defender": {
+   "jewelTypes": [
+    "affliction_attack_damage_while_holding_a_shield"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Vicious Bite": {
+   "jewelTypes": [
+    "affliction_minion_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Vicious Guard": {
+   "jewelTypes": [
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Vicious Skewering": {
+   "jewelTypes": [
+    "affliction_attack_damage_",
+    "affliction_attack_damage_while_dual_wielding_",
+    "affliction_attack_damage_while_holding_a_shield",
+    "affliction_axe_and_sword_damage",
+    "affliction_bow_damage",
+    "affliction_dagger_and_claw_damage",
+    "affliction_damage_with_two_handed_melee_weapons",
+    "affliction_mace_and_staff_damage",
+    "affliction_wand_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Victim Maker": {
+   "jewelTypes": [
+    "affliction_curse_effect_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Vile Reinvigoration": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier",
+    "affliction_cold_damage_over_time_multiplier",
+    "affliction_damage_over_time_multiplier",
+    "affliction_fire_damage_over_time_multiplier",
+    "affliction_physical_damage_over_time_multiplier",
+    "affliction_maximum_energy_shield"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true,
+    "Small Cluster Jewel": true
+   }
+  },
+  "Vital Focus": {
+   "jewelTypes": [
+    "affliction_channelling_skill_damage"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Vivid Hues": {
+   "jewelTypes": [
+    "affliction_physical_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Volatile Presence": {
+   "jewelTypes": [
+    "affliction_reservation_efficiency_small"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Wall of Muscle": {
+   "jewelTypes": [
+    "affliction_maximum_life"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Warning Call": {
+   "jewelTypes": [
+    "affliction_warcry_buff_effect"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Wasting Affliction": {
+   "jewelTypes": [
+    "affliction_chaos_damage_over_time_multiplier",
+    "affliction_cold_damage_over_time_multiplier",
+    "affliction_damage_over_time_multiplier",
+    "affliction_fire_damage_over_time_multiplier",
+    "affliction_physical_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Weight Advantage": {
+   "jewelTypes": [
+    "affliction_mace_and_staff_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Wicked Pall": {
+   "jewelTypes": [
+    "affliction_chaos_damage",
+    "affliction_chaos_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Widespread Destruction": {
+   "jewelTypes": [
+    "affliction_cold_damage",
+    "affliction_elemental_damage",
+    "affliction_fire_damage",
+    "affliction_lightning_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Will Shaper": {
+   "jewelTypes": [
+    "affliction_maximum_energy_shield",
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Wind-up": {
+   "jewelTypes": [
+    "affliction_dagger_and_claw_damage"
+   ],
+   "size": {
+    "Large Cluster Jewel": true
+   }
+  },
+  "Winter Prowler": {
+   "jewelTypes": [
+    "affliction_cold_resistance"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Wizardry": {
+   "jewelTypes": [
+    "affliction_lightning_resistance",
+    "affliction_maximum_mana"
+   ],
+   "size": {
+    "Small Cluster Jewel": true
+   }
+  },
+  "Wound Aggravation": {
+   "jewelTypes": [
+    "affliction_axe_and_sword_damage",
+    "affliction_physical_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Large Cluster Jewel": true,
+    "Medium Cluster Jewel": true
+   }
+  },
+  "Wrapped in Flame": {
+   "jewelTypes": [
+    "affliction_fire_damage_over_time_multiplier"
+   ],
+   "size": {
+    "Medium Cluster Jewel": true
+   }
+  }
+ },
+ "blightcoreNotableIndex": {
+  "2326": 3,
+  "10198": 4,
+  "11849": 1,
+  "12572": 2,
+  "12922": 1,
+  "13560": 3,
+  "17936": 2,
+  "18097": 3,
+  "23095": 2,
+  "25220": 4,
+  "27212": 3,
+  "27715": 1,
+  "30872": 4,
+  "31962": 1,
+  "39736": 3,
+  "40214": 2,
+  "42461": 4,
+  "44094": 2,
+  "45087": 1,
+  "55337": 4,
+  "58805": 4,
+  "58887": 1,
+  "63437": 2,
+  "64935": 3
+ }
+}

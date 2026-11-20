@@ -3,11 +3,50 @@
   "framework": "angular",
   "buildCommand": "ng build --configuration production",
   "outputDirectory": "dist/poe-utils-ng/browser",
-  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/index.html" }],
+  "redirects": [
+    {
+      "source": "/pob",
+      "destination": "/pob/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/proxy",
+      "destination": "/api/proxy"
+    },
+    {
+      "source": "/((?!api/|pob/|proxy$).*)",
+      "destination": "/index.html"
+    }
+  ],
   "headers": [
     {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ]
+    },
+    {
       "source": "/assets/(.*)",
-      "headers": [{ "key": "cache-control", "value": "public, max-age=86400" }]
+      "headers": [
+        {
+          "key": "cache-control",
+          "value": "public, max-age=86400"
+        }
+      ]
     }
-  ]
+  ],
+  "functions": {
+    "api/proxy.ts": {
+      "maxDuration": 300
+    }
+  }
 }

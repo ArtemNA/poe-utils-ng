@@ -3,10 +3,11 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { Auth } from './shared/auth';
 import { TOOLS, type ToolDef } from './tools';
+import { PobHost } from './tools/web-pob/pob-frame';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, PobHost],
   templateUrl: './app.html',
 })
 export class App {

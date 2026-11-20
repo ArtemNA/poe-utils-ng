@@ -1,0 +1,1528 @@
+{
+ "NecropolisCraftingAccuracyPer2Dexterity": {
+  "lines": [
+   "+2 to Accuracy Rating per 2 Dexterity"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "AccuracyPer2Dexterity",
+  "level": 68,
+  "statOrder": [
+   4223
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "attack"
+  ],
+  "weightKey": [
+   "necropolis_helmet",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "tradeHashes": {
+   "773731062": [
+    "+2 to Accuracy Rating per 2 Dexterity"
+   ]
+  }
+ },
+ "NecropolisCraftingAllResistancesWithChaos": {
+  "lines": [
+   "+(12-16)% to All Resistances"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "AllResistancesWithChaos",
+  "level": 12,
+  "statOrder": [
+   9767
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "elemental",
+   "resistance"
+  ],
+  "weightKey": [
+   "necropolis_body_armour",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "tradeHashes": {
+   "2016723660": [
+    "+(12-16)% to All Resistances"
+   ]
+  }
+ },
+ "NecropolisCraftingArcaneSurgeOnSpendingMana": {
+  "lines": [
+   "Gain Arcane Surge after Spending a total of 400 Mana"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "ArcaneSurgeOnSpendingMana",
+  "level": 34,
+  "statOrder": [
+   6904
+  ],
+  "modTags": [
+   "resource",
+   "necropolis_exclusive_mod",
+   "mana"
+  ],
+  "weightKey": [
+   "necropolis_helmet",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "913614572": [
+    "Gain Arcane Surge after Spending a total of 400 Mana"
+   ]
+  }
+ },
+ "NecropolisCraftingAreaOfEffect": {
+  "lines": [
+   "(15-25)% increased Area of Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "AreaOfEffect",
+  "level": 12,
+  "statOrder": [
+   1554
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod"
+  ],
+  "weightKey": [
+   "necropolis_helmet",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "tradeHashes": {
+   "280731498": [
+    "(15-25)% increased Area of Effect"
+   ]
+  }
+ },
+ "NecropolisCraftingAvoidFreeze": {
+  "lines": [
+   "(60-75)% chance to Avoid being Frozen"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "AvoidFreeze",
+  "level": 16,
+  "statOrder": [
+   1519
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "elemental",
+   "cold",
+   "ailment"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "1514829491": [
+    "(60-75)% chance to Avoid being Frozen"
+   ]
+  }
+ },
+ "NecropolisCraftingAvoidIgnite": {
+  "lines": [
+   "(60-75)% chance to Avoid being Ignited"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "AvoidIgnite",
+  "level": 16,
+  "statOrder": [
+   1520
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "elemental",
+   "fire",
+   "ailment"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "1783006896": [
+    "(60-75)% chance to Avoid being Ignited"
+   ]
+  }
+ },
+ "NecropolisCraftingAvoidShock": {
+  "lines": [
+   "(60-75)% chance to Avoid being Shocked"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "AvoidShock",
+  "level": 16,
+  "statOrder": [
+   1522
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "elemental",
+   "lightning",
+   "ailment"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "1871765599": [
+    "(60-75)% chance to Avoid being Shocked"
+   ]
+  }
+ },
+ "NecropolisCraftingBurningGroundEffectEffectiveness": {
+  "lines": [
+   "Unaffected by Burning Ground"
+  ],
+  "type": "Prefix",
+  "affix": "Haunted",
+  "group": "BurningGroundEffectEffectiveness",
+  "level": 68,
+  "statOrder": [
+   10321
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "elemental",
+   "fire"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "1643688236": [
+    "Unaffected by Burning Ground"
+   ]
+  }
+ },
+ "NecropolisCraftingCannotBeKnockedBack": {
+  "lines": [
+   "Cannot be Knocked Back"
+  ],
+  "type": "Prefix",
+  "affix": "Haunted",
+  "group": "CannotBeKnockedBack",
+  "level": 50,
+  "statOrder": [
+   2858
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "4212255859": [
+    "Cannot be Knocked Back"
+   ]
+  }
+ },
+ "NecropolisCraftingChanceToBleed": {
+  "lines": [
+   "Attacks have (15-25)% chance to cause Bleeding"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "ChanceToBleed",
+  "level": 16,
+  "statOrder": [
+   2169
+  ],
+  "modTags": [
+   "bleed",
+   "necropolis_exclusive_mod",
+   "physical",
+   "attack",
+   "ailment"
+  ],
+  "weightKey": [
+   "necropolis_gloves",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "3204820200": [
+    "Attacks have (15-25)% chance to cause Bleeding"
+   ]
+  }
+ },
+ "NecropolisCraftingChaosDamage": {
+  "lines": [
+   "Adds (13-17) to (23-29) Chaos Damage to Attacks"
+  ],
+  "type": "Prefix",
+  "affix": "Haunted",
+  "group": "ChaosDamage",
+  "level": 1,
+  "statOrder": [
+   1059
+  ],
+  "modTags": [
+   "chaos_damage",
+   "necropolis_exclusive_mod",
+   "damage",
+   "chaos",
+   "attack"
+  ],
+  "weightKey": [
+   "necropolis_gloves",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "tradeHashes": {
+   "674553446": [
+    "Adds (13-17) to (23-29) Chaos Damage to Attacks"
+   ]
+  }
+ },
+ "NecropolisCraftingChilledGroundEffectEffectiveness": {
+  "lines": [
+   "Unaffected by Chilled Ground"
+  ],
+  "type": "Prefix",
+  "affix": "Haunted",
+  "group": "ChilledGroundEffectEffectiveness",
+  "level": 68,
+  "statOrder": [
+   10326
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "elemental",
+   "cold",
+   "ailment"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "3653191834": [
+    "Unaffected by Chilled Ground"
+   ]
+  }
+ },
+ "NecropolisCraftingColdResistanceCannotBePenetrated": {
+  "lines": [
+   "Cold Resistance cannot be Penetrated"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "ColdResistanceCannotBePenetrated",
+  "level": 68,
+  "statOrder": [
+   5543
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "elemental",
+   "cold",
+   "resistance"
+  ],
+  "weightKey": [
+   "necropolis_body_armour",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "1864616755": [
+    "Cold Resistance cannot be Penetrated"
+   ]
+  }
+ },
+ "NecropolisCraftingCorruptedBloodImmunity": {
+  "lines": [
+   "Corrupted Blood cannot be inflicted on you"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "CorruptedBloodImmunity",
+  "level": 60,
+  "statOrder": [
+   5167
+  ],
+  "modTags": [
+   "bleed",
+   "necropolis_exclusive_mod",
+   "physical",
+   "ailment"
+  ],
+  "weightKey": [
+   "necropolis_body_armour",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "1658498488": [
+    "Corrupted Blood cannot be inflicted on you"
+   ]
+  }
+ },
+ "NecropolisCraftingCriticalStrikeChance": {
+  "lines": [
+   "(30-50)% increased Global Critical Strike Chance"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "CriticalStrikeChance",
+  "level": 1,
+  "statOrder": [
+   1130
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "critical"
+  ],
+  "weightKey": [
+   "necropolis_helmet",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "587431675": [
+    "(30-50)% increased Global Critical Strike Chance"
+   ]
+  }
+ },
+ "NecropolisCraftingCriticalStrikeMultiplier": {
+  "lines": [
+   "+(15-25)% to Global Critical Strike Multiplier"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "CriticalStrikeMultiplier",
+  "level": 24,
+  "statOrder": [
+   1159
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "damage",
+   "critical"
+  ],
+  "weightKey": [
+   "necropolis_gloves",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "3556824919": [
+    "+(15-25)% to Global Critical Strike Multiplier"
+   ]
+  }
+ },
+ "NecropolisCraftingCurseEffectiveness": {
+  "lines": [
+   "(5-8)% increased Effect of your Curses"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "CurseEffectiveness",
+  "level": 24,
+  "statOrder": [
+   2277
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "caster",
+   "curse"
+  ],
+  "weightKey": [
+   "necropolis_helmet",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "2353576063": [
+    "(5-8)% increased Effect of your Curses"
+   ]
+  }
+ },
+ "NecropolisCraftingDamageTakenGainedAsLife": {
+  "lines": [
+   "(25-35)% of Damage taken Recouped as Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "DamageTakenGainedAsLife",
+  "level": 45,
+  "statOrder": [
+   5834
+  ],
+  "modTags": [
+   "resource",
+   "necropolis_exclusive_mod",
+   "life"
+  ],
+  "weightKey": [
+   "necropolis_body_armour",
+   "default"
+  ],
+  "weightVal": [
+   350,
+   0
+  ],
+  "tradeHashes": {
+   "1444556985": [
+    "(25-35)% of Damage taken Recouped as Life"
+   ]
+  }
+ },
+ "NecropolisCraftingDesecratedGroundEffectEffectiveness": {
+  "lines": [
+   "Unaffected by Desecrated Ground"
+  ],
+  "type": "Prefix",
+  "affix": "Haunted",
+  "group": "DesecratedGroundEffectEffectiveness",
+  "level": 68,
+  "statOrder": [
+   10332
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "chaos"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "4004298002": [
+    "Unaffected by Desecrated Ground"
+   ]
+  }
+ },
+ "NecropolisCraftingFasterBleedDamage": {
+  "lines": [
+   "Bleeding you inflict deals Damage (12-20)% Faster"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "FasterBleedDamage",
+  "level": 38,
+  "statOrder": [
+   6287
+  ],
+  "modTags": [
+   "physical_damage",
+   "bleed",
+   "necropolis_exclusive_mod",
+   "damage",
+   "physical",
+   "attack",
+   "ailment"
+  ],
+  "weightKey": [
+   "necropolis_gloves",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "3828375170": [
+    "Bleeding you inflict deals Damage (12-20)% Faster"
+   ]
+  }
+ },
+ "NecropolisCraftingFireResistanceCannotBePenetrated": {
+  "lines": [
+   "Fire Resistance cannot be Penetrated"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "FireResistanceCannotBePenetrated",
+  "level": 68,
+  "statOrder": [
+   6328
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "elemental",
+   "fire",
+   "resistance"
+  ],
+  "weightKey": [
+   "necropolis_body_armour",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "1138860262": [
+    "Fire Resistance cannot be Penetrated"
+   ]
+  }
+ },
+ "NecropolisCraftingGlobalChanceToBlindOnHit": {
+  "lines": [
+   "(15-25)% Global chance to Blind Enemies on hit"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "GlobalChanceToBlindOnHit",
+  "level": 16,
+  "statOrder": [
+   2652
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod"
+  ],
+  "weightKey": [
+   "necropolis_gloves",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "2221570601": [
+    "(15-25)% Global chance to Blind Enemies on hit"
+   ]
+  }
+ },
+ "NecropolisCraftingGlobalMaimOnHit": {
+  "lines": [
+   "Attacks have (15-25)% chance to Maim on Hit"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "GlobalMaimOnHit",
+  "level": 34,
+  "statOrder": [
+   7946
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "attack"
+  ],
+  "weightKey": [
+   "necropolis_gloves",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "1510714129": [
+    "Attacks have (15-25)% chance to Maim on Hit"
+   ]
+  }
+ },
+ "NecropolisCraftingImmunityToBlind": {
+  "lines": [
+   "Cannot be Blinded"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "ImmunityToBlind",
+  "level": 38,
+  "statOrder": [
+   2668
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod"
+  ],
+  "weightKey": [
+   "necropolis_helmet",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "1436284579": [
+    "Cannot be Blinded"
+   ]
+  }
+ },
+ "NecropolisCraftingIncreasedCastSpeed": {
+  "lines": [
+   "(8-12)% increased Cast Speed"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "IncreasedCastSpeed",
+  "level": 1,
+  "statOrder": [
+   1118
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "caster",
+   "speed"
+  ],
+  "weightKey": [
+   "necropolis_helmet",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "2891184298": [
+    "(8-12)% increased Cast Speed"
+   ]
+  }
+ },
+ "NecropolisCraftingIncreasedMaximumPowerCharges": {
+  "lines": [
+   "+1 to Maximum Power Charges"
+  ],
+  "type": "Prefix",
+  "affix": "Haunted",
+  "group": "IncreasedMaximumPowerCharges",
+  "level": 16,
+  "statOrder": [
+   1488
+  ],
+  "modTags": [
+   "power_charge",
+   "necropolis_exclusive_mod"
+  ],
+  "weightKey": [
+   "necropolis_helmet",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "227523295": [
+    "+1 to Maximum Power Charges"
+   ]
+  }
+ },
+ "NecropolisCraftingIncreasedStunThreshold": {
+  "lines": [
+   "(80-120)% increased Stun Threshold"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "IncreasedStunThreshold",
+  "level": 1,
+  "statOrder": [
+   2968
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "tradeHashes": {
+   "680068163": [
+    "(80-120)% increased Stun Threshold"
+   ]
+  }
+ },
+ "NecropolisCraftingIntimidateOnHit": {
+  "lines": [
+   "(15-25)% chance to Intimidate Enemies for 4 seconds on Hit with Attacks"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "IntimidateOnHit",
+  "level": 38,
+  "statOrder": [
+   4640
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "attack"
+  ],
+  "weightKey": [
+   "necropolis_gloves",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "3438201750": [
+    "(15-25)% chance to Intimidate Enemies for 4 seconds on Hit with Attacks"
+   ]
+  }
+ },
+ "NecropolisCraftingLifeReservationEfficiency": {
+  "lines": [
+   "(20-30)% increased Life Reservation Efficiency of Skills"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "LifeReservationEfficiency",
+  "level": 34,
+  "statOrder": [
+   1901
+  ],
+  "modTags": [
+   "resource",
+   "necropolis_exclusive_mod",
+   "life"
+  ],
+  "weightKey": [
+   "necropolis_body_armour",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "635485889": [
+    "(20-30)% increased Life Reservation Efficiency of Skills"
+   ]
+  }
+ },
+ "NecropolisCraftingLightningResistanceCannotBePenetrated": {
+  "lines": [
+   "Lightning Resistance cannot be Penetrated"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "LightningResistanceCannotBePenetrated",
+  "level": 68,
+  "statOrder": [
+   7234
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "elemental",
+   "lightning",
+   "resistance"
+  ],
+  "weightKey": [
+   "necropolis_body_armour",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "3515979920": [
+    "Lightning Resistance cannot be Penetrated"
+   ]
+  }
+ },
+ "NecropolisCraftingLocalCanSocketIgnoringColour": {
+  "lines": [
+   "Gems Socketed always have the Quality bonus from Socket Colour"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "LocalCanSocketIgnoringColour",
+  "level": 1,
+  "statOrder": [
+   164
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod"
+  ],
+  "weightKey": [
+   "necropolis_body_armour",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "899329924": [
+    "Gems Socketed always have the Quality bonus from Socket Colour"
+   ]
+  }
+ },
+ "NecropolisCraftingLocalNoAttributeRequirements": {
+  "lines": [
+   "Has no Attribute Requirements"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "LocalNoAttributeRequirements",
+  "level": 50,
+  "statOrder": [
+   754
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod"
+  ],
+  "weightKey": [
+   "necropolis_body_armour",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "2739148464": [
+    "Has no Attribute Requirements"
+   ]
+  }
+ },
+ "NecropolisCraftingManaPer2Intelligence": {
+  "lines": [
+   "+1 to maximum Mana per 2 Intelligence"
+  ],
+  "type": "Prefix",
+  "affix": "Haunted",
+  "group": "ManaPer2Intelligence",
+  "level": 68,
+  "statOrder": [
+   8980
+  ],
+  "modTags": [
+   "resource",
+   "necropolis_exclusive_mod",
+   "mana"
+  ],
+  "weightKey": [
+   "necropolis_helmet",
+   "default"
+  ],
+  "weightVal": [
+   100,
+   0
+  ],
+  "tradeHashes": {
+   "3822999954": [
+    "+1 to maximum Mana per 2 Intelligence"
+   ]
+  }
+ },
+ "NecropolisCraftingManaRegeneration": {
+  "lines": [
+   "(40-60)% increased Mana Regeneration Rate"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "ManaRegeneration",
+  "level": 1,
+  "statOrder": [
+   1257
+  ],
+  "modTags": [
+   "resource",
+   "necropolis_exclusive_mod",
+   "mana"
+  ],
+  "weightKey": [
+   "necropolis_helmet",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "tradeHashes": {
+   "789117908": [
+    "(40-60)% increased Mana Regeneration Rate"
+   ]
+  }
+ },
+ "NecropolisCraftingManaReservationEfficiency": {
+  "lines": [
+   "(10-15)% increased Mana Reservation Efficiency of Skills"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "ManaReservationEfficiency",
+  "level": 24,
+  "statOrder": [
+   1903
+  ],
+  "modTags": [
+   "resource",
+   "necropolis_exclusive_mod",
+   "mana"
+  ],
+  "weightKey": [
+   "necropolis_body_armour",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "4237190083": [
+    "(10-15)% increased Mana Reservation Efficiency of Skills"
+   ]
+  }
+ },
+ "NecropolisCraftingMaximumEnduranceCharges": {
+  "lines": [
+   "+1 to Maximum Endurance Charges"
+  ],
+  "type": "Prefix",
+  "affix": "Haunted",
+  "group": "MaximumEnduranceCharges",
+  "level": 16,
+  "statOrder": [
+   1478
+  ],
+  "modTags": [
+   "endurance_charge",
+   "necropolis_exclusive_mod"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "1515657623": [
+    "+1 to Maximum Endurance Charges"
+   ]
+  }
+ },
+ "NecropolisCraftingMaximumFrenzyCharges": {
+  "lines": [
+   "+1 to Maximum Frenzy Charges"
+  ],
+  "type": "Prefix",
+  "affix": "Haunted",
+  "group": "MaximumFrenzyCharges",
+  "level": 16,
+  "statOrder": [
+   1483
+  ],
+  "modTags": [
+   "frenzy_charge",
+   "necropolis_exclusive_mod"
+  ],
+  "weightKey": [
+   "necropolis_gloves",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "4078695": [
+    "+1 to Maximum Frenzy Charges"
+   ]
+  }
+ },
+ "NecropolisCraftingMeleeKnockback": {
+  "lines": [
+   "Melee Attacks Knock Enemies Back on Hit"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "MeleeKnockback",
+  "level": 45,
+  "statOrder": [
+   9005
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "attack"
+  ],
+  "weightKey": [
+   "necropolis_gloves",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "3962823719": [
+    "Melee Attacks Knock Enemies Back on Hit"
+   ]
+  }
+ },
+ "NecropolisCraftingMovementCannotBeSlowedBelowBase": {
+  "lines": [
+   "Movement Speed cannot be modified to below Base Value"
+  ],
+  "type": "Prefix",
+  "affix": "Haunted",
+  "group": "MovementCannotBeSlowedBelowBase",
+  "level": 45,
+  "statOrder": [
+   2892
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "speed"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "3875592188": [
+    "Movement Speed cannot be modified to below Base Value"
+   ]
+  }
+ },
+ "NecropolisCraftingNoExtraBleedDamageWhileMoving": {
+  "lines": [
+   "Moving while Bleeding doesn't cause you to take extra Damage"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "NoExtraBleedDamageWhileMoving",
+  "level": 34,
+  "statOrder": [
+   2888
+  ],
+  "modTags": [
+   "bleed",
+   "necropolis_exclusive_mod",
+   "physical",
+   "attack",
+   "ailment"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "935326447": [
+    "Moving while Bleeding doesn't cause you to take extra Damage"
+   ]
+  }
+ },
+ "NecropolisCraftingPercentDamageGoesToMana": {
+  "lines": [
+   "(25-35)% of Damage taken Recouped as Mana"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "PercentDamageGoesToMana",
+  "level": 45,
+  "statOrder": [
+   2134
+  ],
+  "modTags": [
+   "resource",
+   "necropolis_exclusive_mod",
+   "mana"
+  ],
+  "weightKey": [
+   "necropolis_body_armour",
+   "default"
+  ],
+  "weightVal": [
+   350,
+   0
+  ],
+  "tradeHashes": {
+   "472520716": [
+    "(25-35)% of Damage taken Recouped as Mana"
+   ]
+  }
+ },
+ "NecropolisCraftingPoisonDuration": {
+  "lines": [
+   "(12-20)% increased Poison Duration"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "PoisonDuration",
+  "level": 38,
+  "statOrder": [
+   2865
+  ],
+  "modTags": [
+   "poison",
+   "necropolis_exclusive_mod",
+   "chaos",
+   "ailment"
+  ],
+  "weightKey": [
+   "necropolis_gloves",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "2011656677": [
+    "(12-20)% increased Poison Duration"
+   ]
+  }
+ },
+ "NecropolisCraftingPoisonOnHit": {
+  "lines": [
+   "(15-25)% chance to Poison on Hit"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "PoisonOnHit",
+  "level": 16,
+  "statOrder": [
+   2868
+  ],
+  "modTags": [
+   "poison",
+   "necropolis_exclusive_mod",
+   "chaos",
+   "ailment"
+  ],
+  "weightKey": [
+   "necropolis_gloves",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "795138349": [
+    "(15-25)% chance to Poison on Hit"
+   ]
+  }
+ },
+ "NecropolisCraftingReducedBleedDuration": {
+  "lines": [
+   "(60-75)% reduced Bleed Duration on you"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "ReducedBleedDuration",
+  "level": 24,
+  "statOrder": [
+   9814
+  ],
+  "modTags": [
+   "bleed",
+   "necropolis_exclusive_mod",
+   "physical",
+   "ailment"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   350,
+   0
+  ],
+  "tradeHashes": {
+   "1692879867": [
+    "(60-75)% reduced Bleed Duration on you"
+   ]
+  }
+ },
+ "NecropolisCraftingReducedExtraDamageFromCrits": {
+  "lines": [
+   "You take (40-60)% reduced Extra Damage from Critical Strikes"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "ReducedExtraDamageFromCrits",
+  "level": 24,
+  "statOrder": [
+   1183
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "damage",
+   "critical"
+  ],
+  "weightKey": [
+   "necropolis_body_armour",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "3855016469": [
+    "You take (40-60)% reduced Extra Damage from Critical Strikes"
+   ]
+  }
+ },
+ "NecropolisCraftingReducedPoisonDuration": {
+  "lines": [
+   "(60-75)% reduced Poison Duration on you"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "ReducedPoisonDuration",
+  "level": 24,
+  "statOrder": [
+   9823
+  ],
+  "modTags": [
+   "poison",
+   "necropolis_exclusive_mod",
+   "chaos",
+   "ailment"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   350,
+   0
+  ],
+  "tradeHashes": {
+   "3301100256": [
+    "(60-75)% reduced Poison Duration on you"
+   ]
+  }
+ },
+ "NecropolisCraftingShockedGroundEffectEffectiveness": {
+  "lines": [
+   "Unaffected by Shocked Ground"
+  ],
+  "type": "Prefix",
+  "affix": "Haunted",
+  "group": "ShockedGroundEffectEffectiveness",
+  "level": 68,
+  "statOrder": [
+   10346
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "elemental",
+   "lightning",
+   "ailment"
+  ],
+  "weightKey": [
+   "necropolis_boots",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "2234049899": [
+    "Unaffected by Shocked Ground"
+   ]
+  }
+ },
+ "NecropolisCraftingSpellDamage": {
+  "lines": [
+   "(20-30)% increased Spell Damage"
+  ],
+  "type": "Prefix",
+  "affix": "Haunted",
+  "group": "SpellDamage",
+  "level": 1,
+  "statOrder": [
+   894
+  ],
+  "modTags": [
+   "caster_damage",
+   "necropolis_exclusive_mod",
+   "damage",
+   "caster"
+  ],
+  "weightKey": [
+   "necropolis_helmet",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "tradeHashes": {
+   "2974417149": [
+    "(20-30)% increased Spell Damage"
+   ]
+  }
+ },
+ "NecropolisCraftingSpellUnnerveOnHit": {
+  "lines": [
+   "(15-25)% chance to Unnerve Enemies for 4 seconds on Hit with Spells"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "SpellUnnerveOnHit",
+  "level": 38,
+  "statOrder": [
+   5430
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "caster"
+  ],
+  "weightKey": [
+   "necropolis_gloves",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "220991810": [
+    "(15-25)% chance to Unnerve Enemies for 4 seconds on Hit with Spells"
+   ]
+  }
+ },
+ "NecropolisCraftingSpellsHinderOnHitChance": {
+  "lines": [
+   "(15-25)% chance to Hinder Enemies on Hit with Spells"
+  ],
+  "type": "Suffix",
+  "affix": "of Haunting",
+  "group": "SpellsHinderOnHitChance",
+  "level": 34,
+  "statOrder": [
+   10039
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod",
+   "caster"
+  ],
+  "weightKey": [
+   "necropolis_gloves",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "tradeHashes": {
+   "3002506763": [
+    "(15-25)% chance to Hinder Enemies on Hit with Spells"
+   ]
+  }
+ },
+ "NecropolisCraftingWarcriesOpenChests": {
+  "lines": [
+   "Your Warcries open Chests"
+  ],
+  "type": "Prefix",
+  "affix": "Haunted",
+  "group": "WarcriesOpenChests",
+  "level": 24,
+  "statOrder": [
+   9388
+  ],
+  "modTags": [
+   "necropolis_exclusive_mod"
+  ],
+  "weightKey": [
+   "necropolis_helmet",
+   "default"
+  ],
+  "weightVal": [
+   250,
+   0
+  ],
+  "tradeHashes": {
+   "3452963763": [
+    "Your Warcries open Chests"
+   ]
+  }
+ }
+}

@@ -1,0 +1,3328 @@
+{
+ "AngerFireDamageLifeLeech_": {
+  "lines": [
+   "(1-1.5)% of Fire Damage Leeched as Life while affected by Anger"
+  ],
+  "affix": "",
+  "group": "AngerFireDamageLifeLeech",
+  "level": 1,
+  "statOrder": [
+   7137
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "life",
+   "elemental",
+   "fire"
+  ],
+  "tradeHashes": {
+   "2312747856": [
+    "(1-1.5)% of Fire Damage Leeched as Life while affected by Anger"
+   ]
+  }
+ },
+ "AngerFirePenetration": {
+  "lines": [
+   "Damage Penetrates (10-15)% Fire Resistance while affected by Anger"
+  ],
+  "affix": "",
+  "group": "AngerFirePenetration",
+  "level": 1,
+  "statOrder": [
+   9722
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental_damage",
+   "damage",
+   "elemental",
+   "fire"
+  ],
+  "tradeHashes": {
+   "3111519953": [
+    "Damage Penetrates (10-15)% Fire Resistance while affected by Anger"
+   ]
+  }
+ },
+ "AngerIncreasedCriticalStrikeMultiplier": {
+  "lines": [
+   "+(30-50)% to Critical Strike Multiplier while affected by Anger"
+  ],
+  "affix": "",
+  "group": "AngerIncreasedCriticalStrikeMultiplier",
+  "level": 1,
+  "statOrder": [
+   5680
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "damage",
+   "critical"
+  ],
+  "tradeHashes": {
+   "3627458291": [
+    "+(30-50)% to Critical Strike Multiplier while affected by Anger"
+   ]
+  }
+ },
+ "AngerIncreasedFireDamage": {
+  "lines": [
+   "(40-60)% increased Fire Damage while affected by Anger"
+  ],
+  "affix": "",
+  "group": "AngerIncreasedFireDamage",
+  "level": 1,
+  "statOrder": [
+   6311
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental_damage",
+   "damage",
+   "elemental",
+   "fire"
+  ],
+  "tradeHashes": {
+   "3337107517": [
+    "(40-60)% increased Fire Damage while affected by Anger"
+   ]
+  }
+ },
+ "AngerPhysicalAddedAsFire": {
+  "lines": [
+   "Gain (15-25)% of Physical Damage as Extra Fire Damage while affected by Anger"
+  ],
+  "affix": "",
+  "group": "AngerPhysicalAddedAsFire",
+  "level": 1,
+  "statOrder": [
+   9470
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical_damage",
+   "elemental_damage",
+   "damage",
+   "physical",
+   "elemental",
+   "fire"
+  ],
+  "tradeHashes": {
+   "4245204226": [
+    "Gain (15-25)% of Physical Damage as Extra Fire Damage while affected by Anger"
+   ]
+  }
+ },
+ "AngerPhysicalConvertedToFire": {
+  "lines": [
+   "(25-40)% of Physical Damage Converted to Fire Damage while affected by Anger"
+  ],
+  "affix": "",
+  "group": "AngerPhysicalConvertedToFire",
+  "level": 1,
+  "statOrder": [
+   4787
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical_damage",
+   "elemental_damage",
+   "damage",
+   "physical",
+   "elemental",
+   "fire"
+  ],
+  "tradeHashes": {
+   "3624529132": [
+    "(25-40)% of Physical Damage Converted to Fire Damage while affected by Anger"
+   ]
+  }
+ },
+ "ClarityDamageTakenFromManaBeforeLife": {
+  "lines": [
+   "(6-10)% of Damage taken from Mana before Life while affected by Clarity"
+  ],
+  "affix": "",
+  "group": "ClarityDamageTakenFromManaBeforeLife",
+  "level": 1,
+  "statOrder": [
+   5815
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "life",
+   "mana"
+  ],
+  "tradeHashes": {
+   "2383304564": [
+    "(6-10)% of Damage taken from Mana before Life while affected by Clarity"
+   ]
+  }
+ },
+ "ClarityDamageTakenGainedAsMana": {
+  "lines": [
+   "(15-20)% of Damage taken while affected by Clarity Recouped as Mana"
+  ],
+  "affix": "",
+  "group": "ClarityDamageTakenGainedAsMana",
+  "level": 1,
+  "statOrder": [
+   5835
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "mana"
+  ],
+  "tradeHashes": {
+   "380220671": [
+    "(15-20)% of Damage taken while affected by Clarity Recouped as Mana"
+   ]
+  }
+ },
+ "ClarityManaAddedAsEnergyShield": {
+  "lines": [
+   "Gain (6-10)% of Maximum Mana as Extra Maximum Energy Shield while affected by Clarity"
+  ],
+  "affix": "",
+  "group": "ClarityManaAddedAsEnergyShield",
+  "level": 1,
+  "statOrder": [
+   8979
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "defences",
+   "energy_shield"
+  ],
+  "tradeHashes": {
+   "2831391506": [
+    "Gain (6-10)% of Maximum Mana as Extra Maximum Energy Shield while affected by Clarity"
+   ]
+  }
+ },
+ "ClarityManaRecoveryRate": {
+  "lines": [
+   "(10-15)% increased Mana Recovery Rate while affected by Clarity"
+  ],
+  "affix": "",
+  "group": "ClarityManaRecoveryRate",
+  "level": 1,
+  "statOrder": [
+   7984
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "mana"
+  ],
+  "tradeHashes": {
+   "556659145": [
+    "(10-15)% increased Mana Recovery Rate while affected by Clarity"
+   ]
+  }
+ },
+ "ClarityRecoverManaOnSkillUse": {
+  "lines": [
+   "(10-15)% chance to Recover 10% of Mana when you use a Skill while affected by Clarity"
+  ],
+  "affix": "",
+  "group": "ClarityRecoverManaOnSkillUse",
+  "level": 1,
+  "statOrder": [
+   9690
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "mana"
+  ],
+  "tradeHashes": {
+   "1699077932": [
+    "(10-15)% chance to Recover 10% of Mana when you use a Skill while affected by Clarity"
+   ]
+  }
+ },
+ "ClarityReducedManaCost": {
+  "lines": [
+   "-(10-5) to Total Mana Cost of Skills while affected by Clarity"
+  ],
+  "affix": "",
+  "group": "ClarityReducedManaCost",
+  "level": 1,
+  "statOrder": [
+   9906
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "mana"
+  ],
+  "tradeHashes": {
+   "2445618239": [
+    "-(10-5) to Total Mana Cost of Skills while affected by Clarity"
+   ]
+  }
+ },
+ "ClarityReducedManaCostNonChannelled": {
+  "lines": [
+   "Non-Channelling Skills have -(10-5) to Total Mana Cost while affected by Clarity"
+  ],
+  "affix": "",
+  "group": "ClarityReducedManaCostNonChannelled",
+  "level": 1,
+  "statOrder": [
+   9911
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "mana"
+  ],
+  "tradeHashes": {
+   "1853636813": [
+    "Non-Channelling Skills have -(10-5) to Total Mana Cost while affected by Clarity"
+   ]
+  }
+ },
+ "DeterminationAdditionalArmour": {
+  "lines": [
+   "+(600-1000) to Armour while affected by Determination"
+  ],
+  "affix": "",
+  "group": "DeterminationAdditionalArmour",
+  "level": 1,
+  "statOrder": [
+   4480
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "defences",
+   "armour"
+  ],
+  "tradeHashes": {
+   "3742808908": [
+    "+(600-1000) to Armour while affected by Determination"
+   ]
+  }
+ },
+ "DeterminationAdditionalBlock": {
+  "lines": [
+   "+(5-8)% Chance to Block Attack Damage while affected by Determination"
+  ],
+  "affix": "",
+  "group": "DeterminationAdditionalBlock",
+  "level": 1,
+  "statOrder": [
+   4985
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "block"
+  ],
+  "tradeHashes": {
+   "3692646597": [
+    "+(5-8)% Chance to Block Attack Damage while affected by Determination"
+   ]
+  }
+ },
+ "DeterminationPhysicalDamageReduction": {
+  "lines": [
+   "(5-8)% additional Physical Damage Reduction while affected by Determination"
+  ],
+  "affix": "",
+  "group": "DeterminationPhysicalDamageReduction",
+  "level": 1,
+  "statOrder": [
+   4287
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical"
+  ],
+  "tradeHashes": {
+   "1873457881": [
+    "(5-8)% additional Physical Damage Reduction while affected by Determination"
+   ]
+  }
+ },
+ "DeterminationReducedExtraDamageFromCrits": {
+  "lines": [
+   "You take (40-60)% reduced Extra Damage from Critical Strikes while affected by Determination"
+  ],
+  "affix": "",
+  "group": "DeterminationReducedExtraDamageFromCrits",
+  "level": 1,
+  "statOrder": [
+   6278
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "critical"
+  ],
+  "tradeHashes": {
+   "68410701": [
+    "You take (40-60)% reduced Extra Damage from Critical Strikes while affected by Determination"
+   ]
+  }
+ },
+ "DeterminationReducedReflectedPhysicalDamage": {
+  "lines": [
+   "Prevent +(50-75)% of Reflected Physical Damage you would take while affected by Determination"
+  ],
+  "affix": "",
+  "group": "DeterminationReducedReflectedPhysicalDamage",
+  "level": 1,
+  "statOrder": [
+   9199
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical"
+  ],
+  "tradeHashes": {
+   "2255585376": [
+    "Prevent +(50-75)% of Reflected Physical Damage you would take while affected by Determination"
+   ]
+  }
+ },
+ "DeterminationUnaffectedByVulnerability": {
+  "lines": [
+   "Unaffected by Vulnerability while affected by Determination"
+  ],
+  "affix": "",
+  "group": "DeterminationUnaffectedByVulnerability",
+  "level": 1,
+  "statOrder": [
+   10350
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "caster",
+   "curse"
+  ],
+  "tradeHashes": {
+   "3207781478": [
+    "Unaffected by Vulnerability while affected by Determination"
+   ]
+  }
+ },
+ "DisciplineAdditionalSpellBlock": {
+  "lines": [
+   "+(5-8)% Chance to Block Spell Damage while affected by Discipline"
+  ],
+  "affix": "",
+  "group": "DisciplineAdditionalSpellBlock",
+  "level": 1,
+  "statOrder": [
+   5354
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "block"
+  ],
+  "tradeHashes": {
+   "1313498929": [
+    "+(5-8)% Chance to Block Spell Damage while affected by Discipline"
+   ]
+  }
+ },
+ "DisciplineEnergyShieldPerHit": {
+  "lines": [
+   "Gain (20-30) Energy Shield per Enemy Hit while affected by Discipline"
+  ],
+  "affix": "",
+  "group": "DisciplineEnergyShieldPerHit",
+  "level": 1,
+  "statOrder": [
+   6171
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "defences",
+   "energy_shield"
+  ],
+  "tradeHashes": {
+   "3765507527": [
+    "Gain (20-30) Energy Shield per Enemy Hit while affected by Discipline"
+   ]
+  }
+ },
+ "DisciplineEnergyShieldRecoveryRate": {
+  "lines": [
+   "(10-15)% increased Energy Shield Recovery Rate while affected by Discipline"
+  ],
+  "affix": "",
+  "group": "DisciplineEnergyShieldRecoveryRate",
+  "level": 1,
+  "statOrder": [
+   6191
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "defences",
+   "energy_shield"
+  ],
+  "tradeHashes": {
+   "80470845": [
+    "(10-15)% increased Energy Shield Recovery Rate while affected by Discipline"
+   ]
+  }
+ },
+ "DisciplineEnergyShieldRegen": {
+  "lines": [
+   "Regenerate (1.5-2.5)% of Energy Shield per Second while affected by Discipline"
+  ],
+  "affix": "",
+  "group": "DisciplineEnergyShieldRegen",
+  "level": 1,
+  "statOrder": [
+   6198
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "defences",
+   "energy_shield"
+  ],
+  "tradeHashes": {
+   "991194404": [
+    "Regenerate (1.5-2.5)% of Energy Shield per Second while affected by Discipline"
+   ]
+  }
+ },
+ "DisciplineFasterStartOfRecharge": {
+  "lines": [
+   "(30-40)% faster start of Energy Shield Recharge while affected by Discipline"
+  ],
+  "affix": "",
+  "group": "DisciplineFasterStartOfRecharge",
+  "level": 1,
+  "statOrder": [
+   6168
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "defences",
+   "energy_shield"
+  ],
+  "tradeHashes": {
+   "1016185292": [
+    "(30-40)% faster start of Energy Shield Recharge while affected by Discipline"
+   ]
+  }
+ },
+ "GraceAdditionalChanceToEvade": {
+  "lines": [
+   "+(5-8)% chance to Evade Attack Hits while affected by Grace"
+  ],
+  "affix": "",
+  "group": "GraceAdditionalChanceToEvade",
+  "level": 1,
+  "statOrder": [
+   5378
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "defences",
+   "evasion"
+  ],
+  "tradeHashes": {
+   "969576725": [
+    "+(5-8)% chance to Evade Attack Hits while affected by Grace"
+   ]
+  }
+ },
+ "GraceBlindEnemiesWhenHit": {
+  "lines": [
+   "(30-50)% chance to Blind Enemies which Hit you while affected by Grace"
+  ],
+  "affix": "",
+  "group": "GraceBlindEnemiesWhenHit",
+  "level": 1,
+  "statOrder": [
+   4975
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "2548097895": [
+    "(30-50)% chance to Blind Enemies which Hit you while affected by Grace"
+   ]
+  }
+ },
+ "GraceChanceToDodge": {
+  "lines": [
+   "+(12-15)% chance to Suppress Spell Damage while affected by Grace"
+  ],
+  "affix": "",
+  "group": "GraceChanceToDodge",
+  "level": 1,
+  "statOrder": [
+   10024
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "4071658793": [
+    "+(12-15)% chance to Suppress Spell Damage while affected by Grace"
+   ]
+  }
+ },
+ "GraceIncreasedMovementSpeed": {
+  "lines": [
+   "(10-15)% increased Movement Speed while affected by Grace"
+  ],
+  "affix": "",
+  "group": "GraceIncreasedMovementSpeed",
+  "level": 1,
+  "statOrder": [
+   9254
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "speed"
+  ],
+  "tradeHashes": {
+   "3329402420": [
+    "(10-15)% increased Movement Speed while affected by Grace"
+   ]
+  }
+ },
+ "GraceUnaffectedByEnfeeble": {
+  "lines": [
+   "Unaffected by Enfeeble while affected by Grace"
+  ],
+  "affix": "",
+  "group": "GraceUnaffectedByEnfeeble",
+  "level": 1,
+  "statOrder": [
+   10334
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "caster",
+   "curse"
+  ],
+  "tradeHashes": {
+   "2365917222": [
+    "Unaffected by Enfeeble while affected by Grace"
+   ]
+  }
+ },
+ "HasteChanceToDodgeSpells": {
+  "lines": [
+   "+(5-8)% chance to Suppress Spell Damage while affected by Haste"
+  ],
+  "affix": "",
+  "group": "HasteChanceToDodgeSpells",
+  "level": 1,
+  "statOrder": [
+   10025
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "2170859717": [
+    "+(5-8)% chance to Suppress Spell Damage while affected by Haste"
+   ]
+  }
+ },
+ "HasteCooldownRecoveryForMovementSkills": {
+  "lines": [
+   "(30-50)% increased Cooldown Recovery Rate of Movement Skills used while affected by Haste"
+  ],
+  "affix": "",
+  "group": "HasteCooldownRecoveryForMovementSkills",
+  "level": 1,
+  "statOrder": [
+   9231
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "3332055899": [
+    "(30-50)% increased Cooldown Recovery Rate of Movement Skills used while affected by Haste"
+   ]
+  }
+ },
+ "HasteDebuffsExpireFaster": {
+  "lines": [
+   "Debuffs on you expire (15-20)% faster while affected by Haste"
+  ],
+  "affix": "",
+  "group": "HasteDebuffsExpireFaster",
+  "level": 1,
+  "statOrder": [
+   5879
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "207635700": [
+    "Debuffs on you expire (15-20)% faster while affected by Haste"
+   ]
+  }
+ },
+ "HasteGainOnslaughtOnKill": {
+  "lines": [
+   "You gain Onslaught for 4 seconds on Kill while affected by Haste"
+  ],
+  "affix": "",
+  "group": "HasteGainOnslaughtOnKill",
+  "level": 1,
+  "statOrder": [
+   6540
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "1424006185": [
+    "You gain Onslaught for 4 seconds on Kill while affected by Haste"
+   ]
+  }
+ },
+ "HasteGainPhasing": {
+  "lines": [
+   "You have Phasing while affected by Haste"
+  ],
+  "affix": "",
+  "group": "HasteGainPhasing",
+  "level": 1,
+  "statOrder": [
+   6551
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "1346311588": [
+    "You have Phasing while affected by Haste"
+   ]
+  }
+ },
+ "HasteUnaffectedByTemporalChains": {
+  "lines": [
+   "Unaffected by Temporal Chains while affected by Haste"
+  ],
+  "affix": "",
+  "group": "HasteUnaffectedByTemporalChains",
+  "level": 1,
+  "statOrder": [
+   10349
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "caster",
+   "curse"
+  ],
+  "tradeHashes": {
+   "2806391472": [
+    "Unaffected by Temporal Chains while affected by Haste"
+   ]
+  }
+ },
+ "HatredAddedColdDamage": {
+  "lines": [
+   "Adds (58-70) to (88-104) Cold Damage while affected by Hatred"
+  ],
+  "affix": "",
+  "group": "HatredAddedColdDamage",
+  "level": 1,
+  "statOrder": [
+   9052
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental_damage",
+   "damage",
+   "elemental",
+   "cold"
+  ],
+  "tradeHashes": {
+   "2643562209": [
+    "Adds (58-70) to (88-104) Cold Damage while affected by Hatred"
+   ]
+  }
+ },
+ "HatredAdditionalCriticalStrikeChance": {
+  "lines": [
+   "+(1.2-1.8)% to Critical Strike Chance while affected by Hatred"
+  ],
+  "affix": "",
+  "group": "HatredAdditionalCriticalStrikeChance",
+  "level": 1,
+  "statOrder": [
+   4260
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "critical"
+  ],
+  "tradeHashes": {
+   "2753985507": [
+    "+(1.2-1.8)% to Critical Strike Chance while affected by Hatred"
+   ]
+  }
+ },
+ "HatredColdPenetration": {
+  "lines": [
+   "Damage Penetrates (10-15)% Cold Resistance while affected by Hatred"
+  ],
+  "affix": "",
+  "group": "HatredColdPenetration",
+  "level": 1,
+  "statOrder": [
+   9720
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental_damage",
+   "damage",
+   "elemental",
+   "cold"
+  ],
+  "tradeHashes": {
+   "1222888897": [
+    "Damage Penetrates (10-15)% Cold Resistance while affected by Hatred"
+   ]
+  }
+ },
+ "HatredIncreasedColdDamage": {
+  "lines": [
+   "(40-60)% increased Cold Damage while affected by Hatred"
+  ],
+  "affix": "",
+  "group": "HatredIncreasedColdDamage",
+  "level": 1,
+  "statOrder": [
+   5524
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental_damage",
+   "damage",
+   "elemental",
+   "cold"
+  ],
+  "tradeHashes": {
+   "1413864591": [
+    "(40-60)% increased Cold Damage while affected by Hatred"
+   ]
+  }
+ },
+ "HatredPhysicalConvertedToCold": {
+  "lines": [
+   "(25-40)% of Physical Damage Converted to Cold Damage while affected by Hatred"
+  ],
+  "affix": "",
+  "group": "HatredPhysicalConvertedToCold",
+  "level": 1,
+  "statOrder": [
+   4786
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical_damage",
+   "elemental_damage",
+   "damage",
+   "physical",
+   "elemental",
+   "cold"
+  ],
+  "tradeHashes": {
+   "664849247": [
+    "(25-40)% of Physical Damage Converted to Cold Damage while affected by Hatred"
+   ]
+  }
+ },
+ "MalevolenceChaosNonAilmentDamageOverTimeMultiplier": {
+  "lines": [
+   "+(18-22)% to Damage over Time Multiplier while affected by Malevolence"
+  ],
+  "affix": "",
+  "group": "MalevolenceDamageOverTimeMultiplier",
+  "level": 1,
+  "statOrder": [
+   5995
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "damage"
+  ],
+  "tradeHashes": {
+   "2736708072": [
+    "+(18-22)% to Damage over Time Multiplier while affected by Malevolence"
+   ]
+  }
+ },
+ "MalevolenceColdDamageOverTimeMultiplier": {
+  "lines": [
+   "+(18-22)% to Damage over Time Multiplier while affected by Malevolence"
+  ],
+  "affix": "",
+  "group": "MalevolenceDamageOverTimeMultiplier",
+  "level": 1,
+  "statOrder": [
+   5995
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "damage"
+  ],
+  "tradeHashes": {
+   "2736708072": [
+    "+(18-22)% to Damage over Time Multiplier while affected by Malevolence"
+   ]
+  }
+ },
+ "MalevolenceDamageOverTimeMultiplier": {
+  "lines": [
+   "+(18-22)% to Damage over Time Multiplier while affected by Malevolence"
+  ],
+  "affix": "",
+  "group": "MalevolenceDamageOverTimeMultiplier",
+  "level": 1,
+  "statOrder": [
+   5995
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "damage"
+  ],
+  "tradeHashes": {
+   "2736708072": [
+    "+(18-22)% to Damage over Time Multiplier while affected by Malevolence"
+   ]
+  }
+ },
+ "MalevolenceLifeAndEnergyShieldRecoveryRate": {
+  "lines": [
+   "(8-12)% increased Recovery rate of Life and Energy Shield while affected by Malevolence"
+  ],
+  "affix": "",
+  "group": "MalevolenceLifeAndEnergyShieldRecoveryRate",
+  "level": 1,
+  "statOrder": [
+   7113
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "life",
+   "defences",
+   "energy_shield"
+  ],
+  "tradeHashes": {
+   "3643449791": [
+    "(8-12)% increased Recovery rate of Life and Energy Shield while affected by Malevolence"
+   ]
+  }
+ },
+ "MalevolenceSkillEffectDuration": {
+  "lines": [
+   "(20-30)% increased Skill Effect Duration while affected by Malevolence"
+  ],
+  "affix": "",
+  "group": "MalevolenceSkillEffectDuration",
+  "level": 1,
+  "statOrder": [
+   9900
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "4127613649": [
+    "(20-30)% increased Skill Effect Duration while affected by Malevolence"
+   ]
+  }
+ },
+ "MalevolenceUnaffectedByBleeding_": {
+  "lines": [
+   "Unaffected by Bleeding while affected by Malevolence"
+  ],
+  "affix": "",
+  "group": "MalevolenceUnaffectedByBleeding",
+  "level": 1,
+  "statOrder": [
+   10318
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "bleed",
+   "physical",
+   "attack",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "4104891138": [
+    "Unaffected by Bleeding while affected by Malevolence"
+   ]
+  }
+ },
+ "MalevolenceUnaffectedByPoison": {
+  "lines": [
+   "Unaffected by Poison while affected by Malevolence"
+  ],
+  "affix": "",
+  "group": "MalevolenceUnaffectedByPoison",
+  "level": 1,
+  "statOrder": [
+   10341
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "poison",
+   "chaos",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "34059570": [
+    "Unaffected by Poison while affected by Malevolence"
+   ]
+  }
+ },
+ "MalevolenceYourAilmentsDealDamageFaster__": {
+  "lines": [
+   "Damaging Ailments you inflict deal Damage (10-15)% Faster while affected by Malevolence"
+  ],
+  "affix": "",
+  "group": "MalevolenceYourAilmentsDealDamageFaster",
+  "level": 1,
+  "statOrder": [
+   10531
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "damage",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "3468843137": [
+    "Damaging Ailments you inflict deal Damage (10-15)% Faster while affected by Malevolence"
+   ]
+  }
+ },
+ "PrecisionCannotBeBlinded": {
+  "lines": [
+   "Cannot be Blinded while affected by Precision"
+  ],
+  "affix": "",
+  "group": "PrecisionCannotBeBlinded",
+  "level": 1,
+  "statOrder": [
+   5153
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "1653848515": [
+    "Cannot be Blinded while affected by Precision"
+   ]
+  }
+ },
+ "PrecisionFlaskChargeOnCrit_": {
+  "lines": [
+   "Gain a Flask Charge when you deal a Critical Strike while affected by Precision"
+  ],
+  "affix": "",
+  "group": "PrecisionFlaskChargeOnCrit",
+  "level": 1,
+  "statOrder": [
+   9679
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "flask",
+   "critical"
+  ],
+  "tradeHashes": {
+   "3772841281": [
+    "Gain a Flask Charge when you deal a Critical Strike while affected by Precision"
+   ]
+  }
+ },
+ "PrecisionIncreasedAttackDamage": {
+  "lines": [
+   "(40-60)% increased Attack Damage while affected by Precision"
+  ],
+  "affix": "",
+  "group": "PrecisionIncreasedAttackDamage",
+  "level": 1,
+  "statOrder": [
+   4580
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "damage",
+   "attack"
+  ],
+  "tradeHashes": {
+   "2048747572": [
+    "(40-60)% increased Attack Damage while affected by Precision"
+   ]
+  }
+ },
+ "PrecisionIncreasedAttackSpeed": {
+  "lines": [
+   "(10-15)% increased Attack Speed while affected by Precision"
+  ],
+  "affix": "",
+  "group": "PrecisionIncreasedAttackSpeed",
+  "level": 1,
+  "statOrder": [
+   4624
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "attack",
+   "speed"
+  ],
+  "tradeHashes": {
+   "3375743050": [
+    "(10-15)% increased Attack Speed while affected by Precision"
+   ]
+  }
+ },
+ "PrecisionIncreasedCriticalStrikeMultiplier": {
+  "lines": [
+   "+(20-30)% to Critical Strike Multiplier while affected by Precision"
+  ],
+  "affix": "",
+  "group": "PrecisionIncreasedCriticalStrikeMultiplier",
+  "level": 1,
+  "statOrder": [
+   5681
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "damage",
+   "critical"
+  ],
+  "tradeHashes": {
+   "1817023621": [
+    "+(20-30)% to Critical Strike Multiplier while affected by Precision"
+   ]
+  }
+ },
+ "PrideChanceForDoubleDamage": {
+  "lines": [
+   "(8-12)% chance to deal Double Damage while using Pride"
+  ],
+  "affix": "",
+  "group": "PrideChanceForDoubleDamage",
+  "level": 1,
+  "statOrder": [
+   9551
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "damage"
+  ],
+  "tradeHashes": {
+   "3371719014": [
+    "(8-12)% chance to deal Double Damage while using Pride"
+   ]
+  }
+ },
+ "PrideChanceToImpale": {
+  "lines": [
+   "25% chance to Impale Enemies on Hit with Attacks while using Pride"
+  ],
+  "affix": "",
+  "group": "PrideChanceToImpale",
+  "level": 1,
+  "statOrder": [
+   9552
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical"
+  ],
+  "tradeHashes": {
+   "4173751044": [
+    "25% chance to Impale Enemies on Hit with Attacks while using Pride"
+   ]
+  }
+ },
+ "PrideImpaleAdditionalHits": {
+  "lines": [
+   "Impales you inflict last 2 additional Hits while using Pride"
+  ],
+  "affix": "",
+  "group": "PrideImpaleAdditionalHits",
+  "level": 1,
+  "statOrder": [
+   9559
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical"
+  ],
+  "tradeHashes": {
+   "1011863394": [
+    "Impales you inflict last 2 additional Hits while using Pride"
+   ]
+  }
+ },
+ "PrideIncreasedPhysicalDamage_": {
+  "lines": [
+   "(40-60)% increased Physical Damage while using Pride"
+  ],
+  "affix": "",
+  "group": "PrideIncreasedPhysicalDamage",
+  "level": 1,
+  "statOrder": [
+   9557
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical_damage",
+   "damage",
+   "physical"
+  ],
+  "tradeHashes": {
+   "576528026": [
+    "(40-60)% increased Physical Damage while using Pride"
+   ]
+  }
+ },
+ "PrideIntimidateOnHit": {
+  "lines": [
+   "Your Hits Intimidate Enemies for 4 seconds while you are using Pride"
+  ],
+  "affix": "",
+  "group": "PrideIntimidateOnHit",
+  "level": 1,
+  "statOrder": [
+   9553
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "3772848194": [
+    "Your Hits Intimidate Enemies for 4 seconds while you are using Pride"
+   ]
+  }
+ },
+ "PurityOfElementsChaosResistance": {
+  "lines": [
+   "+(30-50)% to Chaos Resistance while affected by Purity of Elements"
+  ],
+  "affix": "",
+  "group": "PurityOfElementsChaosResistance",
+  "level": 1,
+  "statOrder": [
+   5451
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "chaos",
+   "resistance"
+  ],
+  "tradeHashes": {
+   "1138813382": [
+    "+(30-50)% to Chaos Resistance while affected by Purity of Elements"
+   ]
+  }
+ },
+ "PurityOfElementsMaximumElementalResistances": {
+  "lines": [
+   "+1% to all maximum Elemental Resistances while affected by Purity of Elements"
+  ],
+  "affix": "",
+  "group": "PurityOfElementsMaximumElementalResistances",
+  "level": 1,
+  "statOrder": [
+   4269
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "resistance"
+  ],
+  "tradeHashes": {
+   "3234824465": [
+    "+1% to all maximum Elemental Resistances while affected by Purity of Elements"
+   ]
+  }
+ },
+ "PurityOfElementsReducedReflectedElementalDamage": {
+  "lines": [
+   "Prevent +(50-75)% of Reflected Elemental Damage you would take while",
+   "affected by Purity of Elements"
+  ],
+  "affix": "",
+  "group": "PurityOfElementsReducedReflectedElementalDamage",
+  "level": 1,
+  "statOrder": [
+   9196,
+   9196.1
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental"
+  ],
+  "tradeHashes": {
+   "1574578643": [
+    "Prevent +(50-75)% of Reflected Elemental Damage you would take while",
+    "affected by Purity of Elements"
+   ]
+  }
+ },
+ "PurityOfElementsTakePhysicalAsCold": {
+  "lines": [
+   "(8-12)% of Physical Damage from Hits taken as Cold Damage while affected by Purity of Elements"
+  ],
+  "affix": "",
+  "group": "PurityOfElementsTakePhysicalAsCold",
+  "level": 1,
+  "statOrder": [
+   9495
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical",
+   "elemental",
+   "cold"
+  ],
+  "tradeHashes": {
+   "1710207583": [
+    "(8-12)% of Physical Damage from Hits taken as Cold Damage while affected by Purity of Elements"
+   ]
+  }
+ },
+ "PurityOfElementsTakePhysicalAsFire_": {
+  "lines": [
+   "(8-12)% of Physical Damage from Hits taken as Fire Damage while affected by Purity of Elements"
+  ],
+  "affix": "",
+  "group": "PurityOfElementsTakePhysicalAsFire",
+  "level": 1,
+  "statOrder": [
+   9497
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical",
+   "elemental",
+   "fire"
+  ],
+  "tradeHashes": {
+   "1722775216": [
+    "(8-12)% of Physical Damage from Hits taken as Fire Damage while affected by Purity of Elements"
+   ]
+  }
+ },
+ "PurityOfElementsTakePhysicalAsLightning": {
+  "lines": [
+   "(8-12)% of Physical Damage from Hits taken as Lightning Damage while affected by Purity of Elements"
+  ],
+  "affix": "",
+  "group": "PurityOfElementsTakePhysicalAsLightning",
+  "level": 1,
+  "statOrder": [
+   9499
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical",
+   "elemental",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "873224517": [
+    "(8-12)% of Physical Damage from Hits taken as Lightning Damage while affected by Purity of Elements"
+   ]
+  }
+ },
+ "PurityOfElementsUnaffectedByElementalWeakness": {
+  "lines": [
+   "Unaffected by Elemental Weakness while affected by Purity of Elements"
+  ],
+  "affix": "",
+  "group": "PurityOfElementsUnaffectedByElementalWeakness",
+  "level": 1,
+  "statOrder": [
+   10333
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "caster",
+   "curse"
+  ],
+  "tradeHashes": {
+   "3223142064": [
+    "Unaffected by Elemental Weakness while affected by Purity of Elements"
+   ]
+  }
+ },
+ "PurityOfFireColdAndLightningTakenAsFire": {
+  "lines": [
+   "(10-20)% of Cold and Lightning Damage taken as Fire Damage while affected by Purity of Fire"
+  ],
+  "affix": "",
+  "group": "PurityOfFireColdAndLightningTakenAsFire",
+  "level": 1,
+  "statOrder": [
+   5511
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "fire",
+   "cold",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "1723738042": [
+    "(10-20)% of Cold and Lightning Damage taken as Fire Damage while affected by Purity of Fire"
+   ]
+  }
+ },
+ "PurityOfFireImmuneToIgnite": {
+  "lines": [
+   "Immune to Ignite while affected by Purity of Fire"
+  ],
+  "affix": "",
+  "group": "PurityOfFireImmuneToIgnite",
+  "level": 1,
+  "statOrder": [
+   6999
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "fire",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "371612541": [
+    "Immune to Ignite while affected by Purity of Fire"
+   ]
+  }
+ },
+ "PurityOfFireReducedReflectedFireDamage": {
+  "lines": [
+   "Prevent +(50-75)% of Reflected Fire Damage you would take while affected by Purity of Fire"
+  ],
+  "affix": "",
+  "group": "PurityOfFireReducedReflectedFireDamage",
+  "level": 1,
+  "statOrder": [
+   9197
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "fire"
+  ],
+  "tradeHashes": {
+   "435235774": [
+    "Prevent +(50-75)% of Reflected Fire Damage you would take while affected by Purity of Fire"
+   ]
+  }
+ },
+ "PurityOfFireTakePhysicalAsFire": {
+  "lines": [
+   "(6-10)% of Physical Damage from Hits taken as Fire Damage while affected by Purity of Fire"
+  ],
+  "affix": "",
+  "group": "PurityOfFireTakePhysicalAsFire",
+  "level": 1,
+  "statOrder": [
+   9498
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical",
+   "elemental",
+   "fire"
+  ],
+  "tradeHashes": {
+   "1798459983": [
+    "(6-10)% of Physical Damage from Hits taken as Fire Damage while affected by Purity of Fire"
+   ]
+  }
+ },
+ "PurityOfFireUnaffectedByBurningGround": {
+  "lines": [
+   "Unaffected by Burning Ground while affected by Purity of Fire"
+  ],
+  "affix": "",
+  "group": "PurityOfFireUnaffectedByBurningGround",
+  "level": 1,
+  "statOrder": [
+   10322
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "3308185931": [
+    "Unaffected by Burning Ground while affected by Purity of Fire"
+   ]
+  }
+ },
+ "PurityOfFireUnaffectedByFlammability__": {
+  "lines": [
+   "Unaffected by Flammability while affected by Purity of Fire"
+  ],
+  "affix": "",
+  "group": "PurityOfFireUnaffectedByFlammability",
+  "level": 1,
+  "statOrder": [
+   10335
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "caster",
+   "curse"
+  ],
+  "tradeHashes": {
+   "1173690938": [
+    "Unaffected by Flammability while affected by Purity of Fire"
+   ]
+  }
+ },
+ "PurityOfIceFireAndLightningTakenAsCold": {
+  "lines": [
+   "(10-20)% of Fire and Lightning Damage taken as Cold Damage while affected by Purity of Ice"
+  ],
+  "affix": "",
+  "group": "PurityOfIceFireAndLightningTakenAsCold",
+  "level": 1,
+  "statOrder": [
+   6295
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "fire",
+   "cold",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "2189467271": [
+    "(10-20)% of Fire and Lightning Damage taken as Cold Damage while affected by Purity of Ice"
+   ]
+  }
+ },
+ "PurityOfIceImmuneToFreeze": {
+  "lines": [
+   "Immune to Freeze while affected by Purity of Ice"
+  ],
+  "affix": "",
+  "group": "PurityOfIceImmuneToFreeze",
+  "level": 1,
+  "statOrder": [
+   6996
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "cold",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "2720072724": [
+    "Immune to Freeze while affected by Purity of Ice"
+   ]
+  }
+ },
+ "PurityOfIceReducedReflectedColdDamage": {
+  "lines": [
+   "Prevent +(50-75)% of Reflected Cold Damage you would take while affected by Purity of Ice"
+  ],
+  "affix": "",
+  "group": "PurityOfIceReducedReflectedColdDamage",
+  "level": 1,
+  "statOrder": [
+   9195
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "cold"
+  ],
+  "tradeHashes": {
+   "2480601356": [
+    "Prevent +(50-75)% of Reflected Cold Damage you would take while affected by Purity of Ice"
+   ]
+  }
+ },
+ "PurityOfIceTakePhysicalAsIce": {
+  "lines": [
+   "(6-10)% of Physical Damage from Hits taken as Cold Damage while affected by Purity of Ice"
+  ],
+  "affix": "",
+  "group": "PurityOfIceTakePhysicalAsIce",
+  "level": 1,
+  "statOrder": [
+   9496
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical",
+   "elemental",
+   "cold"
+  ],
+  "tradeHashes": {
+   "1779027621": [
+    "(6-10)% of Physical Damage from Hits taken as Cold Damage while affected by Purity of Ice"
+   ]
+  }
+ },
+ "PurityOfIceUnaffectedByChilledGround": {
+  "lines": [
+   "Unaffected by Chilled Ground while affected by Purity of Ice"
+  ],
+  "affix": "",
+  "group": "PurityOfIceUnaffectedByChilledGround",
+  "level": 1,
+  "statOrder": [
+   10327
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "2647344903": [
+    "Unaffected by Chilled Ground while affected by Purity of Ice"
+   ]
+  }
+ },
+ "PurityOfIceUnaffectedByFrostbite": {
+  "lines": [
+   "Unaffected by Frostbite while affected by Purity of Ice"
+  ],
+  "affix": "",
+  "group": "PurityOfIceUnaffectedByFrostbite",
+  "level": 1,
+  "statOrder": [
+   10337
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "caster",
+   "curse"
+  ],
+  "tradeHashes": {
+   "4012281889": [
+    "Unaffected by Frostbite while affected by Purity of Ice"
+   ]
+  }
+ },
+ "PurityOfLightningFireAndColdTakenAsLightning": {
+  "lines": [
+   "(10-20)% of Fire and Cold Damage taken as Lightning Damage while",
+   "affected by Purity of Lightning"
+  ],
+  "affix": "",
+  "group": "PurityOfLightningFireAndColdTakenAsLightning",
+  "level": 1,
+  "statOrder": [
+   6293,
+   6293.1
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "fire",
+   "cold",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "3953667743": [
+    "(10-20)% of Fire and Cold Damage taken as Lightning Damage while",
+    "affected by Purity of Lightning"
+   ]
+  }
+ },
+ "PurityOfLightningImmuneToShock_": {
+  "lines": [
+   "Immune to Shock while affected by Purity of Lightning"
+  ],
+  "affix": "",
+  "group": "PurityOfLightningImmuneToShock",
+  "level": 1,
+  "statOrder": [
+   7004
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "lightning",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "281949611": [
+    "Immune to Shock while affected by Purity of Lightning"
+   ]
+  }
+ },
+ "PurityOfLightningReducedReflectedLightningDamage": {
+  "lines": [
+   "Prevent +(50-75)% of Reflected Lightning Damage you would take while",
+   "affected by Purity of Lightning"
+  ],
+  "affix": "",
+  "group": "PurityOfLightningReducedReflectedLightningDamage",
+  "level": 1,
+  "statOrder": [
+   9198,
+   9198.1
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "3023818840": [
+    "Prevent +(50-75)% of Reflected Lightning Damage you would take while",
+    "affected by Purity of Lightning"
+   ]
+  }
+ },
+ "PurityOfLightningTakePhysicalAsLightning": {
+  "lines": [
+   "(6-10)% of Physical Damage from Hits taken as Lightning Damage while affected by Purity of Lightning"
+  ],
+  "affix": "",
+  "group": "PurityOfLightningTakePhysicalAsLightning",
+  "level": 1,
+  "statOrder": [
+   9500
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical",
+   "elemental",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "254131992": [
+    "(6-10)% of Physical Damage from Hits taken as Lightning Damage while affected by Purity of Lightning"
+   ]
+  }
+ },
+ "PurityOfLightningUnaffectedByConductivity_____": {
+  "lines": [
+   "Unaffected by Conductivity while affected by Purity of Lightning"
+  ],
+  "affix": "",
+  "group": "PurityOfLightningUnaffectedByConductivity",
+  "level": 1,
+  "statOrder": [
+   10328
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "caster",
+   "curse"
+  ],
+  "tradeHashes": {
+   "1567542124": [
+    "Unaffected by Conductivity while affected by Purity of Lightning"
+   ]
+  }
+ },
+ "PurityOfLightningUnaffectedByShockedGround": {
+  "lines": [
+   "Unaffected by Shocked Ground while affected by Purity of Lightning"
+  ],
+  "affix": "",
+  "group": "PurityOfLightningUnaffectedByShockedGround",
+  "level": 1,
+  "statOrder": [
+   10347
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "2567659895": [
+    "Unaffected by Shocked Ground while affected by Purity of Lightning"
+   ]
+  }
+ },
+ "SublimeVisionAnger": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "Always Scorch while affected by Anger",
+   "Aura Skills other than Anger are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionAnger",
+  "level": 1,
+  "statOrder": [
+   3265,
+   4366,
+   10533
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "fire",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "1585991257": [
+    "Always Scorch while affected by Anger"
+   ],
+   "2185337019": [
+    "Aura Skills other than Anger are Disabled"
+   ]
+  }
+ },
+ "SublimeVisionClarity": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "80% increased Effect of Arcane Surge on you while affected by Clarity",
+   "Aura Skills other than Clarity are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionClarity",
+  "level": 1,
+  "statOrder": [
+   3265,
+   4414,
+   10534
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "mana"
+  ],
+  "tradeHashes": {
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "1808477254": [
+    "80% increased Effect of Arcane Surge on you while affected by Clarity"
+   ],
+   "2010835448": [
+    "Aura Skills other than Clarity are Disabled"
+   ]
+  }
+ },
+ "SublimeVisionDetermination": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "+1 to Maximum Endurance Charges while affected by Determination",
+   "Aura Skills other than Determination are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionDetermination",
+  "level": 1,
+  "statOrder": [
+   3265,
+   8936,
+   10535
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "460973817": [
+    "Aura Skills other than Determination are Disabled"
+   ],
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "2110586221": [
+    "+1 to Maximum Endurance Charges while affected by Determination"
+   ]
+  }
+ },
+ "SublimeVisionDiscipline": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "+1 to Maximum Power Charges while affected by Discipline",
+   "Aura Skills other than Discipline are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionDiscipline",
+  "level": 1,
+  "statOrder": [
+   3265,
+   8989,
+   10536
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "1465672972": [
+    "+1 to Maximum Power Charges while affected by Discipline"
+   ],
+   "2204523353": [
+    "Aura Skills other than Discipline are Disabled"
+   ]
+  }
+ },
+ "SublimeVisionGrace": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "+1 to Maximum Frenzy Charges while affected by Grace",
+   "Aura Skills other than Grace are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionGrace",
+  "level": 1,
+  "statOrder": [
+   3265,
+   8946,
+   10537
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "1747401945": [
+    "Aura Skills other than Grace are Disabled"
+   ],
+   "3458080964": [
+    "+1 to Maximum Frenzy Charges while affected by Grace"
+   ]
+  }
+ },
+ "SublimeVisionHaste": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "10% increased Action Speed while affected by Haste",
+   "Aura Skills other than Haste are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionHaste",
+  "level": 1,
+  "statOrder": [
+   3265,
+   4230,
+   10538
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "speed"
+  ],
+  "tradeHashes": {
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "1960426186": [
+    "10% increased Action Speed while affected by Haste"
+   ],
+   "3067441492": [
+    "Aura Skills other than Haste are Disabled"
+   ]
+  }
+ },
+ "SublimeVisionHatred": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "Always inflict Brittle while affected by Hatred",
+   "Aura Skills other than Hatred are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionHatred",
+  "level": 1,
+  "statOrder": [
+   3265,
+   4361,
+   10539
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "cold",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "13285831": [
+    "Always inflict Brittle while affected by Hatred"
+   ],
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "3348211884": [
+    "Aura Skills other than Hatred are Disabled"
+   ]
+  }
+ },
+ "SublimeVisionMalevolence": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "You can apply an additional Curse while affected by Malevolence",
+   "Aura Skills other than Malevolence are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionMalevolence",
+  "level": 1,
+  "statOrder": [
+   3265,
+   9345,
+   10540
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "curse"
+  ],
+  "tradeHashes": {
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "3540033124": [
+    "Aura Skills other than Malevolence are Disabled"
+   ],
+   "4102244881": [
+    "You can apply an additional Curse while affected by Malevolence"
+   ]
+  }
+ },
+ "SublimeVisionPrecision": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "25% more Critical Strike chance while affected by Precision",
+   "Aura Skills other than Precision are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionPrecision",
+  "level": 1,
+  "statOrder": [
+   3265,
+   5627,
+   10541
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "critical"
+  ],
+  "tradeHashes": {
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "2617837023": [
+    "25% more Critical Strike chance while affected by Precision"
+   ],
+   "2800254163": [
+    "Aura Skills other than Precision are Disabled"
+   ]
+  }
+ },
+ "SublimeVisionPride": {
+  "lines": [
+   "(20-40)% increased Effect of Non-Curse Auras from your Skills on Enemies",
+   "Enemies you Kill while using Pride have 25% chance to Explode, dealing a tenth of their maximum Life as Physical Damage",
+   "Aura Skills other than Pride are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionPride",
+  "level": 1,
+  "statOrder": [
+   3263,
+   6255,
+   10542
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical"
+  ],
+  "tradeHashes": {
+   "1636209393": [
+    "(20-40)% increased Effect of Non-Curse Auras from your Skills on Enemies"
+   ],
+   "1961516633": [
+    "Enemies you Kill while using Pride have 25% chance to Explode, dealing a tenth of their maximum Life as Physical Damage"
+   ],
+   "3970941380": [
+    "Aura Skills other than Pride are Disabled"
+   ]
+  }
+ },
+ "SublimeVisionPurityOfElements": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "+3% to all maximum Elemental Resistances while affected by Purity of Elements",
+   "Aura Skills other than Purity of Elements are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionPurityOfElements",
+  "level": 1,
+  "statOrder": [
+   3265,
+   4269,
+   10543
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "resistance"
+  ],
+  "tradeHashes": {
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "2225434657": [
+    "Aura Skills other than Purity of Elements are Disabled"
+   ],
+   "3234824465": [
+    "+3% to all maximum Elemental Resistances while affected by Purity of Elements"
+   ]
+  }
+ },
+ "SublimeVisionPurityOfFire": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "30% of Cold and Lightning Damage taken as Fire Damage while affected by Purity of Fire",
+   "Aura Skills other than Purity of Fire are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionPurityOfFire",
+  "level": 1,
+  "statOrder": [
+   3265,
+   5511,
+   10544
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "fire",
+   "cold",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "1723738042": [
+    "30% of Cold and Lightning Damage taken as Fire Damage while affected by Purity of Fire"
+   ],
+   "3192291777": [
+    "Aura Skills other than Purity of Fire are Disabled"
+   ]
+  }
+ },
+ "SublimeVisionPurityOfIce": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "30% of Fire and Lightning Damage taken as Cold Damage while affected by Purity of Ice",
+   "Aura Skills other than Purity of Ice are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionPurityOfIce",
+  "level": 1,
+  "statOrder": [
+   3265,
+   6295,
+   10545
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "fire",
+   "cold",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "2189467271": [
+    "30% of Fire and Lightning Damage taken as Cold Damage while affected by Purity of Ice"
+   ],
+   "2517644375": [
+    "Aura Skills other than Purity of Ice are Disabled"
+   ]
+  }
+ },
+ "SublimeVisionPurityOfLightning": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "30% of Fire and Cold Damage taken as Lightning Damage while",
+   "affected by Purity of Lightning",
+   "Aura Skills other than Purity of Lightning are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionPurityOfLightning",
+  "level": 1,
+  "statOrder": [
+   3265,
+   6293,
+   6293.1,
+   10546
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "fire",
+   "cold",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "2523986538": [
+    "Aura Skills other than Purity of Lightning are Disabled"
+   ],
+   "3953667743": [
+    "30% of Fire and Cold Damage taken as Lightning Damage while",
+    "affected by Purity of Lightning"
+   ]
+  }
+ },
+ "SublimeVisionVitality": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "Regenerate 15% Life over one second when hit while affected by Vitality",
+   "Aura Skills other than Vitality are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionVitality",
+  "level": 1,
+  "statOrder": [
+   3265,
+   9733,
+   10547
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "life"
+  ],
+  "tradeHashes": {
+   "110034065": [
+    "Aura Skills other than Vitality are Disabled"
+   ],
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "1366273824": [
+    "Regenerate 15% Life over one second when hit while affected by Vitality"
+   ]
+  }
+ },
+ "SublimeVisionWrath": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "Always Sap while affected by Wrath",
+   "Aura Skills other than Wrath are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionWrath",
+  "level": 1,
+  "statOrder": [
+   3265,
+   4365,
+   10548
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental",
+   "lightning",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "2499038519": [
+    "Always Sap while affected by Wrath"
+   ],
+   "3292388799": [
+    "Aura Skills other than Wrath are Disabled"
+   ]
+  }
+ },
+ "SublimeVisionZealotry": {
+  "lines": [
+   "Auras from your Skills have (20-40)% increased Effect on you",
+   "Unaffected by Curses while affected by Zealotry",
+   "Aura Skills other than Zealotry are Disabled"
+  ],
+  "affix": "",
+  "group": "SublimeVisionZealotry",
+  "level": 1,
+  "statOrder": [
+   3265,
+   10330,
+   10549
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "curse"
+  ],
+  "tradeHashes": {
+   "374559518": [
+    "Aura Skills other than Zealotry are Disabled"
+   ],
+   "472812693": [
+    "Auras from your Skills have (20-40)% increased Effect on you"
+   ],
+   "3403419549": [
+    "Unaffected by Curses while affected by Zealotry"
+   ]
+  }
+ },
+ "SummonArbalistAttackSpeed_": {
+  "lines": [
+   "Summoned Arbalists have (30-40)% increased Attack Speed"
+  ],
+  "affix": "",
+  "group": "SummonArbalistAttackSpeed",
+  "level": 1,
+  "statOrder": [
+   10124
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "4054463312": [
+    "Summoned Arbalists have (30-40)% increased Attack Speed"
+   ]
+  }
+ },
+ "SummonArbalistChains_": {
+  "lines": [
+   "Summoned Arbalists' Projectiles Chain +2 times"
+  ],
+  "affix": "",
+  "group": "SummonArbalistChains",
+  "level": 1,
+  "statOrder": [
+   10125
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "3010688059": [
+    "Summoned Arbalists' Projectiles Chain +2 times"
+   ]
+  }
+ },
+ "SummonArbalistChanceToBleedPercent_": {
+  "lines": [
+   "Summoned Arbalists' Attacks have (40-60)% chance to inflict Bleeding"
+  ],
+  "affix": "",
+  "group": "SummonArbalistChanceToBleed",
+  "level": 1,
+  "statOrder": [
+   10126
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "1841503755": [
+    "Summoned Arbalists' Attacks have (40-60)% chance to inflict Bleeding"
+   ]
+  }
+ },
+ "SummonArbalistChanceToCrushOnHit": {
+  "lines": [
+   "Summoned Arbalists have (10-20)% chance to Crush on Hit"
+  ],
+  "affix": "",
+  "group": "SummonArbalistChanceToCrushOnHit",
+  "level": 1,
+  "statOrder": [
+   10127
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "1658936540": [
+    "Summoned Arbalists have (10-20)% chance to Crush on Hit"
+   ]
+  }
+ },
+ "SummonArbalistChanceToDealDoubleDamage___": {
+  "lines": [
+   "Summoned Arbalists have (25-35)% chance to deal Double Damage"
+  ],
+  "affix": "",
+  "group": "SummonArbalistChanceToDealDoubleDamage",
+  "level": 1,
+  "statOrder": [
+   10128
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "3057722139": [
+    "Summoned Arbalists have (25-35)% chance to deal Double Damage"
+   ]
+  }
+ },
+ "SummonArbalistChanceToIgniteFreezeShockPercent": {
+  "lines": [
+   "Summoned Arbalists have (15-25)% chance to Freeze, Shock, and Ignite"
+  ],
+  "affix": "",
+  "group": "SummonArbalistChanceToIgniteFreezeShock",
+  "level": 1,
+  "statOrder": [
+   10129
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "357325557": [
+    "Summoned Arbalists have (15-25)% chance to Freeze, Shock, and Ignite"
+   ]
+  }
+ },
+ "SummonArbalistChanceToInflictColdExposureonHit": {
+  "lines": [
+   "Summoned Arbalists have (10-20)% chance to inflict Cold Exposure on Hit"
+  ],
+  "affix": "",
+  "group": "SummonArbalistChanceToInflictColdExposureonHit",
+  "level": 1,
+  "statOrder": [
+   10147
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "157070900": [
+    "Summoned Arbalists have (10-20)% chance to inflict Cold Exposure on Hit"
+   ]
+  }
+ },
+ "SummonArbalistChanceToInflictFireExposureOnHit_": {
+  "lines": [
+   "Summoned Arbalists have (10-20)% chance to inflict Fire Exposure on Hit"
+  ],
+  "affix": "",
+  "group": "SummonArbalistChanceToInflictFireExposureOnHit",
+  "level": 1,
+  "statOrder": [
+   10148
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "3327243369": [
+    "Summoned Arbalists have (10-20)% chance to inflict Fire Exposure on Hit"
+   ]
+  }
+ },
+ "SummonArbalistChanceToInflictLightningExposureOnHit_": {
+  "lines": [
+   "Summoned Arbalists have (10-20)% chance to inflict Lightning Exposure on Hit"
+  ],
+  "affix": "",
+  "group": "SummonArbalistChanceToInflictLightningExposureOnHit",
+  "level": 1,
+  "statOrder": [
+   10149
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "223656429": [
+    "Summoned Arbalists have (10-20)% chance to inflict Lightning Exposure on Hit"
+   ]
+  }
+ },
+ "SummonArbalistChanceToIntimidateFor4SecondsOnHit": {
+  "lines": [
+   "Summoned Arbalists have (20-30)% chance to Intimidate for 4 seconds on Hit"
+  ],
+  "affix": "",
+  "group": "SummonArbalistChanceToIntimidateFor4SecondsOnHit",
+  "level": 1,
+  "statOrder": [
+   10130
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "3964074505": [
+    "Summoned Arbalists have (20-30)% chance to Intimidate for 4 seconds on Hit"
+   ]
+  }
+ },
+ "SummonArbalistChanceToMaimfor4secondsOnHit_": {
+  "lines": [
+   "Summoned Arbalists have (20-30)% chance to Maim for 4 seconds on Hit"
+  ],
+  "affix": "",
+  "group": "SummonArbalistChanceToMaimfor4secondsOnHit",
+  "level": 1,
+  "statOrder": [
+   10131
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "3652224635": [
+    "Summoned Arbalists have (20-30)% chance to Maim for 4 seconds on Hit"
+   ]
+  }
+ },
+ "SummonArbalistChanceToPoisonPercent": {
+  "lines": [
+   "Summoned Arbalists have (40-60)% chance to Poison"
+  ],
+  "affix": "",
+  "group": "SummonArbalistChanceToPoison",
+  "level": 1,
+  "statOrder": [
+   10132
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "2894626576": [
+    "Summoned Arbalists have (40-60)% chance to Poison"
+   ]
+  }
+ },
+ "SummonArbalistChanceToUnnerveFor4SecondsOnHit_": {
+  "lines": [
+   "Summoned Arbalists have (20-30)% chance to Unnerve for 4 seconds on Hit"
+  ],
+  "affix": "",
+  "group": "SummonArbalistChanceToUnnerveFor4SecondsOnHit",
+  "level": 1,
+  "statOrder": [
+   10133
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "3976916585": [
+    "Summoned Arbalists have (20-30)% chance to Unnerve for 4 seconds on Hit"
+   ]
+  }
+ },
+ "SummonArbalistNumberOfAdditionalProjectiles_": {
+  "lines": [
+   "Summoned Arbalists fire (2-4) additional Projectiles"
+  ],
+  "affix": "",
+  "group": "SummonArbalistNumberOfAdditionalProjectiles",
+  "level": 1,
+  "statOrder": [
+   10134
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "2087104263": [
+    "Summoned Arbalists fire (2-4) additional Projectiles"
+   ]
+  }
+ },
+ "SummonArbalistNumberOfArbalistsAllowed": {
+  "lines": [
+   "+1 to number of Summoned Arbalists"
+  ],
+  "affix": "",
+  "group": "SummonArbalistNumberOfArbalistsAllowed",
+  "level": 1,
+  "statOrder": [
+   9358
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "1886245216": [
+    "+1 to number of Summoned Arbalists"
+   ]
+  }
+ },
+ "SummonArbalistNumberOfSplits__": {
+  "lines": [
+   "Summoned Arbalists' Projectiles Split into 3"
+  ],
+  "affix": "",
+  "group": "SummonArbalistNumberOfSplits",
+  "level": 1,
+  "statOrder": [
+   10135
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "1857935842": [
+    "Summoned Arbalists' Projectiles Split into 3"
+   ]
+  }
+ },
+ "SummonArbalistPhysicalDamagePercentToAddAsCold_": {
+  "lines": [
+   "Summoned Arbalists gain (30-40)% of Physical Damage as Extra Cold Damage",
+   "Summoned Arbalists have 20% chance to inflict Cold Exposure on Hit"
+  ],
+  "affix": "",
+  "group": "SummonArbalistPhysicalDamageToAddAsCold",
+  "level": 1,
+  "statOrder": [
+   10136,
+   10147
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "157070900": [
+    "Summoned Arbalists have 20% chance to inflict Cold Exposure on Hit"
+   ],
+   "655918588": [
+    "Summoned Arbalists gain (30-40)% of Physical Damage as Extra Cold Damage"
+   ]
+  }
+ },
+ "SummonArbalistPhysicalDamagePercentToAddAsFire": {
+  "lines": [
+   "Summoned Arbalists gain (30-40)% of Physical Damage as Extra Fire Damage",
+   "Summoned Arbalists have 20% chance to inflict Fire Exposure on Hit"
+  ],
+  "affix": "",
+  "group": "SummonArbalistPhysicalDamageToAddAsFire",
+  "level": 1,
+  "statOrder": [
+   10137,
+   10148
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "1477474340": [
+    "Summoned Arbalists gain (30-40)% of Physical Damage as Extra Fire Damage"
+   ],
+   "3327243369": [
+    "Summoned Arbalists have 20% chance to inflict Fire Exposure on Hit"
+   ]
+  }
+ },
+ "SummonArbalistPhysicalDamagePercentToAddAsLightning": {
+  "lines": [
+   "Summoned Arbalists gain (30-40)% of Physical Damage as Extra Lightning Damage",
+   "Summoned Arbalists have 20% chance to inflict Lightning Exposure on Hit"
+  ],
+  "affix": "",
+  "group": "SummonArbalistPhysicalDamageToAddAsLightning",
+  "level": 1,
+  "statOrder": [
+   10138,
+   10149
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "223656429": [
+    "Summoned Arbalists have 20% chance to inflict Lightning Exposure on Hit"
+   ],
+   "2631827343": [
+    "Summoned Arbalists gain (30-40)% of Physical Damage as Extra Lightning Damage"
+   ]
+  }
+ },
+ "SummonArbalistPhysicalDamagePercentToConvertToCold_": {
+  "lines": [
+   "Summoned Arbalists Convert 100% of Physical Damage to Cold Damage",
+   "Summoned Arbalists have (10-20)% chance to Freeze"
+  ],
+  "affix": "",
+  "group": "SummonArbalistPhysicalDamageToConvertToCold",
+  "level": 1,
+  "statOrder": [
+   10139,
+   10144
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "1094808741": [
+    "Summoned Arbalists Convert 100% of Physical Damage to Cold Damage"
+   ],
+   "2052458107": [
+    "Summoned Arbalists have (10-20)% chance to Freeze"
+   ]
+  }
+ },
+ "SummonArbalistPhysicalDamagePercentToConvertToFire": {
+  "lines": [
+   "Summoned Arbalists Convert 100% of Physical Damage to Fire Damage",
+   "Summoned Arbalists have (10-20)% chance to Ignite"
+  ],
+  "affix": "",
+  "group": "SummonArbalistPhysicalDamageToConvertToFire",
+  "level": 1,
+  "statOrder": [
+   10140,
+   10145
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "831284309": [
+    "Summoned Arbalists have (10-20)% chance to Ignite"
+   ],
+   "2954406821": [
+    "Summoned Arbalists Convert 100% of Physical Damage to Fire Damage"
+   ]
+  }
+ },
+ "SummonArbalistPhysicalDamagePercentToConvertToLightning": {
+  "lines": [
+   "Summoned Arbalists Convert 100% of Physical Damage to Lightning Damage",
+   "Summoned Arbalists have (10-20)% chance to Shock"
+  ],
+  "affix": "",
+  "group": "SummonArbalistPhysicalDamageToConvertToLightning",
+  "level": 1,
+  "statOrder": [
+   10141,
+   10146
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "2144847042": [
+    "Summoned Arbalists have (10-20)% chance to Shock"
+   ],
+   "2934219859": [
+    "Summoned Arbalists Convert 100% of Physical Damage to Lightning Damage"
+   ]
+  }
+ },
+ "SummonArbalistProjectilesFork": {
+  "lines": [
+   "Summoned Arbalists' Projectiles Fork"
+  ],
+  "affix": "",
+  "group": "SummonArbalistProjectilesFork",
+  "level": 1,
+  "statOrder": [
+   10142
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "2461270975": [
+    "Summoned Arbalists' Projectiles Fork"
+   ]
+  }
+ },
+ "SummonArbalistTargetsToPierce": {
+  "lines": [
+   "Summoned Arbalists' Projectiles Pierce (2-4) additional Targets"
+  ],
+  "affix": "",
+  "group": "SummonArbalistTargetsToPierce",
+  "level": 1,
+  "statOrder": [
+   10143
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "3741465646": [
+    "Summoned Arbalists' Projectiles Pierce (2-4) additional Targets"
+   ]
+  }
+ },
+ "VitalityDamageLifeLeech": {
+  "lines": [
+   "(0.8-1.2)% of Damage leeched as Life while affected by Vitality"
+  ],
+  "affix": "",
+  "group": "VitalityDamageLifeLeech",
+  "level": 1,
+  "statOrder": [
+   7130
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "life"
+  ],
+  "tradeHashes": {
+   "3656959867": [
+    "(0.8-1.2)% of Damage leeched as Life while affected by Vitality"
+   ]
+  }
+ },
+ "VitalityFlatLifeRegen": {
+  "lines": [
+   "Regenerate (100-140) Life per Second while affected by Vitality"
+  ],
+  "affix": "",
+  "group": "VitalityFlatLifeRegen",
+  "level": 1,
+  "statOrder": [
+   7175
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "life"
+  ],
+  "tradeHashes": {
+   "3489570622": [
+    "Regenerate (100-140) Life per Second while affected by Vitality"
+   ]
+  }
+ },
+ "VitalityLifeGainPerHit": {
+  "lines": [
+   "Gain (20-30) Life per Enemy Hit while affected by Vitality"
+  ],
+  "affix": "",
+  "group": "VitalityLifeGainPerHit",
+  "level": 1,
+  "statOrder": [
+   7124
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "life"
+  ],
+  "tradeHashes": {
+   "4259701244": [
+    "Gain (20-30) Life per Enemy Hit while affected by Vitality"
+   ]
+  }
+ },
+ "VitalityLifeRecoveryFromFlasks_": {
+  "lines": [
+   "(50-70)% increased Life Recovery from Flasks while affected by Vitality"
+  ],
+  "affix": "",
+  "group": "VitalityLifeRecoveryFromFlasks",
+  "level": 1,
+  "statOrder": [
+   6386
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "flask",
+   "resource",
+   "life"
+  ],
+  "tradeHashes": {
+   "362838683": [
+    "(50-70)% increased Life Recovery from Flasks while affected by Vitality"
+   ]
+  }
+ },
+ "VitalityLifeRecoveryRate": {
+  "lines": [
+   "(10-15)% increased Life Recovery Rate while affected by Vitality"
+  ],
+  "affix": "",
+  "group": "VitalityLifeRecoveryRate",
+  "level": 1,
+  "statOrder": [
+   7165
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "life"
+  ],
+  "tradeHashes": {
+   "2690790844": [
+    "(10-15)% increased Life Recovery Rate while affected by Vitality"
+   ]
+  }
+ },
+ "VitalityPercentLifeRegen": {
+  "lines": [
+   "Regenerate (1-1.5)% of Life per second while affected by Vitality"
+  ],
+  "affix": "",
+  "group": "VitalityPercentLifeRegen",
+  "level": 1,
+  "statOrder": [
+   7182
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "life"
+  ],
+  "tradeHashes": {
+   "1165583295": [
+    "Regenerate (1-1.5)% of Life per second while affected by Vitality"
+   ]
+  }
+ },
+ "WrathIncreasedCriticalStrikeChance": {
+  "lines": [
+   "(70-100)% increased Critical Strike Chance while affected by Wrath"
+  ],
+  "affix": "",
+  "group": "WrathIncreasedCriticalStrikeChance",
+  "level": 1,
+  "statOrder": [
+   5653
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "critical"
+  ],
+  "tradeHashes": {
+   "3357049845": [
+    "(70-100)% increased Critical Strike Chance while affected by Wrath"
+   ]
+  }
+ },
+ "WrathIncreasedLightningDamage": {
+  "lines": [
+   "(40-60)% increased Lightning Damage while affected by Wrath"
+  ],
+  "affix": "",
+  "group": "WrathIncreasedLightningDamage",
+  "level": 1,
+  "statOrder": [
+   7222
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental_damage",
+   "damage",
+   "elemental",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "418293304": [
+    "(40-60)% increased Lightning Damage while affected by Wrath"
+   ]
+  }
+ },
+ "WrathLightningDamageESLeech": {
+  "lines": [
+   "(1-1.5)% of Lightning Damage is Leeched as Energy Shield while affected by Wrath"
+  ],
+  "affix": "",
+  "group": "WrathLightningDamageESLeech",
+  "level": 1,
+  "statOrder": [
+   6176
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "defences",
+   "energy_shield",
+   "elemental",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "121436064": [
+    "(1-1.5)% of Lightning Damage is Leeched as Energy Shield while affected by Wrath"
+   ]
+  }
+ },
+ "WrathLightningDamageManaLeech": {
+  "lines": [
+   "(1-1.5)% of Lightning Damage is Leeched as Mana while affected by Wrath"
+  ],
+  "affix": "",
+  "group": "WrathLightningDamageManaLeech",
+  "level": 1,
+  "statOrder": [
+   7975
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "resource",
+   "mana",
+   "elemental",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "2889601846": [
+    "(1-1.5)% of Lightning Damage is Leeched as Mana while affected by Wrath"
+   ]
+  }
+ },
+ "WrathLightningPenetration": {
+  "lines": [
+   "Damage Penetrates (10-15)% Lightning Resistance while affected by Wrath"
+  ],
+  "affix": "",
+  "group": "WrathLightningPenetration",
+  "level": 1,
+  "statOrder": [
+   9723
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental_damage",
+   "damage",
+   "elemental",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "1077131949": [
+    "Damage Penetrates (10-15)% Lightning Resistance while affected by Wrath"
+   ]
+  }
+ },
+ "WrathPhysicalAddedAsLightning_": {
+  "lines": [
+   "Gain (15-25)% of Physical Damage as Extra Lightning Damage while affected by Wrath"
+  ],
+  "affix": "",
+  "group": "WrathPhysicalAddedAsLightning",
+  "level": 1,
+  "statOrder": [
+   9473
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical_damage",
+   "elemental_damage",
+   "damage",
+   "physical",
+   "elemental",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "2255914633": [
+    "Gain (15-25)% of Physical Damage as Extra Lightning Damage while affected by Wrath"
+   ]
+  }
+ },
+ "WrathPhysicalConvertedToLightning": {
+  "lines": [
+   "(25-40)% of Physical Damage Converted to Lightning Damage while affected by Wrath"
+  ],
+  "affix": "",
+  "group": "WrathPhysicalConvertedToLightning",
+  "level": 1,
+  "statOrder": [
+   4788
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "physical_damage",
+   "elemental_damage",
+   "damage",
+   "physical",
+   "elemental",
+   "lightning"
+  ],
+  "tradeHashes": {
+   "2106756686": [
+    "(25-40)% of Physical Damage Converted to Lightning Damage while affected by Wrath"
+   ]
+  }
+ },
+ "ZealotryCastSpeed": {
+  "lines": [
+   "(10-15)% increased Cast Speed while affected by Zealotry"
+  ],
+  "affix": "",
+  "group": "ZealotryCastSpeed",
+  "level": 1,
+  "statOrder": [
+   5231
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "caster",
+   "speed"
+  ],
+  "tradeHashes": {
+   "2444534954": [
+    "(10-15)% increased Cast Speed while affected by Zealotry"
+   ]
+  }
+ },
+ "ZealotryConsecratedGroundEffectLingersForMsAfterLeavingTheArea": {
+  "lines": [
+   "Effects of Consecrated Ground you create while affected by Zealotry Linger for 2 seconds"
+  ],
+  "affix": "",
+  "group": "ZealotryConsecratedGroundEffectLingersForMsAfterLeavingTheArea",
+  "level": 1,
+  "statOrder": [
+   5562
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "2163419452": [
+    "Effects of Consecrated Ground you create while affected by Zealotry Linger for 2 seconds"
+   ]
+  }
+ },
+ "ZealotryConsecratedGroundEnemyDamageTaken": {
+  "lines": [
+   "Consecrated Ground you create while affected by Zealotry causes enemies to take (8-10)% increased Damage"
+  ],
+  "affix": "",
+  "group": "ZealotryConsecratedGroundEnemyDamageTaken",
+  "level": 1,
+  "statOrder": [
+   5559
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "2434030180": [
+    "Consecrated Ground you create while affected by Zealotry causes enemies to take (8-10)% increased Damage"
+   ]
+  }
+ },
+ "ZealotryCriticalStrikeChanceAgainstEnemiesOnConsecratedGround": {
+  "lines": [
+   "(100-120)% increased Critical Strike Chance against Enemies on Consecrated Ground while affected by Zealotry"
+  ],
+  "affix": "",
+  "group": "ZealotryCriticalStrikeChanceAgainstEnemiesOnConsecratedGround",
+  "level": 1,
+  "statOrder": [
+   5633
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "critical"
+  ],
+  "tradeHashes": {
+   "214835567": [
+    "(100-120)% increased Critical Strike Chance against Enemies on Consecrated Ground while affected by Zealotry"
+   ]
+  }
+ },
+ "ZealotryCriticalStrikesPenetratesElementalResistances": {
+  "lines": [
+   "Critical Strikes Penetrate (8-10)% of Enemy Elemental Resistances while affected by Zealotry"
+  ],
+  "affix": "",
+  "group": "ZealotryCriticalStrikesPenetratesElementalResistances",
+  "level": 1,
+  "statOrder": [
+   5695
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "elemental_damage",
+   "damage",
+   "elemental",
+   "critical"
+  ],
+  "tradeHashes": {
+   "2091518682": [
+    "Critical Strikes Penetrate (8-10)% of Enemy Elemental Resistances while affected by Zealotry"
+   ]
+  }
+ },
+ "ZealotryGainArcaneSurgeFor4SecondsWhenYouCreateConsecratedGround": {
+  "lines": [
+   "Gain Arcane Surge for 4 seconds when you create Consecrated Ground while affected by Zealotry"
+  ],
+  "affix": "",
+  "group": "ZealotryGainArcaneSurgeFor4SecondsWhenYouCreateConsecratedGround",
+  "level": 1,
+  "statOrder": [
+   6474
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [],
+  "tradeHashes": {
+   "1919069577": [
+    "Gain Arcane Surge for 4 seconds when you create Consecrated Ground while affected by Zealotry"
+   ]
+  }
+ },
+ "ZealotryMaximumEnergyShieldPerSecondToMaximumEnergyShieldLeechRate": {
+  "lines": [
+   "30% increased Maximum total Energy Shield Recovery per second from Leech while affected by Zealotry"
+  ],
+  "affix": "",
+  "group": "ZealotryMaximumEnergyShieldPerSecondToMaximumEnergyShieldLeechRateOld",
+  "level": 1,
+  "statOrder": [
+   1410
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "defences",
+   "energy_shield"
+  ],
+  "tradeHashes": {
+   "3848992177": [
+    "30% increased Maximum total Energy Shield Recovery per second from Leech while affected by Zealotry"
+   ]
+  }
+ },
+ "ZealotryMaximumEnergyShieldPerSecondToMaximumEnergyShieldLeechRateNew": {
+  "lines": [
+   "30% increased Maximum total Energy Shield Recovery per second from Leech while affected by Zealotry"
+  ],
+  "affix": "",
+  "group": "ZealotryMaximumEnergyShieldPerSecondToMaximumEnergyShieldLeechRate",
+  "level": 1,
+  "statOrder": [
+   1409
+  ],
+  "weightKey": [],
+  "weightVal": [],
+  "modTags": [
+   "defences",
+   "energy_shield"
+  ],
+  "tradeHashes": {
+   "2731416566": [
+    "30% increased Maximum total Energy Shield Recovery per second from Leech while affected by Zealotry"
+   ]
+  }
+ }
+}

@@ -46,7 +46,19 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "public"
+                },
+                {
+                  "glob": "**/*",
+                  "input": "pob",
+                  "output": "pob",
+                  "ignore": ["**/*.br"]
+                }
+              ]
             },
             "development": {
               "optimization": false,
@@ -58,6 +70,13 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "proxyConfig": "proxy.conf.json",
+            "headers": {
+              "Cross-Origin-Opener-Policy": "same-origin",
+              "Cross-Origin-Embedder-Policy": "require-corp"
+            }
+          },
           "configurations": {
             "production": {
               "buildTarget": "poe-utils-ng:build:production"

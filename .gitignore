@@ -46,3 +46,6 @@ Thumbs.db
 .env
 .env.*
 .vercel
+
+# Project-local tools (the PoB dev server copy)
+/.toolchain/

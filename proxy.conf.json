@@ -1,0 +1,9 @@
+{
+  "^/pob/": {
+    "target": "http://localhost:8080",
+    "pathRewrite": { "^/pob": "" }
+  },
+  "/proxy": {
+    "target": "http://localhost:8080"
+  }
+}

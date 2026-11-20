@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { RouterStateSnapshot, Routes } from '@angular/router';
 
 /**
  * One lazy route per tool. Paths match the old site's hash ids, so a link like
@@ -61,6 +61,38 @@ export const routes: Routes = [
     path: 'minesweeper',
     title: 'Minesweeper · PoE Tools',
     loadComponent: () => import('./tools/minesweeper/minesweeper').then((m) => m.Minesweeper),
+  },
+  {
+    // Path of Building in a same-origin frame of /pob/ (static files, not part
+    // of this build) that the app shell keeps alive between visits. A new
+    // ?build= reuses this component, so the guard runs on query changes too:
+    // that is the one case that reloads the frame and could lose work.
+    path: 'web-pob',
+    title: 'Path of Building · PoE Tools',
+    runGuardsAndResolvers: 'paramsOrQueryParamsChange',
+    loadComponent: () => import('./tools/web-pob/web-pob').then((m) => m.WebPob),
+    // typed loosely so this file does not pull the component out of its chunk
+    canDeactivate: [
+      (
+        page: { canLeave?: (next: RouterStateSnapshot) => boolean } | null,
+        _route: unknown,
+        _state: unknown,
+        next: RouterStateSnapshot,
+      ) => page?.canLeave?.(next) ?? true,
+    ],
+  },
+  {
+    // `/pob` without the slash is not the application: its page would look for
+    // versions.json at the site root. The host redirects it (vercel.json); this
+    // catches whatever still reaches the router, keeping a #build= link whole.
+    path: 'pob',
+    canActivate: [
+      () => {
+        location.replace(`/pob/${location.search}${location.hash}`);
+        return false;
+      },
+    ],
+    children: [],
   },
   {
     // not a tool, so it is not in TOOLS — reached from the sidebar footer

@@ -2807,3 +2807,46 @@ a.strat-link-btn { text-decoration: none; }
   justify-content: space-between;
   margin-top: 6px;
 }
+
+/* ============================================================
+   PATH OF BUILDING FRAME (/web-pob)
+   ------------------------------------------------------------
+   The frame lives in the shell (app-pob-host.web-pob) and has three states:
+   never opened (nothing), on screen (.active) and parked (.started only).
+   On screen, the content column becomes exactly one screen tall so the frame
+   takes whatever the bar (desktop padding) or the mobile header leaves.
+   Parked, it keeps a size close to that one, out of sight and out of reach,
+   so coming back does not reflow the application.
+   ============================================================ */
+.web-pob { display: none; }
+.app-content:has(> .web-pob.active) {
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.web-pob.active {
+  display: block;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.web-pob.started:not(.active) {
+  display: block;
+  position: fixed;
+  top: var(--bar-h);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+.web-pob-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #000;
+}

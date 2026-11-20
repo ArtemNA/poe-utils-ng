@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Path of Building (Rust)</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: auto; }
+  canvas { display: block; outline: none; }
+  #status { position: fixed; left: 16px; top: 16px; max-width: 720px; padding: 12px 16px; white-space: pre-wrap; font: 14px/1.4 system-ui, sans-serif; color: #eee; background: #222; border: 1px solid #555; }
+  #status.error { color: #fff; background: #5a1a1a; border-color: #a33; }
+  #status.notice { background: #333; }
+  #files[hidden] { display: none; }
+  #files { position: fixed; right: 0; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 4px; }
+  #files select { padding: 4px; font: 12px system-ui, sans-serif; color: #eee; background: #222; border: 1px solid #555; }
+  #files button { padding: 6px 8px; font: 12px system-ui, sans-serif; color: #eee; background: #222; border: 1px solid #555; cursor: pointer; }
+</style>
+</head>
+<body>
+<canvas id="canvas" tabindex="0"></canvas>
+<div id="status">Loading...</div>
+<div id="files" hidden>
+  <select id="version" title="Version of the application" hidden></select>
+  <button id="import" title="Import builds from .xml files or an exported .zip">Import</button>
+  <button id="export" title="Export all saved builds as one .zip">Export</button>
+</div>
+<input id="import-file" type="file" accept=".xml,.zip" multiple hidden>
+<script src="shell.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Path of Building (Rust)</title>
+<style>html, body { margin: 0; height: 100%; background: #000; color: #eee; font: 14px system-ui, sans-serif; } p { margin: 16px; }</style>
+</head>
+<body>
+<p id="status">Loading the list of versions...</p>
+<script>
+  // The newest green version, with the link's #build= kept.
+  fetch('versions.json', { cache: 'no-store' })
+    .then((r) => r.json())
+    .then((v) => {
+      if (!v.latest) throw new Error('no version');
+      location.replace(`${v.latest}/${location.hash}`);
+    })
+    .catch(() => (document.getElementById('status').textContent = 'No version of the application is available here.'));
+</script>
+</body>
+</html>

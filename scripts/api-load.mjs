@@ -33,6 +33,7 @@ const ROUTES = {
   sync: ['GET', 'POST'],
   'links/index': ['POST'],
   'links/[slug]': ['GET'],
+  proxy: ['GET', 'POST'],
 };
 
 process.env.SESSION_SECRET ??= 'a-test-secret-that-is-comfortably-long-enough';

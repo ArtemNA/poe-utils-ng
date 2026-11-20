@@ -1,0 +1,7575 @@
+{
+ "FlaskBleedCorruptingBloodImmunity1": {
+  "lines": [
+   "Grants Immunity to Bleeding for (6-8) seconds if used while Bleeding",
+   "Grants Immunity to Corrupted Blood for (6-8) seconds if used while affected by Corrupted Blood"
+  ],
+  "type": "Suffix",
+  "affix": "of Sealing",
+  "group": "FlaskBleedCorruptingBloodImmunity",
+  "level": 8,
+  "statOrder": [
+   573,
+   573.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "182714578": [
+    "Grants Immunity to Bleeding for (6-8) seconds if used while Bleeding",
+    "Grants Immunity to Corrupted Blood for (6-8) seconds if used while affected by Corrupted Blood"
+   ]
+  }
+ },
+ "FlaskBleedCorruptingBloodImmunity2": {
+  "lines": [
+   "Grants Immunity to Bleeding for (9-11) seconds if used while Bleeding",
+   "Grants Immunity to Corrupted Blood for (9-11) seconds if used while affected by Corrupted Blood"
+  ],
+  "type": "Suffix",
+  "affix": "of Alleviation",
+  "group": "FlaskBleedCorruptingBloodImmunity",
+  "level": 32,
+  "statOrder": [
+   573,
+   573.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "182714578": [
+    "Grants Immunity to Bleeding for (9-11) seconds if used while Bleeding",
+    "Grants Immunity to Corrupted Blood for (9-11) seconds if used while affected by Corrupted Blood"
+   ]
+  }
+ },
+ "FlaskBleedCorruptingBloodImmunity3______": {
+  "lines": [
+   "Grants Immunity to Bleeding for (12-14) seconds if used while Bleeding",
+   "Grants Immunity to Corrupted Blood for (12-14) seconds if used while affected by Corrupted Blood"
+  ],
+  "type": "Suffix",
+  "affix": "of Allaying",
+  "group": "FlaskBleedCorruptingBloodImmunity",
+  "level": 56,
+  "statOrder": [
+   573,
+   573.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "182714578": [
+    "Grants Immunity to Bleeding for (12-14) seconds if used while Bleeding",
+    "Grants Immunity to Corrupted Blood for (12-14) seconds if used while affected by Corrupted Blood"
+   ]
+  }
+ },
+ "FlaskBleedCorruptingBloodImmunity4_": {
+  "lines": [
+   "Grants Immunity to Bleeding for (15-17) seconds if used while Bleeding",
+   "Grants Immunity to Corrupted Blood for (15-17) seconds if used while affected by Corrupted Blood"
+  ],
+  "type": "Suffix",
+  "affix": "of Assuaging",
+  "group": "FlaskBleedCorruptingBloodImmunity",
+  "level": 80,
+  "statOrder": [
+   573,
+   573.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "182714578": [
+    "Grants Immunity to Bleeding for (15-17) seconds if used while Bleeding",
+    "Grants Immunity to Corrupted Blood for (15-17) seconds if used while affected by Corrupted Blood"
+   ]
+  }
+ },
+ "FlaskBleedingAndCorruptedBloodImmunityDuringEffect2_": {
+  "lines": [
+   "(40-44)% less Duration",
+   "Immunity to Bleeding and Corrupted Blood during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Skink",
+  "group": "FlaskBleedingAndCorruptedBloodImmunityDuringEffect",
+  "level": 42,
+  "statOrder": [
+   529,
+   655
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1506355899": [
+    "(40-44)% less Duration"
+   ],
+   "3965637181": [
+    "Immunity to Bleeding and Corrupted Blood during Effect"
+   ]
+  }
+ },
+ "FlaskBleedingAndCorruptedBloodImmunityDuringEffect3___": {
+  "lines": [
+   "(35-39)% less Duration",
+   "Immunity to Bleeding and Corrupted Blood during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Iguana",
+  "group": "FlaskBleedingAndCorruptedBloodImmunityDuringEffect",
+  "level": 76,
+  "statOrder": [
+   529,
+   655
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1506355899": [
+    "(35-39)% less Duration"
+   ],
+   "3965637181": [
+    "Immunity to Bleeding and Corrupted Blood during Effect"
+   ]
+  }
+ },
+ "FlaskBleedingAndCorruptedBloodImmunityDuringEffect_1": {
+  "lines": [
+   "(45-49)% less Duration",
+   "Immunity to Bleeding and Corrupted Blood during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Lizard",
+  "group": "FlaskBleedingAndCorruptedBloodImmunityDuringEffect",
+  "level": 8,
+  "statOrder": [
+   529,
+   655
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1506355899": [
+    "(45-49)% less Duration"
+   ],
+   "3965637181": [
+    "Immunity to Bleeding and Corrupted Blood during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAccuracyWhileHealing1__": {
+  "lines": [
+   "(15-25)% increased Accuracy Rating during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Monkey",
+  "group": "FlaskBuffAccuracyWhileHealing",
+  "level": 12,
+  "statOrder": [
+   615
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "attack"
+  ],
+  "tradeHashes": {
+   "3337754340": [
+    "(15-25)% increased Accuracy Rating during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAccuracyWhileHealing2": {
+  "lines": [
+   "(26-35)% increased Accuracy Rating during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Raccoon",
+  "group": "FlaskBuffAccuracyWhileHealing",
+  "level": 42,
+  "statOrder": [
+   615
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "attack"
+  ],
+  "tradeHashes": {
+   "3337754340": [
+    "(26-35)% increased Accuracy Rating during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAccuracyWhileHealing3": {
+  "lines": [
+   "(35-45)% increased Accuracy Rating during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Crow",
+  "group": "FlaskBuffAccuracyWhileHealing",
+  "level": 72,
+  "statOrder": [
+   615
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "attack"
+  ],
+  "tradeHashes": {
+   "3337754340": [
+    "(35-45)% increased Accuracy Rating during Effect"
+   ]
+  }
+ },
+ "FlaskBuffArmourWhileHealing1": {
+  "lines": [
+   "(41-45)% increased Armour during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Abalone",
+  "group": "FlaskBuffArmourWhileHealing",
+  "level": 6,
+  "statOrder": [
+   608
+  ],
+  "weightKey": [
+   "expedition_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences",
+   "armour"
+  ],
+  "tradeHashes": {
+   "1693613464": [
+    "(41-45)% increased Armour during Effect"
+   ]
+  }
+ },
+ "FlaskBuffArmourWhileHealing2": {
+  "lines": [
+   "(46-50)% increased Armour during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Tortoise",
+  "group": "FlaskBuffArmourWhileHealing",
+  "level": 32,
+  "statOrder": [
+   608
+  ],
+  "weightKey": [
+   "expedition_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences",
+   "armour"
+  ],
+  "tradeHashes": {
+   "1693613464": [
+    "(46-50)% increased Armour during Effect"
+   ]
+  }
+ },
+ "FlaskBuffArmourWhileHealing3": {
+  "lines": [
+   "(51-55)% increased Armour during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Pangolin",
+  "group": "FlaskBuffArmourWhileHealing",
+  "level": 58,
+  "statOrder": [
+   608
+  ],
+  "weightKey": [
+   "expedition_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences",
+   "armour"
+  ],
+  "tradeHashes": {
+   "1693613464": [
+    "(51-55)% increased Armour during Effect"
+   ]
+  }
+ },
+ "FlaskBuffArmourWhileHealing4": {
+  "lines": [
+   "(56-60)% increased Armour during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Armadillo",
+  "group": "FlaskBuffArmourWhileHealing",
+  "level": 84,
+  "statOrder": [
+   608
+  ],
+  "weightKey": [
+   "expedition_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences",
+   "armour"
+  ],
+  "tradeHashes": {
+   "1693613464": [
+    "(56-60)% increased Armour during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAttackLifeLeechWhileHealing1": {
+  "lines": [
+   "0.4% of Attack Damage Leeched as Life during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Bloodshed",
+  "group": "FlaskBuffAttackLifeLeechWhileHealing",
+  "level": 10,
+  "statOrder": [
+   623
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "attack"
+  ],
+  "tradeHashes": {
+   "1173558568": [
+    "0.4% of Attack Damage Leeched as Life during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAttackLifeLeechWhileHealing2": {
+  "lines": [
+   "0.5% of Attack Damage Leeched as Life during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Gore",
+  "group": "FlaskBuffAttackLifeLeechWhileHealing",
+  "level": 20,
+  "statOrder": [
+   623
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "attack"
+  ],
+  "tradeHashes": {
+   "1173558568": [
+    "0.5% of Attack Damage Leeched as Life during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAttackLifeLeechWhileHealing3": {
+  "lines": [
+   "0.6% of Attack Damage Leeched as Life during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Carnage",
+  "group": "FlaskBuffAttackLifeLeechWhileHealing",
+  "level": 40,
+  "statOrder": [
+   623
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "attack"
+  ],
+  "tradeHashes": {
+   "1173558568": [
+    "0.6% of Attack Damage Leeched as Life during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAttackLifeLeechWhileHealing4": {
+  "lines": [
+   "0.7% of Attack Damage Leeched as Life during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Butchery",
+  "group": "FlaskBuffAttackLifeLeechWhileHealing",
+  "level": 60,
+  "statOrder": [
+   623
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "attack"
+  ],
+  "tradeHashes": {
+   "1173558568": [
+    "0.7% of Attack Damage Leeched as Life during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAttackLifeLeechWhileHealing5": {
+  "lines": [
+   "0.8% of Attack Damage Leeched as Life during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Bloodletting",
+  "group": "FlaskBuffAttackLifeLeechWhileHealing",
+  "level": 80,
+  "statOrder": [
+   623
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "attack"
+  ],
+  "tradeHashes": {
+   "1173558568": [
+    "0.8% of Attack Damage Leeched as Life during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAttackSpeedWhileHealing1": {
+  "lines": [
+   "(9-11)% increased Attack Speed during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Falcon",
+  "group": "FlaskBuffAttackSpeedWhileHealing",
+  "level": 12,
+  "statOrder": [
+   616
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "attack",
+   "speed"
+  ],
+  "tradeHashes": {
+   "968369591": [
+    "(9-11)% increased Attack Speed during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAttackSpeedWhileHealing2_____": {
+  "lines": [
+   "(12-14)% increased Attack Speed during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Eagle",
+  "group": "FlaskBuffAttackSpeedWhileHealing",
+  "level": 62,
+  "statOrder": [
+   616
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "attack",
+   "speed"
+  ],
+  "tradeHashes": {
+   "968369591": [
+    "(12-14)% increased Attack Speed during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAttackSpeedWhileHealing3_": {
+  "lines": [
+   "(15-17)% increased Attack Speed during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Dove",
+  "group": "FlaskBuffAttackSpeedWhileHealing",
+  "level": 82,
+  "statOrder": [
+   616
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "attack",
+   "speed"
+  ],
+  "tradeHashes": {
+   "968369591": [
+    "(15-17)% increased Attack Speed during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidChillFreeze1_": {
+  "lines": [
+   "(31-35)% chance to Avoid being Chilled during Effect",
+   "(31-35)% chance to Avoid being Frozen during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Orca",
+  "group": "FlaskBuffAvoidChillFreeze",
+  "level": 4,
+  "statOrder": [
+   635,
+   636
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "475518267": [
+    "(31-35)% chance to Avoid being Frozen during Effect"
+   ],
+   "1619168299": [
+    "(31-35)% chance to Avoid being Chilled during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidChillFreeze2": {
+  "lines": [
+   "(36-40)% chance to Avoid being Chilled during Effect",
+   "(36-40)% chance to Avoid being Frozen during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Sea Lion",
+  "group": "FlaskBuffAvoidChillFreeze",
+  "level": 23,
+  "statOrder": [
+   635,
+   636
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "475518267": [
+    "(36-40)% chance to Avoid being Frozen during Effect"
+   ],
+   "1619168299": [
+    "(36-40)% chance to Avoid being Chilled during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidChillFreeze3": {
+  "lines": [
+   "(41-45)% chance to Avoid being Chilled during Effect",
+   "(41-45)% chance to Avoid being Frozen during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Narwhal",
+  "group": "FlaskBuffAvoidChillFreeze",
+  "level": 42,
+  "statOrder": [
+   635,
+   636
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "475518267": [
+    "(41-45)% chance to Avoid being Frozen during Effect"
+   ],
+   "1619168299": [
+    "(41-45)% chance to Avoid being Chilled during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidChillFreeze4": {
+  "lines": [
+   "(46-50)% chance to Avoid being Chilled during Effect",
+   "(46-50)% chance to Avoid being Frozen during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Beluga",
+  "group": "FlaskBuffAvoidChillFreeze",
+  "level": 61,
+  "statOrder": [
+   635,
+   636
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "475518267": [
+    "(46-50)% chance to Avoid being Frozen during Effect"
+   ],
+   "1619168299": [
+    "(46-50)% chance to Avoid being Chilled during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidChillFreeze5": {
+  "lines": [
+   "(51-55)% chance to Avoid being Chilled during Effect",
+   "(51-55)% chance to Avoid being Frozen during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Seal",
+  "group": "FlaskBuffAvoidChillFreeze",
+  "level": 80,
+  "statOrder": [
+   635,
+   636
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "475518267": [
+    "(51-55)% chance to Avoid being Frozen during Effect"
+   ],
+   "1619168299": [
+    "(51-55)% chance to Avoid being Chilled during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidIgnite1": {
+  "lines": [
+   "(31-35)% chance to Avoid being Ignited during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Guppy",
+  "group": "FlaskBuffAvoidIgnite",
+  "level": 6,
+  "statOrder": [
+   637
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "20251177": [
+    "(31-35)% chance to Avoid being Ignited during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidIgnite2": {
+  "lines": [
+   "(36-40)% chance to Avoid being Ignited during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Goldfish",
+  "group": "FlaskBuffAvoidIgnite",
+  "level": 25,
+  "statOrder": [
+   637
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "20251177": [
+    "(36-40)% chance to Avoid being Ignited during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidIgnite3": {
+  "lines": [
+   "(41-45)% chance to Avoid being Ignited during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Carp",
+  "group": "FlaskBuffAvoidIgnite",
+  "level": 44,
+  "statOrder": [
+   637
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "20251177": [
+    "(41-45)% chance to Avoid being Ignited during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidIgnite4___": {
+  "lines": [
+   "(46-50)% chance to Avoid being Ignited during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Catfish",
+  "group": "FlaskBuffAvoidIgnite",
+  "level": 63,
+  "statOrder": [
+   637
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "20251177": [
+    "(46-50)% chance to Avoid being Ignited during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidIgnite5_": {
+  "lines": [
+   "(51-55)% chance to Avoid being Ignited during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Sunfish",
+  "group": "FlaskBuffAvoidIgnite",
+  "level": 82,
+  "statOrder": [
+   637
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "20251177": [
+    "(51-55)% chance to Avoid being Ignited during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidShock1": {
+  "lines": [
+   "(31-35)% chance to Avoid being Shocked during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Tree Moss",
+  "group": "FlaskBuffAvoidShock",
+  "level": 6,
+  "statOrder": [
+   638
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3642618258": [
+    "(31-35)% chance to Avoid being Shocked during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidShock2_": {
+  "lines": [
+   "(36-40)% chance to Avoid being Shocked during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Turf Moss",
+  "group": "FlaskBuffAvoidShock",
+  "level": 25,
+  "statOrder": [
+   638
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3642618258": [
+    "(36-40)% chance to Avoid being Shocked during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidShock3": {
+  "lines": [
+   "(41-45)% chance to Avoid being Shocked during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Tooth Moss",
+  "group": "FlaskBuffAvoidShock",
+  "level": 44,
+  "statOrder": [
+   638
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3642618258": [
+    "(41-45)% chance to Avoid being Shocked during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidShock4_____": {
+  "lines": [
+   "(46-50)% chance to Avoid being Shocked during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Plume Moss",
+  "group": "FlaskBuffAvoidShock",
+  "level": 63,
+  "statOrder": [
+   638
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3642618258": [
+    "(46-50)% chance to Avoid being Shocked during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidShock5": {
+  "lines": [
+   "(51-55)% chance to Avoid being Shocked during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Bog Moss",
+  "group": "FlaskBuffAvoidShock",
+  "level": 82,
+  "statOrder": [
+   638
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3642618258": [
+    "(51-55)% chance to Avoid being Shocked during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidStunWhileHealing1_": {
+  "lines": [
+   "(31-35)% Chance to Avoid being Stunned during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Composure",
+  "group": "FlaskBuffAvoidStunWhileHealing",
+  "level": 12,
+  "statOrder": [
+   644
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "2312652600": [
+    "(31-35)% Chance to Avoid being Stunned during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidStunWhileHealing2": {
+  "lines": [
+   "(36-40)% Chance to Avoid being Stunned during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Surefootedness",
+  "group": "FlaskBuffAvoidStunWhileHealing",
+  "level": 29,
+  "statOrder": [
+   644
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "2312652600": [
+    "(36-40)% Chance to Avoid being Stunned during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidStunWhileHealing3": {
+  "lines": [
+   "(41-45)% Chance to Avoid being Stunned during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Persistence",
+  "group": "FlaskBuffAvoidStunWhileHealing",
+  "level": 46,
+  "statOrder": [
+   644
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "2312652600": [
+    "(41-45)% Chance to Avoid being Stunned during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidStunWhileHealing4": {
+  "lines": [
+   "(46-50)% Chance to Avoid being Stunned during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Relentlessness",
+  "group": "FlaskBuffAvoidStunWhileHealing",
+  "level": 63,
+  "statOrder": [
+   644
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "2312652600": [
+    "(46-50)% Chance to Avoid being Stunned during Effect"
+   ]
+  }
+ },
+ "FlaskBuffAvoidStunWhileHealing5": {
+  "lines": [
+   "(51-55)% Chance to Avoid being Stunned during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Tenaciousness",
+  "group": "FlaskBuffAvoidStunWhileHealing",
+  "level": 80,
+  "statOrder": [
+   644
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "2312652600": [
+    "(51-55)% Chance to Avoid being Stunned during Effect"
+   ]
+  }
+ },
+ "FlaskBuffBleedDuration1": {
+  "lines": [
+   "(35-45)% reduced Bleeding Duration on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "[UNUSED] Bleed duration 1",
+  "group": "FlaskBuffBleedDuration",
+  "level": 8,
+  "statOrder": [
+   675
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1050147907": [
+    "(35-45)% reduced Bleeding Duration on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffCastSpeedWhileHealing1": {
+  "lines": [
+   "(9-11)% increased Cast Speed during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Albatross",
+  "group": "FlaskBuffCastSpeedWhileHealing",
+  "level": 12,
+  "statOrder": [
+   617
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "caster",
+   "speed"
+  ],
+  "tradeHashes": {
+   "3256116097": [
+    "(9-11)% increased Cast Speed during Effect"
+   ]
+  }
+ },
+ "FlaskBuffCastSpeedWhileHealing2": {
+  "lines": [
+   "(12-14)% increased Cast Speed during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Hummingbird",
+  "group": "FlaskBuffCastSpeedWhileHealing",
+  "level": 62,
+  "statOrder": [
+   617
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "caster",
+   "speed"
+  ],
+  "tradeHashes": {
+   "3256116097": [
+    "(12-14)% increased Cast Speed during Effect"
+   ]
+  }
+ },
+ "FlaskBuffCastSpeedWhileHealing3": {
+  "lines": [
+   "(15-17)% increased Cast Speed during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Horsefly",
+  "group": "FlaskBuffCastSpeedWhileHealing",
+  "level": 82,
+  "statOrder": [
+   617
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "caster",
+   "speed"
+  ],
+  "tradeHashes": {
+   "3256116097": [
+    "(15-17)% increased Cast Speed during Effect"
+   ]
+  }
+ },
+ "FlaskBuffChillFreezeDuration1": {
+  "lines": [
+   "(36-41)% reduced Effect of Chill on you during Effect",
+   "(36-41)% reduced Freeze Duration on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Rabbit",
+  "group": "FlaskBuffChillFreezeDuration",
+  "level": 4,
+  "statOrder": [
+   676,
+   678
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "774474440": [
+    "(36-41)% reduced Freeze Duration on you during Effect"
+   ],
+   "2434101731": [
+    "(36-41)% reduced Effect of Chill on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffChillFreezeDuration2_": {
+  "lines": [
+   "(42-47)% reduced Effect of Chill on you during Effect",
+   "(42-47)% reduced Freeze Duration on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Cat",
+  "group": "FlaskBuffChillFreezeDuration",
+  "level": 23,
+  "statOrder": [
+   676,
+   678
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "774474440": [
+    "(42-47)% reduced Freeze Duration on you during Effect"
+   ],
+   "2434101731": [
+    "(42-47)% reduced Effect of Chill on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffChillFreezeDuration3_": {
+  "lines": [
+   "(48-52)% reduced Effect of Chill on you during Effect",
+   "(48-52)% reduced Freeze Duration on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Fox",
+  "group": "FlaskBuffChillFreezeDuration",
+  "level": 42,
+  "statOrder": [
+   676,
+   678
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "774474440": [
+    "(48-52)% reduced Freeze Duration on you during Effect"
+   ],
+   "2434101731": [
+    "(48-52)% reduced Effect of Chill on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffChillFreezeDuration4": {
+  "lines": [
+   "(52-59)% reduced Effect of Chill on you during Effect",
+   "(52-59)% reduced Freeze Duration on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Sable",
+  "group": "FlaskBuffChillFreezeDuration",
+  "level": 61,
+  "statOrder": [
+   676,
+   678
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "774474440": [
+    "(52-59)% reduced Freeze Duration on you during Effect"
+   ],
+   "2434101731": [
+    "(52-59)% reduced Effect of Chill on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffChillFreezeDuration5": {
+  "lines": [
+   "(60-65)% reduced Effect of Chill on you during Effect",
+   "(60-65)% reduced Freeze Duration on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Bear",
+  "group": "FlaskBuffChillFreezeDuration",
+  "level": 80,
+  "statOrder": [
+   676,
+   678
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "774474440": [
+    "(60-65)% reduced Freeze Duration on you during Effect"
+   ],
+   "2434101731": [
+    "(60-65)% reduced Effect of Chill on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffCriticalChanceWhileHealing1_": {
+  "lines": [
+   "(26-31)% increased Critical Strike Chance during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Stinging",
+  "group": "FlaskBuffCriticalWhileHealing",
+  "level": 18,
+  "statOrder": [
+   648
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "critical"
+  ],
+  "tradeHashes": {
+   "2008255263": [
+    "(26-31)% increased Critical Strike Chance during Effect"
+   ]
+  }
+ },
+ "FlaskBuffCriticalChanceWhileHealing2_": {
+  "lines": [
+   "(32-37)% increased Critical Strike Chance during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Piercing",
+  "group": "FlaskBuffCriticalWhileHealing",
+  "level": 34,
+  "statOrder": [
+   648
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "critical"
+  ],
+  "tradeHashes": {
+   "2008255263": [
+    "(32-37)% increased Critical Strike Chance during Effect"
+   ]
+  }
+ },
+ "FlaskBuffCriticalChanceWhileHealing3": {
+  "lines": [
+   "(38-43)% increased Critical Strike Chance during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Rupturing",
+  "group": "FlaskBuffCriticalWhileHealing",
+  "level": 50,
+  "statOrder": [
+   648
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "critical"
+  ],
+  "tradeHashes": {
+   "2008255263": [
+    "(38-43)% increased Critical Strike Chance during Effect"
+   ]
+  }
+ },
+ "FlaskBuffCriticalChanceWhileHealing4__": {
+  "lines": [
+   "(44-49)% increased Critical Strike Chance during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Penetrating",
+  "group": "FlaskBuffCriticalWhileHealing",
+  "level": 66,
+  "statOrder": [
+   648
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "critical"
+  ],
+  "tradeHashes": {
+   "2008255263": [
+    "(44-49)% increased Critical Strike Chance during Effect"
+   ]
+  }
+ },
+ "FlaskBuffCriticalChanceWhileHealing5": {
+  "lines": [
+   "(50-55)% increased Critical Strike Chance during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Incision",
+  "group": "FlaskBuffCriticalWhileHealing",
+  "level": 82,
+  "statOrder": [
+   648
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "critical"
+  ],
+  "tradeHashes": {
+   "2008255263": [
+    "(50-55)% increased Critical Strike Chance during Effect"
+   ]
+  }
+ },
+ "FlaskBuffCurseEffect1": {
+  "lines": [
+   "(36-41)% reduced Effect of Curses on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Petrel",
+  "group": "FlaskBuffCurseEffect",
+  "level": 8,
+  "statOrder": [
+   677
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "4265534424": [
+    "(36-41)% reduced Effect of Curses on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffCurseEffect2": {
+  "lines": [
+   "(42-47)% reduced Effect of Curses on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Mockingbird",
+  "group": "FlaskBuffCurseEffect",
+  "level": 27,
+  "statOrder": [
+   677
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "4265534424": [
+    "(42-47)% reduced Effect of Curses on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffCurseEffect3_": {
+  "lines": [
+   "(48-52)% reduced Effect of Curses on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Curlew",
+  "group": "FlaskBuffCurseEffect",
+  "level": 46,
+  "statOrder": [
+   677
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "4265534424": [
+    "(48-52)% reduced Effect of Curses on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffCurseEffect4": {
+  "lines": [
+   "(52-59)% reduced Effect of Curses on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Kakapo",
+  "group": "FlaskBuffCurseEffect",
+  "level": 65,
+  "statOrder": [
+   677
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "4265534424": [
+    "(52-59)% reduced Effect of Curses on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffCurseEffect5": {
+  "lines": [
+   "(60-65)% reduced Effect of Curses on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Owl",
+  "group": "FlaskBuffCurseEffect",
+  "level": 84,
+  "statOrder": [
+   677
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "4265534424": [
+    "(60-65)% reduced Effect of Curses on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffEvasionWhileHealing": {
+  "lines": [
+   "(41-45)% increased Evasion Rating during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Gazelle",
+  "group": "FlaskBuffEvasionWhileHealing",
+  "level": 6,
+  "statOrder": [
+   609
+  ],
+  "weightKey": [
+   "expedition_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences",
+   "evasion"
+  ],
+  "tradeHashes": {
+   "299054775": [
+    "(41-45)% increased Evasion Rating during Effect"
+   ]
+  }
+ },
+ "FlaskBuffEvasionWhileHealing2": {
+  "lines": [
+   "(46-50)% increased Evasion Rating during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Antelope",
+  "group": "FlaskBuffEvasionWhileHealing",
+  "level": 32,
+  "statOrder": [
+   609
+  ],
+  "weightKey": [
+   "expedition_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences",
+   "evasion"
+  ],
+  "tradeHashes": {
+   "299054775": [
+    "(46-50)% increased Evasion Rating during Effect"
+   ]
+  }
+ },
+ "FlaskBuffEvasionWhileHealing3_": {
+  "lines": [
+   "(51-55)% increased Evasion Rating during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Ibex",
+  "group": "FlaskBuffEvasionWhileHealing",
+  "level": 58,
+  "statOrder": [
+   609
+  ],
+  "weightKey": [
+   "expedition_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences",
+   "evasion"
+  ],
+  "tradeHashes": {
+   "299054775": [
+    "(51-55)% increased Evasion Rating during Effect"
+   ]
+  }
+ },
+ "FlaskBuffEvasionWhileHealing4": {
+  "lines": [
+   "(56-60)% increased Evasion Rating during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Impala",
+  "group": "FlaskBuffEvasionWhileHealing",
+  "level": 84,
+  "statOrder": [
+   609
+  ],
+  "weightKey": [
+   "expedition_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences",
+   "evasion"
+  ],
+  "tradeHashes": {
+   "299054775": [
+    "(56-60)% increased Evasion Rating during Effect"
+   ]
+  }
+ },
+ "FlaskBuffFreezeShockIgniteChanceWhileHealing1_": {
+  "lines": [
+   "(19-22)% chance to Freeze, Shock and Ignite during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Foisting",
+  "group": "FlaskBuffFreezeShockIgniteChanceWhileHealing",
+  "level": 12,
+  "statOrder": [
+   646
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "elemental",
+   "fire",
+   "cold",
+   "lightning",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "97064873": [
+    "(19-22)% chance to Freeze, Shock and Ignite during Effect"
+   ]
+  }
+ },
+ "FlaskBuffFreezeShockIgniteChanceWhileHealing2____": {
+  "lines": [
+   "(23-26)% chance to Freeze, Shock and Ignite during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Imposing",
+  "group": "FlaskBuffFreezeShockIgniteChanceWhileHealing",
+  "level": 32,
+  "statOrder": [
+   646
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "elemental",
+   "fire",
+   "cold",
+   "lightning",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "97064873": [
+    "(23-26)% chance to Freeze, Shock and Ignite during Effect"
+   ]
+  }
+ },
+ "FlaskBuffFreezeShockIgniteChanceWhileHealing3": {
+  "lines": [
+   "(27-30)% chance to Freeze, Shock and Ignite during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Wreaking",
+  "group": "FlaskBuffFreezeShockIgniteChanceWhileHealing",
+  "level": 52,
+  "statOrder": [
+   646
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "elemental",
+   "fire",
+   "cold",
+   "lightning",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "97064873": [
+    "(27-30)% chance to Freeze, Shock and Ignite during Effect"
+   ]
+  }
+ },
+ "FlaskBuffFreezeShockIgniteChanceWhileHealing4_": {
+  "lines": [
+   "(31-34)% chance to Freeze, Shock and Ignite during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Infliction",
+  "group": "FlaskBuffFreezeShockIgniteChanceWhileHealing",
+  "level": 72,
+  "statOrder": [
+   646
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "elemental",
+   "fire",
+   "cold",
+   "lightning",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "97064873": [
+    "(31-34)% chance to Freeze, Shock and Ignite during Effect"
+   ]
+  }
+ },
+ "FlaskBuffIgniteDuration1_": {
+  "lines": [
+   "(35-45)% reduced Ignite Duration on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "[UNUSED] Ignite duration 1",
+  "group": "FlaskBuffIgniteDuration",
+  "level": 6,
+  "statOrder": [
+   679
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "424810649": [
+    "(35-45)% reduced Ignite Duration on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffKnockbackWhileHealing": {
+  "lines": [
+   "Adds Knockback to Melee Attacks during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Fending",
+  "group": "FlaskBuffKnockbackWhileHealing",
+  "level": 9,
+  "statOrder": [
+   627
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "attack"
+  ],
+  "tradeHashes": {
+   "251342217": [
+    "Adds Knockback to Melee Attacks during Effect"
+   ]
+  }
+ },
+ "FlaskBuffLifeLeechPermyriadWhileHealing": {
+  "lines": [
+   "0.4% of Physical Attack Damage Leeched as Life during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Gluttony",
+  "group": "FlaskBuffLifeLeechPermyriadWhileHealing",
+  "level": 10,
+  "statOrder": [
+   624
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "physical",
+   "attack"
+  ],
+  "tradeHashes": {
+   "3111255591": [
+    "0.4% of Physical Attack Damage Leeched as Life during Effect"
+   ]
+  }
+ },
+ "FlaskBuffLifeLeechWhileHealing": {
+  "lines": [
+   "2% of Physical Attack Damage Leeched as Life during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Gluttony",
+  "group": "FlaskBuffLifeLeechWhileHealing",
+  "level": 10,
+  "statOrder": [
+   621
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "physical",
+   "attack"
+  ],
+  "tradeHashes": {
+   "2146299369": [
+    "2% of Physical Attack Damage Leeched as Life during Effect"
+   ]
+  }
+ },
+ "FlaskBuffManaLeechPermyriadWhileHealing": {
+  "lines": [
+   "0.4% of Physical Attack Damage Leeched as Mana during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Craving",
+  "group": "FlaskBuffManaLeechPermyriadWhileHealing",
+  "level": 12,
+  "statOrder": [
+   626
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "mana",
+   "physical",
+   "attack"
+  ],
+  "tradeHashes": {
+   "374891408": [
+    "0.4% of Physical Attack Damage Leeched as Mana during Effect"
+   ]
+  }
+ },
+ "FlaskBuffMovementSpeedWhileHealing": {
+  "lines": [
+   "(6-8)% increased Movement Speed during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Hare",
+  "group": "FlaskBuffMovementSpeedWhileHealing",
+  "level": 5,
+  "statOrder": [
+   618
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "speed"
+  ],
+  "tradeHashes": {
+   "3182498570": [
+    "(6-8)% increased Movement Speed during Effect"
+   ]
+  }
+ },
+ "FlaskBuffMovementSpeedWhileHealing2": {
+  "lines": [
+   "(9-11)% increased Movement Speed during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Lynx",
+  "group": "FlaskBuffMovementSpeedWhileHealing",
+  "level": 65,
+  "statOrder": [
+   618
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "speed"
+  ],
+  "tradeHashes": {
+   "3182498570": [
+    "(9-11)% increased Movement Speed during Effect"
+   ]
+  }
+ },
+ "FlaskBuffMovementSpeedWhileHealing3": {
+  "lines": [
+   "(12-14)% increased Movement Speed during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Cheetah",
+  "group": "FlaskBuffMovementSpeedWhileHealing",
+  "level": 85,
+  "statOrder": [
+   618
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "speed"
+  ],
+  "tradeHashes": {
+   "3182498570": [
+    "(12-14)% increased Movement Speed during Effect"
+   ]
+  }
+ },
+ "FlaskBuffPoisonDuration1": {
+  "lines": [
+   "(35-45)% reduced Poison Duration on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "[UNUSED] Poison duration 1",
+  "group": "FlaskBuffPoisonDuration",
+  "level": 16,
+  "statOrder": [
+   680
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "4151049654": [
+    "(35-45)% reduced Poison Duration on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffReducedManaCostWhileHealing1_": {
+  "lines": [
+   "(11-14)% reduced Mana Cost of Skills during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Pupil",
+  "group": "LocalFlaskSkillManaCostDuringFlaskEffect",
+  "level": 12,
+  "statOrder": [
+   671
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "mana"
+  ],
+  "tradeHashes": {
+   "683273571": [
+    "(11-14)% reduced Mana Cost of Skills during Effect"
+   ]
+  }
+ },
+ "FlaskBuffReducedManaCostWhileHealing2__": {
+  "lines": [
+   "(15-18)% reduced Mana Cost of Skills during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Initiate",
+  "group": "LocalFlaskSkillManaCostDuringFlaskEffect",
+  "level": 29,
+  "statOrder": [
+   671
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "mana"
+  ],
+  "tradeHashes": {
+   "683273571": [
+    "(15-18)% reduced Mana Cost of Skills during Effect"
+   ]
+  }
+ },
+ "FlaskBuffReducedManaCostWhileHealing3": {
+  "lines": [
+   "(19-21)% reduced Mana Cost of Skills during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Mage",
+  "group": "LocalFlaskSkillManaCostDuringFlaskEffect",
+  "level": 46,
+  "statOrder": [
+   671
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "mana"
+  ],
+  "tradeHashes": {
+   "683273571": [
+    "(19-21)% reduced Mana Cost of Skills during Effect"
+   ]
+  }
+ },
+ "FlaskBuffReducedManaCostWhileHealing4": {
+  "lines": [
+   "(22-25)% reduced Mana Cost of Skills during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Arcanist",
+  "group": "LocalFlaskSkillManaCostDuringFlaskEffect",
+  "level": 63,
+  "statOrder": [
+   671
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "mana"
+  ],
+  "tradeHashes": {
+   "683273571": [
+    "(22-25)% reduced Mana Cost of Skills during Effect"
+   ]
+  }
+ },
+ "FlaskBuffReducedManaCostWhileHealing5": {
+  "lines": [
+   "(26-29)% reduced Mana Cost of Skills during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Sorcerer",
+  "group": "LocalFlaskSkillManaCostDuringFlaskEffect",
+  "level": 80,
+  "statOrder": [
+   671
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "mana"
+  ],
+  "tradeHashes": {
+   "683273571": [
+    "(26-29)% reduced Mana Cost of Skills during Effect"
+   ]
+  }
+ },
+ "FlaskBuffResistancesWhileHealing": {
+  "lines": [
+   "(12-14)% additional Elemental Resistances during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Crystal",
+  "group": "FlaskBuffResistancesWhileHealing",
+  "level": 1,
+  "statOrder": [
+   620
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "elemental",
+   "resistance"
+  ],
+  "tradeHashes": {
+   "962725504": [
+    "(12-14)% additional Elemental Resistances during Effect"
+   ]
+  }
+ },
+ "FlaskBuffResistancesWhileHealing2": {
+  "lines": [
+   "(12-14)% additional Elemental Resistances during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Prism",
+  "group": "FlaskBuffResistancesWhileHealing",
+  "level": 21,
+  "statOrder": [
+   620
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "elemental",
+   "resistance"
+  ],
+  "tradeHashes": {
+   "962725504": [
+    "(12-14)% additional Elemental Resistances during Effect"
+   ]
+  }
+ },
+ "FlaskBuffResistancesWhileHealing3": {
+  "lines": [
+   "(15-17)% additional Elemental Resistances during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Kaleidoscope",
+  "group": "FlaskBuffResistancesWhileHealing",
+  "level": 41,
+  "statOrder": [
+   620
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "elemental",
+   "resistance"
+  ],
+  "tradeHashes": {
+   "962725504": [
+    "(15-17)% additional Elemental Resistances during Effect"
+   ]
+  }
+ },
+ "FlaskBuffResistancesWhileHealing4": {
+  "lines": [
+   "(15-17)% additional Elemental Resistances during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Variegation",
+  "group": "FlaskBuffResistancesWhileHealing",
+  "level": 61,
+  "statOrder": [
+   620
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "elemental",
+   "resistance"
+  ],
+  "tradeHashes": {
+   "962725504": [
+    "(15-17)% additional Elemental Resistances during Effect"
+   ]
+  }
+ },
+ "FlaskBuffResistancesWhileHealing5_": {
+  "lines": [
+   "(18-20)% additional Elemental Resistances during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Rainbow",
+  "group": "FlaskBuffResistancesWhileHealing",
+  "level": 81,
+  "statOrder": [
+   620
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "elemental",
+   "resistance"
+  ],
+  "tradeHashes": {
+   "962725504": [
+    "(18-20)% additional Elemental Resistances during Effect"
+   ]
+  }
+ },
+ "FlaskBuffShockEffect1": {
+  "lines": [
+   "(36-41)% reduced Effect of Shock on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Plover",
+  "group": "FlaskBuffShockEffect",
+  "level": 6,
+  "statOrder": [
+   681
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1878455805": [
+    "(36-41)% reduced Effect of Shock on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffShockEffect2": {
+  "lines": [
+   "(42-47)% reduced Effect of Shock on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Sandpiper",
+  "group": "FlaskBuffShockEffect",
+  "level": 25,
+  "statOrder": [
+   681
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1878455805": [
+    "(42-47)% reduced Effect of Shock on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffShockEffect3___": {
+  "lines": [
+   "(48-52)% reduced Effect of Shock on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Cormorant",
+  "group": "FlaskBuffShockEffect",
+  "level": 44,
+  "statOrder": [
+   681
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1878455805": [
+    "(48-52)% reduced Effect of Shock on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffShockEffect4": {
+  "lines": [
+   "(52-59)% reduced Effect of Shock on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Sanderling",
+  "group": "FlaskBuffShockEffect",
+  "level": 63,
+  "statOrder": [
+   681
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1878455805": [
+    "(52-59)% reduced Effect of Shock on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffShockEffect5": {
+  "lines": [
+   "(60-65)% reduced Effect of Shock on you during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Heron",
+  "group": "FlaskBuffShockEffect",
+  "level": 82,
+  "statOrder": [
+   681
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1878455805": [
+    "(60-65)% reduced Effect of Shock on you during Effect"
+   ]
+  }
+ },
+ "FlaskBuffSpellEnergyShieldLeechWhileHealing1": {
+  "lines": [
+   "0.4% of Spell Damage Leeched as Energy Shield during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Diverting",
+  "group": "FlaskBuffSpellEnergyShieldLeechWhileHealing",
+  "level": 10,
+  "statOrder": [
+   622
+  ],
+  "weightKey": [
+   "utility_flask",
+   "expedition_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences",
+   "energy_shield",
+   "caster"
+  ],
+  "tradeHashes": {
+   "1456464057": [
+    "0.4% of Spell Damage Leeched as Energy Shield during Effect"
+   ]
+  }
+ },
+ "FlaskBuffSpellEnergyShieldLeechWhileHealing2_": {
+  "lines": [
+   "0.5% of Spell Damage Leeched as Energy Shield during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Depletion",
+  "group": "FlaskBuffSpellEnergyShieldLeechWhileHealing",
+  "level": 20,
+  "statOrder": [
+   622
+  ],
+  "weightKey": [
+   "utility_flask",
+   "expedition_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences",
+   "energy_shield",
+   "caster"
+  ],
+  "tradeHashes": {
+   "1456464057": [
+    "0.5% of Spell Damage Leeched as Energy Shield during Effect"
+   ]
+  }
+ },
+ "FlaskBuffSpellEnergyShieldLeechWhileHealing3_____": {
+  "lines": [
+   "0.6% of Spell Damage Leeched as Energy Shield during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Tapping",
+  "group": "FlaskBuffSpellEnergyShieldLeechWhileHealing",
+  "level": 40,
+  "statOrder": [
+   622
+  ],
+  "weightKey": [
+   "utility_flask",
+   "expedition_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences",
+   "energy_shield",
+   "caster"
+  ],
+  "tradeHashes": {
+   "1456464057": [
+    "0.6% of Spell Damage Leeched as Energy Shield during Effect"
+   ]
+  }
+ },
+ "FlaskBuffSpellEnergyShieldLeechWhileHealing4": {
+  "lines": [
+   "0.7% of Spell Damage Leeched as Energy Shield during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Siphoning",
+  "group": "FlaskBuffSpellEnergyShieldLeechWhileHealing",
+  "level": 60,
+  "statOrder": [
+   622
+  ],
+  "weightKey": [
+   "utility_flask",
+   "expedition_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences",
+   "energy_shield",
+   "caster"
+  ],
+  "tradeHashes": {
+   "1456464057": [
+    "0.7% of Spell Damage Leeched as Energy Shield during Effect"
+   ]
+  }
+ },
+ "FlaskBuffSpellEnergyShieldLeechWhileHealing5": {
+  "lines": [
+   "0.8% of Spell Damage Leeched as Energy Shield during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Draining",
+  "group": "FlaskBuffSpellEnergyShieldLeechWhileHealing",
+  "level": 80,
+  "statOrder": [
+   622
+  ],
+  "weightKey": [
+   "utility_flask",
+   "expedition_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences",
+   "energy_shield",
+   "caster"
+  ],
+  "tradeHashes": {
+   "1456464057": [
+    "0.8% of Spell Damage Leeched as Energy Shield during Effect"
+   ]
+  }
+ },
+ "FlaskBuffStunRecoveryWhileHealing": {
+  "lines": [
+   "(51-56)% increased Block and Stun Recovery during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Stiffness",
+  "group": "FlaskBuffStunRecoveryWhileHealing",
+  "level": 1,
+  "statOrder": [
+   619
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3479987487": [
+    "(51-56)% increased Block and Stun Recovery during Effect"
+   ]
+  }
+ },
+ "FlaskBuffStunRecoveryWhileHealing2": {
+  "lines": [
+   "(57-62)% increased Block and Stun Recovery during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Bracing",
+  "group": "FlaskBuffStunRecoveryWhileHealing",
+  "level": 19,
+  "statOrder": [
+   619
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3479987487": [
+    "(57-62)% increased Block and Stun Recovery during Effect"
+   ]
+  }
+ },
+ "FlaskBuffStunRecoveryWhileHealing3": {
+  "lines": [
+   "(63-68)% increased Block and Stun Recovery during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Ballast",
+  "group": "FlaskBuffStunRecoveryWhileHealing",
+  "level": 37,
+  "statOrder": [
+   619
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3479987487": [
+    "(63-68)% increased Block and Stun Recovery during Effect"
+   ]
+  }
+ },
+ "FlaskBuffStunRecoveryWhileHealing4": {
+  "lines": [
+   "(69-74)% increased Block and Stun Recovery during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Counterpoise",
+  "group": "FlaskBuffStunRecoveryWhileHealing",
+  "level": 55,
+  "statOrder": [
+   619
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3479987487": [
+    "(69-74)% increased Block and Stun Recovery during Effect"
+   ]
+  }
+ },
+ "FlaskBuffStunRecoveryWhileHealing5": {
+  "lines": [
+   "(75-80)% increased Block and Stun Recovery during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Stabilisation",
+  "group": "FlaskBuffStunRecoveryWhileHealing",
+  "level": 73,
+  "statOrder": [
+   619
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3479987487": [
+    "(75-80)% increased Block and Stun Recovery during Effect"
+   ]
+  }
+ },
+ "FlaskBuffWardWhileHealing1": {
+  "lines": [
+   "(19-21)% increased Ward during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Runegleaming",
+  "group": "FlaskBuffWardWhileHealing",
+  "level": 12,
+  "statOrder": [
+   611
+  ],
+  "weightKey": [
+   "expedition_flask",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences"
+  ],
+  "tradeHashes": {
+   "2891175306": [
+    "(19-21)% increased Ward during Effect"
+   ]
+  }
+ },
+ "FlaskBuffWardWhileHealing2_": {
+  "lines": [
+   "(22-24)% increased Ward during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Runeshining",
+  "group": "FlaskBuffWardWhileHealing",
+  "level": 26,
+  "statOrder": [
+   611
+  ],
+  "weightKey": [
+   "expedition_flask",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences"
+  ],
+  "tradeHashes": {
+   "2891175306": [
+    "(22-24)% increased Ward during Effect"
+   ]
+  }
+ },
+ "FlaskBuffWardWhileHealing3": {
+  "lines": [
+   "(25-27)% increased Ward during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Runeflaring",
+  "group": "FlaskBuffWardWhileHealing",
+  "level": 52,
+  "statOrder": [
+   611
+  ],
+  "weightKey": [
+   "expedition_flask",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences"
+  ],
+  "tradeHashes": {
+   "2891175306": [
+    "(25-27)% increased Ward during Effect"
+   ]
+  }
+ },
+ "FlaskBuffWardWhileHealing4": {
+  "lines": [
+   "(28-30)% increased Ward during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of Runeblazing",
+  "group": "FlaskBuffWardWhileHealing",
+  "level": 78,
+  "statOrder": [
+   611
+  ],
+  "weightKey": [
+   "expedition_flask",
+   "default"
+  ],
+  "weightVal": [
+   750,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "defences"
+  ],
+  "tradeHashes": {
+   "2891175306": [
+    "(28-30)% increased Ward during Effect"
+   ]
+  }
+ },
+ "FlaskChanceRechargeOnCrit1": {
+  "lines": [
+   "(11-15)% chance to gain a Flask Charge when you deal a Critical Strike"
+  ],
+  "type": "Prefix",
+  "affix": "Medic's",
+  "group": "FlaskChanceRechargeOnCrit",
+  "level": 8,
+  "statOrder": [
+   511
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask",
+   "critical"
+  ],
+  "tradeHashes": {
+   "2858921304": [
+    "(11-15)% chance to gain a Flask Charge when you deal a Critical Strike"
+   ]
+  }
+ },
+ "FlaskChanceRechargeOnCrit2": {
+  "lines": [
+   "(16-20)% chance to gain a Flask Charge when you deal a Critical Strike"
+  ],
+  "type": "Prefix",
+  "affix": "Physician's",
+  "group": "FlaskChanceRechargeOnCrit",
+  "level": 26,
+  "statOrder": [
+   511
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask",
+   "critical"
+  ],
+  "tradeHashes": {
+   "2858921304": [
+    "(16-20)% chance to gain a Flask Charge when you deal a Critical Strike"
+   ]
+  }
+ },
+ "FlaskChanceRechargeOnCrit3___": {
+  "lines": [
+   "(21-25)% chance to gain a Flask Charge when you deal a Critical Strike"
+  ],
+  "type": "Prefix",
+  "affix": "Doctor's",
+  "group": "FlaskChanceRechargeOnCrit",
+  "level": 44,
+  "statOrder": [
+   511
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask",
+   "critical"
+  ],
+  "tradeHashes": {
+   "2858921304": [
+    "(21-25)% chance to gain a Flask Charge when you deal a Critical Strike"
+   ]
+  }
+ },
+ "FlaskChanceRechargeOnCrit4": {
+  "lines": [
+   "(26-30)% chance to gain a Flask Charge when you deal a Critical Strike"
+  ],
+  "type": "Prefix",
+  "affix": "Specialist's",
+  "group": "FlaskChanceRechargeOnCrit",
+  "level": 62,
+  "statOrder": [
+   511
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask",
+   "critical"
+  ],
+  "tradeHashes": {
+   "2858921304": [
+    "(26-30)% chance to gain a Flask Charge when you deal a Critical Strike"
+   ]
+  }
+ },
+ "FlaskChanceRechargeOnCrit5": {
+  "lines": [
+   "(31-35)% chance to gain a Flask Charge when you deal a Critical Strike"
+  ],
+  "type": "Prefix",
+  "affix": "Surgeon's",
+  "group": "FlaskChanceRechargeOnCrit",
+  "level": 80,
+  "statOrder": [
+   511
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask",
+   "critical"
+  ],
+  "tradeHashes": {
+   "2858921304": [
+    "(31-35)% chance to gain a Flask Charge when you deal a Critical Strike"
+   ]
+  }
+ },
+ "FlaskChargesAddedIncreasePercent1": {
+  "lines": [
+   "(16-20)% increased Charge Recovery"
+  ],
+  "type": "Prefix",
+  "affix": "Constant",
+  "group": "FlaskIncreasedChargesAdded",
+  "level": 3,
+  "statOrder": [
+   514
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3196823591": [
+    "(16-20)% increased Charge Recovery"
+   ]
+  }
+ },
+ "FlaskChargesAddedIncreasePercent2_": {
+  "lines": [
+   "(21-25)% increased Charge Recovery"
+  ],
+  "type": "Prefix",
+  "affix": "Continuous",
+  "group": "FlaskIncreasedChargesAdded",
+  "level": 23,
+  "statOrder": [
+   514
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3196823591": [
+    "(21-25)% increased Charge Recovery"
+   ]
+  }
+ },
+ "FlaskChargesAddedIncreasePercent3_": {
+  "lines": [
+   "(26-30)% increased Charge Recovery"
+  ],
+  "type": "Prefix",
+  "affix": "Endless",
+  "group": "FlaskIncreasedChargesAdded",
+  "level": 43,
+  "statOrder": [
+   514
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3196823591": [
+    "(26-30)% increased Charge Recovery"
+   ]
+  }
+ },
+ "FlaskChargesAddedIncreasePercent4_": {
+  "lines": [
+   "(31-45)% increased Charge Recovery"
+  ],
+  "type": "Prefix",
+  "affix": "Bottomless",
+  "group": "FlaskIncreasedChargesAdded",
+  "level": 63,
+  "statOrder": [
+   514
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3196823591": [
+    "(31-45)% increased Charge Recovery"
+   ]
+  }
+ },
+ "FlaskChargesAddedIncreasePercent5__": {
+  "lines": [
+   "(46-50)% increased Charge Recovery"
+  ],
+  "type": "Prefix",
+  "affix": "Perpetual",
+  "group": "FlaskIncreasedChargesAdded",
+  "level": 83,
+  "statOrder": [
+   514
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3196823591": [
+    "(46-50)% increased Charge Recovery"
+   ]
+  }
+ },
+ "FlaskChargesUsed1": {
+  "lines": [
+   "(14-16)% reduced Charges per use"
+  ],
+  "type": "Prefix",
+  "affix": "Apprentice's",
+  "group": "FlaskChargesUsed",
+  "level": 14,
+  "statOrder": [
+   515
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3139816101": [
+    "(14-16)% reduced Charges per use"
+   ]
+  }
+ },
+ "FlaskChargesUsed2": {
+  "lines": [
+   "(17-19)% reduced Charges per use"
+  ],
+  "type": "Prefix",
+  "affix": "Scholar's",
+  "group": "FlaskChargesUsed",
+  "level": 31,
+  "statOrder": [
+   515
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3139816101": [
+    "(17-19)% reduced Charges per use"
+   ]
+  }
+ },
+ "FlaskChargesUsed3__": {
+  "lines": [
+   "(20-22)% reduced Charges per use"
+  ],
+  "type": "Prefix",
+  "affix": "Practitioner's",
+  "group": "FlaskChargesUsed",
+  "level": 48,
+  "statOrder": [
+   515
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3139816101": [
+    "(20-22)% reduced Charges per use"
+   ]
+  }
+ },
+ "FlaskChargesUsed4__": {
+  "lines": [
+   "(23-25)% reduced Charges per use"
+  ],
+  "type": "Prefix",
+  "affix": "Brewer's",
+  "group": "FlaskChargesUsed",
+  "level": 65,
+  "statOrder": [
+   515
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3139816101": [
+    "(23-25)% reduced Charges per use"
+   ]
+  }
+ },
+ "FlaskChargesUsed5": {
+  "lines": [
+   "(26-28)% reduced Charges per use"
+  ],
+  "type": "Prefix",
+  "affix": "Chemist's",
+  "group": "FlaskChargesUsed",
+  "level": 82,
+  "statOrder": [
+   515
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3139816101": [
+    "(26-28)% reduced Charges per use"
+   ]
+  }
+ },
+ "FlaskChillFreezeImmunity1": {
+  "lines": [
+   "Grants Immunity to Chill for (6-8) seconds if used while Chilled",
+   "Grants Immunity to Freeze for (6-8) seconds if used while Frozen"
+  ],
+  "type": "Suffix",
+  "affix": "of Convection",
+  "group": "FlaskChillFreezeImmunity",
+  "level": 4,
+  "statOrder": [
+   575,
+   575.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3869628136": [
+    "Grants Immunity to Chill for (6-8) seconds if used while Chilled",
+    "Grants Immunity to Freeze for (6-8) seconds if used while Frozen"
+   ]
+  }
+ },
+ "FlaskChillFreezeImmunity2": {
+  "lines": [
+   "Grants Immunity to Chill for (9-11) seconds if used while Chilled",
+   "Grants Immunity to Freeze for (9-11) seconds if used while Frozen"
+  ],
+  "type": "Suffix",
+  "affix": "of Thermodynamics",
+  "group": "FlaskChillFreezeImmunity",
+  "level": 28,
+  "statOrder": [
+   575,
+   575.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3869628136": [
+    "Grants Immunity to Chill for (9-11) seconds if used while Chilled",
+    "Grants Immunity to Freeze for (9-11) seconds if used while Frozen"
+   ]
+  }
+ },
+ "FlaskChillFreezeImmunity3": {
+  "lines": [
+   "Grants Immunity to Chill for (12-14) seconds if used while Chilled",
+   "Grants Immunity to Freeze for (12-14) seconds if used while Frozen"
+  ],
+  "type": "Suffix",
+  "affix": "of Entropy",
+  "group": "FlaskChillFreezeImmunity",
+  "level": 52,
+  "statOrder": [
+   575,
+   575.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3869628136": [
+    "Grants Immunity to Chill for (12-14) seconds if used while Chilled",
+    "Grants Immunity to Freeze for (12-14) seconds if used while Frozen"
+   ]
+  }
+ },
+ "FlaskChillFreezeImmunity4": {
+  "lines": [
+   "Grants Immunity to Chill for (15-17) seconds if used while Chilled",
+   "Grants Immunity to Freeze for (15-17) seconds if used while Frozen"
+  ],
+  "type": "Suffix",
+  "affix": "of Thawing",
+  "group": "FlaskChillFreezeImmunity",
+  "level": 76,
+  "statOrder": [
+   575,
+   575.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3869628136": [
+    "Grants Immunity to Chill for (15-17) seconds if used while Chilled",
+    "Grants Immunity to Freeze for (15-17) seconds if used while Frozen"
+   ]
+  }
+ },
+ "FlaskCurseImmunity1": {
+  "lines": [
+   "Removes Curses on use"
+  ],
+  "type": "Suffix",
+  "affix": "of Warding",
+  "group": "FlaskCurseImmunity",
+  "level": 18,
+  "statOrder": [
+   569
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   3000
+  ],
+  "modTags": [
+   "flask",
+   "caster",
+   "curse"
+  ],
+  "tradeHashes": {
+   "3895393544": [
+    "Removes Curses on use"
+   ]
+  }
+ },
+ "FlaskDispellsBurning1": {
+  "lines": [
+   "Grants Immunity to Ignite for 4 seconds if used while Ignited",
+   "Removes all Burning when used"
+  ],
+  "type": "Suffix",
+  "affix": "of Dousing",
+  "group": "FlaskDispellsBurning",
+  "level": 6,
+  "statOrder": [
+   576,
+   576.1
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "elemental",
+   "fire",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "2695527599": [
+    "Grants Immunity to Ignite for 4 seconds if used while Ignited",
+    "Removes all Burning when used"
+   ]
+  }
+ },
+ "FlaskDispellsChill1": {
+  "lines": [
+   "Grants Immunity to Chill for 4 seconds if used while Chilled",
+   "Grants Immunity to Freeze for 4 seconds if used while Frozen"
+  ],
+  "type": "Suffix",
+  "affix": "of Heat",
+  "group": "FlaskDispellsChill",
+  "level": 4,
+  "statOrder": [
+   574,
+   574.1
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "elemental",
+   "cold",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "3570046771": [
+    "Grants Immunity to Chill for 4 seconds if used while Chilled",
+    "Grants Immunity to Freeze for 4 seconds if used while Frozen"
+   ]
+  }
+ },
+ "FlaskDispellsPoison1": {
+  "lines": [
+   "Grants Immunity to Poison for 4 seconds if used while Poisoned"
+  ],
+  "type": "Suffix",
+  "affix": "of Curing",
+  "group": "FlaskDispellsPoison",
+  "level": 16,
+  "statOrder": [
+   580
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "poison",
+   "chaos",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "3596333054": [
+    "Grants Immunity to Poison for 4 seconds if used while Poisoned"
+   ]
+  }
+ },
+ "FlaskEffectNotRemovedOnFullMana1": {
+  "lines": [
+   "66% reduced Amount Recovered",
+   "Effect is not removed when Unreserved Mana is Filled",
+   "Effect does not Queue"
+  ],
+  "type": "Prefix",
+  "affix": "Enduring",
+  "group": "FlaskEffectNotRemovedOnFullManaReducedRecovery",
+  "level": 16,
+  "statOrder": [
+   523,
+   535,
+   535.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "life_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   3000
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "mana"
+  ],
+  "tradeHashes": {
+   "156096868": [
+    ""
+   ],
+   "700317374": [
+    "66% reduced Amount Recovered"
+   ],
+   "3969608626": [
+    "Effect is not removed when Unreserved Mana is Filled",
+    "Effect does not Queue"
+   ]
+  }
+ },
+ "FlaskEffectReducedDuration1": {
+  "lines": [
+   "(33-38)% reduced Duration",
+   "25% increased effect"
+  ],
+  "type": "Prefix",
+  "affix": "Abecedarian's",
+  "group": "FlaskEffectReducedDuration",
+  "level": 20,
+  "statOrder": [
+   528,
+   607
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "156096868": [
+    "(33-38)% reduced Duration"
+   ],
+   "553298121": [
+    "25% increased effect"
+   ]
+  }
+ },
+ "FlaskEffectReducedDuration2": {
+  "lines": [
+   "(28-32)% reduced Duration",
+   "25% increased effect"
+  ],
+  "type": "Prefix",
+  "affix": "Dabbler's",
+  "group": "FlaskEffectReducedDuration",
+  "level": 50,
+  "statOrder": [
+   528,
+   607
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "156096868": [
+    "(28-32)% reduced Duration"
+   ],
+   "553298121": [
+    "25% increased effect"
+   ]
+  }
+ },
+ "FlaskEffectReducedDuration3": {
+  "lines": [
+   "(23-27)% reduced Duration",
+   "25% increased effect"
+  ],
+  "type": "Prefix",
+  "affix": "Alchemist's",
+  "group": "FlaskEffectReducedDuration",
+  "level": 80,
+  "statOrder": [
+   528,
+   607
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "156096868": [
+    "(23-27)% reduced Duration"
+   ],
+   "553298121": [
+    "25% increased effect"
+   ]
+  }
+ },
+ "FlaskExtraCharges1": {
+  "lines": [
+   "+(16-19) to Maximum Charges"
+  ],
+  "type": "Prefix",
+  "affix": "Wide",
+  "group": "FlaskExtraMaxCharges",
+  "level": 2,
+  "statOrder": [
+   506
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3608809816": [
+    "+(16-19) to Maximum Charges"
+   ]
+  }
+ },
+ "FlaskExtraCharges2__": {
+  "lines": [
+   "+(20-23) to Maximum Charges"
+  ],
+  "type": "Prefix",
+  "affix": "Plentiful",
+  "group": "FlaskExtraMaxCharges",
+  "level": 22,
+  "statOrder": [
+   506
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3608809816": [
+    "+(20-23) to Maximum Charges"
+   ]
+  }
+ },
+ "FlaskExtraCharges3_": {
+  "lines": [
+   "+(24-27) to Maximum Charges"
+  ],
+  "type": "Prefix",
+  "affix": "Bountiful",
+  "group": "FlaskExtraMaxCharges",
+  "level": 42,
+  "statOrder": [
+   506
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3608809816": [
+    "+(24-27) to Maximum Charges"
+   ]
+  }
+ },
+ "FlaskExtraCharges4__": {
+  "lines": [
+   "+(28-31) to Maximum Charges"
+  ],
+  "type": "Prefix",
+  "affix": "Abundant",
+  "group": "FlaskExtraMaxCharges",
+  "level": 62,
+  "statOrder": [
+   506
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3608809816": [
+    "+(28-31) to Maximum Charges"
+   ]
+  }
+ },
+ "FlaskExtraCharges5": {
+  "lines": [
+   "+(32-35) to Maximum Charges"
+  ],
+  "type": "Prefix",
+  "affix": "Ample",
+  "group": "FlaskExtraMaxCharges",
+  "level": 82,
+  "statOrder": [
+   506
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3608809816": [
+    "+(32-35) to Maximum Charges"
+   ]
+  }
+ },
+ "FlaskExtraLifeCostsMana1": {
+  "lines": [
+   "(35-39)% increased Life Recovered",
+   "Removes 10% of Life Recovered from Mana when used"
+  ],
+  "type": "Prefix",
+  "affix": "Impairing",
+  "group": "FlaskExtraLifeCostsMana",
+  "level": 13,
+  "statOrder": [
+   518,
+   542
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "hybrid_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "mana"
+  ],
+  "tradeHashes": {
+   "648019518": [
+    "Removes 10% of Life Recovered from Mana when used"
+   ],
+   "1261982764": [
+    "(35-39)% increased Life Recovered"
+   ]
+  }
+ },
+ "FlaskExtraLifeCostsMana2": {
+  "lines": [
+   "(40-44)% increased Life Recovered",
+   "Removes 10% of Life Recovered from Mana when used"
+  ],
+  "type": "Prefix",
+  "affix": "Dizzying",
+  "group": "FlaskExtraLifeCostsMana",
+  "level": 30,
+  "statOrder": [
+   518,
+   542
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "hybrid_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "mana"
+  ],
+  "tradeHashes": {
+   "648019518": [
+    "Removes 10% of Life Recovered from Mana when used"
+   ],
+   "1261982764": [
+    "(40-44)% increased Life Recovered"
+   ]
+  }
+ },
+ "FlaskExtraLifeCostsMana3": {
+  "lines": [
+   "(46-50)% increased Life Recovered",
+   "Removes 10% of Life Recovered from Mana when used"
+  ],
+  "type": "Prefix",
+  "affix": "Depleting",
+  "group": "FlaskExtraLifeCostsMana",
+  "level": 47,
+  "statOrder": [
+   518,
+   542
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "hybrid_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "mana"
+  ],
+  "tradeHashes": {
+   "648019518": [
+    "Removes 10% of Life Recovered from Mana when used"
+   ],
+   "1261982764": [
+    "(46-50)% increased Life Recovered"
+   ]
+  }
+ },
+ "FlaskExtraLifeCostsMana4": {
+  "lines": [
+   "(51-55)% increased Life Recovered",
+   "Removes 10% of Life Recovered from Mana when used"
+  ],
+  "type": "Prefix",
+  "affix": "Vitiating",
+  "group": "FlaskExtraLifeCostsMana",
+  "level": 64,
+  "statOrder": [
+   518,
+   542
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "hybrid_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "mana"
+  ],
+  "tradeHashes": {
+   "648019518": [
+    "Removes 10% of Life Recovered from Mana when used"
+   ],
+   "1261982764": [
+    "(51-55)% increased Life Recovered"
+   ]
+  }
+ },
+ "FlaskExtraLifeCostsMana5_": {
+  "lines": [
+   "(56-60)% increased Life Recovered",
+   "Removes 10% of Life Recovered from Mana when used"
+  ],
+  "type": "Prefix",
+  "affix": "Sapping",
+  "group": "FlaskExtraLifeCostsMana",
+  "level": 81,
+  "statOrder": [
+   518,
+   542
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "hybrid_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "mana"
+  ],
+  "tradeHashes": {
+   "648019518": [
+    "Removes 10% of Life Recovered from Mana when used"
+   ],
+   "1261982764": [
+    "(56-60)% increased Life Recovered"
+   ]
+  }
+ },
+ "FlaskExtraManaCostsLife1": {
+  "lines": [
+   "(41-46)% increased Mana Recovered",
+   "Removes 15% of Mana Recovered from Life when used"
+  ],
+  "type": "Prefix",
+  "affix": "Aged",
+  "group": "FlaskExtraManaCostsLife",
+  "level": 13,
+  "statOrder": [
+   522,
+   540
+  ],
+  "weightKey": [
+   "utility_flask",
+   "life_flask",
+   "hybrid_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "mana"
+  ],
+  "tradeHashes": {
+   "959641748": [
+    "Removes 15% of Mana Recovered from Life when used"
+   ],
+   "1811130680": [
+    "(41-46)% increased Mana Recovered"
+   ]
+  }
+ },
+ "FlaskExtraManaCostsLife2": {
+  "lines": [
+   "(47-52)% increased Mana Recovered",
+   "Removes 15% of Mana Recovered from Life when used"
+  ],
+  "type": "Prefix",
+  "affix": "Fermented",
+  "group": "FlaskExtraManaCostsLife",
+  "level": 30,
+  "statOrder": [
+   522,
+   540
+  ],
+  "weightKey": [
+   "utility_flask",
+   "life_flask",
+   "hybrid_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "mana"
+  ],
+  "tradeHashes": {
+   "959641748": [
+    "Removes 15% of Mana Recovered from Life when used"
+   ],
+   "1811130680": [
+    "(47-52)% increased Mana Recovered"
+   ]
+  }
+ },
+ "FlaskExtraManaCostsLife3_": {
+  "lines": [
+   "(53-58)% increased Mana Recovered",
+   "Removes 15% of Mana Recovered from Life when used"
+  ],
+  "type": "Prefix",
+  "affix": "Congealed",
+  "group": "FlaskExtraManaCostsLife",
+  "level": 47,
+  "statOrder": [
+   522,
+   540
+  ],
+  "weightKey": [
+   "utility_flask",
+   "life_flask",
+   "hybrid_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "mana"
+  ],
+  "tradeHashes": {
+   "959641748": [
+    "Removes 15% of Mana Recovered from Life when used"
+   ],
+   "1811130680": [
+    "(53-58)% increased Mana Recovered"
+   ]
+  }
+ },
+ "FlaskExtraManaCostsLife4": {
+  "lines": [
+   "(59-64)% increased Mana Recovered",
+   "Removes 15% of Mana Recovered from Life when used"
+  ],
+  "type": "Prefix",
+  "affix": "Turbid",
+  "group": "FlaskExtraManaCostsLife",
+  "level": 64,
+  "statOrder": [
+   522,
+   540
+  ],
+  "weightKey": [
+   "utility_flask",
+   "life_flask",
+   "hybrid_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "mana"
+  ],
+  "tradeHashes": {
+   "959641748": [
+    "Removes 15% of Mana Recovered from Life when used"
+   ],
+   "1811130680": [
+    "(59-64)% increased Mana Recovered"
+   ]
+  }
+ },
+ "FlaskExtraManaCostsLife5_": {
+  "lines": [
+   "(65-70)% increased Mana Recovered",
+   "Removes 15% of Mana Recovered from Life when used"
+  ],
+  "type": "Prefix",
+  "affix": "Caustic",
+  "group": "FlaskExtraManaCostsLife",
+  "level": 81,
+  "statOrder": [
+   522,
+   540
+  ],
+  "weightKey": [
+   "utility_flask",
+   "life_flask",
+   "hybrid_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "mana"
+  ],
+  "tradeHashes": {
+   "959641748": [
+    "Removes 15% of Mana Recovered from Life when used"
+   ],
+   "1811130680": [
+    "(65-70)% increased Mana Recovered"
+   ]
+  }
+ },
+ "FlaskFreezeAndChillImmunityDuringEffect": {
+  "lines": [
+   "(45-49)% less Duration",
+   "Immunity to Freeze and Chill during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Deer",
+  "group": "FlaskFreezeAndChillImmunityDuringEffect",
+  "level": 4,
+  "statOrder": [
+   529,
+   657
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1506355899": [
+    "(45-49)% less Duration"
+   ],
+   "3838369929": [
+    "Immunity to Freeze and Chill during Effect"
+   ]
+  }
+ },
+ "FlaskFreezeAndChillImmunityDuringEffect2": {
+  "lines": [
+   "(40-44)% less Duration",
+   "Immunity to Freeze and Chill during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Walrus",
+  "group": "FlaskFreezeAndChillImmunityDuringEffect",
+  "level": 38,
+  "statOrder": [
+   529,
+   657
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1506355899": [
+    "(40-44)% less Duration"
+   ],
+   "3838369929": [
+    "Immunity to Freeze and Chill during Effect"
+   ]
+  }
+ },
+ "FlaskFreezeAndChillImmunityDuringEffect3__": {
+  "lines": [
+   "(35-39)% less Duration",
+   "Immunity to Freeze and Chill during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Penguin",
+  "group": "FlaskFreezeAndChillImmunityDuringEffect",
+  "level": 72,
+  "statOrder": [
+   529,
+   657
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1506355899": [
+    "(35-39)% less Duration"
+   ],
+   "3838369929": [
+    "Immunity to Freeze and Chill during Effect"
+   ]
+  }
+ },
+ "FlaskFullInstantRecovery1": {
+  "lines": [
+   "66% reduced Amount Recovered",
+   "Instant Recovery"
+  ],
+  "type": "Prefix",
+  "affix": "Seething",
+  "group": "FlaskFullInstantRecovery",
+  "level": 7,
+  "statOrder": [
+   523,
+   537
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   3000
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "700317374": [
+    "66% reduced Amount Recovered"
+   ],
+   "1526933524": [
+    "Instant Recovery"
+   ]
+  }
+ },
+ "FlaskFullRechargeOnCrit1": {
+  "lines": [
+   "Recharges 1 Charge when you deal a Critical Strike"
+  ],
+  "type": "Prefix",
+  "affix": "Surgeon's",
+  "group": "FlaskFullRechargeOnCrit",
+  "level": 8,
+  "statOrder": [
+   510
+  ],
+  "weightKey": [
+   "critical_utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0
+  ],
+  "modTags": [
+   "flask",
+   "critical"
+  ],
+  "tradeHashes": {
+   "2961372685": [
+    "Recharges 1 Charge when you deal a Critical Strike"
+   ]
+  }
+ },
+ "FlaskFullRechargeOnHit1": {
+  "lines": [
+   "Gain 1 Charge when you are Hit by an Enemy"
+  ],
+  "type": "Prefix",
+  "affix": "Delinquent's",
+  "group": "FlaskFullRechargeOnHit",
+  "level": 12,
+  "statOrder": [
+   509
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1582728645": [
+    "Gain 1 Charge when you are Hit by an Enemy"
+   ]
+  }
+ },
+ "FlaskFullRechargeOnHit2_": {
+  "lines": [
+   "Gain 1 Charge when you are Hit by an Enemy"
+  ],
+  "type": "Prefix",
+  "affix": "Transgressor's",
+  "group": "FlaskFullRechargeOnHit",
+  "level": 29,
+  "statOrder": [
+   509
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1582728645": [
+    "Gain 1 Charge when you are Hit by an Enemy"
+   ]
+  }
+ },
+ "FlaskFullRechargeOnHit3_": {
+  "lines": [
+   "Gain 2 Charges when you are Hit by an Enemy"
+  ],
+  "type": "Prefix",
+  "affix": "Sinner's",
+  "group": "FlaskFullRechargeOnHit",
+  "level": 46,
+  "statOrder": [
+   509
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1582728645": [
+    "Gain 2 Charges when you are Hit by an Enemy"
+   ]
+  }
+ },
+ "FlaskFullRechargeOnHit4_": {
+  "lines": [
+   "Gain 2 Charges when you are Hit by an Enemy"
+  ],
+  "type": "Prefix",
+  "affix": "Masochist's",
+  "group": "FlaskFullRechargeOnHit",
+  "level": 63,
+  "statOrder": [
+   509
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1582728645": [
+    "Gain 2 Charges when you are Hit by an Enemy"
+   ]
+  }
+ },
+ "FlaskFullRechargeOnHit5___": {
+  "lines": [
+   "Gain 3 Charges when you are Hit by an Enemy"
+  ],
+  "type": "Prefix",
+  "affix": "Flagellant's",
+  "group": "FlaskFullRechargeOnHit",
+  "level": 80,
+  "statOrder": [
+   509
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1582728645": [
+    "Gain 3 Charges when you are Hit by an Enemy"
+   ]
+  }
+ },
+ "FlaskFullRechargeOnTakeCrit1": {
+  "lines": [
+   "Recharges 5 Charges when you take a Critical Strike"
+  ],
+  "type": "Prefix",
+  "affix": "Avenger's",
+  "group": "FlaskFullRechargeOnTakeCrit",
+  "level": 12,
+  "statOrder": [
+   513
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "critical"
+  ],
+  "tradeHashes": {
+   "3662336899": [
+    "Recharges 5 Charges when you take a Critical Strike"
+   ]
+  }
+ },
+ "FlaskHealsMinions1": {
+  "lines": [
+   "Grants (100-119)% of Life Recovery to Minions"
+  ],
+  "type": "Suffix",
+  "affix": "of the Novice",
+  "group": "FlaskHealsMinions",
+  "level": 10,
+  "statOrder": [
+   519
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "minion"
+  ],
+  "tradeHashes": {
+   "2416869319": [
+    "Grants (100-119)% of Life Recovery to Minions"
+   ]
+  }
+ },
+ "FlaskHealsMinions2": {
+  "lines": [
+   "Grants (120-139)% of Life Recovery to Minions"
+  ],
+  "type": "Suffix",
+  "affix": "of the Acolyte",
+  "group": "FlaskHealsMinions",
+  "level": 28,
+  "statOrder": [
+   519
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "minion"
+  ],
+  "tradeHashes": {
+   "2416869319": [
+    "Grants (120-139)% of Life Recovery to Minions"
+   ]
+  }
+ },
+ "FlaskHealsMinions3": {
+  "lines": [
+   "Grants (140-159)% of Life Recovery to Minions"
+  ],
+  "type": "Suffix",
+  "affix": "of the Summoner",
+  "group": "FlaskHealsMinions",
+  "level": 46,
+  "statOrder": [
+   519
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "minion"
+  ],
+  "tradeHashes": {
+   "2416869319": [
+    "Grants (140-159)% of Life Recovery to Minions"
+   ]
+  }
+ },
+ "FlaskHealsMinions4____": {
+  "lines": [
+   "Grants (160-179)% of Life Recovery to Minions"
+  ],
+  "type": "Suffix",
+  "affix": "of the Conjurer",
+  "group": "FlaskHealsMinions",
+  "level": 64,
+  "statOrder": [
+   519
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "minion"
+  ],
+  "tradeHashes": {
+   "2416869319": [
+    "Grants (160-179)% of Life Recovery to Minions"
+   ]
+  }
+ },
+ "FlaskHealsMinions5": {
+  "lines": [
+   "Grants (180-200)% of Life Recovery to Minions"
+  ],
+  "type": "Suffix",
+  "affix": "of the Necromancer",
+  "group": "FlaskHealsMinions",
+  "level": 82,
+  "statOrder": [
+   519
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "life",
+   "minion"
+  ],
+  "tradeHashes": {
+   "2416869319": [
+    "Grants (180-200)% of Life Recovery to Minions"
+   ]
+  }
+ },
+ "FlaskIgniteImmunity1": {
+  "lines": [
+   "Grants Immunity to Ignite for (6-8) seconds if used while Ignited",
+   "Removes all Burning when used"
+  ],
+  "type": "Suffix",
+  "affix": "of Damping",
+  "group": "FlaskIgniteImmunity",
+  "level": 6,
+  "statOrder": [
+   577,
+   577.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "2361218755": [
+    "Grants Immunity to Ignite for (6-8) seconds if used while Ignited",
+    "Removes all Burning when used"
+   ]
+  }
+ },
+ "FlaskIgniteImmunity2_": {
+  "lines": [
+   "Grants Immunity to Ignite for (9-11) seconds if used while Ignited",
+   "Removes all Burning when used"
+  ],
+  "type": "Suffix",
+  "affix": "of Quashing",
+  "group": "FlaskIgniteImmunity",
+  "level": 30,
+  "statOrder": [
+   577,
+   577.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "2361218755": [
+    "Grants Immunity to Ignite for (9-11) seconds if used while Ignited",
+    "Removes all Burning when used"
+   ]
+  }
+ },
+ "FlaskIgniteImmunity3_": {
+  "lines": [
+   "Grants Immunity to Ignite for (12-14) seconds if used while Ignited",
+   "Removes all Burning when used"
+  ],
+  "type": "Suffix",
+  "affix": "of Quelling",
+  "group": "FlaskIgniteImmunity",
+  "level": 54,
+  "statOrder": [
+   577,
+   577.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "2361218755": [
+    "Grants Immunity to Ignite for (12-14) seconds if used while Ignited",
+    "Removes all Burning when used"
+   ]
+  }
+ },
+ "FlaskIgniteImmunity4": {
+  "lines": [
+   "Grants Immunity to Ignite for (15-17) seconds if used while Ignited",
+   "Removes all Burning when used"
+  ],
+  "type": "Suffix",
+  "affix": "of Quenching",
+  "group": "FlaskIgniteImmunity",
+  "level": 78,
+  "statOrder": [
+   577,
+   577.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "2361218755": [
+    "Grants Immunity to Ignite for (15-17) seconds if used while Ignited",
+    "Removes all Burning when used"
+   ]
+  }
+ },
+ "FlaskIgniteImmunityDuringEffect2": {
+  "lines": [
+   "(40-44)% less Duration",
+   "Immunity to Ignite during Effect",
+   "Removes Burning on use"
+  ],
+  "type": "Suffix",
+  "affix": "of the Mussel",
+  "group": "FlaskIgniteImmunityDuringEffect",
+  "level": 40,
+  "statOrder": [
+   529,
+   588,
+   588.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "658443507": [
+    "Immunity to Ignite during Effect",
+    "Removes Burning on use"
+   ],
+   "1506355899": [
+    "(40-44)% less Duration"
+   ]
+  }
+ },
+ "FlaskIgniteImmunityDuringEffect3": {
+  "lines": [
+   "(35-39)% less Duration",
+   "Immunity to Ignite during Effect",
+   "Removes Burning on use"
+  ],
+  "type": "Suffix",
+  "affix": "of the Starfish",
+  "group": "FlaskIgniteImmunityDuringEffect",
+  "level": 74,
+  "statOrder": [
+   529,
+   588,
+   588.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "658443507": [
+    "Immunity to Ignite during Effect",
+    "Removes Burning on use"
+   ],
+   "1506355899": [
+    "(35-39)% less Duration"
+   ]
+  }
+ },
+ "FlaskIgniteImmunityDuringEffect_": {
+  "lines": [
+   "(45-49)% less Duration",
+   "Immunity to Ignite during Effect",
+   "Removes Burning on use"
+  ],
+  "type": "Suffix",
+  "affix": "of the Urchin",
+  "group": "FlaskIgniteImmunityDuringEffect",
+  "level": 6,
+  "statOrder": [
+   529,
+   588,
+   588.1
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "658443507": [
+    "Immunity to Ignite during Effect",
+    "Removes Burning on use"
+   ],
+   "1506355899": [
+    "(45-49)% less Duration"
+   ]
+  }
+ },
+ "FlaskIncreasedDuration2": {
+  "lines": [
+   "(16-20)% increased Duration"
+  ],
+  "type": "Prefix",
+  "affix": "Investigator's",
+  "group": "FlaskUtilityIncreasedDuration",
+  "level": 20,
+  "statOrder": [
+   528
+  ],
+  "weightKey": [
+   "utility_flask",
+   "critical_utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "156096868": [
+    "(16-20)% increased Duration"
+   ]
+  }
+ },
+ "FlaskIncreasedDuration3_": {
+  "lines": [
+   "(21-25)% increased Duration"
+  ],
+  "type": "Prefix",
+  "affix": "Analyst's",
+  "group": "FlaskUtilityIncreasedDuration",
+  "level": 36,
+  "statOrder": [
+   528
+  ],
+  "weightKey": [
+   "utility_flask",
+   "critical_utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "156096868": [
+    "(21-25)% increased Duration"
+   ]
+  }
+ },
+ "FlaskIncreasedDuration4": {
+  "lines": [
+   "(26-30)% increased Duration"
+  ],
+  "type": "Prefix",
+  "affix": "Examiner's",
+  "group": "FlaskUtilityIncreasedDuration",
+  "level": 52,
+  "statOrder": [
+   528
+  ],
+  "weightKey": [
+   "utility_flask",
+   "critical_utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "156096868": [
+    "(26-30)% increased Duration"
+   ]
+  }
+ },
+ "FlaskIncreasedDuration5__": {
+  "lines": [
+   "(31-35)% increased Duration"
+  ],
+  "type": "Prefix",
+  "affix": "Clinician's",
+  "group": "FlaskUtilityIncreasedDuration",
+  "level": 68,
+  "statOrder": [
+   528
+  ],
+  "weightKey": [
+   "utility_flask",
+   "critical_utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "156096868": [
+    "(31-35)% increased Duration"
+   ]
+  }
+ },
+ "FlaskIncreasedDuration6": {
+  "lines": [
+   "(36-40)% increased Duration"
+  ],
+  "type": "Prefix",
+  "affix": "Experimenter's",
+  "group": "FlaskUtilityIncreasedDuration",
+  "level": 84,
+  "statOrder": [
+   528
+  ],
+  "weightKey": [
+   "utility_flask",
+   "critical_utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "156096868": [
+    "(36-40)% increased Duration"
+   ]
+  }
+ },
+ "FlaskIncreasedHealingCharges1": {
+  "lines": [
+   "(20-25)% increased Charges per use",
+   "(21-26)% increased Amount Recovered"
+  ],
+  "type": "Prefix",
+  "affix": "Nitrate",
+  "group": "FlaskIncreasedHealingCharges",
+  "level": 10,
+  "statOrder": [
+   515,
+   523
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "700317374": [
+    "(21-26)% increased Amount Recovered"
+   ],
+   "3139816101": [
+    "(20-25)% increased Charges per use"
+   ]
+  }
+ },
+ "FlaskIncreasedHealingCharges2": {
+  "lines": [
+   "(20-25)% increased Charges per use",
+   "(27-32)% increased Amount Recovered"
+  ],
+  "type": "Prefix",
+  "affix": "Dolomite",
+  "group": "FlaskIncreasedHealingCharges",
+  "level": 28,
+  "statOrder": [
+   515,
+   523
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "700317374": [
+    "(27-32)% increased Amount Recovered"
+   ],
+   "3139816101": [
+    "(20-25)% increased Charges per use"
+   ]
+  }
+ },
+ "FlaskIncreasedHealingCharges3": {
+  "lines": [
+   "(20-25)% increased Charges per use",
+   "(33-38)% increased Amount Recovered"
+  ],
+  "type": "Prefix",
+  "affix": "Kieserite",
+  "group": "FlaskIncreasedHealingCharges",
+  "level": 46,
+  "statOrder": [
+   515,
+   523
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "700317374": [
+    "(33-38)% increased Amount Recovered"
+   ],
+   "3139816101": [
+    "(20-25)% increased Charges per use"
+   ]
+  }
+ },
+ "FlaskIncreasedHealingCharges4____": {
+  "lines": [
+   "(20-25)% increased Charges per use",
+   "(39-44)% increased Amount Recovered"
+  ],
+  "type": "Prefix",
+  "affix": "Kainite",
+  "group": "FlaskIncreasedHealingCharges",
+  "level": 64,
+  "statOrder": [
+   515,
+   523
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "700317374": [
+    "(39-44)% increased Amount Recovered"
+   ],
+   "3139816101": [
+    "(20-25)% increased Charges per use"
+   ]
+  }
+ },
+ "FlaskIncreasedHealingCharges5": {
+  "lines": [
+   "(20-25)% increased Charges per use",
+   "(45-50)% increased Amount Recovered"
+  ],
+  "type": "Prefix",
+  "affix": "Gypsum",
+  "group": "FlaskIncreasedHealingCharges",
+  "level": 82,
+  "statOrder": [
+   515,
+   523
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "700317374": [
+    "(45-50)% increased Amount Recovered"
+   ],
+   "3139816101": [
+    "(20-25)% increased Charges per use"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryAmount1": {
+  "lines": [
+   "(41-46)% increased Amount Recovered",
+   "33% reduced Recovery rate"
+  ],
+  "type": "Prefix",
+  "affix": "Substantial",
+  "group": "FlaskIncreasedRecoveryAmount",
+  "level": 1,
+  "statOrder": [
+   523,
+   524
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "33% reduced Recovery rate"
+   ],
+   "700317374": [
+    "(41-46)% increased Amount Recovered"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryAmount2_": {
+  "lines": [
+   "(47-52)% increased Amount Recovered",
+   "33% reduced Recovery rate"
+  ],
+  "type": "Prefix",
+  "affix": "Opaque",
+  "group": "FlaskIncreasedRecoveryAmount",
+  "level": 21,
+  "statOrder": [
+   523,
+   524
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "33% reduced Recovery rate"
+   ],
+   "700317374": [
+    "(47-52)% increased Amount Recovered"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryAmount3": {
+  "lines": [
+   "(53-58)% increased Amount Recovered",
+   "33% reduced Recovery rate"
+  ],
+  "type": "Prefix",
+  "affix": "Full-bodied",
+  "group": "FlaskIncreasedRecoveryAmount",
+  "level": 41,
+  "statOrder": [
+   523,
+   524
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "33% reduced Recovery rate"
+   ],
+   "700317374": [
+    "(53-58)% increased Amount Recovered"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryAmount4": {
+  "lines": [
+   "(59-64)% increased Amount Recovered",
+   "33% reduced Recovery rate"
+  ],
+  "type": "Prefix",
+  "affix": "Concentrated",
+  "group": "FlaskIncreasedRecoveryAmount",
+  "level": 61,
+  "statOrder": [
+   523,
+   524
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "33% reduced Recovery rate"
+   ],
+   "700317374": [
+    "(59-64)% increased Amount Recovered"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryAmount5": {
+  "lines": [
+   "(65-70)% increased Amount Recovered",
+   "33% reduced Recovery rate"
+  ],
+  "type": "Prefix",
+  "affix": "Saturated",
+  "group": "FlaskIncreasedRecoveryAmount",
+  "level": 81,
+  "statOrder": [
+   523,
+   524
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "33% reduced Recovery rate"
+   ],
+   "700317374": [
+    "(65-70)% increased Amount Recovered"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryOnLowLife1": {
+  "lines": [
+   "(101-106)% more Recovery if used while on Low Life"
+  ],
+  "type": "Prefix",
+  "affix": "Prudent",
+  "group": "FlaskIncreasedRecoveryOnLowLife",
+  "level": 6,
+  "statOrder": [
+   530
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "886931978": [
+    "(101-106)% more Recovery if used while on Low Life"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryOnLowLife2_": {
+  "lines": [
+   "(107-112)% more Recovery if used while on Low Life"
+  ],
+  "type": "Prefix",
+  "affix": "Prepared",
+  "group": "FlaskIncreasedRecoveryOnLowLife",
+  "level": 25,
+  "statOrder": [
+   530
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "886931978": [
+    "(107-112)% more Recovery if used while on Low Life"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryOnLowLife3": {
+  "lines": [
+   "(113-118)% more Recovery if used while on Low Life"
+  ],
+  "type": "Prefix",
+  "affix": "Wary",
+  "group": "FlaskIncreasedRecoveryOnLowLife",
+  "level": 44,
+  "statOrder": [
+   530
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "886931978": [
+    "(113-118)% more Recovery if used while on Low Life"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryOnLowLife4": {
+  "lines": [
+   "(119-124)% more Recovery if used while on Low Life"
+  ],
+  "type": "Prefix",
+  "affix": "Careful",
+  "group": "FlaskIncreasedRecoveryOnLowLife",
+  "level": 63,
+  "statOrder": [
+   530
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "886931978": [
+    "(119-124)% more Recovery if used while on Low Life"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryOnLowLife5": {
+  "lines": [
+   "(125-130)% more Recovery if used while on Low Life"
+  ],
+  "type": "Prefix",
+  "affix": "Cautious",
+  "group": "FlaskIncreasedRecoveryOnLowLife",
+  "level": 82,
+  "statOrder": [
+   530
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "886931978": [
+    "(125-130)% more Recovery if used while on Low Life"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryReducedEffect1_": {
+  "lines": [
+   "(37-42)% increased Charge Recovery",
+   "25% reduced effect"
+  ],
+  "type": "Prefix",
+  "affix": "Doled",
+  "group": "FlaskIncreasedRecoveryReducedEffect",
+  "level": 20,
+  "statOrder": [
+   514,
+   607
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "553298121": [
+    "25% reduced effect"
+   ],
+   "3196823591": [
+    "(37-42)% increased Charge Recovery"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryReducedEffect2_": {
+  "lines": [
+   "(43-48)% increased Charge Recovery",
+   "25% reduced effect"
+  ],
+  "type": "Prefix",
+  "affix": "Provisioned",
+  "group": "FlaskIncreasedRecoveryReducedEffect",
+  "level": 36,
+  "statOrder": [
+   514,
+   607
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "553298121": [
+    "25% reduced effect"
+   ],
+   "3196823591": [
+    "(43-48)% increased Charge Recovery"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryReducedEffect3____": {
+  "lines": [
+   "(49-54)% increased Charge Recovery",
+   "25% reduced effect"
+  ],
+  "type": "Prefix",
+  "affix": "Measured",
+  "group": "FlaskIncreasedRecoveryReducedEffect",
+  "level": 52,
+  "statOrder": [
+   514,
+   607
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "553298121": [
+    "25% reduced effect"
+   ],
+   "3196823591": [
+    "(49-54)% increased Charge Recovery"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryReducedEffect4_": {
+  "lines": [
+   "(55-60)% increased Charge Recovery",
+   "25% reduced effect"
+  ],
+  "type": "Prefix",
+  "affix": "Allocated",
+  "group": "FlaskIncreasedRecoveryReducedEffect",
+  "level": 68,
+  "statOrder": [
+   514,
+   607
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "553298121": [
+    "25% reduced effect"
+   ],
+   "3196823591": [
+    "(55-60)% increased Charge Recovery"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoveryReducedEffect5": {
+  "lines": [
+   "(61-66)% increased Charge Recovery",
+   "25% reduced effect"
+  ],
+  "type": "Prefix",
+  "affix": "Rationed",
+  "group": "FlaskIncreasedRecoveryReducedEffect",
+  "level": 84,
+  "statOrder": [
+   514,
+   607
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "553298121": [
+    "25% reduced effect"
+   ],
+   "3196823591": [
+    "(61-66)% increased Charge Recovery"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoverySpeed1": {
+  "lines": [
+   "(41-46)% increased Recovery rate"
+  ],
+  "type": "Prefix",
+  "affix": "Undiluted",
+  "group": "FlaskIncreasedRecoverySpeed",
+  "level": 1,
+  "statOrder": [
+   524
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "(41-46)% increased Recovery rate"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoverySpeed2": {
+  "lines": [
+   "(47-52)% increased Recovery rate"
+  ],
+  "type": "Prefix",
+  "affix": "Thickened",
+  "group": "FlaskIncreasedRecoverySpeed",
+  "level": 21,
+  "statOrder": [
+   524
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "(47-52)% increased Recovery rate"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoverySpeed3_": {
+  "lines": [
+   "(53-58)% increased Recovery rate"
+  ],
+  "type": "Prefix",
+  "affix": "Viscous",
+  "group": "FlaskIncreasedRecoverySpeed",
+  "level": 41,
+  "statOrder": [
+   524
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "(53-58)% increased Recovery rate"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoverySpeed4": {
+  "lines": [
+   "(59-64)% increased Recovery rate"
+  ],
+  "type": "Prefix",
+  "affix": "Condensed",
+  "group": "FlaskIncreasedRecoverySpeed",
+  "level": 61,
+  "statOrder": [
+   524
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "(59-64)% increased Recovery rate"
+   ]
+  }
+ },
+ "FlaskIncreasedRecoverySpeed5": {
+  "lines": [
+   "(65-70)% increased Recovery rate"
+  ],
+  "type": "Prefix",
+  "affix": "Catalysed",
+  "group": "FlaskIncreasedRecoverySpeed",
+  "level": 81,
+  "statOrder": [
+   524
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "(65-70)% increased Recovery rate"
+   ]
+  }
+ },
+ "FlaskInstantRecoveryOnLowLife1": {
+  "lines": [
+   "(27-30)% reduced Amount Recovered",
+   "Instant Recovery when on Low Life"
+  ],
+  "type": "Prefix",
+  "affix": "Startled",
+  "group": "FlaskInstantRecoveryOnLowLife",
+  "level": 9,
+  "statOrder": [
+   523,
+   531
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "700317374": [
+    "(27-30)% reduced Amount Recovered"
+   ],
+   "3812107348": [
+    "Instant Recovery when on Low Life"
+   ]
+  }
+ },
+ "FlaskInstantRecoveryOnLowLife2": {
+  "lines": [
+   "(23-26)% reduced Amount Recovered",
+   "Instant Recovery when on Low Life"
+  ],
+  "type": "Prefix",
+  "affix": "Frightened",
+  "group": "FlaskInstantRecoveryOnLowLife",
+  "level": 27,
+  "statOrder": [
+   523,
+   531
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "700317374": [
+    "(23-26)% reduced Amount Recovered"
+   ],
+   "3812107348": [
+    "Instant Recovery when on Low Life"
+   ]
+  }
+ },
+ "FlaskInstantRecoveryOnLowLife3": {
+  "lines": [
+   "(19-22)% reduced Amount Recovered",
+   "Instant Recovery when on Low Life"
+  ],
+  "type": "Prefix",
+  "affix": "Alarmed",
+  "group": "FlaskInstantRecoveryOnLowLife",
+  "level": 45,
+  "statOrder": [
+   523,
+   531
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "700317374": [
+    "(19-22)% reduced Amount Recovered"
+   ],
+   "3812107348": [
+    "Instant Recovery when on Low Life"
+   ]
+  }
+ },
+ "FlaskInstantRecoveryOnLowLife4": {
+  "lines": [
+   "(15-18)% reduced Amount Recovered",
+   "Instant Recovery when on Low Life"
+  ],
+  "type": "Prefix",
+  "affix": "Terrified",
+  "group": "FlaskInstantRecoveryOnLowLife",
+  "level": 63,
+  "statOrder": [
+   523,
+   531
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "700317374": [
+    "(15-18)% reduced Amount Recovered"
+   ],
+   "3812107348": [
+    "Instant Recovery when on Low Life"
+   ]
+  }
+ },
+ "FlaskInstantRecoveryOnLowLife5__": {
+  "lines": [
+   "(11-14)% reduced Amount Recovered",
+   "Instant Recovery when on Low Life"
+  ],
+  "type": "Prefix",
+  "affix": "Panicked",
+  "group": "FlaskInstantRecoveryOnLowLife",
+  "level": 81,
+  "statOrder": [
+   523,
+   531
+  ],
+  "weightKey": [
+   "utility_flask",
+   "mana_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "700317374": [
+    "(11-14)% reduced Amount Recovered"
+   ],
+   "3812107348": [
+    "Instant Recovery when on Low Life"
+   ]
+  }
+ },
+ "FlaskManaRecoveryAtEnd1_": {
+  "lines": [
+   "66% increased Amount Recovered",
+   "Mana Recovery occurs instantly at the end of Effect"
+  ],
+  "type": "Prefix",
+  "affix": "Foreboding",
+  "group": "FlaskManaRecoveryAtEnd",
+  "level": 16,
+  "statOrder": [
+   523,
+   536
+  ],
+  "weightKey": [
+   "utility_flask",
+   "life_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   3000
+  ],
+  "modTags": [
+   "flask",
+   "resource",
+   "mana"
+  ],
+  "tradeHashes": {
+   "700317374": [
+    "66% increased Amount Recovered"
+   ],
+   "4204954479": [
+    "Mana Recovery occurs instantly at the end of Effect"
+   ]
+  }
+ },
+ "FlaskPartialInstantRecovery1": {
+  "lines": [
+   "(52-55)% reduced Amount Recovered",
+   "135% increased Recovery rate",
+   "50% of Recovery applied Instantly"
+  ],
+  "type": "Prefix",
+  "affix": "Simmering",
+  "group": "FlaskPartialInstantRecovery",
+  "level": 3,
+  "statOrder": [
+   523,
+   524,
+   532
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "135% increased Recovery rate"
+   ],
+   "700317374": [
+    "(52-55)% reduced Amount Recovered"
+   ],
+   "2503377690": [
+    "50% of Recovery applied Instantly"
+   ]
+  }
+ },
+ "FlaskPartialInstantRecovery2": {
+  "lines": [
+   "(48-51)% reduced Amount Recovered",
+   "135% increased Recovery rate",
+   "50% of Recovery applied Instantly"
+  ],
+  "type": "Prefix",
+  "affix": "Ebullient",
+  "group": "FlaskPartialInstantRecovery",
+  "level": 22,
+  "statOrder": [
+   523,
+   524,
+   532
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "135% increased Recovery rate"
+   ],
+   "700317374": [
+    "(48-51)% reduced Amount Recovered"
+   ],
+   "2503377690": [
+    "50% of Recovery applied Instantly"
+   ]
+  }
+ },
+ "FlaskPartialInstantRecovery3": {
+  "lines": [
+   "(44-47)% reduced Amount Recovered",
+   "135% increased Recovery rate",
+   "50% of Recovery applied Instantly"
+  ],
+  "type": "Prefix",
+  "affix": "Effusive",
+  "group": "FlaskPartialInstantRecovery",
+  "level": 41,
+  "statOrder": [
+   523,
+   524,
+   532
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "135% increased Recovery rate"
+   ],
+   "700317374": [
+    "(44-47)% reduced Amount Recovered"
+   ],
+   "2503377690": [
+    "50% of Recovery applied Instantly"
+   ]
+  }
+ },
+ "FlaskPartialInstantRecovery4": {
+  "lines": [
+   "(40-43)% reduced Amount Recovered",
+   "135% increased Recovery rate",
+   "50% of Recovery applied Instantly"
+  ],
+  "type": "Prefix",
+  "affix": "Effervescent",
+  "group": "FlaskPartialInstantRecovery",
+  "level": 60,
+  "statOrder": [
+   523,
+   524,
+   532
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "135% increased Recovery rate"
+   ],
+   "700317374": [
+    "(40-43)% reduced Amount Recovered"
+   ],
+   "2503377690": [
+    "50% of Recovery applied Instantly"
+   ]
+  }
+ },
+ "FlaskPartialInstantRecovery5_": {
+  "lines": [
+   "(36-39)% reduced Amount Recovered",
+   "135% increased Recovery rate",
+   "50% of Recovery applied Instantly"
+  ],
+  "type": "Prefix",
+  "affix": "Bubbling",
+  "group": "FlaskPartialInstantRecovery",
+  "level": 79,
+  "statOrder": [
+   523,
+   524,
+   532
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   600
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "173226756": [
+    "135% increased Recovery rate"
+   ],
+   "700317374": [
+    "(36-39)% reduced Amount Recovered"
+   ],
+   "2503377690": [
+    "50% of Recovery applied Instantly"
+   ]
+  }
+ },
+ "FlaskPoisonImmunity1__": {
+  "lines": [
+   "Grants Immunity to Poison for (6-8) seconds if used while Poisoned"
+  ],
+  "type": "Suffix",
+  "affix": "of the Antitoxin",
+  "group": "FlaskPoisonImmunity",
+  "level": 16,
+  "statOrder": [
+   581
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "542375676": [
+    "Grants Immunity to Poison for (6-8) seconds if used while Poisoned"
+   ]
+  }
+ },
+ "FlaskPoisonImmunity2": {
+  "lines": [
+   "Grants Immunity to Poison for (9-11) seconds if used while Poisoned"
+  ],
+  "type": "Suffix",
+  "affix": "of the Remedy",
+  "group": "FlaskPoisonImmunity",
+  "level": 38,
+  "statOrder": [
+   581
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "542375676": [
+    "Grants Immunity to Poison for (9-11) seconds if used while Poisoned"
+   ]
+  }
+ },
+ "FlaskPoisonImmunity3": {
+  "lines": [
+   "Grants Immunity to Poison for (12-14) seconds if used while Poisoned"
+  ],
+  "type": "Suffix",
+  "affix": "of the Cure",
+  "group": "FlaskPoisonImmunity",
+  "level": 60,
+  "statOrder": [
+   581
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "542375676": [
+    "Grants Immunity to Poison for (12-14) seconds if used while Poisoned"
+   ]
+  }
+ },
+ "FlaskPoisonImmunity4": {
+  "lines": [
+   "Grants Immunity to Poison for (15-17) seconds if used while Poisoned"
+  ],
+  "type": "Suffix",
+  "affix": "of the Antidote",
+  "group": "FlaskPoisonImmunity",
+  "level": 82,
+  "statOrder": [
+   581
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "542375676": [
+    "Grants Immunity to Poison for (15-17) seconds if used while Poisoned"
+   ]
+  }
+ },
+ "FlaskPoisonImmunityDuringEffect": {
+  "lines": [
+   "(45-49)% less Duration",
+   "Immunity to Poison during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Skunk",
+  "group": "FlaskPoisonImmunityDuringEffect",
+  "level": 16,
+  "statOrder": [
+   529,
+   658
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1349296959": [
+    "Immunity to Poison during Effect"
+   ],
+   "1506355899": [
+    "(45-49)% less Duration"
+   ]
+  }
+ },
+ "FlaskPoisonImmunityDuringEffect2": {
+  "lines": [
+   "(40-44)% less Duration",
+   "Immunity to Poison during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Hedgehog",
+  "group": "FlaskPoisonImmunityDuringEffect",
+  "level": 46,
+  "statOrder": [
+   529,
+   658
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1349296959": [
+    "Immunity to Poison during Effect"
+   ],
+   "1506355899": [
+    "(40-44)% less Duration"
+   ]
+  }
+ },
+ "FlaskPoisonImmunityDuringEffect3": {
+  "lines": [
+   "(35-39)% less Duration",
+   "Immunity to Poison during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Opossum",
+  "group": "FlaskPoisonImmunityDuringEffect",
+  "level": 76,
+  "statOrder": [
+   529,
+   658
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "1349296959": [
+    "Immunity to Poison during Effect"
+   ],
+   "1506355899": [
+    "(35-39)% less Duration"
+   ]
+  }
+ },
+ "FlaskRemovesBleeding1": {
+  "lines": [
+   "Grants Immunity to Bleeding for 4 seconds if used while Bleeding",
+   "Grants Immunity to Corrupted Blood for 4 seconds if used while affected by Corrupted Blood"
+  ],
+  "type": "Suffix",
+  "affix": "of Staunching",
+  "group": "FlaskRemovesBleeding",
+  "level": 8,
+  "statOrder": [
+   572,
+   572.1
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "bleed",
+   "physical",
+   "attack",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "3233646242": [
+    "Grants Immunity to Bleeding for 4 seconds if used while Bleeding",
+    "Grants Immunity to Corrupted Blood for 4 seconds if used while affected by Corrupted Blood"
+   ]
+  }
+ },
+ "FlaskRemovesShock1": {
+  "lines": [
+   "Grants Immunity to Shock for 4 seconds if used while Shocked"
+  ],
+  "type": "Suffix",
+  "affix": "of Grounding",
+  "group": "FlaskRemovesShock",
+  "level": 10,
+  "statOrder": [
+   582
+  ],
+  "weightKey": [
+   "default"
+  ],
+  "weightVal": [
+   0
+  ],
+  "modTags": [
+   "flask",
+   "elemental",
+   "lightning",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "1823903967": [
+    "Grants Immunity to Shock for 4 seconds if used while Shocked"
+   ]
+  }
+ },
+ "FlaskShockImmunity1": {
+  "lines": [
+   "Grants Immunity to Shock for (6-8) seconds if used while Shocked"
+  ],
+  "type": "Suffix",
+  "affix": "of Earthing",
+  "group": "FlaskShockImmunity",
+  "level": 6,
+  "statOrder": [
+   583
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3854439683": [
+    "Grants Immunity to Shock for (6-8) seconds if used while Shocked"
+   ]
+  }
+ },
+ "FlaskShockImmunity2": {
+  "lines": [
+   "Grants Immunity to Shock for (9-11) seconds if used while Shocked"
+  ],
+  "type": "Suffix",
+  "affix": "of Grounding",
+  "group": "FlaskShockImmunity",
+  "level": 30,
+  "statOrder": [
+   583
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3854439683": [
+    "Grants Immunity to Shock for (9-11) seconds if used while Shocked"
+   ]
+  }
+ },
+ "FlaskShockImmunity3": {
+  "lines": [
+   "Grants Immunity to Shock for (12-14) seconds if used while Shocked"
+  ],
+  "type": "Suffix",
+  "affix": "of Insulation",
+  "group": "FlaskShockImmunity",
+  "level": 54,
+  "statOrder": [
+   583
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3854439683": [
+    "Grants Immunity to Shock for (12-14) seconds if used while Shocked"
+   ]
+  }
+ },
+ "FlaskShockImmunity4_": {
+  "lines": [
+   "Grants Immunity to Shock for (15-17) seconds if used while Shocked"
+  ],
+  "type": "Suffix",
+  "affix": "of the Dielectric",
+  "group": "FlaskShockImmunity",
+  "level": 78,
+  "statOrder": [
+   583
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "3854439683": [
+    "Grants Immunity to Shock for (15-17) seconds if used while Shocked"
+   ]
+  }
+ },
+ "FlaskShockImmunityDuringEffect": {
+  "lines": [
+   "(45-49)% less Duration",
+   "Immunity to Shock during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Conger",
+  "group": "FlaskShockImmunityDuringEffect",
+  "level": 6,
+  "statOrder": [
+   529,
+   659
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "589991690": [
+    "Immunity to Shock during Effect"
+   ],
+   "1506355899": [
+    "(45-49)% less Duration"
+   ]
+  }
+ },
+ "FlaskShockImmunityDuringEffect2___": {
+  "lines": [
+   "(40-44)% less Duration",
+   "Immunity to Shock during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Moray",
+  "group": "FlaskShockImmunityDuringEffect",
+  "level": 40,
+  "statOrder": [
+   529,
+   659
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "589991690": [
+    "Immunity to Shock during Effect"
+   ],
+   "1506355899": [
+    "(40-44)% less Duration"
+   ]
+  }
+ },
+ "FlaskShockImmunityDuringEffect3": {
+  "lines": [
+   "(35-39)% less Duration",
+   "Immunity to Shock during Effect"
+  ],
+  "type": "Suffix",
+  "affix": "of the Eel",
+  "group": "FlaskShockImmunityDuringEffect",
+  "level": 74,
+  "statOrder": [
+   529,
+   659
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "589991690": [
+    "Immunity to Shock during Effect"
+   ],
+   "1506355899": [
+    "(35-39)% less Duration"
+   ]
+  }
+ },
+ "LocalFlaskImmuneToMaimAndHinder1": {
+  "lines": [
+   "Grants Immunity to Hinder for (6-8) seconds if used while Hindered",
+   "Grants Immunity to Maim for (6-8) seconds if used while Maimed"
+  ],
+  "type": "Suffix",
+  "affix": "of Movement",
+  "group": "LocalFlaskImmuneToMaimAndHinder",
+  "level": 16,
+  "statOrder": [
+   578,
+   579
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask",
+   "attack",
+   "caster"
+  ],
+  "tradeHashes": {
+   "4003593289": [
+    "Grants Immunity to Hinder for (6-8) seconds if used while Hindered"
+   ],
+   "4232582040": [
+    "Grants Immunity to Maim for (6-8) seconds if used while Maimed"
+   ]
+  }
+ },
+ "LocalFlaskImmuneToMaimAndHinder2": {
+  "lines": [
+   "Grants Immunity to Hinder for (9-11) seconds if used while Hindered",
+   "Grants Immunity to Maim for (9-11) seconds if used while Maimed"
+  ],
+  "type": "Suffix",
+  "affix": "of Motion",
+  "group": "LocalFlaskImmuneToMaimAndHinder",
+  "level": 38,
+  "statOrder": [
+   578,
+   579
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask",
+   "attack",
+   "caster"
+  ],
+  "tradeHashes": {
+   "4003593289": [
+    "Grants Immunity to Hinder for (9-11) seconds if used while Hindered"
+   ],
+   "4232582040": [
+    "Grants Immunity to Maim for (9-11) seconds if used while Maimed"
+   ]
+  }
+ },
+ "LocalFlaskImmuneToMaimAndHinder3": {
+  "lines": [
+   "Grants Immunity to Hinder for (12-14) seconds if used while Hindered",
+   "Grants Immunity to Maim for (12-14) seconds if used while Maimed"
+  ],
+  "type": "Suffix",
+  "affix": "of Freedom",
+  "group": "LocalFlaskImmuneToMaimAndHinder",
+  "level": 60,
+  "statOrder": [
+   578,
+   579
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask",
+   "attack",
+   "caster"
+  ],
+  "tradeHashes": {
+   "4003593289": [
+    "Grants Immunity to Hinder for (12-14) seconds if used while Hindered"
+   ],
+   "4232582040": [
+    "Grants Immunity to Maim for (12-14) seconds if used while Maimed"
+   ]
+  }
+ },
+ "LocalFlaskImmuneToMaimAndHinder4": {
+  "lines": [
+   "Grants Immunity to Hinder for (15-17) seconds if used while Hindered",
+   "Grants Immunity to Maim for (15-17) seconds if used while Maimed"
+  ],
+  "type": "Suffix",
+  "affix": "of Liberation",
+  "group": "LocalFlaskImmuneToMaimAndHinder",
+  "level": 82,
+  "statOrder": [
+   578,
+   579
+  ],
+  "weightKey": [
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   750
+  ],
+  "modTags": [
+   "flask",
+   "attack",
+   "caster"
+  ],
+  "tradeHashes": {
+   "4003593289": [
+    "Grants Immunity to Hinder for (15-17) seconds if used while Hindered"
+   ],
+   "4232582040": [
+    "Grants Immunity to Maim for (15-17) seconds if used while Maimed"
+   ]
+  }
+ },
+ "LocalLifeFlaskAdditionalLifeRecovery1": {
+  "lines": [
+   "Recover an additional (11-16)% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Abundance",
+  "group": "LocalLifeFlaskAdditionalLifeRecovery",
+  "level": 25,
+  "statOrder": [
+   571
+  ],
+  "weightKey": [
+   "life_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "307410279": [
+    "Recover an additional (11-16)% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life"
+   ]
+  }
+ },
+ "LocalLifeFlaskAdditionalLifeRecovery2__": {
+  "lines": [
+   "Recover an additional (17-22)% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Plenty",
+  "group": "LocalLifeFlaskAdditionalLifeRecovery",
+  "level": 39,
+  "statOrder": [
+   571
+  ],
+  "weightKey": [
+   "life_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "307410279": [
+    "Recover an additional (17-22)% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life"
+   ]
+  }
+ },
+ "LocalLifeFlaskAdditionalLifeRecovery3": {
+  "lines": [
+   "Recover an additional (23-28)% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Bounty",
+  "group": "LocalLifeFlaskAdditionalLifeRecovery",
+  "level": 53,
+  "statOrder": [
+   571
+  ],
+  "weightKey": [
+   "life_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "307410279": [
+    "Recover an additional (23-28)% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life"
+   ]
+  }
+ },
+ "LocalLifeFlaskAdditionalLifeRecovery4": {
+  "lines": [
+   "Recover an additional (29-34)% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Incessance",
+  "group": "LocalLifeFlaskAdditionalLifeRecovery",
+  "level": 67,
+  "statOrder": [
+   571
+  ],
+  "weightKey": [
+   "life_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "307410279": [
+    "Recover an additional (29-34)% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life"
+   ]
+  }
+ },
+ "LocalLifeFlaskAdditionalLifeRecovery5_": {
+  "lines": [
+   "Recover an additional (35-40)% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Perenniality",
+  "group": "LocalLifeFlaskAdditionalLifeRecovery",
+  "level": 81,
+  "statOrder": [
+   571
+  ],
+  "weightKey": [
+   "life_flask",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "flask"
+  ],
+  "tradeHashes": {
+   "307410279": [
+    "Recover an additional (35-40)% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life"
+   ]
+  }
+ },
+ "LocalLifeFlaskHinderNearbyEnemies1_": {
+  "lines": [
+   "Hinders Enemies within 3 metres with (17-22)% reduced Movement Speed if used while not on Full Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Interference",
+  "group": "LocalLifeFlaskHinderNearbyEnemies",
+  "level": 30,
+  "statOrder": [
+   584
+  ],
+  "weightKey": [
+   "mana_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   750
+  ],
+  "modTags": [
+   "flask",
+   "caster"
+  ],
+  "tradeHashes": {
+   "1462364052": [
+    "Hinders Enemies within 3 metres with (17-22)% reduced Movement Speed if used while not on Full Life"
+   ]
+  }
+ },
+ "LocalLifeFlaskHinderNearbyEnemies2_": {
+  "lines": [
+   "Hinders Enemies within 3 metres with (23-28)% reduced Movement Speed if used while not on Full Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Obstruction",
+  "group": "LocalLifeFlaskHinderNearbyEnemies",
+  "level": 48,
+  "statOrder": [
+   584
+  ],
+  "weightKey": [
+   "mana_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   750
+  ],
+  "modTags": [
+   "flask",
+   "caster"
+  ],
+  "tradeHashes": {
+   "1462364052": [
+    "Hinders Enemies within 3 metres with (23-28)% reduced Movement Speed if used while not on Full Life"
+   ]
+  }
+ },
+ "LocalLifeFlaskHinderNearbyEnemies3_": {
+  "lines": [
+   "Hinders Enemies within 3 metres with (29-34)% reduced Movement Speed if used while not on Full Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Occlusion",
+  "group": "LocalLifeFlaskHinderNearbyEnemies",
+  "level": 66,
+  "statOrder": [
+   584
+  ],
+  "weightKey": [
+   "mana_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   750
+  ],
+  "modTags": [
+   "flask",
+   "caster"
+  ],
+  "tradeHashes": {
+   "1462364052": [
+    "Hinders Enemies within 3 metres with (29-34)% reduced Movement Speed if used while not on Full Life"
+   ]
+  }
+ },
+ "LocalLifeFlaskHinderNearbyEnemies4": {
+  "lines": [
+   "Hinders Enemies within 3 metres with (35-40)% reduced Movement Speed if used while not on Full Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Restraint",
+  "group": "LocalLifeFlaskHinderNearbyEnemies",
+  "level": 84,
+  "statOrder": [
+   584
+  ],
+  "weightKey": [
+   "mana_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   750
+  ],
+  "modTags": [
+   "flask",
+   "caster"
+  ],
+  "tradeHashes": {
+   "1462364052": [
+    "Hinders Enemies within 3 metres with (35-40)% reduced Movement Speed if used while not on Full Life"
+   ]
+  }
+ },
+ "LocalManaFlaskHinderNearbyEnemies1_": {
+  "lines": [
+   "Hinders Enemies within 3 metres with (17-22)% reduced Movement Speed if used while not on Full Mana"
+  ],
+  "type": "Suffix",
+  "affix": "of Interference",
+  "group": "LocalManaFlaskHinderNearbyEnemies",
+  "level": 30,
+  "statOrder": [
+   585
+  ],
+  "weightKey": [
+   "life_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   750
+  ],
+  "modTags": [
+   "flask",
+   "caster"
+  ],
+  "tradeHashes": {
+   "2313899959": [
+    "Hinders Enemies within 3 metres with (17-22)% reduced Movement Speed if used while not on Full Mana"
+   ]
+  }
+ },
+ "LocalManaFlaskHinderNearbyEnemies2": {
+  "lines": [
+   "Hinders Enemies within 3 metres with (23-28)% reduced Movement Speed if used while not on Full Mana"
+  ],
+  "type": "Suffix",
+  "affix": "of Obstruction",
+  "group": "LocalManaFlaskHinderNearbyEnemies",
+  "level": 48,
+  "statOrder": [
+   585
+  ],
+  "weightKey": [
+   "life_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   750
+  ],
+  "modTags": [
+   "flask",
+   "caster"
+  ],
+  "tradeHashes": {
+   "2313899959": [
+    "Hinders Enemies within 3 metres with (23-28)% reduced Movement Speed if used while not on Full Mana"
+   ]
+  }
+ },
+ "LocalManaFlaskHinderNearbyEnemies3": {
+  "lines": [
+   "Hinders Enemies within 3 metres with (29-34)% reduced Movement Speed if used while not on Full Mana"
+  ],
+  "type": "Suffix",
+  "affix": "of Occlusion",
+  "group": "LocalManaFlaskHinderNearbyEnemies",
+  "level": 66,
+  "statOrder": [
+   585
+  ],
+  "weightKey": [
+   "life_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   750
+  ],
+  "modTags": [
+   "flask",
+   "caster"
+  ],
+  "tradeHashes": {
+   "2313899959": [
+    "Hinders Enemies within 3 metres with (29-34)% reduced Movement Speed if used while not on Full Mana"
+   ]
+  }
+ },
+ "LocalManaFlaskHinderNearbyEnemies4": {
+  "lines": [
+   "Hinders Enemies within 3 metres with (35-40)% reduced Movement Speed if used while not on Full Mana"
+  ],
+  "type": "Suffix",
+  "affix": "of Restraint",
+  "group": "LocalManaFlaskHinderNearbyEnemies",
+  "level": 84,
+  "statOrder": [
+   585
+  ],
+  "weightKey": [
+   "life_flask",
+   "utility_flask",
+   "default"
+  ],
+  "weightVal": [
+   0,
+   0,
+   750
+  ],
+  "modTags": [
+   "flask",
+   "caster"
+  ],
+  "tradeHashes": {
+   "2313899959": [
+    "Hinders Enemies within 3 metres with (35-40)% reduced Movement Speed if used while not on Full Mana"
+   ]
+  }
+ }
+}
