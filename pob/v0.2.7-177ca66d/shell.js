@@ -93,7 +93,50 @@
     hostHidden = !!e.data.value;
     visibility();
   });
-  globalThis.__pobOnUnsaved = (value) => toHost({ type: 'unsaved', value });
+  let persistAsked = false;
+  globalThis.__pobOnUnsaved = (value) => {
+    toHost({ type: 'unsaved', value });
+    // Work worth keeping: the browser is asked not to clear the site's storage (the builds, the draft) when space runs short.
+    if (value && !persistAsked) {
+      persistAsked = true;
+      navigator.storage?.persist?.().catch(() => {});
+    }
+  };
+
+  // A draft from an earlier visit (web/app/src/main.rs, mod draft). A reload of this tab takes it back without asking; a new tab or
+  // browser asks; a #build= link opens its build and leaves the draft for a later visit.
+  const reloaded = (() => {
+    try {
+      const was = sessionStorage.getItem('pob-open') === '1';
+      sessionStorage.setItem('pob-open', '1');
+      return was;
+    } catch (e) {
+      return false;
+    }
+  })();
+  globalThis.__pobOfferDraft = (name, time) => {
+    if (/^#build=/.test(location.hash)) return events.push('h draft-keep');
+    if (reloaded) return events.push('h draft-restore');
+    const box = document.createElement('div');
+    box.id = 'draft';
+    const text = document.createElement('p');
+    text.textContent = `Continue where you left off?\n${name}: unsaved changes from ${new Date(time).toLocaleString()}.`;
+    const answer = (line) => {
+      events.push(line);
+      box.remove();
+      canvas.focus();
+    };
+    const keep = document.createElement('button');
+    keep.textContent = 'Continue';
+    keep.addEventListener('click', () => answer('h draft-restore'));
+    const fresh = document.createElement('button');
+    fresh.textContent = 'New build';
+    fresh.title = 'Start with a new build; the unsaved changes are discarded';
+    fresh.addEventListener('click', () => answer('h draft-drop'));
+    box.append(text, keep, fresh);
+    document.body.append(box);
+    keep.focus();
+  };
 
   // A key held with Ctrl types nothing; Ctrl+Alt is AltGr and does.
   const typed = (e) => e.key.length >= 1 && [...e.key].length === 1 && (!e.ctrlKey || e.altKey) && !e.metaKey;

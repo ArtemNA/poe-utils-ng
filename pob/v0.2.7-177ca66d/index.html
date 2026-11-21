@@ -10,6 +10,10 @@
   #status { position: fixed; left: 16px; top: 16px; max-width: 720px; padding: 12px 16px; white-space: pre-wrap; font: 14px/1.4 system-ui, sans-serif; color: #eee; background: #222; border: 1px solid #555; }
   #status.error { color: #fff; background: #5a1a1a; border-color: #a33; }
   #status.notice { background: #333; }
+  #draft { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; align-content: center; background: rgba(0, 0, 0, 0.6); font: 14px/1.4 system-ui, sans-serif; color: #eee; }
+  #draft p { flex-basis: 100%; max-width: 420px; margin: 0 calc(50% - 210px) 8px; padding: 12px 16px; white-space: pre-wrap; background: #222; border: 1px solid #555; }
+  #draft button { padding: 6px 14px; font: 14px system-ui, sans-serif; color: #eee; background: #333; border: 1px solid #777; cursor: pointer; }
+  #draft button:first-of-type { border-color: #c8a24a; }
   #status .bar { width: 240px; height: 4px; margin-top: 8px; background: #444; }
   #status .bar > div { width: 0; height: 100%; background: #c8a24a; transition: width 0.1s linear; }
   #files[hidden] { display: none; }
