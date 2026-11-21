@@ -2839,6 +2839,12 @@ a.strat-link-btn { text-decoration: none; }
   inset: 0;
   z-index: 1000;
 }
+/* .app-content is a stacking context (z-index 1) below the fixed bar (200):
+   the frame's own z-index cannot lift it past the bar, so the column is
+   lifted while the frame is full. */
+.app-content:has(> .web-pob.active.full) {
+  z-index: 1000;
+}
 .web-pob.started:not(.active) {
   display: block;
   position: fixed;
