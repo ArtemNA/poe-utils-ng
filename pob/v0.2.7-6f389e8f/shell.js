@@ -93,15 +93,7 @@
     hostHidden = !!e.data.value;
     visibility();
   });
-  let persistAsked = false;
-  globalThis.__pobOnUnsaved = (value) => {
-    toHost({ type: 'unsaved', value });
-    // Work worth keeping: the browser is asked not to clear the site's storage (the builds, the draft) when space runs short.
-    if (value && !persistAsked) {
-      persistAsked = true;
-      navigator.storage?.persist?.().catch(() => {});
-    }
-  };
+  globalThis.__pobOnUnsaved = (value) => toHost({ type: 'unsaved', value });
 
   // A draft from an earlier visit (web/app/src/main.rs, mod draft). A reload of this tab takes it back without asking; a new tab or
   // browser asks; a #build= link opens its build and leaves the draft for a later visit.
@@ -192,7 +184,8 @@
   });
 
   // Builds in the browser's storage can be evicted under disk pressure unless the page asks otherwise; the first click is the moment a browser accepts the question.
-  addEventListener('mousedown', () => navigator.storage.persist?.().catch(() => {}), { once: true });
+  // Not in Firefox: it puts the question to the person in a prompt of its own (the user's decision 2026-11-21: "Не питати в Firefox").
+  if (!/\bFirefox\//.test(navigator.userAgent)) addEventListener('mousedown', () => navigator.storage.persist?.().catch(() => {}), { once: true });
 
   // The panel of versions and Import/Export: on the build's Import/Export tab only, which the application reports as it changes
   // (the user's decision 2026-11-20). Dropping files on the page imports them on any tab.
