@@ -229,6 +229,7 @@
 
   globalThis.__pobReady = (ms) => {
     toHost({ type: 'ready', ms });
+    started = true;
     status.hidden = true;
     // After the loading status is gone, or its notice would be hidden with it.
     openFromHash();
@@ -238,8 +239,77 @@
     }
   };
 
+  // The start's progress in the loading status: the module, fetched here, and the startup pack's parts, fetched by the
+  // application's worker (web/shell/library.js). Against the sizes the pack's manifest gives (tools/pack-startup.mjs): the module
+  // as decoded, the parts as sent; a percent, since the two are not the same unit. Without a manifest the status stays as it is.
+  const loaded = { wasm: 0, parts: {} };
+  let sizes = null;
+  let started = false;
+  let shown = -1;
+  const bar = document.createElement('div');
+  bar.className = 'bar';
+  bar.append(document.createElement('div'));
+  const show = () => {
+    if (!sizes || started || status.className) return;
+    let total = sizes.wasm;
+    let done = Math.min(loaded.wasm, sizes.wasm);
+    for (const [name, packed] of Object.entries(sizes.parts)) {
+      total += packed;
+      // A host that decodes a part on its way sends more than its packed size: the part counts as whole.
+      done += Math.min(loaded.parts[name] ?? 0, packed);
+    }
+    const percent = Math.floor((100 * done) / total);
+    if (percent === shown) return;
+    shown = percent;
+    status.replaceChildren(percent < 100 ? `Loading... ${percent}%` : 'Starting...', bar);
+    bar.firstChild.style.width = percent + '%';
+    globalThis.__POB_RS__?.progress.push(percent);
+  };
+  globalThis.__pobProgress = ({ name, got }) => {
+    loaded.parts[name] = got;
+    show();
+  };
+  fetch('startup/manifest.json')
+    .then((r) => (r.ok ? r.json() : null))
+    .then((m) => {
+      if (!m?.wasm || !m.parts.every((p) => p.packed)) return;
+      sizes = { wasm: m.wasm, parts: Object.fromEntries(m.parts.map((p) => [p.name, p.packed])) };
+      show();
+    })
+    .catch(() => {});
+  // The worker's counts arrive as messages of its own: taken here, before Emscripten's handler, which would call them unknown.
+  const NativeWorker = globalThis.Worker;
+  globalThis.Worker = class extends NativeWorker {
+    constructor(...args) {
+      super(...args);
+      this.addEventListener('message', (e) => {
+        if (!e.data?.pobProgress) return;
+        e.stopImmediatePropagation();
+        __pobProgress(e.data.pobProgress);
+      });
+    }
+  };
+  if (globalThis.__POB_RS__) __POB_RS__.progress = [];
+
   globalThis.Module = {
     canvas,
+    // The module fetched here, counted as it arrives, and compiled as it streams (Emscripten's hook for it).
+    instantiateWasm: (imports, done) => {
+      (async () => {
+        const res = await fetch('pob_web.wasm', { credentials: 'same-origin' });
+        if (!res.ok) throw new Error(`pob_web.wasm: ${res.status}`);
+        const counted = res.body.pipeThrough(new TransformStream({
+          transform(chunk, out) {
+            loaded.wasm += chunk.byteLength;
+            show();
+            out.enqueue(chunk);
+          },
+        }));
+        const { instance, module } = await WebAssembly.instantiateStreaming(new Response(counted, { headers: { 'Content-Type': 'application/wasm' } }), imports);
+        done(instance, module);
+      })().catch((e) => __pobFatal('The application could not be loaded: ' + (e?.message ?? e)));
+      return {};
+    },
     print: (t) => console.log(t),
     printErr: (t) => console.warn(t),
     onAbort: (what) => __pobFatal('The application stopped: ' + what),
