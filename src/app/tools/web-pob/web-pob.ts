@@ -1,17 +1,38 @@
 /**
- * `/web-pob` — Path of Building under the site's own bar.
+ * `/pob` and `/web-pob` — Path of Building, over the whole window or under the
+ * site's own bar (`data.full` on the route).
  *
  * The frame itself lives in the app shell (see pob-frame.ts) so it survives
- * leaving this route; this component only shows it while the route is open
- * and hands on `?build=<code or pobb.in link>` as `/pob/#build=...`.
+ * leaving the route; this component only shows it while the route is open and
+ * hands on a build — `?build=<code or link>` or `#build=<code or link>`, the
+ * form Path of Building's own links use — as `/pob-app/#build=...`.
  *
  * Leaving the route loses nothing, so the guard asks only when a different
- * `?build=` would replace a build with unsaved changes.
+ * build would replace one with unsaved changes.
  */
 import { Component, inject } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { ActivatedRoute, type RouterStateSnapshot } from '@angular/router';
+import {
+  ActivatedRoute,
+  type ActivatedRouteSnapshot,
+  type RouterStateSnapshot,
+} from '@angular/router';
+import { combineLatest } from 'rxjs';
 import { PobFrame } from './pob-frame';
+
+/** The routes that show the frame (app.routes.ts). */
+const POB_PATHS = ['pob', 'web-pob'];
+
+/** The build a link asks for: `?build=` first, then `#build=`. */
+export function buildFrom(query: string | null, fragment: string | null): string | null {
+  if (query) return query;
+  if (fragment?.startsWith('build=')) return fragment.slice('build='.length) || null;
+  return null;
+}
+
+function buildOf(route: ActivatedRouteSnapshot): string | null {
+  return buildFrom(route.queryParamMap.get('build'), route.fragment);
+}
 
 @Component({
   selector: 'app-web-pob',
@@ -22,20 +43,22 @@ export class WebPob {
   private readonly pob = inject(PobFrame);
 
   constructor() {
-    inject(ActivatedRoute)
-      .queryParamMap.pipe(takeUntilDestroyed())
-      .subscribe((query) => this.pob.show(query.get('build')));
+    const route = inject(ActivatedRoute);
+    const full = route.snapshot.data['full'] === true;
+    combineLatest([route.queryParamMap, route.fragment])
+      .pipe(takeUntilDestroyed())
+      .subscribe(([query, fragment]) => this.pob.show(buildFrom(query.get('build'), fragment), full));
   }
 
   ngOnDestroy(): void {
     this.pob.hide();
   }
 
-  /** Called by the route's canDeactivate guard in app.routes.ts. */
+  /** Called by the routes' canDeactivate guard in app.routes.ts. */
   canLeave(next: RouterStateSnapshot): boolean {
     const target = next.root.firstChild;
-    if (target?.routeConfig?.path !== 'web-pob') return true;
-    if (!this.pob.wouldDiscard(target.queryParamMap.get('build'))) return true;
+    if (!target || !POB_PATHS.includes(target.routeConfig?.path ?? '')) return true;
+    if (!this.pob.wouldDiscard(buildOf(target))) return true;
     return confirm('The build in Path of Building has unsaved changes. Open the new one and lose them?');
   }
 }

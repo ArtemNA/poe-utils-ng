@@ -62,14 +62,17 @@ export const routes: Routes = [
     title: 'Minesweeper · PoE Tools',
     loadComponent: () => import('./tools/minesweeper/minesweeper').then((m) => m.Minesweeper),
   },
-  {
-    // Path of Building in a same-origin frame of /pob/ (static files, not part
-    // of this build) that the app shell keeps alive between visits. A new
-    // ?build= reuses this component, so the guard runs on query changes too:
-    // that is the one case that reloads the frame and could lose work.
-    path: 'web-pob',
-    title: 'Path of Building · PoE Tools',
-    runGuardsAndResolvers: 'paramsOrQueryParamsChange',
+  // Path of Building in a same-origin frame of /pob-app/ (static files, not
+  // part of this build) that the app shell keeps alive between visits: /pob
+  // over the whole window, /web-pob under the bar. The address stays the
+  // route's, so a shared link never names a build folder. A new build in the
+  // query or the #fragment reuses the component, so the guard runs on those
+  // changes too: the one case that reloads the frame and could lose work.
+  ...(['pob', 'web-pob'] as const).map((path) => ({
+    path,
+    title: 'Path of Building � PoE Tools',
+    data: { full: path === 'pob' },
+    runGuardsAndResolvers: 'always' as const,
     loadComponent: () => import('./tools/web-pob/web-pob').then((m) => m.WebPob),
     // typed loosely so this file does not pull the component out of its chunk
     canDeactivate: [
@@ -80,20 +83,7 @@ export const routes: Routes = [
         next: RouterStateSnapshot,
       ) => page?.canLeave?.(next) ?? true,
     ],
-  },
-  {
-    // `/pob` without the slash is not the application: its page would look for
-    // versions.json at the site root. The host redirects it (vercel.json); this
-    // catches whatever still reaches the router, keeping a #build= link whole.
-    path: 'pob',
-    canActivate: [
-      () => {
-        location.replace(`/pob/${location.search}${location.hash}`);
-        return false;
-      },
-    ],
-    children: [],
-  },
+  })),
   {
     // not a tool, so it is not in TOOLS — reached from the sidebar footer
     path: 'account',

@@ -1,10 +1,12 @@
 /**
  * Path of Building (Rust/WebAssembly) in one same-origin frame that outlives
- * the `/web-pob` route.
+ * the `/pob` (fullscreen) and `/web-pob` (under the site's bar) routes.
  *
  * The application is not part of this build: it is static files served at
- * `/pob/` (the built `dist/` of pob-rust-wasm, kept in `pob/`), and `/pob/`
- * opens its newest version on its own. It cannot be embedded as a component:
+ * `/pob-app/` (the exported dist of pob-rust-wasm, kept in `pob/`), and
+ * `/pob-app/` opens the current build's folder on its own. That folder only
+ * ever shows up inside the frame: the address people see and share is the
+ * route's, so it never names a build that a later update removes. It cannot be embedded as a component:
  * it takes every key and the context menu on `window`, sets `document.title`
  * and reads `location.hash`, which would break the bar and the router.
  *
@@ -29,8 +31,8 @@ import {
 } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
-/** Where the application's files are served; never a pinned version. */
-const POB_ROOT = '/pob/';
+/** Where the application's files are served; never a pinned build folder. */
+const POB_ROOT = '/pob-app/';
 
 export function pobSrc(build: string | null): string {
   return build ? `${POB_ROOT}#build=${encodeURIComponent(build)}` : POB_ROOT;
@@ -40,8 +42,10 @@ export function pobSrc(build: string | null): string {
 export class PobFrame {
   private readonly sanitizer = inject(DomSanitizer);
 
-  /** The frame is on screen (the `/web-pob` route is open). */
+  /** The frame is on screen (`/pob` or `/web-pob` is open). */
   readonly active = signal(false);
+  /** On screen over the whole window (`/pob`) rather than under the bar. */
+  readonly full = signal(false);
   /** What the frame was last pointed at; null until the first visit. */
   readonly src = signal<SafeResourceUrl | null>(null);
   /** The last `unsaved` the application reported. */
@@ -65,10 +69,11 @@ export class PobFrame {
    * Show the frame. A build is loaded only when it differs from the one the
    * frame was last given; with no build, whatever is open stays open.
    */
-  show(build: string | null): void {
+  show(build: string | null, full = false): void {
     if (!this.srcText || (build && pobSrc(build) !== this.srcText)) {
       this.load(pobSrc(build));
     }
+    this.full.set(full);
     this.active.set(true);
     this.post(false);
   }
@@ -136,6 +141,7 @@ export class PobFrame {
     class: 'web-pob',
     '[class.started]': '!!pob.src()',
     '[class.active]': 'pob.active()',
+    '[class.full]': 'pob.active() && pob.full()',
     '[attr.aria-hidden]': 'pob.active() ? null : "true"',
   },
 })

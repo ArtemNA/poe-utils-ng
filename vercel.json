@@ -5,8 +5,8 @@
   "outputDirectory": "dist/poe-utils-ng/browser",
   "redirects": [
     {
-      "source": "/pob",
-      "destination": "/pob/",
+      "source": "/pob/(.*)",
+      "destination": "/pob",
       "permanent": false
     }
   ],
@@ -16,7 +16,7 @@
       "destination": "/api/proxy"
     },
     {
-      "source": "/((?!api/|pob/|proxy$).*)",
+      "source": "/((?!api/|pob-app/|proxy$).*)",
       "destination": "/index.html"
     }
   ],

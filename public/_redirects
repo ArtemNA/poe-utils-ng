@@ -1,9 +1,12 @@
 # Cloudflare Pages redirects (copied to the build root from public/).
-# /pob without the slash: PoB's page resolves its files relative to /pob/.
-/pob  /pob/  302
+# Path of Building's files are served at /pob-app/<build>/; the address people
+# see and share is the app's /pob route (fullscreen) or /web-pob. Old links
+# into /pob/ (the root, or a build folder) go to /pob; the browser keeps their
+# #build= across the redirect.
+/pob/*  /pob  302
 
 # No /* /index.html 200 here: Pages follows _redirects even where a file
-# exists, so a catch-all would shadow /pob/. The build has no top-level
+# exists, so a catch-all would shadow /pob-app/. The build has no top-level
 # 404.html, so Pages already serves index.html for every path that is not a
-# file (its single-page application mode). pob/404.html keeps missing PoB
+# file (its single-page application mode). pob-app/404.html keeps missing PoB
 # files a real 404 instead of the Angular page.

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Not found</title>
+<script>
+  // A page opened straight at a build folder that is gone (an old link):
+  // Path of Building lives at /pob, which takes the link's #build= along.
+  // Inside the site's frame, or for a file the application asks, it stays a 404.
+  if (window.top === window) location.replace('/pob' + location.search + location.hash);
+</script>
+</head>
+<body>
+<p>Not found.</p>
+</body>
+</html>

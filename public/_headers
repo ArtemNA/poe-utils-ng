@@ -13,9 +13,9 @@
 # Every PoB build sits in a folder of its own, <ref>-<id> with <id> from the
 # hash of its files (tools/export-site.ps1): a changed build gets a new
 # address, so a folder is cached for good and this rule never changes.
-# pob/index.html and pob/versions.json are not inside a folder and keep the
+# pob-app/index.html and pob-app/versions.json are not inside a folder and keep the
 # short default cache, so visitors move to a new build at once.
-/pob/:build/*
+/pob-app/:build/*
   Cache-Control: public, max-age=31536000, immutable
 
 /assets/*

@@ -1,7 +1,7 @@
 {
-  "^/pob/": {
+  "^/pob-app/": {
     "target": "http://localhost:8080",
-    "pathRewrite": { "^/pob": "" }
+    "pathRewrite": { "^/pob-app": "" }
   },
   "/proxy": {
     "target": "http://localhost:8080"

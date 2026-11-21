@@ -55,7 +55,7 @@
                 {
                   "glob": "**/*",
                   "input": "pob",
-                  "output": "pob",
+                  "output": "pob-app",
                   "ignore": ["**/*.br"]
                 }
               ]

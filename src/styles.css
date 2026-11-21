@@ -2832,6 +2832,13 @@ a.strat-link-btn { text-decoration: none; }
   flex: 1 1 auto;
   min-height: 0;
 }
+/* /pob: the same frame over the whole window, bar and sidebar included. It is
+   laid over them, not moved (a moved iframe reloads). */
+.web-pob.active.full {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
 .web-pob.started:not(.active) {
   display: block;
   position: fixed;
