@@ -65,6 +65,13 @@ export const TOOLS: ToolDef[] = [
     icon: '<path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2z"/><path d="M9 4v14M15 6v14"/>',
   },
   {
+    // Path of Building (Rust) under the bar; /pob is the same app fullscreen.
+    // Its route is declared by hand in app.routes.ts (shared with /pob).
+    id: 'web-pob',
+    label: 'Path of Building',
+    icon: '<path d="M6 3v18M6 4h8a4 4 0 0 1 0 8H6"/><path d="M14 16l3 3 4-4"/>',
+  },
+  {
     // Off the menu, still at /voyage for anyone who kept a link.
     id: 'voyage',
     hidden: true,

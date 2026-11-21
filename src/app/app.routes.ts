@@ -70,7 +70,7 @@ export const routes: Routes = [
   // changes too: the one case that reloads the frame and could lose work.
   ...(['pob', 'web-pob'] as const).map((path) => ({
     path,
-    title: 'Path of Building · PoE Tools',
+    title: 'Path of Building Â· PoE Tools',
     data: { full: path === 'pob' },
     runGuardsAndResolvers: 'always' as const,
     loadComponent: () => import('./tools/web-pob/web-pob').then((m) => m.WebPob),
