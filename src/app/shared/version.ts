@@ -22,6 +22,13 @@ export interface Release {
 
 export const RELEASES: Release[] = [
   {
+    version: '1.12.1',
+    date: '2026-11-22',
+    changes: [
+      'Atlas: search finds choice nodes by their options, so "mercenary" lights Merged Worlds and "mirage" lights Outside Entities',
+    ],
+  },
+  {
     version: '1.12.0',
     date: '2026-11-22',
     changes: [

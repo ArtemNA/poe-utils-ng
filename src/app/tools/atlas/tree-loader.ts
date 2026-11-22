@@ -58,6 +58,45 @@ function kindOf(id: string, raw: RawTree['nodes'][string]): NodeKind {
   return 'normal';
 }
 
+/**
+ * The part of each option that is its own. Options read "Your Maps have 40%
+ * increased chance to contain a Mirage", "...contain a Buried Sentinel", so the
+ * words every option opens and closes with are cut, along with any "your Maps"
+ * left in the middle — searched whole, they would make "map" light every
+ * choice node on the tree.
+ */
+function choiceText(variants: string[][]): string {
+  if (variants.length < 2) return '';
+  const lines = variants.map((stats) =>
+    stats
+      .join(' ')
+      // [Mirage] → Mirage, [SurpassChance|Surpassing Chance] → Surpassing Chance
+      .replace(/\[(?:[^\]|]*\|)?([^\]]*)\]/g, '$1')
+      .replace(/\s+/g, ' ')
+      .toLowerCase()
+      .split(' '),
+  );
+  const shortest = Math.min(...lines.map((words) => words.length));
+  const first = lines[0];
+  let head = 0;
+  while (head < shortest && lines.every((words) => words[head] === first[head])) head++;
+  let tail = 0;
+  while (
+    tail < shortest - head &&
+    lines.every((words) => words[words.length - 1 - tail] === first[first.length - 1 - tail])
+  ) {
+    tail++;
+  }
+  return lines
+    .map((words) =>
+      words
+        .slice(head, words.length - tail)
+        .join(' ')
+        .replace(/\byour maps?\b/g, ''),
+    )
+    .join('\n');
+}
+
 export function buildTree(raw: RawTree): Tree {
   const { skillsPerOrbit, orbitRadii } = raw.constants;
 
@@ -100,6 +139,7 @@ export function buildTree(raw: RawTree): Tree {
       radius: RADIUS[kind],
       grantsPoints: pointsGranted(stats),
       searchText: [r.name ?? '', ...stats, ...variants.flat()].join('\n').toLowerCase(),
+      choiceText: choiceText(variants),
     };
     nodes.push(node);
     byId.set(id, node);

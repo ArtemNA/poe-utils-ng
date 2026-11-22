@@ -1442,6 +1442,8 @@ export class Atlas {
    * and told you nothing; the same word read as a mechanic and a name is the
    * handful of nodes actually about maps. Whole mechanics rather than just their
    * cluster centres, because "delirium" means the wheels and everything on them.
+   * A choice node whose options name the word joins them ("mercenary" lights
+   * Merged Worlds), since its own name says nothing about what it offers.
    */
   private applyQuery(value: string): void {
     this.query.set(value);
@@ -1468,7 +1470,15 @@ export class Atlas {
       for (const idx of this.stats!.nodesOfMechanic(mechanic)) mark(idx);
     }
     const fromStats = marked.size === 0;
-    if (fromStats) {
+    if (!fromStats) {
+      // A choice node is about whatever its options name: Merged Worlds is as
+      // much a Mercenary node as the Mercenary cluster is. Only the words that
+      // tell its options apart count, so the shared wording lights nothing.
+      // With no name or mechanic hit the full-text pass below covers them.
+      for (const node of tree.nodes) {
+        if (node.allocatable && node.choiceText.includes(q)) mark(node.idx);
+      }
+    } else {
       for (const node of tree.nodes) {
         if (node.allocatable && node.searchText.includes(q)) mark(node.idx);
       }

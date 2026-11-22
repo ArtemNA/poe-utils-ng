@@ -111,6 +111,12 @@ export interface TreeNode {
   /** extra atlas points this node itself grants when allocated (usually 0) */
   grantsPoints: number;
   searchText: string;
+  /**
+   * What sets the options of a multiple-choice node apart, lower case: each
+   * option with the wording all of them share cut away, e.g. "mercenary" and
+   * "rogue exile" on Merged Worlds. Empty for an ordinary node.
+   */
+  choiceText: string;
 }
 
 export interface Edge {
