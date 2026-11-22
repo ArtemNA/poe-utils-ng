@@ -16,8 +16,19 @@
  * selection. Nothing says which tree it was made on; the checksum does, so each
  * tree we have is tried until one matches. Ported from their share.js.
  *
- * Neither site lists the free junction next to the Atlas centre (it is their
- * start node), while this tool keeps it in the allocated set, so it is added.
+ * atlas-blush-beta.vercel.app — `#<base64url>`. Byte 0xA1, then the same kind
+ * of breadth-first walk from the start node (neighbours by ascending id), one
+ * bit per node reached, then 3 bits of picked effect for every allocated
+ * multiple-choice node in walk order. Trailing zero bytes are dropped. No
+ * checksum and no tree version: the site runs the 3.30.0 export (node count
+ * and id sum match ours), so that tree is tried first and a code is accepted
+ * only if every pick is in range and no set bit is left over. The site also
+ * reads two older shapes, kept here too: a plain `id,id.choice` list and GGG's
+ * passive-tree URL bytes with picks given by effect id.
+ *
+ * None of the sites lists the free junction next to the Atlas centre (it is
+ * their start node), while this tool keeps it in the allocated set, so it is
+ * added.
  */
 import type { Tree } from './tree-types';
 import { TREE_VERSIONS } from './tree-versions';
@@ -25,7 +36,7 @@ import { TREE_VERSIONS } from './tree-versions';
 export class ExternalImportError extends Error {}
 
 export interface ExternalPlan {
-  source: 'poeplanner' | 'hypostasis';
+  source: 'poeplanner' | 'hypostasis' | 'atlas-blush-beta';
   treeVersion: number;
   allocated: string[];
   choices: Record<string, number>;
@@ -38,7 +49,12 @@ export interface ExternalPlan {
 type Parsed =
   | { kind: 'poeplanner'; bytes: Uint8Array; poe2: boolean }
   | { kind: 'hypostasis-short'; code: string }
-  | { kind: 'hypostasis-long'; items: [number, number | undefined][] };
+  | { kind: 'hypostasis-long'; items: [number, number | undefined][] }
+  | { kind: 'blush'; hash: string };
+
+const BLUSH_HOST = /atlas-blush-beta\.vercel\.app\/?(?:[^#\s]*)#([\w\-.,]*)/;
+/** The tree atlas-blush-beta's data.json is: 3.30.0. */
+const BLUSH_TREE = 2;
 
 /**
  * poeplanner tree version -> ours. Gaps are Ruthless trees. Their 30 is the
@@ -61,6 +77,13 @@ function parse(text: string): Parsed | null {
       bytes: base64Bytes(decodeURIComponent(pp[2])),
       poe2: pp[1] === 'atlas-tree2',
     };
+  }
+  if (/atlas-blush-beta\.vercel\.app/.test(text)) {
+    const blush = BLUSH_HOST.exec(text);
+    if (!blush || !blush[1]) {
+      throw new ExternalImportError('That atlas-blush-beta link has no tree in it.');
+    }
+    return { kind: 'blush', hash: blush[1] };
   }
   if (/hypostasis\.faith/.test(text) || /^#?[ts]=/.test(text)) {
     const short = /[#&]?t=([\w-]+)/.exec(text);
@@ -91,11 +114,34 @@ export async function readExternal(
   treeFor: (version: number) => Promise<Tree>,
 ): Promise<ExternalPlan> {
   const parsed = parse(text.trim());
-  if (!parsed) throw new ExternalImportError('Not a poeplanner or hypostasis link.');
+  if (!parsed) {
+    throw new ExternalImportError('Not a poeplanner, hypostasis or atlas-blush-beta link.');
+  }
 
   if (parsed.kind === 'poeplanner') {
     const { treeVersion, ids } = readPoeplanner(parsed.bytes, parsed.poe2);
     return finish('poeplanner', await treeFor(treeVersion), treeVersion, ids, []);
+  }
+
+  if (parsed.kind === 'blush') {
+    const versions = [
+      BLUSH_TREE,
+      ...TREE_VERSIONS.map((v) => v.id)
+        .filter((id) => id !== BLUSH_TREE)
+        .sort((a, b) => b - a),
+    ];
+    for (const version of versions) {
+      const tree = await treeFor(version);
+      const items = decodeBlush(tree, parsed.hash);
+      if (!items) continue;
+      if (items.length === 0) throw new ExternalImportError('That atlas-blush-beta tree is empty.');
+      const ids = items.map(([id]) => id);
+      const picks = items.filter((item): item is [number, number] => item[1] !== undefined);
+      return finish('atlas-blush-beta', tree, version, ids, picks);
+    }
+    throw new ExternalImportError(
+      'That atlas-blush-beta link does not match any atlas tree this tool has (or it was cut short).',
+    );
   }
 
   // Current tree first: it is loaded already and almost always the right one.
@@ -287,22 +333,12 @@ export function decodeHypostasis(tree: Tree, code: string): [number, number | un
     return x;
   };
 
-  // Their graph is the export's edges without our synthetic centre.
-  const neighbours = (idx: number) => {
-    const out: number[] = [];
-    for (let e = tree.offsets[idx]; e < tree.offsets[idx + 1]; e++) {
-      const n = tree.adjacency[e];
-      if (n !== tree.rootIdx) out.push(n);
-    }
-    return out.sort((a, b) => Number(tree.nodes[a].id) - Number(tree.nodes[b].id));
-  };
-
   const items: [number, number | undefined][] = [];
   const seen = new Uint8Array(tree.nodes.length);
   seen[start] = 1;
   const queue = [start];
   for (let head = 0; head < queue.length; head++) {
-    for (const idx of neighbours(queue[head])) {
+    for (const idx of walkNeighbours(tree, queue[head])) {
       if (seen[idx]) continue;
       seen[idx] = 1;
       if (!read(1)) continue;
@@ -315,4 +351,103 @@ export function decodeHypostasis(tree: Tree, code: string): [number, number | un
   }
   if (bad || items.length === 0 || bits.indexOf(1, pos) >= 0) return null;
   return checksum(items) === code.slice(0, SUM) ? items : null;
+}
+
+// --- atlas-blush-beta --------------------------------------------------------
+
+const BLUSH_COMPACT = 0xa1;
+
+/**
+ * [[id, choice or undefined], ...] without the start node, [] for an empty
+ * tree, or null if the hash is not a tree of this graph.
+ */
+export function decodeBlush(tree: Tree, hash: string): [number, number | undefined][] | null {
+  if (/^[\d.,]*$/.test(hash)) {
+    // Legacy `id,id.choice` list.
+    const items: [number, number | undefined][] = [];
+    for (const part of hash.split(',').filter(Boolean)) {
+      const [id, choice] = part.split('.');
+      const node = tree.byId.get(id);
+      if (!node) return null;
+      if (node.idx === hypostasisStart(tree)) continue;
+      const pick = choice ? Number(choice) : undefined;
+      if (pick !== undefined && pick >= node.variants.length) return null;
+      items.push([Number(id), pick]);
+    }
+    return items;
+  }
+
+  let bytes: Uint8Array;
+  try {
+    const binary = atob(hash.replace(/-/g, '+').replace(/_/g, '/'));
+    bytes = Uint8Array.from(binary, (c) => c.charCodeAt(0));
+  } catch {
+    return null;
+  }
+  return bytes[0] === BLUSH_COMPACT ? decodeBlushWalk(tree, bytes) : decodeGggUrl(tree, bytes);
+}
+
+function decodeBlushWalk(tree: Tree, bytes: Uint8Array): [number, number | undefined][] | null {
+  const start = hypostasisStart(tree);
+  if (start === null) return null;
+  let pos = 8;
+  const bit = () => ((bytes[pos >> 3] ?? 0) >> (7 - (pos++ & 7))) & 1;
+
+  const order = [start];
+  const seen = new Uint8Array(tree.nodes.length);
+  seen[start] = 1;
+  for (let head = 0; head < order.length; head++) {
+    for (const idx of walkNeighbours(tree, order[head])) {
+      if (seen[idx]) continue;
+      seen[idx] = 1;
+      if (bit()) order.push(idx);
+    }
+  }
+  const items: [number, number | undefined][] = [];
+  for (const idx of order) {
+    const k = tree.nodes[idx].variants.length;
+    let pick: number | undefined;
+    if (k > 0) {
+      pick = bit() * 4 + bit() * 2 + bit();
+      if (pick >= k) return null;
+    }
+    if (idx !== start) items.push([Number(tree.nodes[idx].id), pick]);
+  }
+  // Anything set past the end means the walk was read along the wrong graph.
+  for (; pos < bytes.length * 8;) if (bit()) return null;
+  return items;
+}
+
+/** GGG's passive-tree URL bytes: u32 version, u8 class, u8 ascendancy, then lists. */
+function decodeGggUrl(tree: Tree, b: Uint8Array): [number, number | undefined][] | null {
+  const u16 = (i: number) => ((b[i] ?? 0) << 8) | (b[i + 1] ?? 0);
+  const start = hypostasisStart(tree);
+  const picks = new Map<string, number>();
+  const ids: string[] = [];
+  let i = 6;
+  for (let k = 0, n = b[i++] ?? 0; k < n; k++, i += 2) ids.push(String(u16(i)));
+  i += 1 + (b[i] ?? 0) * 2;
+  for (let k = 0, n = b[i++] ?? 0; k < n; k++, i += 4) {
+    const id = String(u16(i + 2));
+    const effects = tree.raw.nodes[id]?.variantEffects ?? [];
+    const index = effects.findIndex((v) => v.effect === u16(i));
+    if (index >= 0) picks.set(id, index);
+  }
+  const items: [number, number | undefined][] = [];
+  for (const id of ids) {
+    const node = tree.byId.get(id);
+    if (!node) return null;
+    if (node.idx !== start) items.push([Number(id), picks.get(id)]);
+  }
+  return items;
+}
+
+/** Neighbours as the other planners walk them: no synthetic centre, ascending id. */
+function walkNeighbours(tree: Tree, idx: number): number[] {
+  const out: number[] = [];
+  for (let e = tree.offsets[idx]; e < tree.offsets[idx + 1]; e++) {
+    const n = tree.adjacency[e];
+    if (n !== tree.rootIdx) out.push(n);
+  }
+  return out.sort((a, b) => Number(tree.nodes[a].id) - Number(tree.nodes[b].id));
 }

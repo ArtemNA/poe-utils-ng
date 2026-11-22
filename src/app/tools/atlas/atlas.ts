@@ -830,7 +830,7 @@ export class Atlas {
   }
 
   /**
-   * A poeplanner or hypostasis link. It becomes one of our own codes, so a
+   * A poeplanner, hypostasis or atlas-blush-beta link. It becomes one of our own codes, so a
    * tree for another version goes through the same reload as a pasted code.
    */
   private async importExternal(text: string): Promise<void> {

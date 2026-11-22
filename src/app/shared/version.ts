@@ -22,6 +22,11 @@ export interface Release {
 
 export const RELEASES: Release[] = [
   {
+    version: '1.11.0',
+    date: '2026-11-22',
+    changes: ['Atlas: Import also opens atlas-blush-beta.vercel.app links'],
+  },
+  {
     version: '1.10.1',
     date: '2026-11-19',
     changes: [
@@ -40,16 +45,12 @@ export const RELEASES: Release[] = [
   {
     version: '1.9.0',
     date: '2026-11-19',
-    changes: [
-      'Atlas: paste a poeplanner or hypostasis link into Import to open that tree here',
-    ],
+    changes: ['Atlas: paste a poeplanner or hypostasis link into Import to open that tree here'],
   },
   {
     version: '1.8.0',
     date: '2026-08-31',
-    changes: [
-      'Codex removed — saved atlas builds and saved strategies already did most of it',
-    ],
+    changes: ['Codex removed — saved atlas builds and saved strategies already did most of it'],
   },
   {
     version: '1.7.3',
