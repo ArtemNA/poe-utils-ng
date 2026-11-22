@@ -22,6 +22,14 @@ export interface Release {
 
 export const RELEASES: Release[] = [
   {
+    version: '1.12.0',
+    date: '2026-11-22',
+    changes: [
+      'Minesweeper: item level, area level and map tier can each be an exact match or a minimum (that level and higher)',
+      'Minesweeper: an exact level is exact now; "tier: 1" no longer lights tiers 10-19 and 100 too',
+    ],
+  },
+  {
     version: '1.11.1',
     date: '2026-11-22',
     changes: [

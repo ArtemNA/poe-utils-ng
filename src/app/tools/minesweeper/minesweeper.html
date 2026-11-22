@@ -48,7 +48,18 @@
     <div class="section-label">Extra filters</div>
     <div class="ms-grid-3">
       <div class="poe-field">
-        <div class="poe-field-label">Item level</div>
+        <div class="poe-field-label ms-level-label">
+          Item level
+          <button
+            type="button"
+            class="ms-match"
+            [class.min]="matchOf('ilvl') === 'min'"
+            [title]="matchOf('ilvl') === 'min' ? 'This level and higher — click for exact' : 'Exactly this level — click for minimum'"
+            (click)="toggleMatch('ilvl')"
+          >
+            {{ matchOf('ilvl') === 'min' ? '≥ min' : '= exact' }}
+          </button>
+        </div>
         <input
           type="number"
           min="1"
@@ -59,7 +70,18 @@
         />
       </div>
       <div class="poe-field">
-        <div class="poe-field-label">Area level</div>
+        <div class="poe-field-label ms-level-label">
+          Area level
+          <button
+            type="button"
+            class="ms-match"
+            [class.min]="matchOf('area') === 'min'"
+            [title]="matchOf('area') === 'min' ? 'This level and higher — click for exact' : 'Exactly this level — click for minimum'"
+            (click)="toggleMatch('area')"
+          >
+            {{ matchOf('area') === 'min' ? '≥ min' : '= exact' }}
+          </button>
+        </div>
         <input
           type="number"
           min="1"
@@ -70,7 +92,18 @@
         />
       </div>
       <div class="poe-field">
-        <div class="poe-field-label">Map tier</div>
+        <div class="poe-field-label ms-level-label">
+          Map tier
+          <button
+            type="button"
+            class="ms-match"
+            [class.min]="matchOf('tier') === 'min'"
+            [title]="matchOf('tier') === 'min' ? 'This level and higher — click for exact' : 'Exactly this level — click for minimum'"
+            (click)="toggleMatch('tier')"
+          >
+            {{ matchOf('tier') === 'min' ? '≥ min' : '= exact' }}
+          </button>
+        </div>
         <input
           type="number"
           min="1"

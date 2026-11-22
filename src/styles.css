@@ -2349,6 +2349,30 @@ input[type="range"]::-moz-range-thumb {
   gap: 0 14px;
 }
 
+.ms-level-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+.ms-match {
+  padding: 1px 6px;
+  font: inherit;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  background: rgba(var(--fg-rgb),0.05);
+  border: 1px solid rgba(var(--fg-rgb),0.12);
+  border-radius: var(--inner-radius);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.ms-match:hover { color: var(--text-dim); }
+.ms-match.min {
+  color: var(--accent-bright);
+  background: var(--selected);
+}
+
 .ms-corruption {
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 0;

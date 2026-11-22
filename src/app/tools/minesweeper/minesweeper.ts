@@ -34,6 +34,10 @@ export const CORRUPTION = [
 ] as const;
 type Corruption = (typeof CORRUPTION)[number]['value'];
 
+/** The level filters: each matches its number exactly, or that number and up. */
+export type LevelField = 'ilvl' | 'area' | 'tier';
+type LevelMatch = 'exact' | 'min';
+
 /**
  * The shared/stored form. Keys are one character because the whole thing rides
  * inside a link — and they match the original tool's, so its links open here.
@@ -51,6 +55,12 @@ interface Share {
   a?: number;
   /** map tier */
   t?: number;
+  /** 1 when item level is a minimum rather than an exact match */
+  I?: number;
+  /** 1 when area level is a minimum rather than an exact match */
+  A?: number;
+  /** 1 when map tier is a minimum rather than an exact match */
+  T?: number;
   /** corruption: 1 corrupted, 0 not, absent either */
   p?: number;
   /** extra search terms, passed through untouched */
@@ -79,6 +89,9 @@ export class Minesweeper {
   readonly ilvlInput = signal<number | null>(null);
   readonly areaInput = signal<number | null>(null);
   readonly tierInput = signal<number | null>(null);
+  readonly ilvlMatch = signal<LevelMatch>('exact');
+  readonly areaMatch = signal<LevelMatch>('exact');
+  readonly tierMatch = signal<LevelMatch>('exact');
   readonly corruption = signal<Corruption>('any');
   readonly extra = signal('');
 
@@ -99,9 +112,9 @@ export class Minesweeper {
     const ilvl = clampOrNull(this.ilvlInput());
     const area = clampOrNull(this.areaInput());
     const tier = clampOrNull(this.tierInput());
-    if (ilvl !== null) terms.push(`"ilvl: ${ilvl}"`);
-    if (area !== null) terms.push(`"area level: ${area}"`);
-    if (tier !== null) terms.push(`"tier: ${tier}"`);
+    if (ilvl !== null) terms.push(...levelTerms('ilvl', ilvl, this.ilvlMatch()));
+    if (area !== null) terms.push(...levelTerms('area level', area, this.areaMatch()));
+    if (tier !== null) terms.push(...levelTerms('tier', tier, this.tierMatch()));
     const corruption = CORRUPTION.find((option) => option.value === this.corruption());
     if (corruption?.term) terms.push(corruption.term);
     const extra = this.extra().trim();
@@ -124,6 +137,9 @@ export class Minesweeper {
     if (ilvl !== null) share.i = ilvl;
     if (area !== null) share.a = area;
     if (tier !== null) share.t = tier;
+    if (ilvl !== null && this.ilvlMatch() === 'min') share.I = 1;
+    if (area !== null && this.areaMatch() === 'min') share.A = 1;
+    if (tier !== null && this.tierMatch() === 'min') share.T = 1;
     if (this.corruption() !== 'any') share.p = this.corruption() === 'yes' ? 1 : 0;
     const extra = this.extra().trim();
     if (extra) share.x = extra;
@@ -182,6 +198,20 @@ export class Minesweeper {
     this.message.set('');
   }
 
+  toggleMatch(field: LevelField): void {
+    const match = this.matchSignal(field);
+    match.set(match() === 'min' ? 'exact' : 'min');
+    this.message.set('');
+  }
+
+  matchOf(field: LevelField): LevelMatch {
+    return this.matchSignal(field)();
+  }
+
+  private matchSignal(field: LevelField) {
+    return field === 'ilvl' ? this.ilvlMatch : field === 'area' ? this.areaMatch : this.tierMatch;
+  }
+
   setCorruption(value: Corruption): void {
     this.corruption.set(value);
     this.message.set('');
@@ -221,6 +251,9 @@ export class Minesweeper {
     this.ilvlInput.set(level(share.i));
     this.areaInput.set(level(share.a));
     this.tierInput.set(level(share.t));
+    this.ilvlMatch.set(share.I === 1 ? 'min' : 'exact');
+    this.areaMatch.set(share.A === 1 ? 'min' : 'exact');
+    this.tierMatch.set(share.T === 1 ? 'min' : 'exact');
     this.corruption.set(share.p === 1 ? 'yes' : share.p === 0 ? 'no' : 'any');
     this.extra.set(typeof share.x === 'string' ? share.x : '');
   }
@@ -264,6 +297,23 @@ function clamp(value: number | null, min: number, max: number, blank = min): num
 /** An optional field: blank stays blank, anything else lands inside the range. */
 function clampOrNull(value: number | null): number | null {
   return value === null ? null : clamp(value, 1, MAX_LEVEL);
+}
+
+/**
+ * The terms for one level filter. The search matches substrings and there is
+ * no end anchor, so a bare `"tier: 1"` also lights tiers 10-19 and 100.
+ *
+ * A minimum is therefore the range from it up to the cap: a longer number whose
+ * leading digits fit the pattern is still at least the minimum. An exact level
+ * is that minimum with everything above it switched off — no prefix of the
+ * level itself is above it, so the level stays lit.
+ */
+function levelTerms(name: string, value: number, match: LevelMatch): string[] {
+  const atLeast = (from: number) =>
+    from < MAX_LEVEL ? regexRange(from, MAX_LEVEL) : String(MAX_LEVEL);
+  const terms = [`"${name}: ${atLeast(value)}"`];
+  if (match === 'exact' && value < MAX_LEVEL) terms.push(`"!${name}: ${atLeast(value + 1)}"`);
+  return terms;
 }
 
 function level(value: unknown): number | null {
