@@ -22,6 +22,13 @@ export interface Release {
 
 export const RELEASES: Release[] = [
   {
+    version: '1.11.1',
+    date: '2026-11-22',
+    changes: [
+      'Atlas: atlas-blush-beta links made on the 3.30.0c tree import too; a link that fits both 3.30 trees opens on the one selected, with a note',
+    ],
+  },
+  {
     version: '1.11.0',
     date: '2026-11-22',
     changes: ['Atlas: Import also opens atlas-blush-beta.vercel.app links'],

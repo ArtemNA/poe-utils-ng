@@ -20,9 +20,14 @@
  * of breadth-first walk from the start node (neighbours by ascending id), one
  * bit per node reached, then 3 bits of picked effect for every allocated
  * multiple-choice node in walk order. Trailing zero bytes are dropped. No
- * checksum and no tree version: the site runs the 3.30.0 export (node count
- * and id sum match ours), so that tree is tried first and a code is accepted
- * only if every pick is in range and no set bit is left over. The site also
+ * checksum and no tree version. A code fits a tree only if every pick is in
+ * range and no set bit is left over; it is read on both 3.30 exports, since
+ * the site ran 3.30.0 (node count and id sum match ours) and may move to
+ * 3.30.0c. The two differ only by two leaf notables, off 302 and 31171, so a
+ * tree without either of those reads the same on both. One with them can fit
+ * both as different trees (about half the time in random trees): then the
+ * tree picked in the selector wins, else the newest, and the plan names the
+ * other so the user can switch and import again. The site also
  * reads two older shapes, kept here too: a plain `id,id.choice` list and GGG's
  * passive-tree URL bytes with picks given by effect id.
  *
@@ -44,6 +49,11 @@ export interface ExternalPlan {
   unpicked: number;
   /** allocated nodes with no allocated path to the centre on our tree */
   disconnected: number;
+  /**
+   * Other tree versions the same link also reads on, as a different tree. Only
+   * for links that carry no tree version (atlas-blush-beta).
+   */
+  readsOtherwiseOn?: number[];
 }
 
 type Parsed =
@@ -53,8 +63,12 @@ type Parsed =
   | { kind: 'blush'; hash: string };
 
 const BLUSH_HOST = /atlas-blush-beta\.vercel\.app\/?(?:[^#\s]*)#([\w\-.,]*)/;
-/** The tree atlas-blush-beta's data.json is: 3.30.0. */
-const BLUSH_TREE = 2;
+/**
+ * The trees an atlas-blush-beta link may have been made on: 3.30.0 (what its
+ * data.json was when this was written) and 3.30.0c. Add a new export here when
+ * the site moves to it.
+ */
+const BLUSH_TREES = [2, 3];
 
 /**
  * poeplanner tree version -> ours. Gaps are Ruthless trees. Their 30 is the
@@ -124,24 +138,36 @@ export async function readExternal(
   }
 
   if (parsed.kind === 'blush') {
-    const versions = [
-      BLUSH_TREE,
-      ...TREE_VERSIONS.map((v) => v.id)
-        .filter((id) => id !== BLUSH_TREE)
-        .sort((a, b) => b - a),
-    ];
-    for (const version of versions) {
+    const read: { version: number; tree: Tree; items: [number, number | undefined][] }[] = [];
+    for (const version of BLUSH_TREES) {
       const tree = await treeFor(version);
       const items = decodeBlush(tree, parsed.hash);
-      if (!items) continue;
-      if (items.length === 0) throw new ExternalImportError('That atlas-blush-beta tree is empty.');
-      const ids = items.map(([id]) => id);
-      const picks = items.filter((item): item is [number, number] => item[1] !== undefined);
-      return finish('atlas-blush-beta', tree, version, ids, picks);
+      if (items) read.push({ version, tree, items });
     }
-    throw new ExternalImportError(
-      'That atlas-blush-beta link does not match any atlas tree this tool has (or it was cut short).',
-    );
+    if (read.length === 0) {
+      throw new ExternalImportError(
+        'That atlas-blush-beta link does not match any atlas tree this tool has (or it was cut short).',
+      );
+    }
+    const chosen =
+      read.find((r) => r.version === currentVersion) ??
+      read.reduce((a, b) => (b.version > a.version ? b : a));
+    if (chosen.items.length === 0) {
+      throw new ExternalImportError('That atlas-blush-beta tree is empty.');
+    }
+    const key = (items: [number, number | undefined][]) =>
+      items
+        .map(([id, c]) => `${id}:${c}`)
+        .sort()
+        .join();
+    const ids = chosen.items.map(([id]) => id);
+    const picks = chosen.items.filter((item): item is [number, number] => item[1] !== undefined);
+    return {
+      ...finish('atlas-blush-beta', chosen.tree, chosen.version, ids, picks),
+      readsOtherwiseOn: read
+        .filter((r) => r !== chosen && key(r.items) !== key(chosen.items))
+        .map((r) => r.version),
+    };
   }
 
   // Current tree first: it is loaded already and almost always the right one.

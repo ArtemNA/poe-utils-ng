@@ -864,6 +864,15 @@ export class Atlas {
       if (plan.disconnected > 0) {
         notes.push(`${plan.disconnected} node(s) are not connected to the centre on this tree.`);
       }
+      const others = (plan.readsOtherwiseOn ?? [])
+        .map((id) => findTreeVersion(id))
+        .filter((v) => v !== null)
+        .map((v) => versionTitle(v));
+      if (others.length > 0) {
+        notes.push(
+          `The link does not say which tree it was made on and reads as a different tree on ${others.join(', ')}; if this one looks wrong, switch to that tree and import it again.`,
+        );
+      }
       this.shareMessage.set(notes.join(' '));
     } catch (err) {
       this.shareMessage.set(

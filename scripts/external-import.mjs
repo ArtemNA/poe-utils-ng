@@ -120,41 +120,76 @@ const URL_BASE = 'https://atlas-blush-beta.vercel.app/#';
 const ours = (alloc) => [...alloc].filter((id) => id !== site.rootId).sort();
 const theirs = (plan) => plan.allocated.filter((id) => id !== site.rootId).sort();
 
-// --- random trees round-trip ---------------------------------------------------
+// --- random trees round-trip, made on either 3.30 export ---------------------
+// The two exports differ only by two leaf notables off 302 and 31171, so half
+// the trees are steered through one of those four nodes: that is where a link
+// can fit both trees.
+const sites = { 2: site, 3: siteGraph(raws[3]) };
+const HOT = ['302', '31171', '27261', '53484'];
 let seed = 12345;
 const rand = () => (seed = (Math.imul(seed, 1103515245) + 12345) >>> 0) / 2 ** 32;
+function pathTo(g, alloc, target) {
+  const prev = new Map([[target, null]]);
+  const queue = [target];
+  for (let i = 0; i < queue.length; i++) {
+    for (const nb of g.nodes[queue[i]].adj) {
+      if (prev.has(nb)) continue;
+      prev.set(nb, queue[i]);
+      if (alloc.has(nb)) {
+        const out = [];
+        for (let c = queue[i]; c !== null; c = prev.get(c)) out.push(c);
+        return out;
+      }
+      queue.push(nb);
+    }
+  }
+  return [];
+}
+const same = (plan, alloc, variants) =>
+  JSON.stringify(theirs(plan)) === JSON.stringify(ours(alloc)) &&
+  JSON.stringify(Object.fromEntries(Object.entries(plan.choices).sort())) ===
+    JSON.stringify(Object.fromEntries(Object.entries(variants).sort()));
+let ambiguous = 0;
 for (let s = 0; s < SIMULATIONS; s++) {
+  const made = s % 2 ? 3 : 2;
+  const other = made === 2 ? 3 : 2;
+  const g = sites[made];
   const size = 1 + Math.floor(rand() * 140);
-  const alloc = new Set([site.rootId]);
+  const alloc = new Set([g.rootId]);
+  if (s % 4 < 2) {
+    const hot = HOT.filter((id) => g.nodes[id]);
+    for (const id of pathTo(g, alloc, hot[Math.floor(rand() * hot.length)])) alloc.add(id);
+  }
   while (alloc.size <= size) {
     const frontier = [...alloc]
-      .flatMap((id) => [...site.nodes[id].adj])
+      .flatMap((id) => [...g.nodes[id].adj])
       .filter((id) => !alloc.has(id));
     if (!frontier.length) break;
     alloc.add(frontier[Math.floor(rand() * frontier.length)]);
   }
   const variants = {};
   for (const id of alloc) {
-    const n = site.nodes[id];
+    const n = g.nodes[id];
     if (n.isMultipleChoiceVariant) variants[id] = Math.floor(rand() * n.variantEffects.length);
   }
-  const link = URL_BASE + siteEncode(site, alloc, variants);
-  let plan;
+  const link = URL_BASE + siteEncode(g, alloc, variants);
   try {
-    plan = await readExternal(link, 3, treeFor);
+    // With the selector on the tree it was made on, it comes back exactly.
+    const plan = await readExternal(link, made, treeFor);
+    check(plan.treeVersion === made, `sim ${s}: made on ${made}, read on ${plan.treeVersion}`);
+    check(
+      same(plan, alloc, variants),
+      `sim ${s}: ${alloc.size} nodes in, ${plan.allocated.length} out`,
+    );
+    check(plan.disconnected === 0, `sim ${s}: ${plan.disconnected} disconnected`);
+    // On the other tree it is either still exact, or the user is told where else it reads.
+    const guess = await readExternal(link, other, treeFor);
+    const flagged = (guess.readsOtherwiseOn ?? []).includes(made);
+    if (flagged) ambiguous++;
+    check(same(guess, alloc, variants) || flagged, `sim ${s}: silently wrong on ${other}`);
   } catch (err) {
     check(false, `sim ${s}: ${err.message}`);
-    continue;
   }
-  check(plan.treeVersion === 2, `sim ${s}: read on tree ${plan.treeVersion}, not 3.30.0`);
-  check(
-    JSON.stringify(theirs(plan)) === JSON.stringify(ours(alloc)),
-    `sim ${s}: ${alloc.size} nodes in, ${plan.allocated.length} out`,
-  );
-  const picks = Object.fromEntries(Object.entries(variants).sort());
-  const got = Object.fromEntries(Object.entries(plan.choices).sort());
-  check(JSON.stringify(picks) === JSON.stringify(got), `sim ${s}: picks differ`);
-  check(plan.disconnected === 0, `sim ${s}: ${plan.disconnected} disconnected`);
 }
 
 // --- a real link, against the set the site decodes it to ------------------------
@@ -166,6 +201,7 @@ const REAL_PICKS = { 712: 2, 19729: 1, 28477: 0 };
   const plan = await readExternal(URL_BASE + REAL, 3, treeFor);
   check(plan.source === 'atlas-blush-beta', 'real link: wrong source');
   check(plan.treeVersion === 2, `real link: tree ${plan.treeVersion}`);
+  check(!plan.readsOtherwiseOn?.length, 'real link: claimed to fit 3.30.0c too');
   check(
     JSON.stringify(theirs(plan)) === JSON.stringify(ours(new Set(REAL_IDS.split(' ')))),
     `real link: ${plan.allocated.length} nodes, site says ${REAL_IDS.split(' ').length}`,
@@ -200,5 +236,7 @@ for (const [name, link] of [
   check(refused, `${name}: not refused`);
 }
 
-console.log(`${checks - failures}/${checks} checks passed (${SIMULATIONS} simulated trees)`);
+console.log(
+  `${checks - failures}/${checks} checks passed (${SIMULATIONS} simulated trees, ${ambiguous} fit both 3.30 trees and were flagged)`,
+);
 process.exit(failures ? 1 : 0);
