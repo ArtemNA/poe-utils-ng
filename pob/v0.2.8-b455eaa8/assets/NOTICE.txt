@@ -1,6 +1,6 @@
 Path of Building (Rust)
 
-A Rust port of Path of Building Community, built from commit 7559793 of the port.
+A Rust port of Path of Building Community, built from commit a481968 of the port.
 
 The program is under the MIT license of the port: LICENSE.
 Next to it are unchanged files of Path of Building Community 2.68.1 (commit a41fec6c20f822a658ae5df1273e8c69d5969bac,
