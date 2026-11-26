@@ -1,0 +1,12 @@
+Path of Building (Rust)
+
+A Rust port of Path of Building Community, built from commit 8ad87b6 of the port.
+
+The program is under the MIT license of the port: LICENSE.
+Next to it are unchanged files of Path of Building Community 2.69.0 (commit 5606cc64fa9f15694e69001a52b90aa968d01a86,
+https://github.com/PathOfBuildingCommunity/PathOfBuilding), under its license: LICENSE-PathOfBuilding.md:
+  manifest.xml, changelog.txt, help.txt, runtime/SimpleGraphic/Fonts, src/Assets, src/TreeData (one file for each content).
+data/, data-patches/ and src/src.cache are converted from the same files (pob-sha 5606cc64fa9f15694e69001a52b90aa968d01a86).
+Game data and art: (c) Grinding Gear Games. This port is not affiliated with Grinding Gear Games or Path of Building Community.
+
+User data goes to Documents\Path of Building (Rust). It updates by a new build: Ctrl+U only shows a status.

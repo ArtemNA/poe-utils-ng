@@ -1,0 +1,1903 @@
+{
+ "TinctureCooldownRecovery1": {
+  "lines": [
+   "(13-17)% increased Cooldown Recovery Rate"
+  ],
+  "type": "Prefix",
+  "affix": "Lucid",
+  "group": "TinctureCooldownRecovery",
+  "level": 1,
+  "statOrder": [
+   10789
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   800,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "239144": [
+    "(13-17)% increased Cooldown Recovery Rate"
+   ]
+  }
+ },
+ "TinctureCooldownRecovery2": {
+  "lines": [
+   "(18-22)% increased Cooldown Recovery Rate"
+  ],
+  "type": "Prefix",
+  "affix": "Perceptive",
+  "group": "TinctureCooldownRecovery",
+  "level": 30,
+  "statOrder": [
+   10789
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   800,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "239144": [
+    "(18-22)% increased Cooldown Recovery Rate"
+   ]
+  }
+ },
+ "TinctureCooldownRecovery3": {
+  "lines": [
+   "(23-27)% increased Cooldown Recovery Rate"
+  ],
+  "type": "Prefix",
+  "affix": "Insightful",
+  "group": "TinctureCooldownRecovery",
+  "level": 58,
+  "statOrder": [
+   10789
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   800,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "239144": [
+    "(23-27)% increased Cooldown Recovery Rate"
+   ]
+  }
+ },
+ "TinctureCooldownRecovery4": {
+  "lines": [
+   "(28-32)% increased Cooldown Recovery Rate"
+  ],
+  "type": "Prefix",
+  "affix": "Astute",
+  "group": "TinctureCooldownRecovery",
+  "level": 82,
+  "statOrder": [
+   10789
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   800,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "239144": [
+    "(28-32)% increased Cooldown Recovery Rate"
+   ]
+  }
+ },
+ "TinctureCriticalStrikeMultiplier1": {
+  "lines": [
+   "+(9-13)% to Melee Weapon Critical Strike Multiplier"
+  ],
+  "type": "Suffix",
+  "affix": "of Ire",
+  "group": "TinctureCriticalStrikeMultiplier",
+  "level": 1,
+  "statOrder": [
+   10808
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack",
+   "critical"
+  ],
+  "tradeHashes": {
+   "605218169": [
+    "+(9-13)% to Melee Weapon Critical Strike Multiplier"
+   ]
+  }
+ },
+ "TinctureCriticalStrikeMultiplier2": {
+  "lines": [
+   "+(14-18)% to Melee Weapon Critical Strike Multiplier"
+  ],
+  "type": "Suffix",
+  "affix": "of Anger",
+  "group": "TinctureCriticalStrikeMultiplier",
+  "level": 32,
+  "statOrder": [
+   10808
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack",
+   "critical"
+  ],
+  "tradeHashes": {
+   "605218169": [
+    "+(14-18)% to Melee Weapon Critical Strike Multiplier"
+   ]
+  }
+ },
+ "TinctureCriticalStrikeMultiplier3": {
+  "lines": [
+   "+(19-23)% to Melee Weapon Critical Strike Multiplier"
+  ],
+  "type": "Suffix",
+  "affix": "of Rage",
+  "group": "TinctureCriticalStrikeMultiplier",
+  "level": 60,
+  "statOrder": [
+   10808
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack",
+   "critical"
+  ],
+  "tradeHashes": {
+   "605218169": [
+    "+(19-23)% to Melee Weapon Critical Strike Multiplier"
+   ]
+  }
+ },
+ "TinctureCriticalStrikeMultiplier4": {
+  "lines": [
+   "+(24-28)% to Melee Weapon Critical Strike Multiplier"
+  ],
+  "type": "Suffix",
+  "affix": "of Fury",
+  "group": "TinctureCriticalStrikeMultiplier",
+  "level": 73,
+  "statOrder": [
+   10808
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack",
+   "critical"
+  ],
+  "tradeHashes": {
+   "605218169": [
+    "+(24-28)% to Melee Weapon Critical Strike Multiplier"
+   ]
+  }
+ },
+ "TinctureCriticalStrikeMultiplier5": {
+  "lines": [
+   "+(29-33)% to Melee Weapon Critical Strike Multiplier"
+  ],
+  "type": "Suffix",
+  "affix": "of Ferocity",
+  "group": "TinctureCriticalStrikeMultiplier",
+  "level": 85,
+  "statOrder": [
+   10808
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack",
+   "critical"
+  ],
+  "tradeHashes": {
+   "605218169": [
+    "+(29-33)% to Melee Weapon Critical Strike Multiplier"
+   ]
+  }
+ },
+ "TinctureDamageAgainstLowLife1": {
+  "lines": [
+   "(40-47)% increased Melee Weapon Damage against Enemies that are on Low Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Execution",
+  "group": "WeaponDamageVsLowLifeEnemies",
+  "level": 1,
+  "statOrder": [
+   10816
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack"
+  ],
+  "tradeHashes": {
+   "259714394": [
+    "(40-47)% increased Melee Weapon Damage against Enemies that are on Low Life"
+   ]
+  }
+ },
+ "TinctureDamageAgainstLowLife2": {
+  "lines": [
+   "(48-55)% increased Melee Weapon Damage against Enemies that are on Low Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Elimination",
+  "group": "WeaponDamageVsLowLifeEnemies",
+  "level": 28,
+  "statOrder": [
+   10816
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack"
+  ],
+  "tradeHashes": {
+   "259714394": [
+    "(48-55)% increased Melee Weapon Damage against Enemies that are on Low Life"
+   ]
+  }
+ },
+ "TinctureDamageAgainstLowLife3": {
+  "lines": [
+   "(56-63)% increased Melee Weapon Damage against Enemies that are on Low Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Termination",
+  "group": "WeaponDamageVsLowLifeEnemies",
+  "level": 47,
+  "statOrder": [
+   10816
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack"
+  ],
+  "tradeHashes": {
+   "259714394": [
+    "(56-63)% increased Melee Weapon Damage against Enemies that are on Low Life"
+   ]
+  }
+ },
+ "TinctureDamageAgainstLowLife4": {
+  "lines": [
+   "(64-71)% increased Melee Weapon Damage against Enemies that are on Low Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Extermination",
+  "group": "WeaponDamageVsLowLifeEnemies",
+  "level": 65,
+  "statOrder": [
+   10816
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack"
+  ],
+  "tradeHashes": {
+   "259714394": [
+    "(64-71)% increased Melee Weapon Damage against Enemies that are on Low Life"
+   ]
+  }
+ },
+ "TinctureDamageAgainstLowLife5": {
+  "lines": [
+   "(72-79)% increased Melee Weapon Damage against Enemies that are on Low Life"
+  ],
+  "type": "Suffix",
+  "affix": "of Assassination",
+  "group": "WeaponDamageVsLowLifeEnemies",
+  "level": 80,
+  "statOrder": [
+   10816
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack"
+  ],
+  "tradeHashes": {
+   "259714394": [
+    "(72-79)% increased Melee Weapon Damage against Enemies that are on Low Life"
+   ]
+  }
+ },
+ "TinctureDamageOverTimeMultiplier1": {
+  "lines": [
+   "+(9-13)% to Damage over Time Multiplier with Melee Weapon Attacks"
+  ],
+  "type": "Suffix",
+  "affix": "of Acrimony",
+  "group": "TinctureDamageOverTimeMultiplier",
+  "level": 1,
+  "statOrder": [
+   10809
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack"
+  ],
+  "tradeHashes": {
+   "1867426121": [
+    "+(9-13)% to Damage over Time Multiplier with Melee Weapon Attacks"
+   ]
+  }
+ },
+ "TinctureDamageOverTimeMultiplier2": {
+  "lines": [
+   "+(14-18)% to Damage over Time Multiplier with Melee Weapon Attacks"
+  ],
+  "type": "Suffix",
+  "affix": "of Dispersion",
+  "group": "TinctureDamageOverTimeMultiplier",
+  "level": 34,
+  "statOrder": [
+   10809
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack"
+  ],
+  "tradeHashes": {
+   "1867426121": [
+    "+(14-18)% to Damage over Time Multiplier with Melee Weapon Attacks"
+   ]
+  }
+ },
+ "TinctureDamageOverTimeMultiplier3": {
+  "lines": [
+   "+(19-23)% to Damage over Time Multiplier with Melee Weapon Attacks"
+  ],
+  "type": "Suffix",
+  "affix": "of Liquefaction",
+  "group": "TinctureDamageOverTimeMultiplier",
+  "level": 58,
+  "statOrder": [
+   10809
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack"
+  ],
+  "tradeHashes": {
+   "1867426121": [
+    "+(19-23)% to Damage over Time Multiplier with Melee Weapon Attacks"
+   ]
+  }
+ },
+ "TinctureDamageOverTimeMultiplier4": {
+  "lines": [
+   "+(24-28)% to Damage over Time Multiplier with Melee Weapon Attacks"
+  ],
+  "type": "Suffix",
+  "affix": "of Melting",
+  "group": "TinctureDamageOverTimeMultiplier",
+  "level": 70,
+  "statOrder": [
+   10809
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack"
+  ],
+  "tradeHashes": {
+   "1867426121": [
+    "+(24-28)% to Damage over Time Multiplier with Melee Weapon Attacks"
+   ]
+  }
+ },
+ "TinctureDamageOverTimeMultiplier5": {
+  "lines": [
+   "+(29-33)% to Damage over Time Multiplier with Melee Weapon Attacks"
+  ],
+  "type": "Suffix",
+  "affix": "of Dissolution",
+  "group": "TinctureDamageOverTimeMultiplier",
+  "level": 84,
+  "statOrder": [
+   10809
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "damage",
+   "attack"
+  ],
+  "tradeHashes": {
+   "1867426121": [
+    "+(29-33)% to Damage over Time Multiplier with Melee Weapon Attacks"
+   ]
+  }
+ },
+ "TinctureEffect1": {
+  "lines": [
+   "(11-13)% increased effect"
+  ],
+  "type": "Prefix",
+  "affix": "Herbal",
+  "group": "TinctureEffect",
+  "level": 1,
+  "statOrder": [
+   10790
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "3529940209": [
+    "(11-13)% increased effect"
+   ]
+  }
+ },
+ "TinctureEffect2": {
+  "lines": [
+   "(14-16)% increased effect"
+  ],
+  "type": "Prefix",
+  "affix": "Natural",
+  "group": "TinctureEffect",
+  "level": 35,
+  "statOrder": [
+   10790
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "3529940209": [
+    "(14-16)% increased effect"
+   ]
+  }
+ },
+ "TinctureEffect3": {
+  "lines": [
+   "(17-19)% increased effect"
+  ],
+  "type": "Prefix",
+  "affix": "Medicinal",
+  "group": "TinctureEffect",
+  "level": 64,
+  "statOrder": [
+   10790
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "3529940209": [
+    "(17-19)% increased effect"
+   ]
+  }
+ },
+ "TinctureEffect4": {
+  "lines": [
+   "(20-22)% increased effect"
+  ],
+  "type": "Prefix",
+  "affix": "Horticultural",
+  "group": "TinctureEffect",
+  "level": 85,
+  "statOrder": [
+   10790
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   600,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "3529940209": [
+    "(20-22)% increased effect"
+   ]
+  }
+ },
+ "TinctureEffectFasterToxicity1": {
+  "lines": [
+   "35% increased effect",
+   "(47-51)% increased Mana Burn rate"
+  ],
+  "type": "Prefix",
+  "affix": "Potent",
+  "group": "TinctureEffectFasterToxicity",
+  "level": 1,
+  "statOrder": [
+   10790,
+   10791
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   400,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "116232170": [
+    "(47-51)% increased Mana Burn rate"
+   ],
+   "3529940209": [
+    "35% increased effect"
+   ]
+  }
+ },
+ "TinctureEffectFasterToxicity2": {
+  "lines": [
+   "35% increased effect",
+   "(42-46)% increased Mana Burn rate"
+  ],
+  "type": "Prefix",
+  "affix": "Concentrated",
+  "group": "TinctureEffectFasterToxicity",
+  "level": 49,
+  "statOrder": [
+   10790,
+   10791
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   400,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "116232170": [
+    "(42-46)% increased Mana Burn rate"
+   ],
+   "3529940209": [
+    "35% increased effect"
+   ]
+  }
+ },
+ "TinctureEffectFasterToxicity3": {
+  "lines": [
+   "35% increased effect",
+   "(37-41)% increased Mana Burn rate"
+  ],
+  "type": "Prefix",
+  "affix": "Enriched",
+  "group": "TinctureEffectFasterToxicity",
+  "level": 84,
+  "statOrder": [
+   10790,
+   10791
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   400,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "116232170": [
+    "(37-41)% increased Mana Burn rate"
+   ],
+   "3529940209": [
+    "35% increased effect"
+   ]
+  }
+ },
+ "TinctureEffectSlowerToxicity1": {
+  "lines": [
+   "(31-35)% reduced effect",
+   "50% reduced Mana Burn rate"
+  ],
+  "type": "Prefix",
+  "affix": "Thin",
+  "group": "TinctureEffectSlowerToxicity",
+  "level": 1,
+  "statOrder": [
+   10790,
+   10791
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   400,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "116232170": [
+    "50% reduced Mana Burn rate"
+   ],
+   "3529940209": [
+    "(31-35)% reduced effect"
+   ]
+  }
+ },
+ "TinctureEffectSlowerToxicity2": {
+  "lines": [
+   "(26-30)% reduced effect",
+   "50% reduced Mana Burn rate"
+  ],
+  "type": "Prefix",
+  "affix": "Diluted",
+  "group": "TinctureEffectSlowerToxicity",
+  "level": 49,
+  "statOrder": [
+   10790,
+   10791
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   400,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "116232170": [
+    "50% reduced Mana Burn rate"
+   ],
+   "3529940209": [
+    "(26-30)% reduced effect"
+   ]
+  }
+ },
+ "TinctureEffectSlowerToxicity3": {
+  "lines": [
+   "(21-25)% reduced effect",
+   "50% reduced Mana Burn rate"
+  ],
+  "type": "Prefix",
+  "affix": "Measured",
+  "group": "TinctureEffectSlowerToxicity",
+  "level": 84,
+  "statOrder": [
+   10790,
+   10791
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   400,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "116232170": [
+    "50% reduced Mana Burn rate"
+   ],
+   "3529940209": [
+    "(21-25)% reduced effect"
+   ]
+  }
+ },
+ "TinctureElementalPenetration1": {
+  "lines": [
+   "Melee Weapon Damage Penetrates (5-7)% Elemental Resistances"
+  ],
+  "type": "Suffix",
+  "affix": "of Catalysing",
+  "group": "TinctureElementalPenetration",
+  "level": 1,
+  "statOrder": [
+   10815
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "elemental_damage",
+   "damage",
+   "elemental",
+   "attack"
+  ],
+  "tradeHashes": {
+   "2499808413": [
+    "Melee Weapon Damage Penetrates (5-7)% Elemental Resistances"
+   ]
+  }
+ },
+ "TinctureElementalPenetration2": {
+  "lines": [
+   "Melee Weapon Damage Penetrates (8-10)% Elemental Resistances"
+  ],
+  "type": "Suffix",
+  "affix": "of Infusing",
+  "group": "TinctureElementalPenetration",
+  "level": 32,
+  "statOrder": [
+   10815
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "elemental_damage",
+   "damage",
+   "elemental",
+   "attack"
+  ],
+  "tradeHashes": {
+   "2499808413": [
+    "Melee Weapon Damage Penetrates (8-10)% Elemental Resistances"
+   ]
+  }
+ },
+ "TinctureElementalPenetration3": {
+  "lines": [
+   "Melee Weapon Damage Penetrates (11-13)% Elemental Resistances"
+  ],
+  "type": "Suffix",
+  "affix": "of Empowering",
+  "group": "TinctureElementalPenetration",
+  "level": 60,
+  "statOrder": [
+   10815
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "elemental_damage",
+   "damage",
+   "elemental",
+   "attack"
+  ],
+  "tradeHashes": {
+   "2499808413": [
+    "Melee Weapon Damage Penetrates (11-13)% Elemental Resistances"
+   ]
+  }
+ },
+ "TinctureElementalPenetration4": {
+  "lines": [
+   "Melee Weapon Damage Penetrates (14-16)% Elemental Resistances"
+  ],
+  "type": "Suffix",
+  "affix": "of the Unleashed",
+  "group": "TinctureElementalPenetration",
+  "level": 73,
+  "statOrder": [
+   10815
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "elemental_damage",
+   "damage",
+   "elemental",
+   "attack"
+  ],
+  "tradeHashes": {
+   "2499808413": [
+    "Melee Weapon Damage Penetrates (14-16)% Elemental Resistances"
+   ]
+  }
+ },
+ "TinctureElementalPenetration5": {
+  "lines": [
+   "Melee Weapon Damage Penetrates (17-19)% Elemental Resistances"
+  ],
+  "type": "Suffix",
+  "affix": "of Overpowering",
+  "group": "TinctureElementalPenetration",
+  "level": 85,
+  "statOrder": [
+   10815
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "elemental_damage",
+   "damage",
+   "elemental",
+   "attack"
+  ],
+  "tradeHashes": {
+   "2499808413": [
+    "Melee Weapon Damage Penetrates (17-19)% Elemental Resistances"
+   ]
+  }
+ },
+ "TinctureFlaskChargeIncrease1": {
+  "lines": [
+   "(11-15)% increased Flask Charges gained from Kills with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Restocking",
+  "group": "FlaskChargesFromWeaponKills",
+  "level": 1,
+  "statOrder": [
+   10811
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   800,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "6637015": [
+    "(11-15)% increased Flask Charges gained from Kills with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureFlaskChargeIncrease2": {
+  "lines": [
+   "(16-20)% increased Flask Charges gained from Kills with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Replenishing",
+  "group": "FlaskChargesFromWeaponKills",
+  "level": 40,
+  "statOrder": [
+   10811
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   800,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "6637015": [
+    "(16-20)% increased Flask Charges gained from Kills with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureFlaskChargeIncrease3": {
+  "lines": [
+   "(21-25)% increased Flask Charges gained from Kills with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Pouring",
+  "group": "FlaskChargesFromWeaponKills",
+  "level": 72,
+  "statOrder": [
+   10811
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   800,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "6637015": [
+    "(21-25)% increased Flask Charges gained from Kills with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureFlaskChargeIncrease4": {
+  "lines": [
+   "(26-30)% increased Flask Charges gained from Kills with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Overflowing",
+  "group": "FlaskChargesFromWeaponKills",
+  "level": 85,
+  "statOrder": [
+   10811
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   800,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "6637015": [
+    "(26-30)% increased Flask Charges gained from Kills with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureIgnorePhysDR1": {
+  "lines": [
+   "Melee Weapon Hits have (30-39)% chance to ignore Enemy Physical Damage Reduction"
+  ],
+  "type": "Suffix",
+  "affix": "of Battering",
+  "group": "TinctureIgnorePhysDR",
+  "level": 40,
+  "statOrder": [
+   10777
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "physical_damage",
+   "damage",
+   "physical",
+   "attack"
+  ],
+  "tradeHashes": {
+   "1676663186": [
+    "Melee Weapon Hits have (30-39)% chance to ignore Enemy Physical Damage Reduction"
+   ]
+  }
+ },
+ "TinctureIgnorePhysDR2": {
+  "lines": [
+   "Melee Weapon Hits have (40-49)% chance to ignore Enemy Physical Damage Reduction"
+  ],
+  "type": "Suffix",
+  "affix": "of Crushing",
+  "group": "TinctureIgnorePhysDR",
+  "level": 62,
+  "statOrder": [
+   10777
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "physical_damage",
+   "damage",
+   "physical",
+   "attack"
+  ],
+  "tradeHashes": {
+   "1676663186": [
+    "Melee Weapon Hits have (40-49)% chance to ignore Enemy Physical Damage Reduction"
+   ]
+  }
+ },
+ "TinctureIgnorePhysDR3": {
+  "lines": [
+   "Melee Weapon Hits have (50-60)% chance to ignore Enemy Physical Damage Reduction"
+  ],
+  "type": "Suffix",
+  "affix": "of Overwhelming",
+  "group": "TinctureIgnorePhysDR",
+  "level": 80,
+  "statOrder": [
+   10777
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "physical_damage",
+   "damage",
+   "physical",
+   "attack"
+  ],
+  "tradeHashes": {
+   "1676663186": [
+    "Melee Weapon Hits have (50-60)% chance to ignore Enemy Physical Damage Reduction"
+   ]
+  }
+ },
+ "TinctureIncreasedAilmentDuration1": {
+  "lines": [
+   "(25-35)% increased Duration of Elemental Ailments from Melee Weapon Attacks"
+  ],
+  "type": "Suffix",
+  "affix": "of the Wild",
+  "group": "TinctureIncreasedAilmentDuration",
+  "level": 1,
+  "statOrder": [
+   10810
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   700,
+   0
+  ],
+  "modTags": [
+   "elemental",
+   "attack",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "3284469689": [
+    "(25-35)% increased Duration of Elemental Ailments from Melee Weapon Attacks"
+   ]
+  }
+ },
+ "TinctureIncreasedAilmentDuration2": {
+  "lines": [
+   "(36-45)% increased Duration of Elemental Ailments from Melee Weapon Attacks"
+  ],
+  "type": "Suffix",
+  "affix": "of the Untamed",
+  "group": "TinctureIncreasedAilmentDuration",
+  "level": 42,
+  "statOrder": [
+   10810
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   700,
+   0
+  ],
+  "modTags": [
+   "elemental",
+   "attack",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "3284469689": [
+    "(36-45)% increased Duration of Elemental Ailments from Melee Weapon Attacks"
+   ]
+  }
+ },
+ "TinctureIncreasedAilmentDuration3": {
+  "lines": [
+   "(46-55)% increased Duration of Elemental Ailments from Melee Weapon Attacks"
+  ],
+  "type": "Suffix",
+  "affix": "of the Savage",
+  "group": "TinctureIncreasedAilmentDuration",
+  "level": 60,
+  "statOrder": [
+   10810
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   700,
+   0
+  ],
+  "modTags": [
+   "elemental",
+   "attack",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "3284469689": [
+    "(46-55)% increased Duration of Elemental Ailments from Melee Weapon Attacks"
+   ]
+  }
+ },
+ "TinctureIncreasedAilmentDuration4": {
+  "lines": [
+   "(56-65)% increased Duration of Elemental Ailments from Melee Weapon Attacks"
+  ],
+  "type": "Suffix",
+  "affix": "of the Beast",
+  "group": "TinctureIncreasedAilmentDuration",
+  "level": 82,
+  "statOrder": [
+   10810
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   700,
+   0
+  ],
+  "modTags": [
+   "elemental",
+   "attack",
+   "ailment"
+  ],
+  "tradeHashes": {
+   "3284469689": [
+    "(56-65)% increased Duration of Elemental Ailments from Melee Weapon Attacks"
+   ]
+  }
+ },
+ "TinctureIncreasedAttackSpeed1": {
+  "lines": [
+   "(15-19)% increased Melee Weapon Attack Speed"
+  ],
+  "type": "Suffix",
+  "affix": "of Skill",
+  "group": "TinctureIncreasedAttackSpeed",
+  "level": 1,
+  "statOrder": [
+   10806
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   800,
+   0
+  ],
+  "modTags": [
+   "attack",
+   "speed"
+  ],
+  "tradeHashes": {
+   "2038105340": [
+    "(15-19)% increased Melee Weapon Attack Speed"
+   ]
+  }
+ },
+ "TinctureIncreasedAttackSpeed2": {
+  "lines": [
+   "(20-24)% increased Melee Weapon Attack Speed"
+  ],
+  "type": "Suffix",
+  "affix": "of Ease",
+  "group": "TinctureIncreasedAttackSpeed",
+  "level": 65,
+  "statOrder": [
+   10806
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   800,
+   0
+  ],
+  "modTags": [
+   "attack",
+   "speed"
+  ],
+  "tradeHashes": {
+   "2038105340": [
+    "(20-24)% increased Melee Weapon Attack Speed"
+   ]
+  }
+ },
+ "TinctureIncreasedAttackSpeed3": {
+  "lines": [
+   "(25-29)% increased Melee Weapon Attack Speed"
+  ],
+  "type": "Suffix",
+  "affix": "of Mastery",
+  "group": "TinctureIncreasedAttackSpeed",
+  "level": 85,
+  "statOrder": [
+   10806
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   800,
+   0
+  ],
+  "modTags": [
+   "attack",
+   "speed"
+  ],
+  "tradeHashes": {
+   "2038105340": [
+    "(25-29)% increased Melee Weapon Attack Speed"
+   ]
+  }
+ },
+ "TinctureLifeGainPerTarget1": {
+  "lines": [
+   "Gain (2-3) Life per Enemy Hit with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Rejuvenation",
+  "group": "TinctureLifeGainPerTarget",
+  "level": 1,
+  "statOrder": [
+   10812
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "life",
+   "attack"
+  ],
+  "tradeHashes": {
+   "3497810785": [
+    "Gain (2-3) Life per Enemy Hit with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureLifeGainPerTarget2": {
+  "lines": [
+   "Gain (3-4) Life per Enemy Hit with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Restoration",
+  "group": "TinctureLifeGainPerTarget",
+  "level": 50,
+  "statOrder": [
+   10812
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "life",
+   "attack"
+  ],
+  "tradeHashes": {
+   "3497810785": [
+    "Gain (3-4) Life per Enemy Hit with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureLifeGainPerTarget3": {
+  "lines": [
+   "Gain (5-7) Life per Enemy Hit with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Regrowth",
+  "group": "TinctureLifeGainPerTarget",
+  "level": 77,
+  "statOrder": [
+   10812
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "life",
+   "attack"
+  ],
+  "tradeHashes": {
+   "3497810785": [
+    "Gain (5-7) Life per Enemy Hit with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureLifeGainedFromEnemyDeath1": {
+  "lines": [
+   "Gain (11-15) Life per Enemy Killed with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Success",
+  "group": "TinctureLifeGainedFromEnemyDeath",
+  "level": 1,
+  "statOrder": [
+   10813
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "life",
+   "attack"
+  ],
+  "tradeHashes": {
+   "2507321875": [
+    "Gain (11-15) Life per Enemy Killed with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureLifeGainedFromEnemyDeath2": {
+  "lines": [
+   "Gain (16-20) Life per Enemy Killed with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Victory",
+  "group": "TinctureLifeGainedFromEnemyDeath",
+  "level": 35,
+  "statOrder": [
+   10813
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "life",
+   "attack"
+  ],
+  "tradeHashes": {
+   "2507321875": [
+    "Gain (16-20) Life per Enemy Killed with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureLifeGainedFromEnemyDeath3": {
+  "lines": [
+   "Gain (21-25) Life per Enemy Killed with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Triumph",
+  "group": "TinctureLifeGainedFromEnemyDeath",
+  "level": 62,
+  "statOrder": [
+   10813
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "life",
+   "attack"
+  ],
+  "tradeHashes": {
+   "2507321875": [
+    "Gain (21-25) Life per Enemy Killed with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureLifeGainedFromEnemyDeath4": {
+  "lines": [
+   "Gain (26-30) Life per Enemy Killed with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Conquest",
+  "group": "TinctureLifeGainedFromEnemyDeath",
+  "level": 80,
+  "statOrder": [
+   10813
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "life",
+   "attack"
+  ],
+  "tradeHashes": {
+   "2507321875": [
+    "Gain (26-30) Life per Enemy Killed with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureManaGainPerTarget1": {
+  "lines": [
+   "Gain 1 Mana per Enemy Hit with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Enveloping",
+  "group": "TinctureManaGainPerTarget",
+  "level": 45,
+  "statOrder": [
+   10814
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "mana",
+   "attack"
+  ],
+  "tradeHashes": {
+   "766380077": [
+    "Gain 1 Mana per Enemy Hit with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureManaGainPerTarget2": {
+  "lines": [
+   "Gain 2 Mana per Enemy Hit with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Siphoning",
+  "group": "TinctureManaGainPerTarget",
+  "level": 68,
+  "statOrder": [
+   10814
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "mana",
+   "attack"
+  ],
+  "tradeHashes": {
+   "766380077": [
+    "Gain 2 Mana per Enemy Hit with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureManaGainPerTarget3": {
+  "lines": [
+   "Gain 3 Mana per Enemy Hit with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Devouring",
+  "group": "TinctureManaGainPerTarget",
+  "level": 84,
+  "statOrder": [
+   10814
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   500,
+   0
+  ],
+  "modTags": [
+   "resource",
+   "mana",
+   "attack"
+  ],
+  "tradeHashes": {
+   "766380077": [
+    "Gain 3 Mana per Enemy Hit with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureManaGainedFromEnemyDeath1": {
+  "lines": [
+   "Gain (2-3) Mana per Enemy Killed with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Absorption",
+  "group": "ManaGainedOnWeaponKill",
+  "level": 38,
+  "statOrder": [
+   10807
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "2230910022": [
+    "Gain (2-3) Mana per Enemy Killed with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureManaGainedFromEnemyDeath2": {
+  "lines": [
+   "Gain (4-5) Mana per Enemy Killed with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Osmosis",
+  "group": "ManaGainedOnWeaponKill",
+  "level": 50,
+  "statOrder": [
+   10807
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "2230910022": [
+    "Gain (4-5) Mana per Enemy Killed with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureManaGainedFromEnemyDeath3": {
+  "lines": [
+   "Gain (6-8) Mana per Enemy Killed with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Consumption",
+  "group": "ManaGainedOnWeaponKill",
+  "level": 68,
+  "statOrder": [
+   10807
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "2230910022": [
+    "Gain (6-8) Mana per Enemy Killed with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureManaGainedFromEnemyDeath4": {
+  "lines": [
+   "Gain (9-11) Mana per Enemy Killed with Melee Weapons"
+  ],
+  "type": "Suffix",
+  "affix": "of Assimilation",
+  "group": "ManaGainedOnWeaponKill",
+  "level": 82,
+  "statOrder": [
+   10807
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "2230910022": [
+    "Gain (9-11) Mana per Enemy Killed with Melee Weapons"
+   ]
+  }
+ },
+ "TinctureToxicityRate1": {
+  "lines": [
+   "(15-17)% reduced Mana Burn rate"
+  ],
+  "type": "Prefix",
+  "affix": "Sustained",
+  "group": "TinctureToxicityRate",
+  "level": 1,
+  "statOrder": [
+   10791
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "116232170": [
+    "(15-17)% reduced Mana Burn rate"
+   ]
+  }
+ },
+ "TinctureToxicityRate2": {
+  "lines": [
+   "(18-20)% reduced Mana Burn rate"
+  ],
+  "type": "Prefix",
+  "affix": "Tenacious",
+  "group": "TinctureToxicityRate",
+  "level": 30,
+  "statOrder": [
+   10791
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "116232170": [
+    "(18-20)% reduced Mana Burn rate"
+   ]
+  }
+ },
+ "TinctureToxicityRate3": {
+  "lines": [
+   "(21-23)% reduced Mana Burn rate"
+  ],
+  "type": "Prefix",
+  "affix": "Persistent",
+  "group": "TinctureToxicityRate",
+  "level": 58,
+  "statOrder": [
+   10791
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "116232170": [
+    "(21-23)% reduced Mana Burn rate"
+   ]
+  }
+ },
+ "TinctureToxicityRate4": {
+  "lines": [
+   "(24-26)% reduced Mana Burn rate"
+  ],
+  "type": "Prefix",
+  "affix": "Persevering",
+  "group": "TinctureToxicityRate",
+  "level": 80,
+  "statOrder": [
+   10791
+  ],
+  "weightKey": [
+   "tincture",
+   "default"
+  ],
+  "weightVal": [
+   1000,
+   0
+  ],
+  "modTags": [],
+  "tradeHashes": {
+   "116232170": [
+    "(24-26)% reduced Mana Burn rate"
+   ]
+  }
+ }
+}
